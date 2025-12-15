@@ -9,10 +9,13 @@ interface InterlinearWordProps {
 }
 
 export default function InterlinearWord({ token, isEditing, onClick }: InterlinearWordProps) {
+  const isClickable = !!onClick
+
   return (
     <span
-      className={`word-unit ${isEditing ? 'editing' : ''}`}
+      className={`word-unit ${isEditing ? 'editing' : ''} ${isClickable ? 'cursor-pointer' : ''}`}
       onClick={onClick}
+      title={isClickable ? 'Click to edit' : undefined}
     >
       {token.parts.map((part, index) => (
         <ruby key={index}>

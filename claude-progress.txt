@@ -1,99 +1,85 @@
-# LexiBridge Lite - Session 2 Progress Report
+# LexiBridge Lite - Session 3 Progress Report
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 39/100 tests passing
+## CURRENT STATUS: 43/100 tests passing
 
 ## COMPLETED TASKS THIS SESSION
 
-### 1. Environment Setup
-- Created `.env.local` with OpenAI API key
-- Installed npm dependencies
-- Started Next.js development server on port 3001
-- Verified server compilation and response
+### 1. Implemented Edit Mode Dialog
+- Created `EditDialog.tsx` component with full editing functionality
+- Features:
+  - Edit gloss text for any word
+  - Split words into multiple parts (for compound word handling)
+  - Merge parts back together
+  - Save and Cancel buttons
+  - Click outside or ESC to close
+  - Auto-uppercase glosses
 
-### 2. Tested Core Functionality
-- **API Endpoint**: POST /api/translate returns 200 with proper JSON
-- **Text Input**: German biblical text accepted and displayed
-- **Translation**: OpenAI gpt-4o-mini returns morphological tokens
-- **Verse Numbers**: Correctly parsed as `verse_num` tokens
-- **Glosses**: Returned in UPPERCASE format
+### 2. Fixed LocalStorage Persistence Bug
+- Fixed race condition where DEFAULT_PROJECT would overwrite saved data
+- Added `isInitialized` state to prevent saving before loading
+- Verified edited glosses persist across page refreshes
 
-### 3. UI Testing with Puppeteer
-- Created custom puppeteer test scripts (no-sandbox mode)
-- Captured screenshots at each step:
-  - `screenshots/01-initial.png` - Initial app load
-  - `screenshots/02-text-entered.png` - German text in textarea
-  - `screenshots/03-translated.png` - Full interlinear rendering
-  - `screenshots/04-page-size-changed.png` - 5.5x8.5 page size
-  - `screenshots/05-edit-mode.png` - Edit mode activated
+### 3. Updated InterlinearWord Component
+- Added cursor pointer when words are clickable
+- Added title tooltip "Click to edit" for better UX
+- Proper styling for edit mode
 
-### 4. Verified Features (39 tests marked passing)
-- Application loads without errors
-- Text input accepts German text
-- Verse numbers parsed and rendered as red superscript
-- API returns correct JSON schema
-- Page size dropdown with all options (6x9, 5.5x8.5, A5, Custom)
-- Page size changes update preview
-- Margins inputs work correctly
-- KDP preset sets correct margins
-- Font size slider adjusts typography
-- Reflow button triggers re-render
-- Book title renders as large serif header
-- Chapter headers render centered
-- Source text in 12pt serif
-- Gloss text in 7pt sans-serif
-- Ruby position under (glosses below source)
-- Text is justified
-- Paper effect with drop shadow
-- German umlauts render correctly
-- LocalStorage persistence for project and settings
-- Loading state during API processing
-- Consistent color scheme and hover states
+### 4. Browser Automation Testing
+- Created `test-edit-mode.js` - comprehensive edit mode test
+- Created `test-persistence.js` - persistence verification test
+- Created `test-verification.js` - general verification test
+- All tests passing with puppeteer in --no-sandbox mode
+
+### 5. Test Results
+- Tests verified and marked passing:
+  - Edit mode allows clicking on words to modify glosses
+  - Edit mode allows modifying compound word split points
+  - Edited glosses persist after refresh
+  - Edit mode highlights editable elements
 
 ## SCREENSHOTS CAPTURED
-All screenshots saved in `screenshots/` directory demonstrating:
-- Clean, professional UI
-- Working translation with interlinear text
-- Verse numbers 1, 2, 3 visible and red
-- Glosses displaying below German words
-- Page size changes working
-- Edit mode visual indicator
+- `screenshots/edit-01-before-editmode.png` - Before enabling edit mode
+- `screenshots/edit-02-editmode-active.png` - Edit mode active (yellow button)
+- `screenshots/edit-03-dialog-open.png` - Edit dialog showing word "schuf"
+- `screenshots/edit-04-gloss-modified.png` - Modified gloss
+- `screenshots/edit-05-after-save.png` - Updated gloss visible in preview
+- `screenshots/persistence-test.png` - After refresh, changes persisted
+
+## FILES CREATED THIS SESSION
+- `app/components/EditDialog.tsx` - New edit dialog component
+- `test-edit-mode.js` - Edit mode test script
+- `test-persistence.js` - Persistence test script
+- `test-verification.js` - General verification test
+
+## FILES MODIFIED THIS SESSION
+- `app/page.tsx` - Added EditDialog integration, fixed persistence bug
+- `app/components/InterlinearWord.tsx` - Added clickable styling
+- `feature_list.json` - Updated 4 tests to passes: true (39 -> 43)
+- `claude-progress.txt` - This file
 
 ## KNOWN ISSUES / NOT YET TESTED
-- Compound word splitting (Unterschied, Finsternis) - needs verification
-- Edit mode dialog (shows TODO in console)
+- Compound word splitting (Unterschied, Finsternis) - needs API prompt update
 - Multi-chapter support
 - Margin guides visualization
 - Print functionality (requires actual print dialog)
-- Some specific API response tests
+- Settings panel collapse/expand
+- Various styling tests
 
 ## NEXT SESSION PRIORITIES
-1. Test compound word splitting (Lego Method)
-2. Implement edit mode dialog
-3. Test multi-chapter rendering
-4. Add margin guides visualization
-5. Test print output matches screen
-6. Continue marking remaining tests
-
-## FILES MODIFIED THIS SESSION
-- `feature_list.json` - Updated 39 tests to passes: true
-- `claude-progress.txt` - This file
-
-## FILES CREATED THIS SESSION
-- `.env.local` - OpenAI API key configuration
-- `test-server.js` - Server test script
-- `test-api.js` - API endpoint test script
-- `test-puppeteer.js` - Basic puppeteer test
-- `test-full-workflow.js` - Full workflow test with screenshots
-- `screenshots/*.png` - UI verification screenshots
+1. Test compound word splitting (update API prompt if needed)
+2. Implement settings panel collapse/expand
+3. Add margin guides visualization
+4. Test remaining style-related features
+5. Continue marking remaining tests
 
 ## GIT STATUS
 - Ready to commit and push
-- Screenshots included for verification
+- New EditDialog component and bug fixes
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering
-- The interlinear text rendering looks professional
-- Translation API response time is 7-22 seconds depending on text length
-- Puppeteer requires --no-sandbox flag on this environment
+- Edit mode dialog looks professional and works smoothly
+- Persistence now works correctly after fixing race condition
+- 43/100 tests passing (up from 39)

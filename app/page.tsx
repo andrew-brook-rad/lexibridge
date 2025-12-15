@@ -1,10 +1,11 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse } from '@/types'
+import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse, WordToken, WordPart } from '@/types'
 import SettingsPanel from './components/SettingsPanel'
 import PrintPreview from './components/PrintPreview'
 import TextInput from './components/TextInput'
+import EditDialog from './components/EditDialog'
 
 const STORAGE_KEY = 'lexibridge-project'
 
@@ -16,6 +17,13 @@ export default function Home() {
   const [settingsCollapsed, setSettingsCollapsed] = useState(false)
   const [editMode, setEditMode] = useState(false)
   const [showInput, setShowInput] = useState(true)
+  const [editingToken, setEditingToken] = useState<{
+    chapterIndex: number
+    paragraphIndex: number
+    tokenIndex: number
+    token: WordToken
+  } | null>(null)
+  const [isInitialized, setIsInitialized] = useState(false)
 
   // Load project from localStorage on mount
   useEffect(() => {
@@ -31,12 +39,15 @@ export default function Home() {
         console.error('Failed to load saved project:', e)
       }
     }
+    setIsInitialized(true)
   }, [])
 
-  // Save project to localStorage on change
+  // Save project to localStorage on change (only after initialization)
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(project))
-  }, [project])
+    if (isInitialized) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(project))
+    }
+  }, [project, isInitialized])
 
   const handleTranslate = async (text: string) => {
     setIsLoading(true)
@@ -118,8 +129,46 @@ export default function Home() {
 
   const handleTokenClick = (chapterIndex: number, paragraphIndex: number, tokenIndex: number) => {
     if (!editMode) return
-    // TODO: Implement edit dialog
-    console.log('Edit token:', { chapterIndex, paragraphIndex, tokenIndex })
+
+    const token = project.chapters[chapterIndex]?.paragraphs[paragraphIndex]?.[tokenIndex]
+    if (token && token.type === 'word') {
+      setEditingToken({
+        chapterIndex,
+        paragraphIndex,
+        tokenIndex,
+        token: token as WordToken
+      })
+    }
+  }
+
+  const handleSaveEdit = (updatedParts: WordPart[]) => {
+    if (!editingToken) return
+
+    const { chapterIndex, paragraphIndex, tokenIndex } = editingToken
+
+    setProject((prev) => {
+      const newProject = { ...prev }
+      const newChapters = [...newProject.chapters]
+      const newChapter = { ...newChapters[chapterIndex] }
+      const newParagraphs = [...newChapter.paragraphs]
+      const newParagraph = [...newParagraphs[paragraphIndex]]
+
+      const oldToken = newParagraph[tokenIndex] as WordToken
+      newParagraph[tokenIndex] = {
+        ...oldToken,
+        parts: updatedParts
+      }
+
+      newParagraphs[paragraphIndex] = newParagraph
+      newChapter.paragraphs = newParagraphs
+      newChapters[chapterIndex] = newChapter
+      newProject.chapters = newChapters
+
+      return newProject
+    })
+
+    setReflowKey((k) => k + 1)
+    setEditingToken(null)
   }
 
   return (
@@ -251,6 +300,15 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Edit Dialog */}
+      {editingToken && (
+        <EditDialog
+          token={editingToken.token}
+          onSave={handleSaveEdit}
+          onClose={() => setEditingToken(null)}
+        />
+      )}
     </main>
   )
 }

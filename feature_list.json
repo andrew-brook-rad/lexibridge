@@ -323,7 +323,7 @@
       "Step 4: Modify the gloss text",
       "Step 5: Verify change is reflected in preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -335,7 +335,7 @@
       "Step 4: Modify where the word splits",
       "Step 5: Verify new split is rendered correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -978,7 +978,7 @@
       "Step 3: Refresh the page",
       "Step 4: Verify edited gloss is restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -989,7 +989,7 @@
       "Step 3: Verify hover effects on editable elements",
       "Step 4: Verify clear visual affordance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

@@ -68,9 +68,17 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
   return (
     <div
       key={reflowKey}
-      className={`print-preview mx-auto ${editMode ? 'edit-mode' : ''}`}
+      className={`print-preview mx-auto relative ${editMode ? 'edit-mode' : ''}`}
       style={customStyles}
     >
+      {/* Margin Guides - Safe Area Indicators */}
+      <div className="margin-guides no-print">
+        <div className="margin-guide-top" />
+        <div className="margin-guide-bottom" />
+        <div className="margin-guide-inner" />
+        <div className="margin-guide-outer" />
+      </div>
+
       {/* Book Title */}
       {meta.title && (
         <h1 className="book-title">{meta.title}</h1>

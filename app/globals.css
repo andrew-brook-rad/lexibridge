@@ -276,9 +276,50 @@ ruby rt, ruby .gloss-text {
   100% { transform: rotate(360deg); }
 }
 
-/* Margin guides */
+/* Margin guides - Safe Area Indicators */
 .margin-guides {
   position: absolute;
-  border: 1px dashed rgba(59, 130, 246, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   pointer-events: none;
+  z-index: 10;
+}
+
+.margin-guide-top,
+.margin-guide-bottom,
+.margin-guide-inner,
+.margin-guide-outer {
+  position: absolute;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px dashed rgba(59, 130, 246, 0.3);
+}
+
+.margin-guide-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--margin-top);
+}
+
+.margin-guide-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--margin-bottom);
+}
+
+.margin-guide-inner {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--margin-inner);
+}
+
+.margin-guide-outer {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--margin-outer);
 }

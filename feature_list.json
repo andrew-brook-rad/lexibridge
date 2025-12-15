@@ -367,7 +367,7 @@
       "Step 3: Verify guides match configured margins",
       "Step 4: Verify inner margin guide is larger for binding"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -378,7 +378,7 @@
       "Step 3: Verify print dialog opens",
       "Step 4: Verify preview matches screen layout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -389,7 +389,7 @@
       "Step 3: Verify margins match configured values",
       "Step 4: Verify page size is set correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

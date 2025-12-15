@@ -9,7 +9,7 @@ const data = JSON.stringify({
 
 const options = {
   hostname: 'localhost',
-  port: 3001,
+  port: 3000,
   path: '/api/translate',
   method: 'POST',
   headers: {

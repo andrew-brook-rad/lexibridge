@@ -24,6 +24,7 @@ export default function Home() {
     token: WordToken
   } | null>(null)
   const [isInitialized, setIsInitialized] = useState(false)
+  const [previewPageType, setPreviewPageType] = useState<'recto' | 'verso'>('recto')
 
   // Load project from localStorage on mount
   useEffect(() => {
@@ -220,13 +221,13 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-sm no-print">
         <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">LexiBridge Lite</h1>
-              <p className="text-sm text-gray-500">Biblical Interlinear Generator</p>
+              <h1 className="text-xl sm:text-2xl font-bold text-gray-900">LexiBridge Lite</h1>
+              <p className="text-xs sm:text-sm text-gray-500">Biblical Interlinear Generator</p>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-4">
               {/* Title input */}
               <div className="flex items-center gap-2">
                 <label className="text-sm text-gray-600">Title:</label>
@@ -321,9 +322,9 @@ export default function Home() {
         )}
 
         {/* Main layout */}
-        <div className="flex gap-6">
-          {/* Settings panel */}
-          <div className="no-print flex-shrink-0">
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Settings panel - hidden by default on mobile, shown when expanded */}
+          <div className="no-print flex-shrink-0 w-full lg:w-auto">
             <SettingsPanel
               settings={project.printSettings}
               onSettingsChange={handleSettingsChange}
@@ -335,11 +336,41 @@ export default function Home() {
 
           {/* Preview area */}
           <div className="flex-grow overflow-x-auto">
+            {/* Recto/Verso toggle */}
+            <div className="mb-4 flex flex-wrap items-center gap-2 no-print">
+              <span className="text-sm text-gray-600">Preview Page:</span>
+              <div className="flex rounded-lg overflow-hidden border border-gray-300">
+                <button
+                  onClick={() => setPreviewPageType('recto')}
+                  className={`px-3 py-1 text-sm ${
+                    previewPageType === 'recto'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Recto (Odd)
+                </button>
+                <button
+                  onClick={() => setPreviewPageType('verso')}
+                  className={`px-3 py-1 text-sm ${
+                    previewPageType === 'verso'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-white text-gray-700 hover:bg-gray-50'
+                  }`}
+                >
+                  Verso (Even)
+                </button>
+              </div>
+              <span className="text-xs text-gray-400 ml-2 hidden sm:inline">
+                {previewPageType === 'recto' ? 'Inner margin on left' : 'Inner margin on right'}
+              </span>
+            </div>
             <PrintPreview
               project={project}
               reflowKey={reflowKey}
               editMode={editMode}
               onTokenClick={handleTokenClick}
+              previewPageType={previewPageType}
             />
           </div>
         </div>

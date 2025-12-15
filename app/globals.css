@@ -12,6 +12,9 @@
   --margin-bottom: 0.75in;
   --margin-inner: 0.875in;
   --margin-outer: 0.5in;
+  /* Dynamic left/right margins (set based on recto/verso) */
+  --margin-left: 0.875in;
+  --margin-right: 0.5in;
 
   /* Font sizes */
   --font-size-base: 12pt;
@@ -41,8 +44,9 @@ body {
   min-height: var(--page-height);
   padding-top: var(--margin-top);
   padding-bottom: var(--margin-bottom);
-  padding-left: var(--margin-inner);
-  padding-right: var(--margin-outer);
+  /* Use dynamic left/right margins for recto/verso preview */
+  padding-left: var(--margin-left);
+  padding-right: var(--margin-right);
 }
 
 /* Interlinear text styles */
@@ -364,12 +368,29 @@ ruby rt, ruby .gloss-text {
   top: 0;
   left: 0;
   bottom: 0;
-  width: var(--margin-inner);
+  /* Use dynamic left margin for recto/verso */
+  width: var(--margin-left);
 }
 
 .margin-guide-outer {
   top: 0;
   right: 0;
   bottom: 0;
-  width: var(--margin-outer);
+  /* Use dynamic right margin for recto/verso */
+  width: var(--margin-right);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .print-preview {
+    /* Scale down for mobile viewing */
+    transform-origin: top left;
+    transform: scale(0.6);
+    margin-bottom: -40%;
+  }
+
+  .settings-panel {
+    width: 100%;
+    max-width: none;
+  }
 }

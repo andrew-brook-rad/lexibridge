@@ -8,15 +8,25 @@ interface PrintPreviewProps {
   reflowKey: number
   editMode: boolean
   onTokenClick?: (chapterIndex: number, paragraphIndex: number, tokenIndex: number) => void
+  previewPageType?: 'recto' | 'verso'
 }
 
-export default function PrintPreview({ project, reflowKey, editMode, onTokenClick }: PrintPreviewProps) {
+export default function PrintPreview({ project, reflowKey, editMode, onTokenClick, previewPageType = 'recto' }: PrintPreviewProps) {
   const { meta, printSettings, chapters } = project
 
   // Calculate page dimensions
   const pageDimensions = printSettings.pageSize === 'custom'
     ? { width: printSettings.customWidth || 6, height: printSettings.customHeight || 9 }
     : PAGE_SIZES[printSettings.pageSize]
+
+  // For recto (odd) pages: inner margin on left, outer on right
+  // For verso (even) pages: outer margin on left, inner on right
+  const marginLeft = previewPageType === 'recto'
+    ? printSettings.margins.inner
+    : printSettings.margins.outer
+  const marginRight = previewPageType === 'recto'
+    ? printSettings.margins.outer
+    : printSettings.margins.inner
 
   // CSS custom properties for dynamic styling
   const customStyles = {
@@ -26,6 +36,8 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
     '--margin-bottom': `${printSettings.margins.bottom}in`,
     '--margin-inner': `${printSettings.margins.inner}in`,
     '--margin-outer': `${printSettings.margins.outer}in`,
+    '--margin-left': `${marginLeft}in`,
+    '--margin-right': `${marginRight}in`,
     '--font-size-base': `${printSettings.baseFontSize}pt`,
     '--font-size-gloss': `${Math.round(printSettings.baseFontSize * 0.58)}pt`,
     '--font-size-verse': `${Math.round(printSettings.baseFontSize * 0.67)}pt`,

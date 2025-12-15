@@ -531,7 +531,7 @@
       "Step 3: Verify logical grouping of related settings",
       "Step 4: Verify adequate spacing between controls"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -542,7 +542,7 @@
       "Step 3: Enter custom dimensions",
       "Step 4: Verify preview updates to custom size"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -553,7 +553,7 @@
       "Step 3: Verify professional book-like appearance",
       "Step 4: Verify consistent styling throughout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -853,7 +853,7 @@
       "Step 4: Verify preview area expands",
       "Step 5: Verify settings can be restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",

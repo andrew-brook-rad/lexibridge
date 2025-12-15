@@ -160,7 +160,7 @@
       "Step 3: Verify white-space: normal allows wrapping",
       "Step 4: Visually confirm gloss stacks vertically under narrow words"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -497,7 +497,7 @@
       "Step 3: Verify line-height: 1 is applied",
       "Step 4: Verify glosses stack tightly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -609,7 +609,7 @@
       "Step 3: Verify ß displays correctly",
       "Step 4: Verify gloss handles appropriately"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -631,7 +631,7 @@
       "Step 3: Verify gloss wraps vertically",
       "Step 4: Verify source word width is not affected"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",

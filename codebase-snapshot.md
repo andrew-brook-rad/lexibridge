@@ -1,3 +1,582 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+The content has been processed where content has been compressed (code blocks are separated by ⋮---- delimiter).
+
+# File Summary
+
+## Purpose
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+
+## File Format
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  a. A header with the file path (## File: path/to/file)
+  b. The full contents of the file in a code block
+
+## Usage Guidelines
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+
+## Notes
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Content has been compressed - code blocks are separated by ⋮---- delimiter
+- Files are sorted by Git change count (files with more changes are at the bottom)
+- Git logs (20 commits) are included to show development patterns
+
+# Directory Structure
+```
+app/
+  api/
+    translate/
+      route.ts
+  components/
+    InterlinearWord.tsx
+    PrintPreview.tsx
+    SettingsPanel.tsx
+    TextInput.tsx
+  globals.css
+  layout.tsx
+  page.tsx
+types/
+  index.ts
+.claude_settings.json
+.env.example
+.gitignore
+app_spec.txt
+claude-progress.txt
+feature_list.json
+init.sh
+next.config.js
+package.json
+postcss.config.js
+README.md
+tailwind.config.ts
+tsconfig.json
+```
+
+# Files
+
+## File: app/api/translate/route.ts
+````typescript
+import { NextRequest, NextResponse } from 'next/server'
+import OpenAI from 'openai'
+import { Chapter, Token, TranslateRequest, TranslateResponse } from '@/types'
+⋮----
+export async function POST(request: NextRequest)
+⋮----
+// Validate the response structure
+````
+
+## File: app/components/InterlinearWord.tsx
+````typescript
+import { WordToken } from '@/types'
+⋮----
+interface InterlinearWordProps {
+  token: WordToken
+  isEditing?: boolean
+  onClick?: () => void
+}
+⋮----
+export default function InterlinearWord(
+````
+
+## File: app/components/PrintPreview.tsx
+````typescript
+import { BookProject, Token, PAGE_SIZES } from '@/types'
+import InterlinearWord from './InterlinearWord'
+⋮----
+interface PrintPreviewProps {
+  project: BookProject
+  reflowKey: number
+  editMode: boolean
+  onTokenClick?: (chapterIndex: number, paragraphIndex: number, tokenIndex: number) => void
+}
+⋮----
+export default function PrintPreview(
+⋮----
+// Calculate page dimensions
+⋮----
+// CSS custom properties for dynamic styling
+⋮----
+{/* Book Title */}
+⋮----
+{/* Chapter Header */}
+````
+
+## File: app/components/SettingsPanel.tsx
+````typescript
+import { PrintSettings, PAGE_SIZES, KDP_MARGINS } from '@/types'
+⋮----
+interface SettingsPanelProps {
+  settings: PrintSettings
+  onSettingsChange: (settings: PrintSettings) => void
+  onReflow: () => void
+  isCollapsed: boolean
+  onToggleCollapse: () => void
+}
+⋮----
+const handlePageSizeChange = (pageSize: PrintSettings['pageSize']) =>
+⋮----
+const handleMarginChange = (key: keyof PrintSettings['margins'], value: number) =>
+⋮----
+const handleFontSizeChange = (baseFontSize: number) =>
+⋮----
+const handleCustomDimensionChange = (key: 'customWidth' | 'customHeight', value: number) =>
+⋮----
+const applyKDPPreset = () =>
+⋮----
+{/* Page Size */}
+⋮----
+{/* Custom dimensions */}
+⋮----
+{/* Margins */}
+⋮----
+{/* Font Size */}
+⋮----
+{/* Reflow Button */}
+````
+
+## File: app/components/TextInput.tsx
+````typescript
+import { useState } from 'react'
+⋮----
+interface TextInputProps {
+  onTranslate: (text: string) => void
+  isLoading: boolean
+}
+⋮----
+export default function TextInput(
+⋮----
+const handleSubmit = (e: React.FormEvent) =>
+⋮----
+const loadSample = () =>
+⋮----
+onChange=
+⋮----
+onClick=
+````
+
+## File: app/globals.css
+````css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+⋮----
+:root {
+⋮----
+/* Page dimensions */
+⋮----
+/* Margins */
+⋮----
+/* Font sizes */
+⋮----
+/* Colors */
+⋮----
+/* Base styles */
+body {
+⋮----
+/* Print preview container */
+.print-preview {
+⋮----
+/* Interlinear text styles */
+.interlinear-text {
+⋮----
+/* Word unit container (Lego component) */
+.word-unit {
+⋮----
+/* Ruby element styling */
+ruby {
+⋮----
+/* Source text (rb) */
+ruby rb, ruby .source-text {
+⋮----
+/* Gloss text (rt) */
+ruby rt, ruby .gloss-text {
+⋮----
+/* Verse numbers */
+.verse-number {
+⋮----
+/* Chapter header */
+.chapter-header {
+⋮----
+/* Book title */
+.book-title {
+⋮----
+/* Punctuation */
+.punctuation {
+⋮----
+/* Paragraph styling */
+.paragraph {
+⋮----
+/* Print styles */
+⋮----
+.no-print {
+⋮----
+@page {
+⋮----
+@page :left {
+⋮----
+@page :right {
+⋮----
+/* Edit mode styles */
+.edit-mode .word-unit:hover {
+⋮----
+.word-unit.editing {
+⋮----
+/* Settings panel */
+.settings-panel {
+⋮----
+.settings-panel label {
+⋮----
+.settings-panel input,
+⋮----
+.settings-panel input:focus,
+⋮----
+.settings-panel button {
+⋮----
+.settings-panel button:hover {
+⋮----
+.settings-panel button:active {
+⋮----
+/* Loading spinner */
+.loading-spinner {
+⋮----
+/* Margin guides */
+.margin-guides {
+````
+
+## File: app/layout.tsx
+````typescript
+import type { Metadata } from 'next'
+⋮----
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+})
+````
+
+## File: app/page.tsx
+````typescript
+import { useState, useEffect, useCallback } from 'react'
+import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse } from '@/types'
+import SettingsPanel from './components/SettingsPanel'
+import PrintPreview from './components/PrintPreview'
+import TextInput from './components/TextInput'
+⋮----
+// Load project from localStorage on mount
+⋮----
+// Save project to localStorage on change
+⋮----
+const handleTranslate = async (text: string) =>
+⋮----
+const handleNewProject = () =>
+⋮----
+const handleExport = () =>
+⋮----
+const handleImport = (e: React.ChangeEvent<HTMLInputElement>) =>
+⋮----
+const handleTokenClick = (chapterIndex: number, paragraphIndex: number, tokenIndex: number) =>
+⋮----
+// TODO: Implement edit dialog
+⋮----
+{/* Header */}
+⋮----
+{/* Title input */}
+⋮----
+setProject((prev) => (
+⋮----
+{/* Action buttons */}
+⋮----
+onClick=
+⋮----
+{/* Main content */}
+⋮----
+{/* Error display */}
+⋮----
+{/* Text input panel */}
+⋮----
+{/* Main layout */}
+⋮----
+{/* Settings panel */}
+⋮----
+{/* Preview area */}
+````
+
+## File: types/index.ts
+````typescript
+// LexiBridge Lite - Type Definitions
+⋮----
+export interface WordPart {
+  text: string
+  gloss: string
+}
+⋮----
+export interface VerseNumToken {
+  type: 'verse_num'
+  value: string
+}
+⋮----
+export interface WordToken {
+  type: 'word'
+  original_full: string
+  parts: WordPart[]
+}
+⋮----
+export interface PunctuationToken {
+  type: 'punctuation'
+  value: string
+}
+⋮----
+export type Token = VerseNumToken | WordToken | PunctuationToken
+⋮----
+export type Paragraph = Token[]
+⋮----
+export interface Chapter {
+  number: number
+  paragraphs: Paragraph[]
+}
+⋮----
+export interface PrintSettings {
+  pageSize: '6x9' | '5.5x8.5' | 'A5' | 'custom'
+  customWidth?: number
+  customHeight?: number
+  margins: {
+    top: number
+    bottom: number
+    inner: number
+    outer: number
+  }
+  baseFontSize: number
+}
+⋮----
+export interface ProjectMeta {
+  title: string
+  language: string
+}
+⋮----
+export interface BookProject {
+  meta: ProjectMeta
+  printSettings: PrintSettings
+  chapters: Chapter[]
+}
+⋮----
+export interface TranslateRequest {
+  text: string
+  chapterNumber?: number
+}
+⋮----
+export interface TranslateResponse {
+  chapter: Chapter
+  error?: string
+}
+⋮----
+// Page size dimensions in inches
+⋮----
+'A5': { width: 5.83, height: 8.27 }, // 148mm x 210mm
+⋮----
+// KDP recommended margins
+⋮----
+// Default project state
+````
+
+## File: .claude_settings.json
+````json
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Bash(*)",
+      "mcp__puppeteer__puppeteer_navigate",
+      "mcp__puppeteer__puppeteer_screenshot",
+      "mcp__puppeteer__puppeteer_click",
+      "mcp__puppeteer__puppeteer_fill",
+      "mcp__puppeteer__puppeteer_select",
+      "mcp__puppeteer__puppeteer_hover",
+      "mcp__puppeteer__puppeteer_evaluate"
+    ]
+  }
+}
+````
+
+## File: .env.example
+````
+# LexiBridge Lite - Environment Configuration
+# Copy this file to .env.local and fill in your values
+
+# ===========================================
+# OpenAI API Configuration (REQUIRED)
+# ===========================================
+# Get your API key from: https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-your-openai-api-key-here
+
+# ===========================================
+# Application Settings (OPTIONAL)
+# ===========================================
+# Development mode
+NODE_ENV=development
+
+# Base URL (for production deployments)
+# NEXT_PUBLIC_BASE_URL=https://your-domain.vercel.app
+````
+
+## File: claude-progress.txt
+````
+# LexiBridge Lite - Session 1 Progress Report
+
+## Session Date: December 2024
+
+## COMPLETED TASKS
+
+### 1. Created feature_list.json (100 test cases)
+- 100 features covering rendering, Lego Method, print settings, and UI/UX
+- Distribution: ~50% rendering, ~20% compound splitting, ~15% print settings, ~15% UI
+- Multiple comprehensive tests with 10+ steps
+- All features start with "passes": false
+
+### 2. Created Configuration Files
+- `.env.example` - Template for OpenAI API key configuration
+- `.gitignore` - Protects .env files from being committed
+- `init.sh` - Development environment setup script
+- `README.md` - Project documentation and setup instructions
+
+### 3. Initialized Git Repository
+- Configured user: andrew-brook-rad
+- Created main branch
+- Initial commit with all project files
+
+### 4. Created Next.js Project Structure
+- `package.json` - Dependencies (Next.js 14, React 18, OpenAI, Tailwind)
+- `tsconfig.json` - TypeScript configuration
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `postcss.config.js` - PostCSS configuration
+- `next.config.js` - Next.js configuration
+
+### 5. Implemented Core Components
+
+#### Types (`types/index.ts`)
+- Token types: VerseNumToken, WordToken, PunctuationToken
+- BookProject structure with chapters, paragraphs, and print settings
+- Page size constants and KDP margins
+
+#### API Route (`app/api/translate/route.ts`)
+- POST endpoint for text translation
+- OpenAI integration with gpt-4o-mini
+- System prompt for morphological tokenization
+- JSON Object Mode response format
+
+#### Components
+- `PrintPreview.tsx` - Main rendering component with CSS custom properties
+- `SettingsPanel.tsx` - Page size, margins, font size controls
+- `TextInput.tsx` - Text input area with sample text loader
+- `InterlinearWord.tsx` - Ruby annotation component for Lego Method
+
+#### Styling (`app/globals.css`)
+- CSS custom properties for dynamic reflow
+- Ruby positioning (under)
+- Justified text with proper gloss stacking
+- Print-specific styles with @page rules
+- Verse number styling (red, superscript)
+
+#### Main Page (`app/page.tsx`)
+- LocalStorage persistence
+- Settings panel with collapse/expand
+- Edit mode toggle
+- Export/Import functionality
+- Print button
+
+## FILES CREATED
+```
+/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/
+├── .env.example
+├── .gitignore
+├── README.md
+├── feature_list.json
+├── init.sh
+├── package.json
+├── tsconfig.json
+├── next.config.js
+├── tailwind.config.ts
+├── postcss.config.js
+├── types/
+│   └── index.ts
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── api/
+│   │   └── translate/
+│   │       └── route.ts
+│   └── components/
+│       ├── InterlinearWord.tsx
+│       ├── PrintPreview.tsx
+│       ├── SettingsPanel.tsx
+│       └── TextInput.tsx
+└── public/
+```
+
+## NEXT SESSION TASKS
+
+### Immediate Priorities
+1. Install dependencies: `npm install`
+2. Test the translation API with sample Genesis text
+3. Verify compound word splitting (Unterschied, Finsternis)
+4. Test print preview rendering
+
+### Features to Implement
+- Edit mode for modifying glosses and split points
+- Multi-chapter support with chunking
+- Better paragraph break detection
+- Margin guides visualization
+- Page number rendering
+
+### Features to Test and Mark as Passing
+Start with feature_list.json items 1-10 (basic functionality)
+
+## CONFIGURATION REQUIRED
+
+Before the next session can proceed:
+1. Create `.env.local` with your OpenAI API key:
+   ```bash
+   cp .env.example .env.local
+   nano .env.local
+   ```
+2. Add your key: `OPENAI_API_KEY=sk-...`
+
+## GIT STATUS
+- Initial commit made
+- Ready to push to remote when configured
+- All files tracked, .env files properly ignored
+
+## NOTES
+- This is a PROTOTYPE - focus on beautiful rendering over error handling
+- The Lego Method (compound splitting) is critical for print quality
+- Test with Genesis 1:1-8 sample text provided in spec
+````
+
+## File: feature_list.json
+````json
 [
   {
     "category": "functional",
@@ -7,7 +586,7 @@
       "Step 2: Verify the page loads without JavaScript errors",
       "Step 3: Verify the main UI components are visible"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -18,7 +597,7 @@
       "Step 3: Paste sample Genesis 1:1-8 text",
       "Step 4: Verify text is displayed in the input area"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -29,7 +608,7 @@
       "Step 3: Verify verse numbers are extracted as separate tokens",
       "Step 4: Verify verse numbers are marked with type 'verse_num'"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -40,7 +619,7 @@
       "Step 3: Verify the endpoint returns a 200 status",
       "Step 4: Verify the response contains JSON data"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -50,7 +629,7 @@
       "Step 2: Verify response contains word tokens with 'parts' array",
       "Step 3: Verify each part has 'text' and 'gloss' properties"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -106,7 +685,7 @@
       "Step 3: Verify simple words have single-part structure",
       "Step 4: Verify glosses are UPPERCASE (GOD, AND)"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -116,7 +695,7 @@
       "Step 2: Verify preview container has white background",
       "Step 3: Verify drop shadow is applied around paper"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -128,7 +707,7 @@
       "Step 4: Verify font color is red or similar accent color",
       "Step 5: Verify font-size is approximately 0.7em (8pt relative to 12pt body)"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -138,7 +717,7 @@
       "Step 2: Verify text-align: justify is applied",
       "Step 3: Visually confirm text edges align on both sides"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -149,7 +728,7 @@
       "Step 3: Verify ruby-position: under is set",
       "Step 4: Visually confirm glosses are below source words"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -170,7 +749,7 @@
       "Step 2: Click page size dropdown",
       "Step 3: Verify options include: 6x9, 5.5x8.5, A5, Custom"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -180,7 +759,7 @@
       "Step 2: Verify preview container width/height ratio matches 6x9",
       "Step 3: Verify CSS custom properties are updated"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -190,7 +769,7 @@
       "Step 2: Verify preview container updates",
       "Step 3: Verify text reflows to narrower width"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -200,7 +779,7 @@
       "Step 2: Enter values for top, bottom, inner, outer margins",
       "Step 3: Verify values are accepted and stored"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -210,7 +789,7 @@
       "Step 2: Verify margins are set to KDP safe values",
       "Step 3: Verify inner margin is larger for binding (0.875 inch)"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -221,7 +800,7 @@
       "Step 3: Verify body text size increases",
       "Step 4: Verify proportional scaling of other typography"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -232,7 +811,7 @@
       "Step 3: Verify preview updates with new settings",
       "Step 4: Verify text reflows according to new dimensions"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -243,7 +822,7 @@
       "Step 3: Verify font-size is approximately 18pt",
       "Step 4: Verify text-align: center is applied"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -255,7 +834,7 @@
       "Step 4: Verify font-size is approximately 24pt",
       "Step 5: Verify title is centered"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -266,7 +845,7 @@
       "Step 3: Verify font-family is serif",
       "Step 4: Verify base font-size is 12pt"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -278,7 +857,7 @@
       "Step 4: Verify font-size is approximately 7pt",
       "Step 5: Verify condensed or narrow appearance"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -311,7 +890,7 @@
       "Step 3: Verify punctuation appears as type 'punctuation' tokens",
       "Step 4: Verify punctuation renders correctly in preview"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -346,7 +925,7 @@
       "Step 3: Refresh the page",
       "Step 4: Verify project data is restored"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -356,7 +935,7 @@
       "Step 2: Refresh the page",
       "Step 3: Verify settings are restored from LocalStorage"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -412,7 +991,7 @@
       "Step 4: Verify chapters array contains paragraph arrays",
       "Step 5: Verify tokens have correct type fields"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -423,7 +1002,7 @@
       "Step 3: Verify margin-right is approximately 2px",
       "Step 4: Verify verse number doesn't touch following word"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -440,7 +1019,7 @@
       "Step 9: Verify 'und' glosses to 'AND'",
       "Step 10: Verify 'Erde' glosses to 'EARTH'"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -451,7 +1030,7 @@
       "Step 3: Verify no forced line break between verses",
       "Step 4: Verify text flows naturally with justification"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -564,7 +1143,7 @@
       "Step 3: Verify all glosses are UPPERCASE",
       "Step 4: Verify consistency across all tokens"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -587,7 +1166,7 @@
       "Step 3: Verify box-shadow property is set",
       "Step 4: Verify shadow creates depth illusion"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -598,7 +1177,7 @@
       "Step 3: Verify umlauts display correctly in source",
       "Step 4: Verify no encoding issues in output"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -620,7 +1199,7 @@
       "Step 3: Verify words don't touch or overlap",
       "Step 4: Verify spacing is consistent"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -641,7 +1220,7 @@
       "Step 2: Inspect rt element styling",
       "Step 3: Verify max-width: 5ch or similar is set"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -808,7 +1387,7 @@
       "Step 3: Verify UI remains responsive",
       "Step 4: Verify loading clears when complete"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -819,7 +1398,7 @@
       "Step 3: Verify good contrast ratios",
       "Step 4: Verify professional appearance"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -830,7 +1409,7 @@
       "Step 3: Verify visual hover feedback",
       "Step 4: Click and verify active state"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -841,7 +1420,7 @@
       "Step 3: Verify border or outline change",
       "Step 4: Verify accessibility compliance"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -864,7 +1443,7 @@
       "Step 3: Verify settings don't dominate layout",
       "Step 4: Verify good use of screen real estate"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "functional",
@@ -908,7 +1487,7 @@
       "Step 3: Verify first word follows inline",
       "Step 4: Verify proper spacing between them"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "style",
@@ -1090,3 +1669,397 @@
     "passes": false
   }
 ]
+````
+
+## File: init.sh
+````bash
+#!/bin/bash
+
+# LexiBridge Lite - Development Environment Setup Script
+# This script initializes and runs the development environment
+
+set -e
+
+echo "======================================"
+echo "LexiBridge Lite - Environment Setup"
+echo "======================================"
+echo ""
+
+# Check for Node.js
+if ! command -v node &> /dev/null; then
+    echo "ERROR: Node.js is not installed."
+    echo "Please install Node.js 18+ from https://nodejs.org"
+    exit 1
+fi
+
+NODE_VERSION=$(node -v | cut -d'v' -f2 | cut -d'.' -f1)
+if [ "$NODE_VERSION" -lt 18 ]; then
+    echo "ERROR: Node.js version 18 or higher is required."
+    echo "Current version: $(node -v)"
+    exit 1
+fi
+
+echo "Node.js version: $(node -v)"
+
+# Check for npm
+if ! command -v npm &> /dev/null; then
+    echo "ERROR: npm is not installed."
+    exit 1
+fi
+
+echo "npm version: $(npm -v)"
+echo ""
+
+# Check for .env file
+if [ ! -f .env ] && [ ! -f .env.local ]; then
+    echo "WARNING: No .env or .env.local file found!"
+    echo ""
+    if [ -f .env.example ]; then
+        echo "Please create your environment file:"
+        echo "  cp .env.example .env.local"
+        echo "  nano .env.local  # Add your OpenAI API key"
+        echo ""
+    fi
+    echo "The application requires OPENAI_API_KEY to function."
+    echo ""
+    read -p "Continue anyway? (y/N) " -n 1 -r
+    echo ""
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        exit 1
+    fi
+fi
+
+# Install dependencies
+echo "Installing dependencies..."
+npm install
+
+echo ""
+echo "======================================"
+echo "Starting development server..."
+echo "======================================"
+echo ""
+
+# Start the development server
+npm run dev &
+
+# Wait for server to be ready
+echo "Waiting for server to start..."
+sleep 5
+
+echo ""
+echo "======================================"
+echo "Development Environment Ready!"
+echo "======================================"
+echo ""
+echo "Application URL:  http://localhost:3000"
+echo ""
+echo "Quick Links:"
+echo "  - Main App:     http://localhost:3000"
+echo "  - API Test:     http://localhost:3000/api/translate"
+echo ""
+echo "To stop the server: Press Ctrl+C or run 'pkill -f next-server'"
+echo ""
+echo "For production build:"
+echo "  npm run build"
+echo "  npm start"
+echo ""
+
+# Keep script running to show logs
+wait
+````
+
+## File: next.config.js
+````javascript
+/** @type {import('next').NextConfig} */
+⋮----
+// Enable React strict mode for better development experience
+````
+
+## File: package.json
+````json
+{
+  "name": "lexibridge-lite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "openai": "^4.76.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.21",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}
+````
+
+## File: postcss.config.js
+````javascript
+
+````
+
+## File: tailwind.config.ts
+````typescript
+import type { Config } from 'tailwindcss'
+````
+
+## File: tsconfig.json
+````json
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
+````
+
+## File: .gitignore
+````
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Environment files (NEVER commit these!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+.nyc_output
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Misc
+*.log
+*.pid
+*.seed
+````
+
+## File: README.md
+````markdown
+# LexiBridge Lite - Biblical Interlinear Generator
+
+A Next.js tool for generating professional, print-ready interlinear books, with a primary focus on Biblical texts (German to English).
+
+## Features
+
+- **Morphological Tokenization**: Splits German compound words into meaningful parts using AI
+- **The "Lego Method"**: Words break naturally across lines at morpheme boundaries
+- **Biblical Formatting**: Verse numbers, chapter headers, and book titles
+- **Print-Ready Output**: CSS Paged Media with KDP/IngramSpark safe margins
+- **Interactive Editor**: Click to edit glosses and split points
+- **Configurable Settings**: Page size, margins, font sizes with live preview
+
+## Quick Start
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+- OpenAI API key
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd lexibridge
+   ```
+
+2. Create your environment file:
+   ```bash
+   cp .env.example .env.local
+   ```
+
+3. Add your OpenAI API key to `.env.local`:
+   ```
+   OPENAI_API_KEY=sk-your-key-here
+   ```
+
+4. Run the setup script:
+   ```bash
+   chmod +x init.sh
+   ./init.sh
+   ```
+
+   Or manually:
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## Usage
+
+1. **Input Text**: Paste German biblical text (e.g., Luther Bible 1912)
+2. **Translate**: Click to process through the AI translation engine
+3. **Preview**: View the interlinear rendering with UPPERCASE glosses
+4. **Adjust Settings**: Change page size, margins, and font sizes
+5. **Edit**: Click any word to modify glosses or split points
+6. **Print**: Use browser print (Ctrl/Cmd+P) to generate PDF
+
+## Sample Text
+
+```
+1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war wüst und leer, und es war finster auf der Tiefe; und der Geist Gottes schwebte auf dem Wasser. 3 Und Gott sprach: Es werde Licht! und es ward Licht.
+```
+
+## Print Settings
+
+- **Page Sizes**: 6x9", 5.5x8.5", A5, Custom
+- **KDP Margins**: Inner 0.875", Outer 0.5", Top/Bottom 0.75"
+- **Font Sizes**: Adjustable base size (10-14pt)
+
+## Tech Stack
+
+- **Framework**: Next.js 14+ with App Router (TypeScript)
+- **Styling**: Tailwind CSS + Custom CSS Paged Media
+- **State**: React Hooks + LocalStorage
+- **AI**: OpenAI API (gpt-4o-mini)
+
+## Project Structure
+
+```
+lexibridge/
+├── app/
+│   ├── api/translate/    # Server-side AI translation
+│   ├── components/       # React components
+│   └── page.tsx          # Main application
+├── public/               # Static assets
+├── styles/               # CSS files
+└── types/                # TypeScript definitions
+```
+
+## Development
+
+```bash
+# Development server
+npm run dev
+
+# Production build
+npm run build
+npm start
+
+# Type checking
+npm run type-check
+
+# Linting
+npm run lint
+```
+
+## Deployment
+
+This project is configured for Vercel deployment:
+
+1. Push to main branch
+2. Vercel auto-deploys
+3. Add `OPENAI_API_KEY` in Vercel Environment Variables
+
+## License
+
+MIT
+````
+
+
+
+# Git Logs
+
+## Commit: 2025-12-15 20:43:48 +0000
+**Message:** Add session 1 progress report
+
+**Files:**
+- claude-progress.txt
+
+## Commit: 2025-12-15 20:43:18 +0000
+**Message:** Initial setup: feature_list.json, configuration template, and project structure
+
+**Files:**
+- .claude_settings.json
+- .env.example
+- .gitignore
+- README.md
+- app/api/translate/route.ts
+- app/components/InterlinearWord.tsx
+- app/components/PrintPreview.tsx
+- app/components/SettingsPanel.tsx
+- app/components/TextInput.tsx
+- app/globals.css
+- app/layout.tsx
+- app/page.tsx
+- app_spec.txt
+- feature_list.json
+- init.sh
+- logs/.6dd77d741c80de4a74fc367334c426134c357078-audit.json
+- next.config.js
+- package.json
+- postcss.config.js
+- tailwind.config.ts
+- tsconfig.json
+- types/index.ts

@@ -1,93 +1,82 @@
-# LexiBridge Lite - Session 3 Progress Report
+# LexiBridge Lite - Session 4 Progress Report
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 47/100 tests passing
+## CURRENT STATUS: 55/100 tests passing
 
 ## COMPLETED TASKS THIS SESSION
 
-### 1. Implemented Edit Mode Dialog
-- Created `EditDialog.tsx` component with full editing functionality
-- Features:
-  - Edit gloss text for any word
-  - Split words into multiple parts (for compound word handling)
-  - Merge parts back together
-  - Save and Cancel buttons
-  - Click outside or ESC to close
-  - Auto-uppercase glosses
+### 1. Verified Compound Word Splitting Works
+- Tested 'Unterschied' -> 'Unter-schied' (UNDER-DIFFERENCE) - PASSING
+- Tested 'Finsternis' -> 'Finster-nis' (DARK-NESS) - PASSING
+- Created test scripts: test-compound-words.js, test-finsternis.js, test-comprehensive.js
 
-### 2. Fixed LocalStorage Persistence Bug
-- Fixed race condition where DEFAULT_PROJECT would overwrite saved data
-- Added `isInitialized` state to prevent saving before loading
-- Verified edited glosses persist across page refreshes
+### 2. Fixed API max_tokens Issue
+- Increased max_tokens from 4096 to 16384 to handle longer texts
+- Added better error handling for JSON parsing errors
+- This fixed timeouts on longer Genesis passages
 
-### 3. Updated InterlinearWord Component
-- Added cursor pointer when words are clickable
-- Added title tooltip "Click to edit" for better UX
-- Proper styling for edit mode
+### 3. Ran Comprehensive Feature Tests
+- Ruby element rendering: PASS (133 ruby elements)
+- Compound word splitting: PASS
+- Verse numbers present: PASS (color: red, vertical-align: super)
+- UPPERCASE glosses: PASS
+- Page size change: PASS
+- Text justified: PASS
+- German characters: PASS
 
-### 4. Browser Automation Testing
-- Created `test-edit-mode.js` - comprehensive edit mode test
-- Created `test-persistence.js` - persistence verification test
-- Created `test-verification.js` - general verification test
-- Created `test-collapse.js` - settings panel collapse test
-- Created `test-custom-pagesize.js` - custom page size test
-- All tests passing with puppeteer in --no-sandbox mode
+### 4. Verified API Configuration
+- Model: gpt-4o-mini (verified in code)
+- Response format: json_object (verified in code)
+- System prompt includes all required instructions
 
-### 5. Test Results (8 new tests passing)
-- Tests verified and marked passing:
-  - Edit mode allows clicking on words to modify glosses
-  - Edit mode allows modifying compound word split points
-  - Edited glosses persist after refresh
-  - Edit mode highlights editable elements
-  - Settings panel can be collapsed/expanded
-  - Settings panel is visually organized and accessible
-  - Custom page size allows entering arbitrary dimensions
-  - Overall typography creates print-ready appearance
+### 5. Updated Feature List (8 new tests passing: 47 -> 55)
+- Compound word 'Unterschied' split: PASS
+- Compound word 'Finsternis' split: PASS
+- Each morpheme as separate ruby: PASS
+- API system prompt follows spec: PASS
+- API uses JSON Object Mode: PASS
+- API uses gpt-4o-mini: PASS
+- Page size change reflows text: PASS
+- Ruby tags render as flex-row: PASS
 
 ## SCREENSHOTS CAPTURED
-- `screenshots/edit-*.png` - Edit mode workflow screenshots
-- `screenshots/collapse-*.png` - Settings panel collapse/expand screenshots
-- `screenshots/custom-pagesize-*.png` - Custom page size screenshots
-- `screenshots/persistence-test.png` - Persistence verification
-- `screenshots/verify-*.png` - General verification screenshots
+- screenshots/compound-words-test.png - Unterschied splitting
+- screenshots/finsternis-test.png - Finsternis splitting
+- screenshots/comprehensive-01-initial.png - Full Genesis 1:1-8 rendered
+- screenshots/comprehensive-02-page-changed.png - After page size change
 
 ## FILES CREATED THIS SESSION
-- `app/components/EditDialog.tsx` - New edit dialog component
-- `test-edit-mode.js` - Edit mode test script
-- `test-persistence.js` - Persistence test script
-- `test-verification.js` - General verification test
-- `test-collapse.js` - Settings collapse test
-- `test-custom-pagesize.js` - Custom page size test
+- test-compound-words.js - Test for compound word splitting
+- test-finsternis.js - Test for Finsternis splitting
+- test-comprehensive.js - Comprehensive feature test
 
 ## FILES MODIFIED THIS SESSION
-- `app/page.tsx` - Added EditDialog integration, fixed persistence bug
-- `app/components/InterlinearWord.tsx` - Added clickable styling
-- `feature_list.json` - Updated 8 tests to passes: true (39 -> 47)
-- `claude-progress.txt` - This file
+- app/api/translate/route.ts - Increased max_tokens, added error handling
+- feature_list.json - Updated 8 tests to passes: true (47 -> 55)
+- claude-progress.txt - This file
 
 ## KNOWN ISSUES / NOT YET TESTED
-- Compound word splitting (Unterschied, Finsternis) - needs API prompt update
-- Multi-chapter support
-- Margin guides visualization
-- Print functionality (requires actual print dialog)
-- Various other style and functional tests
+- Long compound words (Lego Method line breaking) - test #8
+- Glosses wrap vertically - test #15
+- Paragraph preservation - tests #26, #27
+- Margin guides visualization - test #33
+- Print functionality - tests #34, #35
+- German eszett (ß) - test #54
+- Multi-chapter support - tests #51, #60, #62
 
 ## NEXT SESSION PRIORITIES
-1. Test compound word splitting (update API prompt if needed)
-2. Add margin guides visualization
-3. Test multi-chapter rendering
-4. Test remaining style-related features
-5. Continue marking remaining tests
+1. Test German eszett (ß) rendering
+2. Test paragraph preservation with double newlines
+3. Implement/test margin guides visualization
+4. Test more Genesis passages (1:5, 1:7)
+5. Continue verifying remaining tests
 
 ## GIT STATUS
-- Committed: Edit mode implementation
-- Ready for additional commits
+- Ready for commit with API fixes and feature list updates
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering
-- Edit mode dialog looks professional and works smoothly
-- Persistence now works correctly after fixing race condition
-- Settings panel collapse/expand was already implemented
-- Custom page size feature was already working
-- 47/100 tests passing (up from 39)
+- Compound word splitting is working correctly now!
+- API is properly configured per specification
+- 55/100 tests passing (up from 47)

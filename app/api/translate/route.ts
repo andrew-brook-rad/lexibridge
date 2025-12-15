@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
         },
       ],
       temperature: 0.3,
-      max_tokens: 4096,
+      max_tokens: 16384,
     })
 
     const content = completion.choices[0]?.message?.content
@@ -84,7 +84,18 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const chapter: Chapter = JSON.parse(content)
+    let chapter: Chapter
+    try {
+      chapter = JSON.parse(content)
+    } catch (parseError) {
+      console.error('JSON Parse Error:', parseError)
+      console.error('Raw content (first 500 chars):', content.substring(0, 500))
+      console.error('Raw content (last 500 chars):', content.substring(content.length - 500))
+      return NextResponse.json(
+        { error: 'Failed to parse AI response as JSON. The response may have been truncated.' },
+        { status: 500 }
+      )
+    }
 
     // Validate the response structure
     if (!chapter.paragraphs || !Array.isArray(chapter.paragraphs)) {

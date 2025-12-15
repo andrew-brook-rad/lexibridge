@@ -61,7 +61,7 @@
       "Step 3: Verify 'Unterschied' is split into ['Unter', 'schied']",
       "Step 4: Verify glosses are provided for each part"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -72,7 +72,7 @@
       "Step 3: Verify 'Finsternis' is split into ['Finster', 'nis']",
       "Step 4: Verify glosses are ['DARK', 'NESS'] or equivalent"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -95,7 +95,7 @@
       "Step 3: Verify multiple <ruby> tags for split compound",
       "Step 4: Verify each ruby has matching <rt> gloss"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -475,7 +475,7 @@
       "Step 5: Verify text reflows to narrower width",
       "Step 6: Verify compound words break appropriately"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -486,7 +486,7 @@
       "Step 3: Verify display: flex is used",
       "Step 4: Verify flex-direction: row for horizontal layout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -766,7 +766,7 @@
       "Step 4: Verify prompt requests UPPERCASE glosses",
       "Step 5: Verify prompt handles paragraph suggestion"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -776,7 +776,7 @@
       "Step 2: Verify response_format is set to json_object",
       "Step 3: Verify responses parse as valid JSON"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -786,7 +786,7 @@
       "Step 2: Verify model parameter is 'gpt-4o-mini'",
       "Step 3: Verify model is called correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

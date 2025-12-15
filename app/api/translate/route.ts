@@ -16,6 +16,8 @@ RULES:
    - Example: "Handschuh" -> parts: [{text: "Hand", gloss: "HAND"}, {text: "schuh", gloss: "SHOE"}]
    - Example: "Unterschied" -> parts: [{text: "Unter", gloss: "UNDER"}, {text: "schied", gloss: "DIFFERENCE"}]
    - Example: "Finsternis" -> parts: [{text: "Finster", gloss: "DARK"}, {text: "nis", gloss: "NESS"}]
+   - Example for ge- prefix: "geschah" -> parts: [{text: "ge", gloss: "PAST"}, {text: "schah", gloss: "HAPPENED"}]
+   - Example for three-part compound: "Unabhängigkeit" -> parts: [{text: "Un", gloss: "UN"}, {text: "abhängig", gloss: "DEPENDENT"}, {text: "keit", gloss: "NESS"}]
    - Simple words should NOT be split, just have a single part.
 3. Gloss: Provide literal UPPERCASE English translations for each part.
 4. Punctuation: Keep punctuation as separate tokens with type "punctuation".

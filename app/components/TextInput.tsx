@@ -11,6 +11,12 @@ const SAMPLE_TEXT = `1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war 
 
 6 Und Gott sprach: Es werde eine Feste zwischen den Wassern, und die sei ein Unterschied zwischen den Wassern. 7 Da machte Gott die Feste und schied das Wasser unter der Feste von dem Wasser über der Feste. Und es geschah also. 8 Und Gott nannte die Feste Himmel. Da ward aus Abend und Morgen der andere Tag.`
 
+const MULTI_CHAPTER_SAMPLE = `Chapter 1
+1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war wüst und leer, und es war finster auf der Tiefe; und der Geist Gottes schwebte auf dem Wasser. 3 Und Gott sprach: Es werde Licht! und es ward Licht.
+
+Chapter 2
+1 Also ward vollendet Himmel und Erde mit ihrem ganzen Heer. 2 Und also vollendete Gott am siebenten Tage seine Werke, die er machte. 3 Und Gott segnete den siebenten Tag und heiligte ihn.`
+
 export default function TextInput({ onTranslate, isLoading }: TextInputProps) {
   const [text, setText] = useState('')
 
@@ -25,17 +31,30 @@ export default function TextInput({ onTranslate, isLoading }: TextInputProps) {
     setText(SAMPLE_TEXT)
   }
 
+  const loadMultiChapterSample = () => {
+    setText(MULTI_CHAPTER_SAMPLE)
+  }
+
   return (
     <div className="bg-white rounded-lg shadow p-6">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold text-gray-900">German Source Text</h2>
-        <button
-          type="button"
-          onClick={loadSample}
-          className="text-sm text-blue-600 hover:text-blue-800"
-        >
-          Load Genesis 1:1-8 Sample
-        </button>
+        <div className="flex gap-4">
+          <button
+            type="button"
+            onClick={loadSample}
+            className="text-sm text-blue-600 hover:text-blue-800"
+          >
+            Load Genesis 1:1-8
+          </button>
+          <button
+            type="button"
+            onClick={loadMultiChapterSample}
+            className="text-sm text-green-600 hover:text-green-800"
+          >
+            Load Multi-Chapter Sample
+          </button>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit}>

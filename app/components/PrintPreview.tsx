@@ -87,8 +87,11 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
       {/* Chapters */}
       {chapters.map((chapter, chapterIndex) => (
         <div key={chapterIndex} className="chapter">
-          {/* Chapter Header */}
-          <h2 className="chapter-header">Chapter {chapter.number}</h2>
+          {/* Chapter Header with drop cap number */}
+          <h2 className="chapter-header">
+            <span className="chapter-number">{chapter.number}</span>
+            <span className="chapter-label">Chapter</span>
+          </h2>
 
           {/* Paragraphs */}
           {chapter.paragraphs.map((paragraph, paragraphIndex) => (

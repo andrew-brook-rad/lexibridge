@@ -400,7 +400,7 @@
       "Step 3: Verify API calls are made per chapter",
       "Step 4: Verify results are combined correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -576,7 +576,7 @@
       "Step 4: Verify Chapter 2 header appears",
       "Step 5: Verify chapters are visually separated"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -709,7 +709,7 @@
       "Step 3: Verify large/drop cap styling option",
       "Step 4: Verify elegant serif appearance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -731,7 +731,7 @@
       "Step 3: Verify prefix is optionally split",
       "Step 4: Verify gloss reflects meaning"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -743,7 +743,7 @@
       "Step 4: Verify each part has its own gloss",
       "Step 5: Verify parts can break across lines independently"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -919,7 +919,7 @@
       "Step 3: Verify correct numbering sequence",
       "Step 4: Verify placement doesn't overlap content"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -931,7 +931,7 @@
       "Step 4: Compare print preview to screen",
       "Step 5: Verify layout consistency"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

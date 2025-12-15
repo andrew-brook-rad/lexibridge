@@ -49,27 +49,71 @@ export default function Home() {
     }
   }, [project, isInitialized])
 
+  // Helper function to split text into chapters
+  const splitIntoChapters = (text: string): { chapterNumber: number; text: string }[] => {
+    // Common chapter markers
+    const chapterPattern = /(?:^|\n)\s*(?:CHAPTER|Chapter|Kapitel|KAPITEL)\s+(\d+)\s*[:\.]?\s*/gi
+
+    const chapters: { chapterNumber: number; text: string }[] = []
+    const matches: { index: number; chapterNumber: number }[] = []
+
+    let match
+    while ((match = chapterPattern.exec(text)) !== null) {
+      matches.push({ index: match.index, chapterNumber: parseInt(match[1], 10) })
+    }
+
+    if (matches.length === 0) {
+      // No chapter markers found, treat as single chapter (Chapter 1)
+      return [{ chapterNumber: 1, text: text.trim() }]
+    }
+
+    // Extract each chapter's text
+    for (let i = 0; i < matches.length; i++) {
+      const start = matches[i].index
+      const end = i + 1 < matches.length ? matches[i + 1].index : text.length
+
+      // Get text from after the chapter marker to the next chapter or end
+      const chapterText = text.substring(start, end)
+        .replace(/^\s*(?:CHAPTER|Chapter|Kapitel|KAPITEL)\s+\d+\s*[:\.]?\s*/i, '')
+        .trim()
+
+      if (chapterText.length > 0) {
+        chapters.push({ chapterNumber: matches[i].chapterNumber, text: chapterText })
+      }
+    }
+
+    return chapters
+  }
+
   const handleTranslate = async (text: string) => {
     setIsLoading(true)
     setError(null)
 
     try {
-      const response = await fetch('/api/translate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text, chapterNumber: 1 }),
-      })
+      // Split text into chapters
+      const chapterTexts = splitIntoChapters(text)
+      const translatedChapters: Chapter[] = []
 
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Translation failed')
+      // Process each chapter sequentially
+      for (const { chapterNumber, text: chapterText } of chapterTexts) {
+        const response = await fetch('/api/translate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: chapterText, chapterNumber }),
+        })
+
+        if (!response.ok) {
+          const errorData = await response.json()
+          throw new Error(errorData.error || `Translation failed for Chapter ${chapterNumber}`)
+        }
+
+        const data: TranslateResponse = await response.json()
+        translatedChapters.push(data.chapter)
       }
-
-      const data: TranslateResponse = await response.json()
 
       setProject((prev) => ({
         ...prev,
-        chapters: [data.chapter],
+        chapters: translatedChapters,
       }))
 
       setShowInput(false)

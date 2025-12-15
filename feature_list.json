@@ -289,7 +289,7 @@
       "Step 3: Verify paragraph structure is maintained in output",
       "Step 4: Verify visual paragraph breaks in preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -875,7 +875,7 @@
       "Step 3: Verify paragraph break at marker",
       "Step 4: Verify marker is not displayed in output"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -886,7 +886,7 @@
       "Step 3: Verify paragraph structure reflects breaks",
       "Step 4: Verify visual separation in preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -897,7 +897,7 @@
       "Step 3: Verify paragraphs are clearly distinct",
       "Step 4: Verify no excessive whitespace"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

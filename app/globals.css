@@ -150,8 +150,18 @@ ruby rt, ruby .gloss-text {
 
 /* Paragraph styling */
 .paragraph {
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   text-indent: 0;
+}
+
+/* First paragraph after chapter header should not have extra spacing */
+.chapter-header + .paragraph {
+  margin-top: 0;
+}
+
+/* Paragraph separations should be visually clear */
+.paragraph + .paragraph {
+  margin-top: 0.8em;
 }
 
 /* Print styles */

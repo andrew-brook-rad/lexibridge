@@ -19,8 +19,11 @@ RULES:
    - Simple words should NOT be split, just have a single part.
 3. Gloss: Provide literal UPPERCASE English translations for each part.
 4. Punctuation: Keep punctuation as separate tokens with type "punctuation".
-5. Paragraphs: If the input has paragraph markers (blank lines), preserve them as separate arrays.
-   If not present, suggest natural paragraph breaks based on narrative flow (roughly every 3-5 verses).
+5. Paragraphs:
+   - The input text may contain [PARAGRAPH_BREAK] markers indicating where paragraph breaks should occur.
+   - Each paragraph should be a separate array in the "paragraphs" array.
+   - Text before the first [PARAGRAPH_BREAK] is paragraph 1, text between [PARAGRAPH_BREAK] markers are subsequent paragraphs.
+   - If NO [PARAGRAPH_BREAK] markers are present, suggest natural paragraph breaks based on narrative flow (roughly every 3-5 verses).
 
 OUTPUT FORMAT:
 Return a JSON object with this exact structure:
@@ -43,6 +46,22 @@ IMPORTANT:
 - Verse numbers at the start of verses (e.g., "1 Am Anfang") should be separate tokens
 - Keep all punctuation (. , ; : ! ?) as separate punctuation tokens`
 
+// Preprocess text to detect paragraph markers
+function preprocessText(text: string): string {
+  let processed = text
+
+  // Replace ¶ symbol with [PARAGRAPH_BREAK]
+  processed = processed.replace(/¶/g, '[PARAGRAPH_BREAK]')
+
+  // Replace double newlines (with optional whitespace between) with [PARAGRAPH_BREAK]
+  processed = processed.replace(/\n\s*\n/g, ' [PARAGRAPH_BREAK] ')
+
+  // Clean up extra whitespace
+  processed = processed.replace(/\s+/g, ' ').trim()
+
+  return processed
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: TranslateRequest = await request.json()
@@ -62,6 +81,9 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Preprocess text to convert paragraph markers
+    const processedText = preprocessText(text)
+
     const completion = await openai.chat.completions.create({
       model: 'gpt-4o-mini',
       response_format: { type: 'json_object' },
@@ -69,7 +91,7 @@ export async function POST(request: NextRequest) {
         { role: 'system', content: SYSTEM_PROMPT },
         {
           role: 'user',
-          content: `Process this German biblical text (Chapter ${chapterNumber}):\n\n${text}`,
+          content: `Process this German biblical text (Chapter ${chapterNumber}):\n\n${processedText}`,
         },
       ],
       temperature: 0.3,

@@ -1,71 +1,74 @@
-# LexiBridge Lite - Session 7 Progress Report
+# LexiBridge Lite - Session 8 Progress Report
 
 ## Session Date: December 15, 2024
 
-## FINAL STATUS: 83/100 tests passing (up from 80)
+## CURRENT STATUS: 88/100 tests passing (up from 83)
 
 ## COMPLETED TASKS THIS SESSION
 
-### 1. Implemented the Lego Method for Line Breaking
-- Modified InterlinearWord.tsx to add soft hyphens between morpheme parts
-- Updated globals.css to allow compound words to break across lines
-- Added .morpheme-unit wrapper for each part of compound words
-- Used Unicode soft hyphen (\u00AD) which displays as hyphen only at line breaks
+### 1. Implemented Paragraph Preservation from Source Text
+- Added `preprocessText` function in route.ts to detect paragraph markers
+- Converts ¶ (pilcrow) symbols to [PARAGRAPH_BREAK] markers
+- Converts double newlines to [PARAGRAPH_BREAK] markers
+- Updated system prompt to handle [PARAGRAPH_BREAK] markers
+- AI now correctly splits text into separate paragraph arrays
 
-### 2. Tests Verified and Marked as Passing (3 new tests)
+### 2. Improved Paragraph CSS Styling
+- Enhanced `.paragraph` styling with better margin-bottom (1.2em)
+- Added `.paragraph + .paragraph` styling for between-paragraph spacing (0.8em)
+- Paragraphs are now visually distinct
 
-1. **Long compound words break across lines (Lego Method)** (Test #8)
-   - Tested with Unabhängigkeitserklärung on narrow page width
-   - Verified soft hyphens allow line breaks between morphemes
-   - Each morpheme stays with its gloss when breaking
+### 3. Tests Verified and Marked as Passing (5 new tests)
 
-2. **Compound word 'Handschuh' splits into Hand-schuh** (Test #64)
-   - Verified API splits Handschuh into Hand + schuh
-   - Glosses correctly show HAND + SHOE
-   - Visual rendering shows split compound
+1. **Paragraphs are preserved when present in source text** (Test #27)
+   - Input with double newlines creates multiple paragraphs
+   - Verified visual paragraph breaks in preview
 
-3. **Hyphen appears between split compound parts when breaking** (Test #67)
-   - Verified with 3.5" narrow page width
-   - Compound words show hyphen at line break points
-   - Example: "Wasser-" at end of line, "n" on next line
+2. **AI suggests paragraph breaks when not present in source** (Test #28)
+   - Input continuous text without markers
+   - AI splits into multiple paragraphs based on narrative flow
+   - Verified with 6-verse continuous text → 6 paragraphs
 
-### 3. Code Changes Made
+3. **Paragraph marker (¶) in source is detected** (Test #76)
+   - ¶ symbol correctly triggers paragraph break
+   - Symbol is NOT displayed in output
 
-**InterlinearWord.tsx:**
-- Added `isCompound` check for multi-part words
-- Added `.compound` class for compound words
-- Wrapped each part in `.morpheme-unit` span
-- Added soft hyphen span between parts (except first)
+4. **Double newline in source creates paragraph break** (Test #77)
+   - Double newlines correctly converted to paragraph breaks
+   - Visual separation in preview confirmed
 
-**globals.css:**
-- Changed `.word-unit` from `inline-flex` to `inline` for natural wrapping
-- Added `.word-unit.compound` with manual hyphens
-- Added `.morpheme-unit` styling
-- Added `.soft-hyphen` styling
+5. **Paragraph spacing is visually appropriate** (Test #78)
+   - Clear spacing between paragraphs
+   - No excessive whitespace
 
 ## SCREENSHOTS CAPTURED THIS SESSION
-- screenshots/verify-session7-initial.png - App initial state
-- screenshots/lego-02-translated.png - Full Genesis translated
-- screenshots/lego-03-narrow.png - 5.5x8.5 narrow layout
-- screenshots/hyphen-break-test.png - 3.5" width showing line breaks
-- screenshots/compound-var-02-result.png - Handschuh compound split
+- screenshots/para-simple-01-input.png - Text with double newlines
+- screenshots/para-simple-02-result.png - Result with 2 paragraphs
+- screenshots/pilcrow-01-input.png - Text with ¶ symbol
+- screenshots/pilcrow-02-result.png - Result with ¶ converted to paragraph break
+- screenshots/ai-para-01-input.png - Continuous text
+- screenshots/ai-para-02-result.png - AI-suggested 6 paragraphs
 
 ## TEST FILES CREATED THIS SESSION
-- test-verify-session7.js - Session verification
-- test-lego-method.js - Lego method testing
-- test-lego-full.js - Full Genesis with Lego method
-- test-lego-narrow.js - Narrow width testing
-- test-hyphen-break.js - Hyphen at line breaks
-- test-compound-variations.js - Handschuh and ge- prefix
+- test-paragraph-simple.js - Double newline paragraph test
+- test-pilcrow.js - Pilcrow symbol test
+- test-ai-paragraph.js - AI paragraph suggestion test
 
-## REMAINING FAILING TESTS (17 tests)
+## CODE CHANGES MADE
 
-Paragraph-related (5 tests):
-- Paragraphs are preserved when present in source text (#27)
-- AI suggests paragraph breaks when not present in source (#28)
-- Paragraph marker (¶) in source is detected (#76)
-- Double newline in source creates paragraph break (#77)
-- Paragraph spacing is visually appropriate (#78)
+**app/api/translate/route.ts:**
+- Added `preprocessText()` function
+- Converts ¶ to [PARAGRAPH_BREAK]
+- Converts `\n\s*\n` to [PARAGRAPH_BREAK]
+- Updated system prompt with [PARAGRAPH_BREAK] instructions
+- Applied preprocessing to user input before sending to OpenAI
+
+**app/globals.css:**
+- Improved `.paragraph` margin-bottom to 1.2em
+- Added `.chapter-header + .paragraph` rule
+- Added `.paragraph + .paragraph` spacing rule
+
+## REMAINING FAILING TESTS (12 tests)
 
 Print-related (5 tests):
 - Preview shows margin guides for safe area (#33)
@@ -88,22 +91,20 @@ Styling (3 tests):
 - Preview simulates recto/verso page differences (#92)
 
 ## NEXT SESSION PRIORITIES
-1. Implement paragraph preservation (5 tests)
-2. Test multi-chapter support
-3. Consider print features
-4. Test ge- prefix handling (AI-dependent)
+1. Test print functionality (#34, #35)
+2. Implement multi-chapter support (#36, #51)
+3. Consider ge- prefix handling (AI-dependent)
+4. Consider drop cap styling for chapter numbers
 
 ## SESSION SUMMARY
-- Started at 80/100 tests passing
-- Ended at 83/100 tests passing
-- Implemented the core Lego Method for line-breaking
-- Verified compound word splitting (Handschuh, Unterschied, Finsternis)
-- Verified soft hyphens allow proper line breaks
-- All changes tested with browser automation
+- Started at 83/100 tests passing
+- Ended at 88/100 tests passing (+5)
+- All 5 paragraph-related tests now passing
+- Paragraph preservation fully functional
+- AI paragraph suggestions working
 
 ## NOTES
-- The Lego Method is now fully functional
-- Soft hyphens (\u00AD) are the key - they show as hyphen only at line breaks
-- The ge- prefix test (#65) is AI-dependent - the AI decides whether to split
-- Three-part compound test (#66) is also AI-dependent
 - This is a PROTOTYPE - focusing on beautiful rendering
+- ge- prefix (#65) and three-part compounds (#66) are AI-dependent
+- Print tests may require manual verification
+- Multi-chapter support may need API chunking logic

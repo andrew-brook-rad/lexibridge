@@ -300,7 +300,7 @@
       "Step 3: Verify AI returns paragraph suggestions",
       "Step 4: Verify narrative flow is considered in breaks"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

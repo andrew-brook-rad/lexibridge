@@ -2,7 +2,7 @@
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 64/100 tests passing (up from 59)
+## CURRENT STATUS: 67/100 tests passing (up from 59)
 
 ## COMPLETED TASKS THIS SESSION
 
@@ -40,12 +40,29 @@
 - Input panel shows with "No content yet"
 - Default settings restored
 
-## TESTS UPDATED TO PASSING (5 total: 59 -> 64)
+### 4. Font Size Tests Verified (2 new tests passing)
+- 10pt font size - PASS
+  - Computed size: 13.3px
+  - Proportional scaling works
+- 14pt font size - PASS
+  - Computed size: 18.7px
+  - Slider shows correct position
+
+### 5. A5 Page Size Verified (1 new test passing)
+- A5 (148 x 210 mm) - PASS
+  - Aspect ratio: 0.705 (correct)
+  - Dropdown shows A5
+  - Text reflows correctly
+
+## TESTS UPDATED TO PASSING (8 total: 59 -> 67)
 1. API handles verse with 'der Geist Gottes' correctly
 2. API handles 'Es werde Licht' correctly
 3. Genesis 1:5 'Tag und Nacht' renders correctly
 4. Genesis 1:7 'über der Feste' renders correctly
 5. New project can be created from scratch
+6. Font size 10pt is selectable and renders correctly
+7. Font size 14pt is selectable and renders correctly
+8. A5 page size renders with correct proportions
 
 ## SCREENSHOTS CAPTURED
 - screenshots/verify-01-initial.png - Initial app state
@@ -57,6 +74,9 @@
 - screenshots/es-werde-licht-test.png - Es werde Licht test
 - screenshots/new-project-01-before.png - Before New Project
 - screenshots/new-project-02-after.png - After New Project
+- screenshots/font-size-10pt.png - 10pt font size
+- screenshots/font-size-14pt.png - 14pt font size
+- screenshots/pagesize-a5.png - A5 page size
 
 ## TEST FILES CREATED
 - test-genesis-1-5.js - Genesis 1:5 verse test
@@ -64,8 +84,10 @@
 - test-geist-gottes.js - der Geist Gottes test
 - test-es-werde-licht.js - Es werde Licht test
 - test-new-project.js - New Project feature test (with dialog handling)
+- test-font-sizes.js - Font size 10pt and 14pt tests
+- test-a5-pagesize.js - A5 page size test
 
-## REMAINING FAILING TESTS (36 tests)
+## REMAINING FAILING TESTS (33 tests)
 High priority:
 - Long compound words break across lines (Lego Method) - test #8
 - Paragraphs preservation - tests #26, #27
@@ -73,8 +95,6 @@ High priority:
 - Print functionality - tests #34, #35
 - Multi-chapter support - tests #51, #60, #62
 - Export/Import JSON - tests #85, #86
-- Font size tests (10pt, 14pt) - tests #93, #94
-- A5 page size - test #99
 
 Lower priority:
 - Title page styling - test #61
@@ -83,21 +103,23 @@ Lower priority:
 - ge- prefix identification - test #65
 - Three-part compounds - test #66
 - Mobile responsive layout - test #90
+- Recto/verso page simulation - test #91
 
 ## NEXT SESSION PRIORITIES
 1. Test Export/Import JSON functionality
-2. Test font size adjustments (10pt, 14pt)
-3. Test A5 page size
-4. Implement/test paragraph preservation
-5. Continue verifying remaining tests
+2. Implement/test paragraph preservation
+3. Test multi-chapter support
+4. Continue verifying remaining tests
 
 ## GIT STATUS
-- Ready to commit with 5 new passing tests
-- 64/100 tests now passing
+- Local commits made with all changes
+- 67/100 tests now passing
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering
 - All Genesis verse translations verified working
 - New Project feature confirmed working
+- Font size slider works correctly (10pt-14pt)
+- A5 page size renders with correct proportions
 - Morphological splitting continues to work well
 - CSS ensures glosses display uppercase even if API returns mixed case

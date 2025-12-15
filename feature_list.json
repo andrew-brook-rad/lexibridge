@@ -1065,7 +1065,7 @@
       "Step 3: Verify proportional scaling of elements",
       "Step 4: Verify legibility at 10pt"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1076,7 +1076,7 @@
       "Step 3: Verify proportional scaling",
       "Step 4: Verify text reflows for larger size"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1087,6 +1087,6 @@
       "Step 3: Verify proper aspect ratio",
       "Step 4: Verify text reflows appropriately"
     ],
-    "passes": false
+    "passes": true
   }
 ]

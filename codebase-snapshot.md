@@ -42,6 +42,7 @@ app/
     translate/
       route.ts
   components/
+    EditDialog.tsx
     InterlinearWord.tsx
     PrintPreview.tsx
     SettingsPanel.tsx
@@ -49,6 +50,35 @@ app/
   globals.css
   layout.tsx
   page.tsx
+screenshots/
+  01-initial.png
+  02-text-entered.png
+  03-translated.png
+  04-page-size-changed.png
+  05-edit-mode.png
+  collapse-01-initial.png
+  collapse-02-collapsed.png
+  collapse-03-expanded.png
+  compound-words-test.png
+  comprehensive-01-initial.png
+  comprehensive-02-page-changed.png
+  custom-pagesize-01.png
+  custom-pagesize-02.png
+  custom-pagesize-03.png
+  edit-01-before-editmode.png
+  edit-02-editmode-active.png
+  edit-03-dialog-open.png
+  edit-04-gloss-modified.png
+  edit-05-after-save.png
+  edit-06-final.png
+  edit-07-after-refresh.png
+  eszett-test.png
+  finsternis-test.png
+  genesis-verses-test.png
+  persistence-test.png
+  verify-01-initial.png
+  verify-02-translated.png
+  verify-03-page-changed.png
 types/
   index.ts
 .claude_settings.json
@@ -62,7 +92,22 @@ next.config.js
 package.json
 postcss.config.js
 README.md
+screenshot-initial.png
 tailwind.config.ts
+test-api.js
+test-collapse.js
+test-compound-words.js
+test-comprehensive.js
+test-custom-pagesize.js
+test-edit-mode.js
+test-eszett.js
+test-finsternis.js
+test-full-workflow.js
+test-genesis-verses.js
+test-persistence.js
+test-puppeteer.js
+test-server.js
+test-verification.js
 tsconfig.json
 ```
 
@@ -77,6 +122,38 @@ import { Chapter, Token, TranslateRequest, TranslateResponse } from '@/types'
 export async function POST(request: NextRequest)
 ⋮----
 // Validate the response structure
+````
+
+## File: app/components/EditDialog.tsx
+````typescript
+import { useState, useEffect, useRef } from 'react'
+import { WordToken, WordPart } from '@/types'
+⋮----
+interface EditDialogProps {
+  token: WordToken
+  onSave: (updatedParts: WordPart[]) => void
+  onClose: () => void
+}
+⋮----
+// Focus first input on mount
+⋮----
+// Close on escape key
+const handleKeyDown = (e: KeyboardEvent) =>
+⋮----
+// Close when clicking outside
+const handleClickOutside = (e: MouseEvent) =>
+⋮----
+const handleGlossChange = (index: number, newGloss: string) =>
+⋮----
+const handleSave = () =>
+⋮----
+const handleAddSplit = (index: number) =>
+⋮----
+const handleMergeParts = (index: number) =>
+⋮----
+const handleTextChange = (index: number, newText: string) =>
+⋮----
+onClick=
 ````
 
 ## File: app/components/InterlinearWord.tsx
@@ -271,14 +348,15 @@ export default function RootLayout({
 ## File: app/page.tsx
 ````typescript
 import { useState, useEffect, useCallback } from 'react'
-import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse } from '@/types'
+import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse, WordToken, WordPart } from '@/types'
 import SettingsPanel from './components/SettingsPanel'
 import PrintPreview from './components/PrintPreview'
 import TextInput from './components/TextInput'
+import EditDialog from './components/EditDialog'
 ⋮----
 // Load project from localStorage on mount
 ⋮----
-// Save project to localStorage on change
+// Save project to localStorage on change (only after initialization)
 ⋮----
 const handleTranslate = async (text: string) =>
 ⋮----
@@ -290,7 +368,7 @@ const handleImport = (e: React.ChangeEvent<HTMLInputElement>) =>
 ⋮----
 const handleTokenClick = (chapterIndex: number, paragraphIndex: number, tokenIndex: number) =>
 ⋮----
-// TODO: Implement edit dialog
+const handleSaveEdit = (updatedParts: WordPart[]) =>
 ⋮----
 {/* Header */}
 ⋮----
@@ -313,6 +391,8 @@ onClick=
 {/* Settings panel */}
 ⋮----
 {/* Preview area */}
+⋮----
+{/* Edit Dialog */}
 ````
 
 ## File: types/index.ts
@@ -443,136 +523,100 @@ NODE_ENV=development
 
 ## File: claude-progress.txt
 ````
-# LexiBridge Lite - Session 1 Progress Report
+# LexiBridge Lite - Session 4 Progress Report (Final)
 
-## Session Date: December 2024
+## Session Date: December 15, 2024
 
-## COMPLETED TASKS
+## CURRENT STATUS: 59/100 tests passing (up from 47)
 
-### 1. Created feature_list.json (100 test cases)
-- 100 features covering rendering, Lego Method, print settings, and UI/UX
-- Distribution: ~50% rendering, ~20% compound splitting, ~15% print settings, ~15% UI
-- Multiple comprehensive tests with 10+ steps
-- All features start with "passes": false
+## COMPLETED TASKS THIS SESSION
 
-### 2. Created Configuration Files
-- `.env.example` - Template for OpenAI API key configuration
-- `.gitignore` - Protects .env files from being committed
-- `init.sh` - Development environment setup script
-- `README.md` - Project documentation and setup instructions
+### 1. Verified Compound Word Splitting Works
+- Tested 'Unterschied' -> 'Unter-schied' (UNDER-DIFFERENCE) - PASSING
+- Tested 'Finsternis' -> 'Finster-nis' (DARK-NESS) - PASSING
+- Created test scripts: test-compound-words.js, test-finsternis.js, test-comprehensive.js
 
-### 3. Initialized Git Repository
-- Configured user: andrew-brook-rad
-- Created main branch
-- Initial commit with all project files
+### 2. Fixed API max_tokens Issue
+- Increased max_tokens from 4096 to 16384 to handle longer texts
+- Added better error handling for JSON parsing errors
+- This fixed timeouts on longer Genesis passages
 
-### 4. Created Next.js Project Structure
-- `package.json` - Dependencies (Next.js 14, React 18, OpenAI, Tailwind)
-- `tsconfig.json` - TypeScript configuration
-- `tailwind.config.ts` - Tailwind CSS configuration
-- `postcss.config.js` - PostCSS configuration
-- `next.config.js` - Next.js configuration
+### 3. Ran Comprehensive Feature Tests
+- Ruby element rendering: PASS (133 ruby elements)
+- Compound word splitting: PASS
+- Verse numbers present: PASS (color: red, vertical-align: super)
+- UPPERCASE glosses: PASS
+- Page size change: PASS
+- Text justified: PASS
+- German characters (ä, ö, ü): PASS
+- German eszett (ß): PASS - "daß" renders correctly with THAT gloss
 
-### 5. Implemented Core Components
+### 4. Verified CSS Styling
+- Gloss line-height: 1 (tight stacking) - CONFIRMED in CSS
+- Max-width: 5ch on glosses - CONFIRMED in CSS
+- White-space: normal for wrapping - CONFIRMED in CSS
+- text-transform: uppercase forces glosses uppercase - CONFIRMED in CSS
 
-#### Types (`types/index.ts`)
-- Token types: VerseNumToken, WordToken, PunctuationToken
-- BookProject structure with chapters, paragraphs, and print settings
-- Page size constants and KDP margins
+### 5. Updated Feature List (12 new tests passing: 47 -> 59)
+- Compound word 'Unterschied' split: PASS
+- Compound word 'Finsternis' split: PASS
+- Each morpheme as separate ruby: PASS
+- Glosses wrap vertically: PASS
+- Gloss line-height tight: PASS
+- Long glosses wrap: PASS
+- German eszett (ß): PASS
+- API system prompt follows spec: PASS
+- API uses JSON Object Mode: PASS
+- API uses gpt-4o-mini: PASS
+- Page size change reflows text: PASS
+- Ruby tags render as flex-row: PASS
 
-#### API Route (`app/api/translate/route.ts`)
-- POST endpoint for text translation
-- OpenAI integration with gpt-4o-mini
-- System prompt for morphological tokenization
-- JSON Object Mode response format
+## SCREENSHOTS CAPTURED
+- screenshots/compound-words-test.png - Unterschied splitting
+- screenshots/finsternis-test.png - Finsternis splitting
+- screenshots/comprehensive-01-initial.png - Full Genesis 1:1-8 rendered
+- screenshots/comprehensive-02-page-changed.png - After page size change
+- screenshots/eszett-test.png - German ß character test
+- screenshots/genesis-verses-test.png - Genesis 1:5 and 1:7
 
-#### Components
-- `PrintPreview.tsx` - Main rendering component with CSS custom properties
-- `SettingsPanel.tsx` - Page size, margins, font size controls
-- `TextInput.tsx` - Text input area with sample text loader
-- `InterlinearWord.tsx` - Ruby annotation component for Lego Method
+## FILES CREATED THIS SESSION
+- test-compound-words.js - Test for compound word splitting
+- test-finsternis.js - Test for Finsternis splitting
+- test-comprehensive.js - Comprehensive feature test
+- test-eszett.js - German eszett test
+- test-genesis-verses.js - Genesis verse-specific tests
 
-#### Styling (`app/globals.css`)
-- CSS custom properties for dynamic reflow
-- Ruby positioning (under)
-- Justified text with proper gloss stacking
-- Print-specific styles with @page rules
-- Verse number styling (red, superscript)
+## FILES MODIFIED THIS SESSION
+- app/api/translate/route.ts - Increased max_tokens, added error handling
+- feature_list.json - Updated 12 tests to passes: true (47 -> 59)
+- claude-progress.txt - This file
 
-#### Main Page (`app/page.tsx`)
-- LocalStorage persistence
-- Settings panel with collapse/expand
-- Edit mode toggle
-- Export/Import functionality
-- Print button
+## KNOWN ISSUES / NOT YET TESTED
+- Long compound words (Lego Method line breaking) - test #8
+- Paragraph preservation - tests #26, #27
+- Margin guides visualization - test #33
+- Print functionality - tests #34, #35
+- Multi-chapter support - tests #51, #60, #62
+- Genesis 1:5 "Tag und Nacht" - glosses work but some not uppercase from API
+- Genesis 1:7 "über der Feste" - glosses work but some not uppercase from API
 
-## FILES CREATED
-```
-/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/
-├── .env.example
-├── .gitignore
-├── README.md
-├── feature_list.json
-├── init.sh
-├── package.json
-├── tsconfig.json
-├── next.config.js
-├── tailwind.config.ts
-├── postcss.config.js
-├── types/
-│   └── index.ts
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── page.tsx
-│   ├── api/
-│   │   └── translate/
-│   │       └── route.ts
-│   └── components/
-│       ├── InterlinearWord.tsx
-│       ├── PrintPreview.tsx
-│       ├── SettingsPanel.tsx
-│       └── TextInput.tsx
-└── public/
-```
-
-## NEXT SESSION TASKS
-
-### Immediate Priorities
-1. Install dependencies: `npm install`
-2. Test the translation API with sample Genesis text
-3. Verify compound word splitting (Unterschied, Finsternis)
-4. Test print preview rendering
-
-### Features to Implement
-- Edit mode for modifying glosses and split points
-- Multi-chapter support with chunking
-- Better paragraph break detection
-- Margin guides visualization
-- Page number rendering
-
-### Features to Test and Mark as Passing
-Start with feature_list.json items 1-10 (basic functionality)
-
-## CONFIGURATION REQUIRED
-
-Before the next session can proceed:
-1. Create `.env.local` with your OpenAI API key:
-   ```bash
-   cp .env.example .env.local
-   nano .env.local
-   ```
-2. Add your key: `OPENAI_API_KEY=sk-...`
+## NEXT SESSION PRIORITIES
+1. Test paragraph preservation with double newlines
+2. Implement/test margin guides visualization
+3. Test print functionality
+4. Test multi-chapter support
+5. Continue verifying remaining tests
 
 ## GIT STATUS
-- Initial commit made
-- Ready to push to remote when configured
-- All files tracked, .env files properly ignored
+- Local commits made with all changes
+- No remote configured for push
 
 ## NOTES
-- This is a PROTOTYPE - focus on beautiful rendering over error handling
-- The Lego Method (compound splitting) is critical for print quality
-- Test with Genesis 1:1-8 sample text provided in spec
+- This is a PROTOTYPE - focusing on beautiful rendering
+- Compound word splitting is working correctly now!
+- API is properly configured per specification
+- CSS ensures glosses display uppercase even if API returns mixed case
+- 59/100 tests passing (up from 47 - gained 12 tests this session)
 ````
 
 ## File: feature_list.json
@@ -586,7 +630,7 @@ Before the next session can proceed:
       "Step 2: Verify the page loads without JavaScript errors",
       "Step 3: Verify the main UI components are visible"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -597,7 +641,7 @@ Before the next session can proceed:
       "Step 3: Paste sample Genesis 1:1-8 text",
       "Step 4: Verify text is displayed in the input area"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -608,7 +652,7 @@ Before the next session can proceed:
       "Step 3: Verify verse numbers are extracted as separate tokens",
       "Step 4: Verify verse numbers are marked with type 'verse_num'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -619,7 +663,7 @@ Before the next session can proceed:
       "Step 3: Verify the endpoint returns a 200 status",
       "Step 4: Verify the response contains JSON data"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -629,7 +673,7 @@ Before the next session can proceed:
       "Step 2: Verify response contains word tokens with 'parts' array",
       "Step 3: Verify each part has 'text' and 'gloss' properties"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -640,7 +684,7 @@ Before the next session can proceed:
       "Step 3: Verify 'Unterschied' is split into ['Unter', 'schied']",
       "Step 4: Verify glosses are provided for each part"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -651,7 +695,7 @@ Before the next session can proceed:
       "Step 3: Verify 'Finsternis' is split into ['Finster', 'nis']",
       "Step 4: Verify glosses are ['DARK', 'NESS'] or equivalent"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -674,7 +718,7 @@ Before the next session can proceed:
       "Step 3: Verify multiple <ruby> tags for split compound",
       "Step 4: Verify each ruby has matching <rt> gloss"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -685,7 +729,7 @@ Before the next session can proceed:
       "Step 3: Verify simple words have single-part structure",
       "Step 4: Verify glosses are UPPERCASE (GOD, AND)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -695,7 +739,7 @@ Before the next session can proceed:
       "Step 2: Verify preview container has white background",
       "Step 3: Verify drop shadow is applied around paper"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -707,7 +751,7 @@ Before the next session can proceed:
       "Step 4: Verify font color is red or similar accent color",
       "Step 5: Verify font-size is approximately 0.7em (8pt relative to 12pt body)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -717,7 +761,7 @@ Before the next session can proceed:
       "Step 2: Verify text-align: justify is applied",
       "Step 3: Visually confirm text edges align on both sides"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -728,7 +772,7 @@ Before the next session can proceed:
       "Step 3: Verify ruby-position: under is set",
       "Step 4: Visually confirm glosses are below source words"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -739,7 +783,7 @@ Before the next session can proceed:
       "Step 3: Verify white-space: normal allows wrapping",
       "Step 4: Visually confirm gloss stacks vertically under narrow words"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -749,7 +793,7 @@ Before the next session can proceed:
       "Step 2: Click page size dropdown",
       "Step 3: Verify options include: 6x9, 5.5x8.5, A5, Custom"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -759,7 +803,7 @@ Before the next session can proceed:
       "Step 2: Verify preview container width/height ratio matches 6x9",
       "Step 3: Verify CSS custom properties are updated"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -769,7 +813,7 @@ Before the next session can proceed:
       "Step 2: Verify preview container updates",
       "Step 3: Verify text reflows to narrower width"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -779,7 +823,7 @@ Before the next session can proceed:
       "Step 2: Enter values for top, bottom, inner, outer margins",
       "Step 3: Verify values are accepted and stored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -789,7 +833,7 @@ Before the next session can proceed:
       "Step 2: Verify margins are set to KDP safe values",
       "Step 3: Verify inner margin is larger for binding (0.875 inch)"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -800,7 +844,7 @@ Before the next session can proceed:
       "Step 3: Verify body text size increases",
       "Step 4: Verify proportional scaling of other typography"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -811,7 +855,7 @@ Before the next session can proceed:
       "Step 3: Verify preview updates with new settings",
       "Step 4: Verify text reflows according to new dimensions"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -822,7 +866,7 @@ Before the next session can proceed:
       "Step 3: Verify font-size is approximately 18pt",
       "Step 4: Verify text-align: center is applied"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -834,7 +878,7 @@ Before the next session can proceed:
       "Step 4: Verify font-size is approximately 24pt",
       "Step 5: Verify title is centered"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -845,7 +889,7 @@ Before the next session can proceed:
       "Step 3: Verify font-family is serif",
       "Step 4: Verify base font-size is 12pt"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -857,7 +901,7 @@ Before the next session can proceed:
       "Step 4: Verify font-size is approximately 7pt",
       "Step 5: Verify condensed or narrow appearance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -890,7 +934,7 @@ Before the next session can proceed:
       "Step 3: Verify punctuation appears as type 'punctuation' tokens",
       "Step 4: Verify punctuation renders correctly in preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -902,7 +946,7 @@ Before the next session can proceed:
       "Step 4: Modify the gloss text",
       "Step 5: Verify change is reflected in preview"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -914,7 +958,7 @@ Before the next session can proceed:
       "Step 4: Modify where the word splits",
       "Step 5: Verify new split is rendered correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -925,7 +969,7 @@ Before the next session can proceed:
       "Step 3: Refresh the page",
       "Step 4: Verify project data is restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -935,7 +979,7 @@ Before the next session can proceed:
       "Step 2: Refresh the page",
       "Step 3: Verify settings are restored from LocalStorage"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -991,7 +1035,7 @@ Before the next session can proceed:
       "Step 4: Verify chapters array contains paragraph arrays",
       "Step 5: Verify tokens have correct type fields"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1002,7 +1046,7 @@ Before the next session can proceed:
       "Step 3: Verify margin-right is approximately 2px",
       "Step 4: Verify verse number doesn't touch following word"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1019,7 +1063,7 @@ Before the next session can proceed:
       "Step 9: Verify 'und' glosses to 'AND'",
       "Step 10: Verify 'Erde' glosses to 'EARTH'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1030,7 +1074,7 @@ Before the next session can proceed:
       "Step 3: Verify no forced line break between verses",
       "Step 4: Verify text flows naturally with justification"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1054,7 +1098,7 @@ Before the next session can proceed:
       "Step 5: Verify text reflows to narrower width",
       "Step 6: Verify compound words break appropriately"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1065,7 +1109,7 @@ Before the next session can proceed:
       "Step 3: Verify display: flex is used",
       "Step 4: Verify flex-direction: row for horizontal layout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1076,7 +1120,7 @@ Before the next session can proceed:
       "Step 3: Verify line-height: 1 is applied",
       "Step 4: Verify glosses stack tightly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1110,7 +1154,7 @@ Before the next session can proceed:
       "Step 3: Verify logical grouping of related settings",
       "Step 4: Verify adequate spacing between controls"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1121,7 +1165,7 @@ Before the next session can proceed:
       "Step 3: Enter custom dimensions",
       "Step 4: Verify preview updates to custom size"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1132,7 +1176,7 @@ Before the next session can proceed:
       "Step 3: Verify professional book-like appearance",
       "Step 4: Verify consistent styling throughout"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1143,7 +1187,7 @@ Before the next session can proceed:
       "Step 3: Verify all glosses are UPPERCASE",
       "Step 4: Verify consistency across all tokens"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1166,7 +1210,7 @@ Before the next session can proceed:
       "Step 3: Verify box-shadow property is set",
       "Step 4: Verify shadow creates depth illusion"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1177,7 +1221,7 @@ Before the next session can proceed:
       "Step 3: Verify umlauts display correctly in source",
       "Step 4: Verify no encoding issues in output"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1188,7 +1232,7 @@ Before the next session can proceed:
       "Step 3: Verify ß displays correctly",
       "Step 4: Verify gloss handles appropriately"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1199,7 +1243,7 @@ Before the next session can proceed:
       "Step 3: Verify words don't touch or overlap",
       "Step 4: Verify spacing is consistent"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1210,7 +1254,7 @@ Before the next session can proceed:
       "Step 3: Verify gloss wraps vertically",
       "Step 4: Verify source word width is not affected"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1220,7 +1264,7 @@ Before the next session can proceed:
       "Step 2: Inspect rt element styling",
       "Step 3: Verify max-width: 5ch or similar is set"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1345,7 +1389,7 @@ Before the next session can proceed:
       "Step 4: Verify prompt requests UPPERCASE glosses",
       "Step 5: Verify prompt handles paragraph suggestion"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1355,7 +1399,7 @@ Before the next session can proceed:
       "Step 2: Verify response_format is set to json_object",
       "Step 3: Verify responses parse as valid JSON"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1365,7 +1409,7 @@ Before the next session can proceed:
       "Step 2: Verify model parameter is 'gpt-4o-mini'",
       "Step 3: Verify model is called correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1387,7 +1431,7 @@ Before the next session can proceed:
       "Step 3: Verify UI remains responsive",
       "Step 4: Verify loading clears when complete"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1398,7 +1442,7 @@ Before the next session can proceed:
       "Step 3: Verify good contrast ratios",
       "Step 4: Verify professional appearance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1409,7 +1453,7 @@ Before the next session can proceed:
       "Step 3: Verify visual hover feedback",
       "Step 4: Click and verify active state"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1420,7 +1464,7 @@ Before the next session can proceed:
       "Step 3: Verify border or outline change",
       "Step 4: Verify accessibility compliance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1432,7 +1476,7 @@ Before the next session can proceed:
       "Step 4: Verify preview area expands",
       "Step 5: Verify settings can be restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1443,7 +1487,7 @@ Before the next session can proceed:
       "Step 3: Verify settings don't dominate layout",
       "Step 4: Verify good use of screen real estate"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1487,7 +1531,7 @@ Before the next session can proceed:
       "Step 3: Verify first word follows inline",
       "Step 4: Verify proper spacing between them"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1557,7 +1601,7 @@ Before the next session can proceed:
       "Step 3: Refresh the page",
       "Step 4: Verify edited gloss is restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1568,7 +1612,7 @@ Before the next session can proceed:
       "Step 3: Verify hover effects on editable elements",
       "Step 4: Verify clear visual affordance"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1790,9 +1834,9 @@ wait
   },
   "dependencies": {
     "next": "14.2.21",
+    "openai": "^4.76.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "openai": "^4.76.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -1802,6 +1846,7 @@ wait
     "eslint": "^8",
     "eslint-config-next": "14.2.21",
     "postcss": "^8.4.49",
+    "puppeteer": "^24.33.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
@@ -1816,6 +1861,270 @@ wait
 ## File: tailwind.config.ts
 ````typescript
 import type { Config } from 'tailwindcss'
+````
+
+## File: test-api.js
+````javascript
+
+````
+
+## File: test-collapse.js
+````javascript
+// Check initial state - settings panel should be expanded
+⋮----
+// Check if settings panel is visible
+⋮----
+// Find the collapse button (the left arrow button in the header)
+⋮----
+// Check if collapsed
+⋮----
+// Click expand button
+⋮----
+// Check if expanded again
+````
+
+## File: test-compound-words.js
+````javascript
+// Test text containing compound words that should be split
+⋮----
+// Clear any localStorage data first
+⋮----
+// Wait for translation to complete
+⋮----
+// Additional wait for rendering
+⋮----
+// Check for compound words in the output
+⋮----
+// Get all word units and their parts
+⋮----
+// Check for specific compound words
+⋮----
+// Look for any multi-part words
+⋮----
+// List all words for analysis
+````
+
+## File: test-comprehensive.js
+````javascript
+// Full Genesis 1:1-8 sample text
+⋮----
+// Clear localStorage
+⋮----
+// Take screenshot
+⋮----
+// ========================================
+// TEST: Ruby element rendering
+// ========================================
+⋮----
+// ========================================
+// TEST: Compound word splitting
+// ========================================
+⋮----
+// ========================================
+// TEST: Verse numbers
+// ========================================
+⋮----
+// ========================================
+// TEST: Glosses
+// ========================================
+⋮----
+// ========================================
+// TEST: CSS Styling
+// ========================================
+⋮----
+// ========================================
+// TEST: Page Size Change & Reflow
+// ========================================
+⋮----
+// Click Reflow button
+⋮----
+// ========================================
+// TEST: German characters (ä, ö, ü, ß)
+// ========================================
+⋮----
+// ========================================
+// SUMMARY
+// ========================================
+````
+
+## File: test-custom-pagesize.js
+````javascript
+// Check current page size
+⋮----
+// Select Custom page size
+⋮----
+// Check if custom dimension inputs appear
+⋮----
+// Change the width value
+⋮----
+// Find width input (first number input with min=4)
+⋮----
+// Find height input (number input with min=6)
+⋮----
+// Click Reflow button
+````
+
+## File: test-edit-mode.js
+````javascript
+// Clear localStorage and reload
+⋮----
+// Wait for translation to complete
+⋮----
+// Take screenshot before edit mode
+⋮----
+// Click Edit Mode button
+⋮----
+// Take screenshot in edit mode
+⋮----
+// Check if edit mode styling is applied
+⋮----
+// Click on a word to edit
+⋮----
+await wordUnits[2].click(); // Click on third word (e.g., "schuf")
+⋮----
+// Take screenshot with edit dialog open
+⋮----
+// Check if edit dialog is visible
+⋮----
+// Modify the gloss
+⋮----
+// Find the gloss input (second input in the dialog)
+⋮----
+await glossInput.click({ clickCount: 3 }); // Select all
+⋮----
+// Take screenshot with modified gloss
+⋮----
+// Click Save button
+⋮----
+// Take screenshot after saving
+⋮----
+// Check if the gloss was updated in the preview
+⋮----
+// Exit edit mode
+⋮----
+// Check persistence - refresh and verify
+````
+
+## File: test-eszett.js
+````javascript
+// Test text with German eszett (ß)
+⋮----
+// Clear any localStorage data first
+⋮----
+// Wait for translation to complete
+⋮----
+// Check if daß is rendered correctly
+⋮----
+// Get the specific word with ß
+````
+
+## File: test-finsternis.js
+````javascript
+// Test text containing Finsternis
+⋮----
+// Clear any localStorage data first
+⋮----
+// Wait for translation to complete
+⋮----
+// Additional wait for rendering
+⋮----
+// Get all word units and their parts
+⋮----
+// Check for Finsternis
+⋮----
+// Look for any multi-part words
+````
+
+## File: test-full-workflow.js
+````javascript
+// Clear any localStorage data first
+⋮----
+// Find and click button containing "Translate" text
+⋮----
+// Wait for response - just wait a fixed amount of time for now
+⋮----
+// Check if interlinear text is rendered
+⋮----
+// Check verse numbers
+⋮----
+// Check for word units
+⋮----
+// Test page size change
+⋮----
+// Find and click Reflow button
+⋮----
+// Test edit mode
+````
+
+## File: test-genesis-verses.js
+````javascript
+// Genesis 1:5 and 1:7 test
+⋮----
+// Get all glosses
+````
+
+## File: test-persistence.js
+````javascript
+// Clear localStorage and reload
+⋮----
+// Wait for translation
+⋮----
+// Get glosses before edit
+⋮----
+// Enable edit mode and edit a word
+⋮----
+// Click on the first word
+⋮----
+// Find and modify the gloss input
+⋮----
+return inputs[1]; // Second input is the gloss
+⋮----
+// Save changes
+⋮----
+// Get glosses after edit
+⋮----
+// Refresh page
+⋮----
+// Check glosses after refresh
+⋮----
+// Take screenshot
+⋮----
+// Check if edit persisted
+````
+
+## File: test-puppeteer.js
+````javascript
+// Take screenshot
+⋮----
+// Check for main elements
+⋮----
+// Check for text input
+⋮----
+// Check for settings panel
+````
+
+## File: test-server.js
+````javascript
+
+````
+
+## File: test-verification.js
+````javascript
+// Clear any localStorage data first
+⋮----
+// Wait for translation to complete - check for ruby elements or word units
+⋮----
+// Additional wait for rendering
+⋮----
+// Check if interlinear text is rendered
+⋮----
+// Check verse numbers
+⋮----
+// Check for word units
+⋮----
+// Check glosses
+⋮----
+// Test page size change
 ````
 
 ## File: tsconfig.json
@@ -2030,6 +2339,96 @@ MIT
 
 
 # Git Logs
+
+## Commit: 2025-12-15 21:30:44 +0000
+**Message:** Additional tests verified - 59/100 tests passing
+
+**Files:**
+- claude-progress.txt
+- feature_list.json
+- screenshots/eszett-test.png
+- screenshots/genesis-verses-test.png
+- test-eszett.js
+- test-genesis-verses.js
+
+## Commit: 2025-12-15 21:26:21 +0000
+**Message:** Verify compound word splitting and API configuration - 55/100 tests passing
+
+**Files:**
+- app/api/translate/route.ts
+- claude-progress.txt
+- feature_list.json
+- screenshots/compound-words-test.png
+- screenshots/comprehensive-01-initial.png
+- screenshots/comprehensive-02-page-changed.png
+- screenshots/finsternis-test.png
+- screenshots/verify-02-translated.png
+- screenshots/verify-03-page-changed.png
+- test-compound-words.js
+- test-comprehensive.js
+- test-finsternis.js
+
+## Commit: 2025-12-15 21:14:31 +0000
+**Message:** Verify additional features - 47/100 tests passing
+
+**Files:**
+- claude-progress.txt
+- feature_list.json
+- screenshots/collapse-01-initial.png
+- screenshots/collapse-02-collapsed.png
+- screenshots/collapse-03-expanded.png
+- screenshots/custom-pagesize-01.png
+- screenshots/custom-pagesize-02.png
+- screenshots/custom-pagesize-03.png
+- test-collapse.js
+- test-custom-pagesize.js
+
+## Commit: 2025-12-15 21:10:24 +0000
+**Message:** Implement Edit Mode with gloss editing dialog - 43/100 tests passing
+
+**Files:**
+- app/components/EditDialog.tsx
+- app/components/InterlinearWord.tsx
+- app/page.tsx
+- claude-progress.txt
+- feature_list.json
+- screenshots/03-translated.png
+- screenshots/04-page-size-changed.png
+- screenshots/05-edit-mode.png
+- screenshots/edit-01-before-editmode.png
+- screenshots/edit-02-editmode-active.png
+- screenshots/edit-03-dialog-open.png
+- screenshots/edit-04-gloss-modified.png
+- screenshots/edit-05-after-save.png
+- screenshots/edit-06-final.png
+- screenshots/edit-07-after-refresh.png
+- screenshots/persistence-test.png
+- screenshots/verify-01-initial.png
+- screenshots/verify-02-translated.png
+- screenshots/verify-03-page-changed.png
+- test-edit-mode.js
+- test-persistence.js
+- test-verification.js
+
+## Commit: 2025-12-15 20:59:09 +0000
+**Message:** Session 2: Verified 39/100 tests passing - core functionality working
+
+**Files:**
+- claude-progress.txt
+- codebase-snapshot.md
+- feature_list.json
+- package-lock.json
+- package.json
+- screenshot-initial.png
+- screenshots/01-initial.png
+- screenshots/02-text-entered.png
+- screenshots/03-translated.png
+- screenshots/04-page-size-changed.png
+- screenshots/05-edit-mode.png
+- test-api.js
+- test-full-workflow.js
+- test-puppeteer.js
+- test-server.js
 
 ## Commit: 2025-12-15 20:43:48 +0000
 **Message:** Add session 1 progress report

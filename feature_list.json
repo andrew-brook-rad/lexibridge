@@ -653,7 +653,7 @@
       "Step 4: Verify 'Geist' glosses to 'SPIRIT'",
       "Step 5: Verify 'Gottes' glosses to 'GOD'S' or 'OF GOD'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -665,7 +665,7 @@
       "Step 4: Verify 'werde' glosses to 'BECOME/BE'",
       "Step 5: Verify 'Licht' glosses to 'LIGHT'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -943,7 +943,7 @@
       "Step 4: Verify 'und' glosses to 'AND'",
       "Step 5: Verify 'Nacht' glosses to 'NIGHT'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -955,7 +955,7 @@
       "Step 4: Verify 'der' glosses to 'THE'",
       "Step 5: Verify 'Feste' glosses to 'FIRMAMENT' or 'EXPANSE'"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1000,7 +1000,7 @@
       "Step 3: Verify fresh input state",
       "Step 4: Verify default settings are restored"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

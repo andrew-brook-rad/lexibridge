@@ -11,8 +11,8 @@ const sampleText = `1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war w
   const page = await browser.newPage();
   await page.setViewport({ width: 1400, height: 900 });
 
-  console.log('1. Navigating to http://localhost:3001...');
-  await page.goto('http://localhost:3001', { waitUntil: 'networkidle0' });
+  console.log('1. Navigating to http://localhost:3002...');
+  await page.goto('http://localhost:3002', { waitUntil: 'networkidle0' });
 
   // Clear any localStorage data first
   await page.evaluate(() => localStorage.clear());

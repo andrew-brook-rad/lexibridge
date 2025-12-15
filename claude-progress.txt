@@ -4,6 +4,32 @@
 
 ## FINAL STATUS: 91/100 tests passing (up from 83)
 
+## ⚠️ CRITICAL PRIORITY FOR NEXT SESSION ⚠️
+
+**FOCUS ON TEXT EDGE-TO-EDGE RENDERING AND HYPHENATION**
+
+The most important rendering requirements are:
+
+1. **Full-Width Text:** Text MUST fill the entire text area from left edge to right edge (justified)
+2. **Hyphenation:** If a word is too long and goes past the end of a line, it MUST hyphenate and continue on the next line
+3. **Gloss Text Wrapping:** The translation/gloss text below each word should be allowed to span to the next line if needed
+4. **Smaller Gloss Text:** Make the gloss/translation text smaller if needed to fit better
+
+**CSS techniques to implement:**
+- `hyphens: auto` on the text container
+- `word-break: break-word` as fallback
+- `text-align: justify` (already done)
+- Ensure ruby/rt elements can wrap properly
+- Consider `font-size: 6pt` or smaller for glosses if they overflow
+
+**DO NOT WORK ON:**
+- Mobile responsive layout (#92) - NOT NEEDED, skip this test
+- Any mobile-specific features
+
+**This is the #1 priority - the text rendering must look like a professional printed book!**
+
+---
+
 ## COMPLETED TASKS THIS SESSION
 
 ### 1. Implemented Paragraph Preservation from Source Text
@@ -74,21 +100,28 @@
 
 ## REMAINING FAILING TESTS (9 tests)
 
-Multi-chapter (2 tests):
+**SKIP - Not needed:**
+- #92: Mobile responsive layout - SKIP THIS, not required
+
+**Text rendering priority (work on these first):**
+- Ensure hyphenation works when words exceed line width
+- Ensure glosses can wrap/span to next line
+- Make gloss text smaller if needed
+
+**Multi-chapter (2 tests):**
 - Text chunks by chapter to manage API context (#36)
 - Multiple chapters render with distinct headers (#51)
 
-Compound words - AI-dependent (2 tests):
+**Compound words - AI-dependent (2 tests):**
 - Prefix 'ge-' is identified in compound words (#65)
 - Three-part compound words split correctly (#66)
 
-Print features (2 tests):
+**Print features (2 tests):**
 - Page numbers appear in footer (print only) (#80)
 - Print output matches screen preview (#81)
 
-Styling (3 tests):
+**Styling (2 tests):**
 - Chapter number can render as drop cap style (#63)
-- Mobile responsive layout adjusts appropriately (#90)
 - Preview simulates recto/verso page differences (#92)
 
 ## SESSION SUMMARY
@@ -98,12 +131,6 @@ Styling (3 tests):
 - All 3 print/margin tests now passing
 - Paragraph preservation fully functional
 - Margin guides showing safe area
-
-## NEXT SESSION PRIORITIES
-1. Multi-chapter support (#36, #51) - needs API chunking
-2. ge- prefix handling (#65) - AI-dependent
-3. Drop cap styling for chapter numbers (#63)
-4. Mobile responsive layout (#90)
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering

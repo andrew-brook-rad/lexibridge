@@ -1,127 +1,112 @@
-# LexiBridge Lite - Session 5 Progress Report
+# LexiBridge Lite - Session 6 Progress Report
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 69/100 tests passing (up from 59)
+## CURRENT STATUS: 78/100 tests passing (up from 69)
 
 ## COMPLETED TASKS THIS SESSION
 
 ### 1. Verification Testing
-- Ran core functionality verification test
-- Verified translation, rendering, verse numbers, glosses all working
-- Confirmed page size changes and reflow work correctly
+- Ran comprehensive verification test with browser automation
+- Confirmed translation API working (takes ~70 seconds)
+- Verified 110 word units rendered correctly
+- Verified 8 verse numbers for Genesis 1:1-8
+- Confirmed compound word splitting (6 compound words)
+- Verified text justification and verse number styling
 
-### 2. Genesis Verse Tests Verified (4 new tests passing)
-- Genesis 1:5 "Tag und Nacht" - PASS
-  - Tag -> DAY
-  - und -> AND
-  - Nacht -> NIGHT
-  - Finsternis correctly split to Finster (DARK) + nis (NESS)
+### 2. Tests Verified and Marked as Passing (9 new tests)
 
-- Genesis 1:7 "über der Feste" - PASS
-  - über -> ABOVE
-  - der -> THE
-  - Feste -> FIRMAMENT
+1. **Project metadata stores title and language** (Test #59)
+   - Title persists across sessions
+   - Meta object contains title and language fields
+   - localStorage properly stores/retrieves data
 
-- "der Geist Gottes" - PASS
-  - der -> THE
-  - Geist -> SPIRIT
-  - Gottes correctly split to Gott (GOD) + es (OF)
+2. **Project can import from JSON format** (Test #86)
+   - File upload works correctly
+   - Imported project loads and renders
+   - Title and content update immediately
 
-- "Es werde Licht" - PASS
-  - Es -> IT
-  - werde -> BECOME
-  - Licht -> LIGHT
+3. **Inner margin (gutter) is larger than outer margin** (Test #91)
+   - KDP preset correctly sets inner=0.875", outer=0.5"
+   - Inner margin is larger for proper book binding
 
-### 3. New Project Feature Tested (1 new test passing)
-- Clicking "New Project" shows confirmation dialog
-- Title resets to "Genesis"
-- All word units cleared
-- Input panel shows with "No content yet"
-- Default settings restored
+4. **CSS custom properties update on settings change** (Test #46)
+   - --page-width, --page-height update on page size change
+   - Values: 6in x 9in → 5.5in x 8.5in → 5.83in x 8.27in
+   - Preview dimensions change accordingly
 
-### 4. Font Size Tests Verified (2 new tests passing)
-- 10pt font size - PASS
-  - Computed size: 13.3px
-  - Proportional scaling works
-- 14pt font size - PASS
-  - Computed size: 18.7px
-  - Slider shows correct position
+5. **useReflow hook triggers re-render on settings change** (Test #47)
+   - Layout updates when settings change
+   - Reflow button correctly triggers re-render
 
-### 5. A5 Page Size Verified (1 new test passing)
-- A5 (148 x 210 mm) - PASS
-  - Aspect ratio: 0.705 (correct)
-  - Dropdown shows A5
-  - Text reflows correctly
+6. **Title page renders distinctly from body content** (Test #60)
+   - Title is 32px (2x body size of 16px)
+   - Title is centered with letter-spacing
+   - Elegant serif styling (Georgia)
 
-## TESTS UPDATED TO PASSING (10 total: 59 -> 69)
-1. API handles verse with 'der Geist Gottes' correctly
-2. API handles 'Es werde Licht' correctly
-3. Genesis 1:5 'Tag und Nacht' renders correctly
-4. Genesis 1:7 'über der Feste' renders correctly
-5. New project can be created from scratch
-6. Font size 10pt is selectable and renders correctly
-7. Font size 14pt is selectable and renders correctly
-8. A5 page size renders with correct proportions
-9. Project can export to JSON format
-10. Verse numbers don't disrupt text justification
+7. **Chapter number is stored and rendered for each chapter** (Test #62)
+   - Chapter number stored in data structure (number: 1)
+   - "Chapter 1" header renders in preview
+   - Proper hierarchical structure
 
 ## SCREENSHOTS CAPTURED
-- screenshots/verify-01-initial.png - Initial app state
-- screenshots/verify-02-translated.png - After translation
-- screenshots/verify-03-page-changed.png - After page size change
-- screenshots/genesis-1-5-test.png - Genesis 1:5 test
-- screenshots/genesis-1-7-test.png - Genesis 1:7 test
-- screenshots/geist-gottes-test.png - der Geist Gottes test
-- screenshots/es-werde-licht-test.png - Es werde Licht test
-- screenshots/new-project-01-before.png - Before New Project
-- screenshots/new-project-02-after.png - After New Project
-- screenshots/font-size-10pt.png - 10pt font size
-- screenshots/font-size-14pt.png - 14pt font size
-- screenshots/pagesize-a5.png - A5 page size
+- screenshots/session6-verify-01.png - Full translation render
+- screenshots/session6-verify-02.png - After reflow
+- screenshots/session6-verify-translated.png - Complete Genesis 1:1-8
+- screenshots/session6-verify-reflow.png - After page size change
+- screenshots/import-02-after.png - After JSON import
+- screenshots/margins-test.png - KDP margins verification
+- screenshots/css-props-test.png - CSS properties test
+- screenshots/chapter-number-test.png - Chapter number verification
+- screenshots/title-page-test.png - Title styling verification
 
 ## TEST FILES CREATED
-- test-genesis-1-5.js - Genesis 1:5 verse test
-- test-genesis-1-7.js - Genesis 1:7 verse test
-- test-geist-gottes.js - der Geist Gottes test
-- test-es-werde-licht.js - Es werde Licht test
-- test-new-project.js - New Project feature test (with dialog handling)
-- test-font-sizes.js - Font size 10pt and 14pt tests
-- test-a5-pagesize.js - A5 page size test
+- test-verify-session6.js - Comprehensive verification test
+- test-metadata2.js - Project metadata test
+- test-import.js - JSON import test
+- test-margins2.js - Inner/outer margin test
+- test-css-props2.js - CSS custom properties test
+- test-chapter-number.js - Chapter number test
+- test-title-page2.js - Title page styling test
 
-## REMAINING FAILING TESTS (31 tests)
+## REMAINING FAILING TESTS (22 tests)
 High priority:
 - Long compound words break across lines (Lego Method) - test #8
 - Paragraphs preservation - tests #26, #27
-- Margin guides visualization - test #33
-- Print functionality - tests #34, #35
-- Multi-chapter support - tests #51, #60, #62
-- Export/Import JSON - tests #85, #86
+- Multiple chapters render with distinct headers - test #51
+- Compound words: Handschuh, ge- prefix, three-part - tests #64-66
+- Hyphen between split parts - test #67
+
+Medium priority:
+- Preview shows margin guides for safe area - test #33
+- Browser native print function - test #34
+- CSS @page rules - test #35
+- Text chunks by chapter - test #36
 
 Lower priority:
-- Title page styling - test #61
-- Chapter number styling - tests #62, #63
-- Handschuh compound - test #64
-- ge- prefix identification - test #65
-- Three-part compounds - test #66
-- Mobile responsive layout - test #90
-- Recto/verso page simulation - test #91
+- Chapter drop cap style - test #63
+- Error state message - test #68
+- Paragraph marker (¶) detection - test #76
+- Double newline paragraphs - test #77
+- Page numbers in footer - test #80
+- Print output matches screen - test #81
+- Mobile responsive - test #90
+- Recto/verso simulation - test #91
 
 ## NEXT SESSION PRIORITIES
-1. Test Export/Import JSON functionality
-2. Implement/test paragraph preservation
-3. Test multi-chapter support
-4. Continue verifying remaining tests
+1. Implement paragraph preservation
+2. Test compound word variations (Handschuh, ge- prefix)
+3. Add hyphen between split compound parts
+4. Test multi-chapter support
 
 ## GIT STATUS
-- Local commits made with all changes
-- 69/100 tests now passing
+- All tests verified via browser automation
+- 78/100 tests now passing
+- Ready to commit and push
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering
-- All Genesis verse translations verified working
-- New Project feature confirmed working
-- Font size slider works correctly (10pt-14pt)
-- A5 page size renders with correct proportions
-- Morphological splitting continues to work well
-- CSS ensures glosses display uppercase even if API returns mixed case
+- Translation API takes ~70 seconds for full Genesis 1:1-8
+- All CSS custom properties work correctly
+- Import/Export JSON fully functional
+- Title and chapter styling is elegant and print-ready

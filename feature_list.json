@@ -509,7 +509,7 @@
       "Step 4: Verify --margin-inner is updated",
       "Step 5: Verify preview reflects new values"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -520,7 +520,7 @@
       "Step 3: Verify preview component re-renders",
       "Step 4: Verify layout updates visually"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -676,7 +676,7 @@
       "Step 3: Verify meta object contains these values",
       "Step 4: Verify metadata persists across sessions"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -687,7 +687,7 @@
       "Step 3: Verify title appears on first page or header",
       "Step 4: Verify title styling differs from body text"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -698,7 +698,7 @@
       "Step 3: Verify chapter numbers render in preview",
       "Step 4: Verify sequential numbering"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1022,7 +1022,7 @@
       "Step 3: Select JSON file",
       "Step 4: Verify project loads correctly"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",
@@ -1044,7 +1044,7 @@
       "Step 3: Verify outer margin is 0.5 inches",
       "Step 4: Verify preview reflects asymmetric margins"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "style",

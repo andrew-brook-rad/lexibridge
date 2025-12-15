@@ -84,7 +84,7 @@
       "Step 4: Verify the word can break across lines with hyphenation",
       "Step 5: Verify each morpheme stays with its gloss"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -720,7 +720,7 @@
       "Step 3: Verify split into ['Hand', 'schuh']",
       "Step 4: Verify glosses ['HAND', 'SHOE']"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -754,7 +754,7 @@
       "Step 3: Verify hyphen appears at break point",
       "Step 4: Verify continued part on next line"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

@@ -54,9 +54,32 @@ body {
 
 /* Word unit container (Lego component) */
 .word-unit {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: flex-end;
+  display: inline;
+  /* Allow compound words to break across lines */
+  word-break: break-word;
+}
+
+/* For multi-part (compound) words, allow breaking between parts */
+.word-unit.compound {
+  /* Hyphenation hint for CSS */
+  hyphens: manual;
+}
+
+/* Soft hyphen styling - shows hyphen only at line break */
+.word-unit .soft-hyphen {
+  display: inline;
+}
+
+/* Hide the separator when not at a line break */
+.word-unit .part-separator {
+  display: inline;
+  width: 0;
+  overflow: hidden;
+}
+
+/* Morpheme unit - each part of a compound word */
+.morpheme-unit {
+  display: inline;
 }
 
 /* Ruby element styling */
@@ -66,6 +89,11 @@ ruby {
   align-items: center;
   ruby-position: under;
   margin-right: 0.25em;
+}
+
+/* Last ruby in a word unit should have less margin (space before punctuation) */
+.word-unit ruby:last-of-type {
+  margin-right: 0.15em;
 }
 
 /* Source text (rb) */

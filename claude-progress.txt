@@ -1,134 +1,109 @@
-# LexiBridge Lite - Session 6 Progress Report
+# LexiBridge Lite - Session 7 Progress Report
 
 ## Session Date: December 15, 2024
 
-## FINAL STATUS: 80/100 tests passing (up from 69)
+## FINAL STATUS: 83/100 tests passing (up from 80)
 
 ## COMPLETED TASKS THIS SESSION
 
-### 1. Verification Testing
-- Ran comprehensive verification test with browser automation
-- Confirmed translation API working (takes ~70 seconds)
-- Verified 110 word units rendered correctly
-- Verified 8 verse numbers for Genesis 1:1-8
-- Confirmed compound word splitting (6 compound words)
-- Verified text justification and verse number styling
+### 1. Implemented the Lego Method for Line Breaking
+- Modified InterlinearWord.tsx to add soft hyphens between morpheme parts
+- Updated globals.css to allow compound words to break across lines
+- Added .morpheme-unit wrapper for each part of compound words
+- Used Unicode soft hyphen (\u00AD) which displays as hyphen only at line breaks
 
-### 2. Tests Verified and Marked as Passing (11 new tests)
+### 2. Tests Verified and Marked as Passing (3 new tests)
 
-1. **Project metadata stores title and language** (Test #59)
-   - Title persists across sessions
-   - Meta object contains title and language fields
-   - localStorage properly stores/retrieves data
+1. **Long compound words break across lines (Lego Method)** (Test #8)
+   - Tested with Unabhängigkeitserklärung on narrow page width
+   - Verified soft hyphens allow line breaks between morphemes
+   - Each morpheme stays with its gloss when breaking
 
-2. **Project can import from JSON format** (Test #86)
-   - File upload works correctly
-   - Imported project loads and renders
-   - Title and content update immediately
+2. **Compound word 'Handschuh' splits into Hand-schuh** (Test #64)
+   - Verified API splits Handschuh into Hand + schuh
+   - Glosses correctly show HAND + SHOE
+   - Visual rendering shows split compound
 
-3. **Inner margin (gutter) is larger than outer margin** (Test #91)
-   - KDP preset correctly sets inner=0.875", outer=0.5"
-   - Inner margin is larger for proper book binding
+3. **Hyphen appears between split compound parts when breaking** (Test #67)
+   - Verified with 3.5" narrow page width
+   - Compound words show hyphen at line break points
+   - Example: "Wasser-" at end of line, "n" on next line
 
-4. **CSS custom properties update on settings change** (Test #46)
-   - --page-width, --page-height update on page size change
-   - Values: 6in x 9in → 5.5in x 8.5in → 5.83in x 8.27in
-   - Preview dimensions change accordingly
+### 3. Code Changes Made
 
-5. **useReflow hook triggers re-render on settings change** (Test #47)
-   - Layout updates when settings change
-   - Reflow button correctly triggers re-render
+**InterlinearWord.tsx:**
+- Added `isCompound` check for multi-part words
+- Added `.compound` class for compound words
+- Wrapped each part in `.morpheme-unit` span
+- Added soft hyphen span between parts (except first)
 
-6. **Title page renders distinctly from body content** (Test #60)
-   - Title is 32px (2x body size of 16px)
-   - Title is centered with letter-spacing
-   - Elegant serif styling (Georgia)
+**globals.css:**
+- Changed `.word-unit` from `inline-flex` to `inline` for natural wrapping
+- Added `.word-unit.compound` with manual hyphens
+- Added `.morpheme-unit` styling
+- Added `.soft-hyphen` styling
 
-7. **Chapter number is stored and rendered for each chapter** (Test #62)
-   - Chapter number stored in data structure (number: 1)
-   - "Chapter 1" header renders in preview
-   - Proper hierarchical structure
+## SCREENSHOTS CAPTURED THIS SESSION
+- screenshots/verify-session7-initial.png - App initial state
+- screenshots/lego-02-translated.png - Full Genesis translated
+- screenshots/lego-03-narrow.png - 5.5x8.5 narrow layout
+- screenshots/hyphen-break-test.png - 3.5" width showing line breaks
+- screenshots/compound-var-02-result.png - Handschuh compound split
 
-8. **Error state displays user-friendly message** (Test #68)
-   - Button disabled when textarea empty (prevents errors)
-   - Error display code ready for API errors
-   - Application doesn't crash and remains usable
+## TEST FILES CREATED THIS SESSION
+- test-verify-session7.js - Session verification
+- test-lego-method.js - Lego method testing
+- test-lego-full.js - Full Genesis with Lego method
+- test-lego-narrow.js - Narrow width testing
+- test-hyphen-break.js - Hyphen at line breaks
+- test-compound-variations.js - Handschuh and ge- prefix
 
-9. **Narrow page width causes appropriate line breaks** (Test #87)
-   - Width reduced from 576px to 528px on 5.5x8.5
-   - Text justified and reflows correctly
-   - No orphan characters
+## REMAINING FAILING TESTS (17 tests)
 
-## SCREENSHOTS CAPTURED
-- screenshots/session6-verify-translated.png - Complete Genesis 1:1-8
-- screenshots/session6-verify-reflow.png - After page size change
-- screenshots/import-02-after.png - After JSON import
-- screenshots/margins-test.png - KDP margins verification
-- screenshots/css-props-test.png - CSS properties test
-- screenshots/chapter-number-test.png - Chapter number verification
-- screenshots/title-page-test.png - Title styling verification
-- screenshots/error-handling-test.png - Error handling test
-- screenshots/narrow-width-test.png - Narrow width line breaks
+Paragraph-related (5 tests):
+- Paragraphs are preserved when present in source text (#27)
+- AI suggests paragraph breaks when not present in source (#28)
+- Paragraph marker (¶) in source is detected (#76)
+- Double newline in source creates paragraph break (#77)
+- Paragraph spacing is visually appropriate (#78)
 
-## TEST FILES CREATED
-- test-verify-session6.js - Comprehensive verification test
-- test-metadata2.js - Project metadata test
-- test-import.js - JSON import test
-- test-margins2.js - Inner/outer margin test
-- test-css-props2.js - CSS custom properties test
-- test-chapter-number.js - Chapter number test
-- test-title-page2.js - Title page styling test
-- test-error-handling.js - Error state handling test
-- test-narrow-width.js - Narrow page width test
+Print-related (5 tests):
+- Preview shows margin guides for safe area (#33)
+- Browser native print function is accessible (#34)
+- CSS @page rules define print margins correctly (#35)
+- Page numbers appear in footer (print only) (#80)
+- Print output matches screen preview (#81)
 
-## REMAINING FAILING TESTS (20 tests)
-High priority:
-- Long compound words break across lines (Lego Method) - test #8
-- Paragraphs preservation - tests #26, #27
-- Multiple chapters render with distinct headers - test #51
-- Compound words: Handschuh, ge- prefix, three-part - tests #64-66
-- Hyphen between split parts - test #67
+Multi-chapter (2 tests):
+- Text chunks by chapter to manage API context (#36)
+- Multiple chapters render with distinct headers (#51)
 
-Medium priority:
-- Preview shows margin guides for safe area - test #33
-- Browser native print function - test #34
-- CSS @page rules - test #35
-- Text chunks by chapter - test #36
+Compound words (2 tests):
+- Prefix 'ge-' is identified in compound words (#65)
+- Three-part compound words split correctly (#66)
 
-Lower priority:
-- Chapter drop cap style - test #63
-- Paragraph marker (¶) detection - test #76
-- Double newline paragraphs - test #77
-- Page numbers in footer - test #80
-- Print output matches screen - test #81
-- Mobile responsive - test #90
-- Recto/verso simulation - test #91
+Styling (3 tests):
+- Chapter number can render as drop cap style (#63)
+- Mobile responsive layout adjusts appropriately (#90)
+- Preview simulates recto/verso page differences (#92)
 
 ## NEXT SESSION PRIORITIES
-1. Implement paragraph preservation
-2. Test compound word variations (Handschuh, ge- prefix)
-3. Add hyphen between split compound parts
-4. Test multi-chapter support
-5. Implement print-related features
-
-## GIT STATUS
-- 2 commits made this session
-- Commit 1: 78/100 tests passing (9 new tests)
-- Commit 2: 80/100 tests passing (2 more tests)
-- Ready to push when remote is configured
+1. Implement paragraph preservation (5 tests)
+2. Test multi-chapter support
+3. Consider print features
+4. Test ge- prefix handling (AI-dependent)
 
 ## SESSION SUMMARY
-- Started at 69/100 tests passing
-- Ended at 80/100 tests passing
-- Verified 11 tests through browser automation
-- All tests verified with screenshots
-- Application is stable and working correctly
+- Started at 80/100 tests passing
+- Ended at 83/100 tests passing
+- Implemented the core Lego Method for line-breaking
+- Verified compound word splitting (Handschuh, Unterschied, Finsternis)
+- Verified soft hyphens allow proper line breaks
+- All changes tested with browser automation
 
 ## NOTES
+- The Lego Method is now fully functional
+- Soft hyphens (\u00AD) are the key - they show as hyphen only at line breaks
+- The ge- prefix test (#65) is AI-dependent - the AI decides whether to split
+- Three-part compound test (#66) is also AI-dependent
 - This is a PROTOTYPE - focusing on beautiful rendering
-- Translation API takes ~70 seconds for full Genesis 1:1-8
-- All CSS custom properties work correctly
-- Import/Export JSON fully functional
-- Title and chapter styling is elegant and print-ready
-- Error handling prevents crashes and is user-friendly
-- Text reflows properly on narrow page widths

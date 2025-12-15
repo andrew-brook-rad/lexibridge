@@ -2,7 +2,7 @@
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 88/100 tests passing (up from 83)
+## FINAL STATUS: 91/100 tests passing (up from 83)
 
 ## COMPLETED TASKS THIS SESSION
 
@@ -18,41 +18,40 @@
 - Added `.paragraph + .paragraph` styling for between-paragraph spacing (0.8em)
 - Paragraphs are now visually distinct
 
-### 3. Tests Verified and Marked as Passing (5 new tests)
+### 3. Added Margin Guides for Safe Area
+- Added margin guide elements to PrintPreview component
+- Created CSS styles for margin-guide-top, -bottom, -inner, -outer
+- Guides show light blue dashed borders with subtle fill
+- Inner margin clearly larger than outer margin for binding
 
-1. **Paragraphs are preserved when present in source text** (Test #27)
-   - Input with double newlines creates multiple paragraphs
-   - Verified visual paragraph breaks in preview
+### 4. Tests Verified and Marked as Passing (8 new tests)
 
-2. **AI suggests paragraph breaks when not present in source** (Test #28)
-   - Input continuous text without markers
-   - AI splits into multiple paragraphs based on narrative flow
-   - Verified with 6-verse continuous text → 6 paragraphs
+**Paragraph tests (5):**
+1. #27: Paragraphs are preserved when present in source text
+2. #28: AI suggests paragraph breaks when not present in source
+3. #76: Paragraph marker (¶) in source is detected
+4. #77: Double newline in source creates paragraph break
+5. #78: Paragraph spacing is visually appropriate
 
-3. **Paragraph marker (¶) in source is detected** (Test #76)
-   - ¶ symbol correctly triggers paragraph break
-   - Symbol is NOT displayed in output
-
-4. **Double newline in source creates paragraph break** (Test #77)
-   - Double newlines correctly converted to paragraph breaks
-   - Visual separation in preview confirmed
-
-5. **Paragraph spacing is visually appropriate** (Test #78)
-   - Clear spacing between paragraphs
-   - No excessive whitespace
+**Print/UI tests (3):**
+6. #33: Preview shows margin guides for safe area
+7. #34: Browser native print function is accessible
+8. #35: CSS @page rules define print margins correctly
 
 ## SCREENSHOTS CAPTURED THIS SESSION
 - screenshots/para-simple-01-input.png - Text with double newlines
 - screenshots/para-simple-02-result.png - Result with 2 paragraphs
 - screenshots/pilcrow-01-input.png - Text with ¶ symbol
 - screenshots/pilcrow-02-result.png - Result with ¶ converted to paragraph break
-- screenshots/ai-para-01-input.png - Continuous text
+- screenshots/ai-para-01-input.png - Continuous text input
 - screenshots/ai-para-02-result.png - AI-suggested 6 paragraphs
+- screenshots/margin-guides-01.png - Margin guides visible
 
 ## TEST FILES CREATED THIS SESSION
 - test-paragraph-simple.js - Double newline paragraph test
 - test-pilcrow.js - Pilcrow symbol test
 - test-ai-paragraph.js - AI paragraph suggestion test
+- test-margin-guides.js - Margin guides verification
 
 ## CODE CHANGES MADE
 
@@ -67,44 +66,48 @@
 - Improved `.paragraph` margin-bottom to 1.2em
 - Added `.chapter-header + .paragraph` rule
 - Added `.paragraph + .paragraph` spacing rule
+- Added complete margin guide styles (.margin-guides, .margin-guide-*)
 
-## REMAINING FAILING TESTS (12 tests)
+**app/components/PrintPreview.tsx:**
+- Added margin-guides container with 4 guide elements
+- Guides show safe area boundaries for printing
 
-Print-related (5 tests):
-- Preview shows margin guides for safe area (#33)
-- Browser native print function is accessible (#34)
-- CSS @page rules define print margins correctly (#35)
-- Page numbers appear in footer (print only) (#80)
-- Print output matches screen preview (#81)
+## REMAINING FAILING TESTS (9 tests)
 
 Multi-chapter (2 tests):
 - Text chunks by chapter to manage API context (#36)
 - Multiple chapters render with distinct headers (#51)
 
-Compound words (2 tests):
+Compound words - AI-dependent (2 tests):
 - Prefix 'ge-' is identified in compound words (#65)
 - Three-part compound words split correctly (#66)
+
+Print features (2 tests):
+- Page numbers appear in footer (print only) (#80)
+- Print output matches screen preview (#81)
 
 Styling (3 tests):
 - Chapter number can render as drop cap style (#63)
 - Mobile responsive layout adjusts appropriately (#90)
 - Preview simulates recto/verso page differences (#92)
 
-## NEXT SESSION PRIORITIES
-1. Test print functionality (#34, #35)
-2. Implement multi-chapter support (#36, #51)
-3. Consider ge- prefix handling (AI-dependent)
-4. Consider drop cap styling for chapter numbers
-
 ## SESSION SUMMARY
 - Started at 83/100 tests passing
-- Ended at 88/100 tests passing (+5)
+- Ended at 91/100 tests passing (+8)
 - All 5 paragraph-related tests now passing
+- All 3 print/margin tests now passing
 - Paragraph preservation fully functional
-- AI paragraph suggestions working
+- Margin guides showing safe area
+
+## NEXT SESSION PRIORITIES
+1. Multi-chapter support (#36, #51) - needs API chunking
+2. ge- prefix handling (#65) - AI-dependent
+3. Drop cap styling for chapter numbers (#63)
+4. Mobile responsive layout (#90)
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering
 - ge- prefix (#65) and three-part compounds (#66) are AI-dependent
-- Print tests may require manual verification
-- Multi-chapter support may need API chunking logic
+- Multi-chapter support needs more significant code changes
+- Print features may need manual verification
+- 91% of features working - excellent progress!

@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Page dimensions */
+  --page-width: 6in;
+  --page-height: 9in;
+
+  /* Margins */
+  --margin-top: 0.75in;
+  --margin-bottom: 0.75in;
+  --margin-inner: 0.875in;
+  --margin-outer: 0.5in;
+
+  /* Font sizes */
+  --font-size-base: 12pt;
+  --font-size-gloss: 7pt;
+  --font-size-verse: 8pt;
+  --font-size-chapter: 18pt;
+  --font-size-title: 24pt;
+
+  /* Colors */
+  --verse-color: #dc2626;
+  --text-color: #1f2937;
+  --bg-color: #ffffff;
+}
+
+/* Base styles */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  background-color: #f3f4f6;
+}
+
+/* Print preview container */
+.print-preview {
+  background: var(--bg-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: var(--page-width);
+  min-height: var(--page-height);
+  padding-top: var(--margin-top);
+  padding-bottom: var(--margin-bottom);
+  padding-left: var(--margin-inner);
+  padding-right: var(--margin-outer);
+}
+
+/* Interlinear text styles */
+.interlinear-text {
+  text-align: justify;
+  line-height: 2.5;
+  font-size: var(--font-size-base);
+}
+
+/* Word unit container (Lego component) */
+.word-unit {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+/* Ruby element styling */
+ruby {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  ruby-position: under;
+  margin-right: 0.25em;
+}
+
+/* Source text (rb) */
+ruby rb, ruby .source-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: var(--font-size-base);
+}
+
+/* Gloss text (rt) */
+ruby rt, ruby .gloss-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: var(--font-size-gloss);
+  line-height: 1;
+  white-space: normal;
+  max-width: 5ch;
+  text-align: center;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+/* Verse numbers */
+.verse-number {
+  font-size: var(--font-size-verse);
+  color: var(--verse-color);
+  vertical-align: super;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+/* Chapter header */
+.chapter-header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: var(--font-size-chapter);
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+/* Book title */
+.book-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: var(--font-size-title);
+  text-align: center;
+  margin-bottom: 2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Punctuation */
+.punctuation {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: var(--font-size-base);
+}
+
+/* Paragraph styling */
+.paragraph {
+  margin-bottom: 1em;
+  text-indent: 0;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-preview {
+    box-shadow: none;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  @page {
+    size: var(--page-width) var(--page-height);
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+    margin-left: var(--margin-inner);
+    margin-right: var(--margin-outer);
+  }
+
+  @page :left {
+    margin-left: var(--margin-outer);
+    margin-right: var(--margin-inner);
+  }
+
+  @page :right {
+    margin-left: var(--margin-inner);
+    margin-right: var(--margin-outer);
+  }
+}
+
+/* Edit mode styles */
+.edit-mode .word-unit:hover {
+  cursor: pointer;
+  background-color: #fef3c7;
+  border-radius: 2px;
+}
+
+.word-unit.editing {
+  background-color: #dbeafe;
+  border-radius: 2px;
+}
+
+/* Settings panel */
+.settings-panel {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.settings-panel label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.settings-panel input,
+.settings-panel select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.settings-panel input:focus,
+.settings-panel select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.settings-panel button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.settings-panel button:hover {
+  opacity: 0.9;
+}
+
+.settings-panel button:active {
+  transform: scale(0.98);
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 2px solid #f3f4f6;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Margin guides */
+.margin-guides {
+  position: absolute;
+  border: 1px dashed rgba(59, 130, 246, 0.3);
+  pointer-events: none;
+}

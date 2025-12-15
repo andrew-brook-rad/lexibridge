@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/logs/.6dd77d741c80de4a74fc367334c426134c357078-audit.json",
+    "files": [
+        {
+            "date": 1765830986886,
+            "name": "/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/logs/mcp-puppeteer-2025-12-15.log",
+            "hash": "31cf749392a1cebdcac129f0e4c105b9fc5dd7da984421d8ddb7d4ccdbe69bd6"
+        }
+    ],
+    "hashType": "sha256"
+}

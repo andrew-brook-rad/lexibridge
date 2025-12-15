@@ -1,0 +1,1092 @@
+[
+  {
+    "category": "functional",
+    "description": "Application loads and renders the main page without errors",
+    "steps": [
+      "Step 1: Navigate to the application root URL",
+      "Step 2: Verify the page loads without JavaScript errors",
+      "Step 3: Verify the main UI components are visible"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Text input area accepts German biblical text",
+    "steps": [
+      "Step 1: Navigate to the input page",
+      "Step 2: Locate the text input area",
+      "Step 3: Paste sample Genesis 1:1-8 text",
+      "Step 4: Verify text is displayed in the input area"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Verse numbers are correctly parsed from input text",
+    "steps": [
+      "Step 1: Input text with numbered verses (e.g., '1 Am Anfang... 2 Und die Erde...')",
+      "Step 2: Trigger translation/parsing",
+      "Step 3: Verify verse numbers are extracted as separate tokens",
+      "Step 4: Verify verse numbers are marked with type 'verse_num'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API route /api/translate exists and responds",
+    "steps": [
+      "Step 1: Send a POST request to /api/translate",
+      "Step 2: Include sample German text in the request body",
+      "Step 3: Verify the endpoint returns a 200 status",
+      "Step 4: Verify the response contains JSON data"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "OpenAI integration returns morphological tokens",
+    "steps": [
+      "Step 1: Submit text to /api/translate",
+      "Step 2: Verify response contains word tokens with 'parts' array",
+      "Step 3: Verify each part has 'text' and 'gloss' properties"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Compound word 'Unterschied' is split into morphological parts",
+    "steps": [
+      "Step 1: Input text containing 'Unterschied'",
+      "Step 2: Process through translation API",
+      "Step 3: Verify 'Unterschied' is split into ['Unter', 'schied']",
+      "Step 4: Verify glosses are provided for each part"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Compound word 'Finsternis' is split into morphological parts",
+    "steps": [
+      "Step 1: Input text containing 'Finsternis'",
+      "Step 2: Process through translation API",
+      "Step 3: Verify 'Finsternis' is split into ['Finster', 'nis']",
+      "Step 4: Verify glosses are ['DARK', 'NESS'] or equivalent"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Long compound words break across lines (Lego Method)",
+    "steps": [
+      "Step 1: Set a narrow page width (5.5x8.5)",
+      "Step 2: Input text with long compound word 'Unabhängigkeitserklärung'",
+      "Step 3: Process and render the text",
+      "Step 4: Verify the word can break across lines with hyphenation",
+      "Step 5: Verify each morpheme stays with its gloss"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Each morpheme part renders as a separate ruby element",
+    "steps": [
+      "Step 1: Process compound word through translation",
+      "Step 2: Inspect rendered HTML",
+      "Step 3: Verify multiple <ruby> tags for split compound",
+      "Step 4: Verify each ruby has matching <rt> gloss"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Simple words remain unsplit with single gloss",
+    "steps": [
+      "Step 1: Input text with simple words like 'Gott', 'und'",
+      "Step 2: Process through translation",
+      "Step 3: Verify simple words have single-part structure",
+      "Step 4: Verify glosses are UPPERCASE (GOD, AND)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Print preview shows paper simulation with white background",
+    "steps": [
+      "Step 1: Navigate to preview page",
+      "Step 2: Verify preview container has white background",
+      "Step 3: Verify drop shadow is applied around paper"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Verse numbers render as red superscript",
+    "steps": [
+      "Step 1: Render text with verse numbers",
+      "Step 2: Inspect verse number styling",
+      "Step 3: Verify vertical-align: super is applied",
+      "Step 4: Verify font color is red or similar accent color",
+      "Step 5: Verify font-size is approximately 0.7em (8pt relative to 12pt body)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Text is justified within the preview",
+    "steps": [
+      "Step 1: Navigate to preview with rendered text",
+      "Step 2: Verify text-align: justify is applied",
+      "Step 3: Visually confirm text edges align on both sides"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Glosses appear below source text using ruby-position: under",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Inspect ruby element CSS",
+      "Step 3: Verify ruby-position: under is set",
+      "Step 4: Visually confirm glosses are below source words"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Glosses wrap vertically (stack) rather than widening",
+    "steps": [
+      "Step 1: Render text with multi-word gloss (e.g., 'THE EARTH')",
+      "Step 2: Verify gloss container has max-width constraint",
+      "Step 3: Verify white-space: normal allows wrapping",
+      "Step 4: Visually confirm gloss stacks vertically under narrow words"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Page size dropdown includes all required options",
+    "steps": [
+      "Step 1: Locate settings panel",
+      "Step 2: Click page size dropdown",
+      "Step 3: Verify options include: 6x9, 5.5x8.5, A5, Custom"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Selecting 6x9 page size updates preview dimensions",
+    "steps": [
+      "Step 1: Select 6x9 from page size dropdown",
+      "Step 2: Verify preview container width/height ratio matches 6x9",
+      "Step 3: Verify CSS custom properties are updated"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Selecting 5.5x8.5 page size updates preview dimensions",
+    "steps": [
+      "Step 1: Select 5.5x8.5 from page size dropdown",
+      "Step 2: Verify preview container updates",
+      "Step 3: Verify text reflows to narrower width"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Margin inputs accept numeric values",
+    "steps": [
+      "Step 1: Locate margin input fields",
+      "Step 2: Enter values for top, bottom, inner, outer margins",
+      "Step 3: Verify values are accepted and stored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "KDP preset button sets correct safe area margins",
+    "steps": [
+      "Step 1: Click KDP preset button",
+      "Step 2: Verify margins are set to KDP safe values",
+      "Step 3: Verify inner margin is larger for binding (0.875 inch)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Font size slider adjusts base typography",
+    "steps": [
+      "Step 1: Locate font size slider",
+      "Step 2: Adjust slider to increase font size",
+      "Step 3: Verify body text size increases",
+      "Step 4: Verify proportional scaling of other typography"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Reflow button triggers re-render of preview",
+    "steps": [
+      "Step 1: Change print settings",
+      "Step 2: Click Reflow button",
+      "Step 3: Verify preview updates with new settings",
+      "Step 4: Verify text reflows according to new dimensions"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Chapter headers render as large centered serif text",
+    "steps": [
+      "Step 1: Render text with chapter number",
+      "Step 2: Verify chapter header uses serif font",
+      "Step 3: Verify font-size is approximately 18pt",
+      "Step 4: Verify text-align: center is applied"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Book title renders as large elegant serif header",
+    "steps": [
+      "Step 1: Set book title (e.g., 'Genesis')",
+      "Step 2: Navigate to preview",
+      "Step 3: Verify title uses serif font",
+      "Step 4: Verify font-size is approximately 24pt",
+      "Step 5: Verify title is centered"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Source text renders in 12pt serif font",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Inspect source word styling",
+      "Step 3: Verify font-family is serif",
+      "Step 4: Verify base font-size is 12pt"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Gloss text renders in 7pt sans-condensed font",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Inspect gloss (rt element) styling",
+      "Step 3: Verify font-family is sans-serif",
+      "Step 4: Verify font-size is approximately 7pt",
+      "Step 5: Verify condensed or narrow appearance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Paragraphs are preserved when present in source text",
+    "steps": [
+      "Step 1: Input text with double newlines marking paragraphs",
+      "Step 2: Process through translation",
+      "Step 3: Verify paragraph structure is maintained in output",
+      "Step 4: Verify visual paragraph breaks in preview"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "AI suggests paragraph breaks when not present in source",
+    "steps": [
+      "Step 1: Input continuous text without paragraph markers",
+      "Step 2: Process through translation API",
+      "Step 3: Verify AI returns paragraph suggestions",
+      "Step 4: Verify narrative flow is considered in breaks"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Punctuation is preserved as separate tokens",
+    "steps": [
+      "Step 1: Input text with punctuation marks (. , ; :)",
+      "Step 2: Process through translation",
+      "Step 3: Verify punctuation appears as type 'punctuation' tokens",
+      "Step 4: Verify punctuation renders correctly in preview"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Edit mode allows clicking on words to modify glosses",
+    "steps": [
+      "Step 1: Enable edit mode",
+      "Step 2: Click on a rendered word",
+      "Step 3: Verify edit interface appears",
+      "Step 4: Modify the gloss text",
+      "Step 5: Verify change is reflected in preview"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Edit mode allows modifying compound word split points",
+    "steps": [
+      "Step 1: Enable edit mode",
+      "Step 2: Click on a compound word",
+      "Step 3: Access split point editor",
+      "Step 4: Modify where the word splits",
+      "Step 5: Verify new split is rendered correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Project data persists to LocalStorage",
+    "steps": [
+      "Step 1: Create/modify a project",
+      "Step 2: Verify data is saved to LocalStorage",
+      "Step 3: Refresh the page",
+      "Step 4: Verify project data is restored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Print settings persist to LocalStorage",
+    "steps": [
+      "Step 1: Modify print settings",
+      "Step 2: Refresh the page",
+      "Step 3: Verify settings are restored from LocalStorage"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Preview shows margin guides for safe area",
+    "steps": [
+      "Step 1: Enable margin guide display",
+      "Step 2: Verify visual guides are shown",
+      "Step 3: Verify guides match configured margins",
+      "Step 4: Verify inner margin guide is larger for binding"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Browser native print function is accessible",
+    "steps": [
+      "Step 1: Navigate to preview page",
+      "Step 2: Trigger print function",
+      "Step 3: Verify print dialog opens",
+      "Step 4: Verify preview matches screen layout"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "CSS @page rules define print margins correctly",
+    "steps": [
+      "Step 1: Inspect print stylesheet",
+      "Step 2: Verify @page rule exists",
+      "Step 3: Verify margins match configured values",
+      "Step 4: Verify page size is set correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Text chunks by chapter to manage API context",
+    "steps": [
+      "Step 1: Input multi-chapter text",
+      "Step 2: Process through translation",
+      "Step 3: Verify API calls are made per chapter",
+      "Step 4: Verify results are combined correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Translation returns JSON in correct schema format",
+    "steps": [
+      "Step 1: Call /api/translate with sample text",
+      "Step 2: Parse response JSON",
+      "Step 3: Verify structure matches book_project schema",
+      "Step 4: Verify chapters array contains paragraph arrays",
+      "Step 5: Verify tokens have correct type fields"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Verse numbers have appropriate right margin spacing",
+    "steps": [
+      "Step 1: Render text with verse numbers",
+      "Step 2: Inspect verse number element",
+      "Step 3: Verify margin-right is approximately 2px",
+      "Step 4: Verify verse number doesn't touch following word"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Genesis 1:1 'Am Anfang schuf Gott' renders correctly",
+    "steps": [
+      "Step 1: Input Genesis 1:1 text",
+      "Step 2: Process through translation",
+      "Step 3: Verify verse number '1' appears as superscript",
+      "Step 4: Verify 'Am' glosses to 'IN/AT'",
+      "Step 5: Verify 'Anfang' glosses to 'BEGINNING'",
+      "Step 6: Verify 'schuf' glosses to 'CREATED'",
+      "Step 7: Verify 'Gott' glosses to 'GOD'",
+      "Step 8: Verify 'Himmel' glosses to 'HEAVEN/SKY'",
+      "Step 9: Verify 'und' glosses to 'AND'",
+      "Step 10: Verify 'Erde' glosses to 'EARTH'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Verse 1 flows naturally into Verse 2 without forced line break",
+    "steps": [
+      "Step 1: Render Genesis 1:1-2",
+      "Step 2: Verify both verses are in same paragraph",
+      "Step 3: Verify no forced line break between verses",
+      "Step 4: Verify text flows naturally with justification"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Verse numbers don't disrupt text justification",
+    "steps": [
+      "Step 1: Render multiple verses",
+      "Step 2: Verify text remains justified",
+      "Step 3: Verify verse numbers integrate inline",
+      "Step 4: Verify no awkward spacing around verse numbers"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Page size change from 6x9 to 5.5x8.5 reflows text",
+    "steps": [
+      "Step 1: Render text at 6x9 page size",
+      "Step 2: Note line breaks and layout",
+      "Step 3: Change to 5.5x8.5 page size",
+      "Step 4: Click Reflow button",
+      "Step 5: Verify text reflows to narrower width",
+      "Step 6: Verify compound words break appropriately"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Ruby tags render as flex-row of adjacent elements",
+    "steps": [
+      "Step 1: Render compound word",
+      "Step 2: Inspect container element",
+      "Step 3: Verify display: flex is used",
+      "Step 4: Verify flex-direction: row for horizontal layout"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Gloss line-height is tight (1.0) for compact stacking",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Inspect rt element styling",
+      "Step 3: Verify line-height: 1 is applied",
+      "Step 4: Verify glosses stack tightly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "CSS custom properties update on settings change",
+    "steps": [
+      "Step 1: Inspect initial CSS custom properties",
+      "Step 2: Change page size setting",
+      "Step 3: Verify --page-width is updated",
+      "Step 4: Verify --margin-inner is updated",
+      "Step 5: Verify preview reflects new values"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "useReflow hook triggers re-render on settings change",
+    "steps": [
+      "Step 1: Modify print settings",
+      "Step 2: Verify hook detects change",
+      "Step 3: Verify preview component re-renders",
+      "Step 4: Verify layout updates visually"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Settings panel is visually organized and accessible",
+    "steps": [
+      "Step 1: Navigate to settings panel",
+      "Step 2: Verify clear labels for all inputs",
+      "Step 3: Verify logical grouping of related settings",
+      "Step 4: Verify adequate spacing between controls"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Custom page size allows entering arbitrary dimensions",
+    "steps": [
+      "Step 1: Select 'Custom' from page size dropdown",
+      "Step 2: Verify width/height inputs appear",
+      "Step 3: Enter custom dimensions",
+      "Step 4: Verify preview updates to custom size"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Overall typography creates print-ready appearance",
+    "steps": [
+      "Step 1: Render full Genesis 1:1-8 sample",
+      "Step 2: Evaluate overall visual quality",
+      "Step 3: Verify professional book-like appearance",
+      "Step 4: Verify consistent styling throughout"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API returns UPPERCASE glosses for all words",
+    "steps": [
+      "Step 1: Process sample text through API",
+      "Step 2: Inspect gloss values in response",
+      "Step 3: Verify all glosses are UPPERCASE",
+      "Step 4: Verify consistency across all tokens"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Multiple chapters render with distinct headers",
+    "steps": [
+      "Step 1: Input text spanning chapters 1 and 2",
+      "Step 2: Process and render",
+      "Step 3: Verify Chapter 1 header appears",
+      "Step 4: Verify Chapter 2 header appears",
+      "Step 5: Verify chapters are visually separated"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Drop shadow on preview creates paper effect",
+    "steps": [
+      "Step 1: Navigate to preview",
+      "Step 2: Inspect preview container CSS",
+      "Step 3: Verify box-shadow property is set",
+      "Step 4: Verify shadow creates depth illusion"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "German umlauts render correctly (ä, ö, ü)",
+    "steps": [
+      "Step 1: Input text with umlauts (wüst, schöpfung)",
+      "Step 2: Process through translation",
+      "Step 3: Verify umlauts display correctly in source",
+      "Step 4: Verify no encoding issues in output"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "German eszett (ß) renders correctly",
+    "steps": [
+      "Step 1: Input text containing ß",
+      "Step 2: Process through translation",
+      "Step 3: Verify ß displays correctly",
+      "Step 4: Verify gloss handles appropriately"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Adequate spacing between interlinear word units",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Verify spacing between word units",
+      "Step 3: Verify words don't touch or overlap",
+      "Step 4: Verify spacing is consistent"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Long glosses wrap within max-width constraint",
+    "steps": [
+      "Step 1: Render word with long gloss",
+      "Step 2: Verify max-width is applied to gloss",
+      "Step 3: Verify gloss wraps vertically",
+      "Step 4: Verify source word width is not affected"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Gloss text uses max-width of approximately 5ch",
+    "steps": [
+      "Step 1: Render interlinear text",
+      "Step 2: Inspect rt element styling",
+      "Step 3: Verify max-width: 5ch or similar is set"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API handles verse with 'der Geist Gottes' correctly",
+    "steps": [
+      "Step 1: Input Genesis 1:2 containing 'der Geist Gottes'",
+      "Step 2: Process through API",
+      "Step 3: Verify 'der' glosses to 'THE'",
+      "Step 4: Verify 'Geist' glosses to 'SPIRIT'",
+      "Step 5: Verify 'Gottes' glosses to 'GOD'S' or 'OF GOD'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API handles 'Es werde Licht' correctly",
+    "steps": [
+      "Step 1: Input Genesis 1:3 'Es werde Licht'",
+      "Step 2: Process through API",
+      "Step 3: Verify 'Es' glosses appropriately (LET IT/IT)",
+      "Step 4: Verify 'werde' glosses to 'BECOME/BE'",
+      "Step 5: Verify 'Licht' glosses to 'LIGHT'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Project metadata stores title and language",
+    "steps": [
+      "Step 1: Set project title to 'Genesis'",
+      "Step 2: Set language to 'DE'",
+      "Step 3: Verify meta object contains these values",
+      "Step 4: Verify metadata persists across sessions"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Title page renders distinctly from body content",
+    "steps": [
+      "Step 1: Set book title",
+      "Step 2: Navigate to preview",
+      "Step 3: Verify title appears on first page or header",
+      "Step 4: Verify title styling differs from body text"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Chapter number is stored and rendered for each chapter",
+    "steps": [
+      "Step 1: Process multi-chapter text",
+      "Step 2: Verify chapter numbers in data structure",
+      "Step 3: Verify chapter numbers render in preview",
+      "Step 4: Verify sequential numbering"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Chapter number can render as drop cap style",
+    "steps": [
+      "Step 1: Navigate to chapter start",
+      "Step 2: Inspect chapter number rendering",
+      "Step 3: Verify large/drop cap styling option",
+      "Step 4: Verify elegant serif appearance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Compound word 'Handschuh' splits into Hand-schuh",
+    "steps": [
+      "Step 1: Input text containing 'Handschuh'",
+      "Step 2: Process through translation API",
+      "Step 3: Verify split into ['Hand', 'schuh']",
+      "Step 4: Verify glosses ['HAND', 'SHOE']"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Prefix 'ge-' is identified in compound words",
+    "steps": [
+      "Step 1: Input word with ge- prefix (geschah)",
+      "Step 2: Process through translation",
+      "Step 3: Verify prefix is optionally split",
+      "Step 4: Verify gloss reflects meaning"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Three-part compound words split correctly",
+    "steps": [
+      "Step 1: Input three-part compound word",
+      "Step 2: Process through translation",
+      "Step 3: Verify three separate parts in output",
+      "Step 4: Verify each part has its own gloss",
+      "Step 5: Verify parts can break across lines independently"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Hyphen appears between split compound parts when breaking",
+    "steps": [
+      "Step 1: Render compound word in narrow width",
+      "Step 2: Force line break within compound",
+      "Step 3: Verify hyphen appears at break point",
+      "Step 4: Verify continued part on next line"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API system prompt follows specification exactly",
+    "steps": [
+      "Step 1: Inspect /api/translate route code",
+      "Step 2: Verify system prompt includes verse number handling",
+      "Step 3: Verify prompt requests morphological splits",
+      "Step 4: Verify prompt requests UPPERCASE glosses",
+      "Step 5: Verify prompt handles paragraph suggestion"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API uses JSON Object Mode for responses",
+    "steps": [
+      "Step 1: Inspect OpenAI API call configuration",
+      "Step 2: Verify response_format is set to json_object",
+      "Step 3: Verify responses parse as valid JSON"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "API uses gpt-4o-mini model as specified",
+    "steps": [
+      "Step 1: Inspect OpenAI API call",
+      "Step 2: Verify model parameter is 'gpt-4o-mini'",
+      "Step 3: Verify model is called correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Error state displays user-friendly message",
+    "steps": [
+      "Step 1: Trigger an API error (e.g., invalid input)",
+      "Step 2: Verify error is caught",
+      "Step 3: Verify user-friendly message displays",
+      "Step 4: Verify application doesn't crash"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Loading state shows during API processing",
+    "steps": [
+      "Step 1: Submit text for translation",
+      "Step 2: Verify loading indicator appears",
+      "Step 3: Verify UI remains responsive",
+      "Step 4: Verify loading clears when complete"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "UI has consistent color scheme",
+    "steps": [
+      "Step 1: Review all UI components",
+      "Step 2: Verify consistent use of colors",
+      "Step 3: Verify good contrast ratios",
+      "Step 4: Verify professional appearance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Buttons have clear hover/active states",
+    "steps": [
+      "Step 1: Locate all buttons in UI",
+      "Step 2: Hover over each button",
+      "Step 3: Verify visual hover feedback",
+      "Step 4: Click and verify active state"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Input fields have focus states",
+    "steps": [
+      "Step 1: Tab to each input field",
+      "Step 2: Verify visual focus indicator",
+      "Step 3: Verify border or outline change",
+      "Step 4: Verify accessibility compliance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Settings panel can be collapsed/expanded",
+    "steps": [
+      "Step 1: Locate settings panel",
+      "Step 2: Click collapse/expand control",
+      "Step 3: Verify panel collapses",
+      "Step 4: Verify preview area expands",
+      "Step 5: Verify settings can be restored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Preview panel takes majority of screen space",
+    "steps": [
+      "Step 1: View application layout",
+      "Step 2: Verify preview is prominently displayed",
+      "Step 3: Verify settings don't dominate layout",
+      "Step 4: Verify good use of screen real estate"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Paragraph marker (¶) in source is detected",
+    "steps": [
+      "Step 1: Input text with ¶ paragraph marker",
+      "Step 2: Process through translation",
+      "Step 3: Verify paragraph break at marker",
+      "Step 4: Verify marker is not displayed in output"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Double newline in source creates paragraph break",
+    "steps": [
+      "Step 1: Input text with double newline between sections",
+      "Step 2: Process through translation",
+      "Step 3: Verify paragraph structure reflects breaks",
+      "Step 4: Verify visual separation in preview"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Paragraph spacing is visually appropriate",
+    "steps": [
+      "Step 1: Render text with multiple paragraphs",
+      "Step 2: Verify spacing between paragraphs",
+      "Step 3: Verify paragraphs are clearly distinct",
+      "Step 4: Verify no excessive whitespace"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "First word after verse number renders correctly",
+    "steps": [
+      "Step 1: Render verse starting with verse number",
+      "Step 2: Verify verse number is superscript",
+      "Step 3: Verify first word follows inline",
+      "Step 4: Verify proper spacing between them"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Page numbers appear in footer (print only)",
+    "steps": [
+      "Step 1: Access print preview",
+      "Step 2: Verify page numbers in footer",
+      "Step 3: Verify correct numbering sequence",
+      "Step 4: Verify placement doesn't overlap content"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Print output matches screen preview",
+    "steps": [
+      "Step 1: Set up text and settings",
+      "Step 2: Note screen preview layout",
+      "Step 3: Open print dialog",
+      "Step 4: Compare print preview to screen",
+      "Step 5: Verify layout consistency"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Genesis 1:5 'Tag und Nacht' renders correctly",
+    "steps": [
+      "Step 1: Input Genesis 1:5",
+      "Step 2: Process through translation",
+      "Step 3: Verify 'Tag' glosses to 'DAY'",
+      "Step 4: Verify 'und' glosses to 'AND'",
+      "Step 5: Verify 'Nacht' glosses to 'NIGHT'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Genesis 1:7 'über der Feste' renders correctly",
+    "steps": [
+      "Step 1: Input Genesis 1:7 text",
+      "Step 2: Process through translation",
+      "Step 3: Verify 'über' glosses to 'OVER/ABOVE'",
+      "Step 4: Verify 'der' glosses to 'THE'",
+      "Step 5: Verify 'Feste' glosses to 'FIRMAMENT' or 'EXPANSE'"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Narrow page width causes appropriate line breaks",
+    "steps": [
+      "Step 1: Set page size to 5.5x8.5",
+      "Step 2: Render full Genesis passage",
+      "Step 3: Verify lines break at word boundaries",
+      "Step 4: Verify compound words break at morpheme boundaries",
+      "Step 5: Verify no orphan characters"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Edited glosses persist after refresh",
+    "steps": [
+      "Step 1: Render and edit a gloss",
+      "Step 2: Save the edit",
+      "Step 3: Refresh the page",
+      "Step 4: Verify edited gloss is restored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Edit mode highlights editable elements",
+    "steps": [
+      "Step 1: Enable edit mode",
+      "Step 2: Verify words show editable indication",
+      "Step 3: Verify hover effects on editable elements",
+      "Step 4: Verify clear visual affordance"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "New project can be created from scratch",
+    "steps": [
+      "Step 1: Click new project button",
+      "Step 2: Verify previous data is cleared",
+      "Step 3: Verify fresh input state",
+      "Step 4: Verify default settings are restored"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Project can export to JSON format",
+    "steps": [
+      "Step 1: Complete a translation project",
+      "Step 2: Click export button",
+      "Step 3: Verify JSON file downloads",
+      "Step 4: Verify JSON matches schema"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Project can import from JSON format",
+    "steps": [
+      "Step 1: Have a valid project JSON file",
+      "Step 2: Click import button",
+      "Step 3: Select JSON file",
+      "Step 4: Verify project loads correctly"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Mobile responsive layout adjusts appropriately",
+    "steps": [
+      "Step 1: Resize browser to mobile width",
+      "Step 2: Verify UI remains usable",
+      "Step 3: Verify controls are accessible",
+      "Step 4: Verify preview scales or scrolls"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Inner margin (gutter) is larger than outer margin",
+    "steps": [
+      "Step 1: Set KDP margins preset",
+      "Step 2: Verify inner margin is 0.875 inches",
+      "Step 3: Verify outer margin is 0.5 inches",
+      "Step 4: Verify preview reflects asymmetric margins"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "Preview simulates recto/verso page differences",
+    "steps": [
+      "Step 1: Enable multi-page preview",
+      "Step 2: Verify odd pages have inner margin on left",
+      "Step 3: Verify even pages have inner margin on right"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Font size 10pt is selectable and renders correctly",
+    "steps": [
+      "Step 1: Set font size to 10pt via slider",
+      "Step 2: Verify body text updates",
+      "Step 3: Verify proportional scaling of elements",
+      "Step 4: Verify legibility at 10pt"
+    ],
+    "passes": false
+  },
+  {
+    "category": "functional",
+    "description": "Font size 14pt is selectable and renders correctly",
+    "steps": [
+      "Step 1: Set font size to 14pt via slider",
+      "Step 2: Verify body text updates",
+      "Step 3: Verify proportional scaling",
+      "Step 4: Verify text reflows for larger size"
+    ],
+    "passes": false
+  },
+  {
+    "category": "style",
+    "description": "A5 page size renders with correct proportions",
+    "steps": [
+      "Step 1: Select A5 from page size dropdown",
+      "Step 2: Verify preview dimensions (148 x 210 mm)",
+      "Step 3: Verify proper aspect ratio",
+      "Step 4: Verify text reflows appropriately"
+    ],
+    "passes": false
+  }
+]

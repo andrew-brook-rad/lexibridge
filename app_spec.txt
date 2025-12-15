@@ -1,0 +1,212 @@
+<project_specification>
+  <project_name>LexiBridge Lite - Biblical Interlinear Generator</project_name>
+
+  <overview>
+    Build a Next.js tool to generate professional, print-ready interlinear books.
+    **PRIMARY USE CASE:** Biblical texts (Bible books/chapters).
+    The tool must handle specific theological formatting (Verse numbers, Chapter headers, Book Titles)
+    while strictly adhering to space-efficient publishing standards. It generates "Hand-Shoe" style
+    literal translations using server-side AI and renders them into a justified, flowable layout
+    suitable for Print-on-Demand (KDP/IngramSpark).
+
+    **IMPORTANT: This is a PROTOTYPE. Focus on:**
+    - Beautiful rendering and typography
+    - The "Lego Method" working correctly (compound word splitting)
+    - Good visual output that looks print-ready
+
+    **DO NOT worry about:**
+    - Production-ready error handling
+    - Edge cases
+    - Authentication/security hardening
+    - Performance optimization
+    - Comprehensive test coverage
+  </overview>
+
+  <technology_stack>
+    <framework>Next.js 14+ with App Router (TypeScript)</framework>
+    <styling>Tailwind CSS (UI) + Custom CSS Paged Media (Print)</styling>
+    <state>React Hooks + LocalStorage</state>
+    <pdf_engine>Native Browser Print</pdf_engine>
+    <ai_integration>
+      <provider>OpenAI API (Server-side via API Routes)</provider>
+      <model>gpt-4o-mini</model>
+      <mode>JSON Object Mode</mode>
+      <api_key>OPENAI_API_KEY=your-api-key-here</api_key>
+      <note>Add this key to .env.local for the Next.js server-side API routes</note>
+    </ai_integration>
+  </technology_stack>
+
+  <publishing_constraints>
+    <!-- CRITICAL TYPESETTING RULES -->
+    <space_efficiency>
+      - **The "Lego" Method:** Standard Ruby tags act like solid bricks that refuse to break.
+        The renderer MUST split long words (German compounds) into components.
+      - **Flow:** Words like "Unabhängigkeitserklärung" must be able to break across lines:
+        "Unabhängig-" (Line 1) and "keitserklärung" (Line 2).
+    </space_efficiency>
+
+    <visual_density>
+      - **Justification:** `text-align: justify` is mandatory.
+      - **Vertical Stacking:** English glosses must wrap *vertically* (stack) rather than
+        widening the source word. Use `max-width` on gloss tags.
+    </visual_density>
+
+    <biblical_formatting>
+      - **Verse Numbers:** Must be rendered inline but distinct (superscript, bold, or colored red).
+        They must not break the justification flow.
+      - **Chapter Headers:** Large, centered, elegant serif typography.
+      - **Book Titles:** Distinct title pages or headers (e.g., "THE GOSPEL OF JOHN").
+      - **Paragraphs:** If the source text contains paragraph markers (¶ or double newlines), use them.
+        Otherwise, let the AI determine natural paragraph breaks based on content/meaning.
+    </biblical_formatting>
+
+    <configurable_print_settings>
+      - **Page Size:** User-selectable (6x9", 5.5x8.5", A5, Custom)
+      - **Margins:** Configurable (with presets for KDP Safe Area)
+      - **Font Sizes:** Adjustable base size that scales all typography
+      - **Re-render:** A "Reflow" button that programmatically re-renders the layout when settings change
+    </configurable_print_settings>
+  </publishing_constraints>
+
+  <core_features>
+    <input_processing>
+      - **Bible Parser:** Logic to detect standard verse numbering in raw text.
+        (Input: "1 Am Anfang... 2 Und die Erde..." -> output structure separates verses).
+      - **Chunking:** Split text by Chapter to manage API context limits.
+    </input_processing>
+
+    <translation_engine>
+      - **Server-side API Route:** `/api/translate` endpoint that calls OpenAI
+      - **Morphological Tokenizer (AI):** The system prompt must instruct the AI to:
+        1. Preserve Verse Numbers.
+        2. Split words into morphological roots.
+        3. Provide literal UPPERCASE glosses.
+        4. Suggest paragraph breaks if not present in source.
+    </translation_engine>
+
+    <interactive_editor>
+      - **Visual Feedback:** Verse numbers clearly visible.
+      - **Edit Mode:** Click any word to edit the gloss or split points.
+    </interactive_editor>
+
+    <rendering_engine>
+      - **Layout:** CSS Paged Media (`@page`) to handle margins, gutters, and page numbers.
+      - **The Lego Component:** Flex-row of adjacent `<ruby>` tags.
+      - **Verse Component:** A `<sup>` span that sits inline before the first word of a verse.
+      - **Programmatic Reflow:** A function/hook that forces re-render when print settings change.
+    </rendering_engine>
+  </core_features>
+
+  <data_structure>
+    <book_project>
+      {
+        "meta": { "title": "Genesis", "language": "DE" },
+        "printSettings": {
+          "pageSize": "6x9",
+          "margins": { "top": 0.75, "bottom": 0.75, "inner": 0.875, "outer": 0.5 },
+          "baseFontSize": 12
+        },
+        "chapters": [
+          {
+            "number": 1,
+            "paragraphs": [
+              [ // A paragraph is an array of tokens
+                { "type": "verse_num", "value": "1" },
+                {
+                  "type": "word",
+                  "original_full": "Anfang",
+                  "parts": [{ "text": "Anfang", "gloss": "BEGINNING" }]
+                },
+                { "type": "punctuation", "value": "." },
+                { "type": "verse_num", "value": "2" },
+                { "type": "word", "original_full": "Und", ... }
+              ]
+            ]
+          }
+        ]
+      }
+    </book_project>
+  </data_structure>
+
+  <sample_test_data>
+    <!-- Luther Bible 1912 - Genesis 1:1-8 (Public Domain) -->
+    <german_bible_text>
+1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war wüst und leer, und es war finster auf der Tiefe; und der Geist Gottes schwebte auf dem Wasser. 3 Und Gott sprach: Es werde Licht! und es ward Licht. 4 Und Gott sah, daß das Licht gut war. Da schied Gott das Licht von der Finsternis 5 und nannte das Licht Tag und die Finsternis Nacht. Da ward aus Abend und Morgen der erste Tag.
+
+6 Und Gott sprach: Es werde eine Feste zwischen den Wassern, und die sei ein Unterschied zwischen den Wassern. 7 Da machte Gott die Feste und schied das Wasser unter der Feste von dem Wasser über der Feste. Und es geschah also. 8 Und Gott nannte die Feste Himmel. Da ward aus Abend und Morgen der andere Tag.
+    </german_bible_text>
+
+    <expected_compound_splits>
+      - "Unterschied" -> "Unter-schied" (UNDER-DIFFERENCE)
+      - "Finsternis" -> "Finster-nis" (DARK-NESS)
+    </expected_compound_splits>
+  </sample_test_data>
+
+  <ui_layout>
+    <settings_panel>
+      - Page size dropdown (6x9, 5.5x8.5, A5, Custom)
+      - Margin inputs (with KDP preset button)
+      - Font size slider
+      - "Reflow" button to re-render
+    </settings_panel>
+
+    <print_preview>
+      - **Paper Simulation:** White background, drop shadow.
+      - **Margins:** Visual guides for Safe Area (prevent text being cut off in binding).
+      - **Typography:**
+        - Book Title: 24pt Serif, Centered.
+        - Chapter Num: 18pt Serif, Centered or Drop Cap.
+        - Body Text: 12pt Serif (Source), 7pt Sans-Condensed (Gloss).
+        - Verse Num: 8pt Bold/Red, Superscript.
+    </print_preview>
+  </ui_layout>
+
+  <implementation_instructions>
+    <instruction type="prompt_engineering">
+      **System Prompt for /api/translate:**
+      "You are a Biblical Interlinear Generator.
+      1. Respect Verse Numbers: Return them as distinct objects `{type: 'verse_num', value: '1'}`.
+      2. Morphology: Split complex German compound words into roots for line-breaking
+         (e.g., 'Handschuh' -> ['Hand', 'schuh'], 'Unterschied' -> ['Unter', 'schied']).
+      3. Gloss: Provide literal UPPERCASE English translations for each part.
+      4. Paragraphs: If the input has paragraph markers (blank lines), preserve them.
+         If not, suggest natural paragraph breaks based on narrative flow.
+      5. Output strict JSON matching the schema."
+    </instruction>
+
+    <instruction type="css_tricks">
+      - Use `ruby-position: under`.
+      - Use `text-align: justify`.
+      - Verse numbers should have `vertical-align: super; font-size: 0.7em; margin-right: 2px;`.
+      - Glosses (`rt`) must have `white-space: normal; line-height: 1; max-width: 5ch;` to force stacking.
+      - Use CSS custom properties (--page-width, --margin-inner, etc.) for dynamic reflow.
+    </instruction>
+
+    <instruction type="reflow_mechanism">
+      Create a `useReflow` hook or similar that:
+      1. Listens to print settings changes
+      2. Forces a re-render of the preview component
+      3. Updates CSS custom properties on the container
+      This allows users to see immediate visual feedback when changing page size/margins.
+    </instruction>
+  </implementation_instructions>
+
+  <success_criteria>
+    <visual_check>
+      - Use the sample Genesis 1:1-8 text above.
+      - Check that Verse 1 flows naturally into Verse 2 without a line break unless it's a new paragraph.
+      - Check that Verse Numbers (superscript red) are visible but don't mess up the spacing.
+      - Check that compound words like "Unterschied" and "Finsternis" split across lines when
+        the page is narrow (test with 5.5x8.5 size).
+      - Change page size from 6x9 to 5.5x8.5 and verify the text reflows correctly.
+    </visual_check>
+  </success_criteria>
+
+  <feature_count>
+    Generate approximately 100 features/test cases. Focus heavily on:
+    - Rendering quality (50% of features)
+    - The Lego Method / compound splitting (20% of features)
+    - Print settings and reflow (15% of features)
+    - Basic UI/UX (15% of features)
+  </feature_count>
+</project_specification>

@@ -6,7 +6,7 @@ const postData = JSON.stringify({ text: testText, chapterNumber: 1 });
 
 const options = {
   hostname: 'localhost',
-  port: 3001,
+  port: 3002,
   path: '/api/translate',
   method: 'POST',
   headers: {

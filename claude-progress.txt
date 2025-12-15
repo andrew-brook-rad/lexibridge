@@ -2,7 +2,7 @@
 
 ## Session Date: December 15, 2024
 
-## CURRENT STATUS: 67/100 tests passing (up from 59)
+## CURRENT STATUS: 69/100 tests passing (up from 59)
 
 ## COMPLETED TASKS THIS SESSION
 
@@ -54,7 +54,7 @@
   - Dropdown shows A5
   - Text reflows correctly
 
-## TESTS UPDATED TO PASSING (8 total: 59 -> 67)
+## TESTS UPDATED TO PASSING (10 total: 59 -> 69)
 1. API handles verse with 'der Geist Gottes' correctly
 2. API handles 'Es werde Licht' correctly
 3. Genesis 1:5 'Tag und Nacht' renders correctly
@@ -63,6 +63,8 @@
 6. Font size 10pt is selectable and renders correctly
 7. Font size 14pt is selectable and renders correctly
 8. A5 page size renders with correct proportions
+9. Project can export to JSON format
+10. Verse numbers don't disrupt text justification
 
 ## SCREENSHOTS CAPTURED
 - screenshots/verify-01-initial.png - Initial app state
@@ -87,7 +89,7 @@
 - test-font-sizes.js - Font size 10pt and 14pt tests
 - test-a5-pagesize.js - A5 page size test
 
-## REMAINING FAILING TESTS (33 tests)
+## REMAINING FAILING TESTS (31 tests)
 High priority:
 - Long compound words break across lines (Lego Method) - test #8
 - Paragraphs preservation - tests #26, #27
@@ -113,7 +115,7 @@ Lower priority:
 
 ## GIT STATUS
 - Local commits made with all changes
-- 67/100 tests now passing
+- 69/100 tests now passing
 
 ## NOTES
 - This is a PROTOTYPE - focusing on beautiful rendering

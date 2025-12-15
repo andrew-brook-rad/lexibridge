@@ -462,7 +462,7 @@
       "Step 3: Verify verse numbers integrate inline",
       "Step 4: Verify no awkward spacing around verse numbers"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",
@@ -1011,7 +1011,7 @@
       "Step 3: Verify JSON file downloads",
       "Step 4: Verify JSON matches schema"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "functional",

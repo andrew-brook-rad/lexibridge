@@ -14,7 +14,7 @@ async function test() {
   try {
     // Step 1: Load the app
     console.log('\n=== Step 1: Loading app ===');
-    await page.goto('http://localhost:3000', { waitUntil: 'networkidle0', timeout: 30000 });
+    await page.goto('http://localhost:3001', { waitUntil: 'networkidle0', timeout: 30000 });
     console.log('App loaded');
     await page.screenshot({ path: 'screenshots/full-verify-01-initial.png' });
 

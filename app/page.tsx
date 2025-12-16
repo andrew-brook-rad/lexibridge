@@ -4,6 +4,8 @@ import { useState, useEffect, useCallback } from 'react'
 import { BookProject, Chapter, DEFAULT_PROJECT, TranslateResponse, WordToken, WordPart } from '@/types'
 import SettingsPanel from './components/SettingsPanel'
 import PrintPreview from './components/PrintPreview'
+import BookSpreadViewer from './components/BookSpreadViewer'
+import PDFViewer from './components/PDFViewer'
 import TextInput from './components/TextInput'
 import EditDialog from './components/EditDialog'
 
@@ -25,6 +27,7 @@ export default function Home() {
   } | null>(null)
   const [isInitialized, setIsInitialized] = useState(false)
   const [previewPageType, setPreviewPageType] = useState<'recto' | 'verso'>('recto')
+  const [viewMode, setViewMode] = useState<'spread' | 'single' | 'pdf'>('pdf')
 
   // Load project from localStorage on mount
   useEffect(() => {
@@ -139,6 +142,19 @@ export default function Home() {
       setProject(DEFAULT_PROJECT)
       setShowInput(true)
       localStorage.removeItem(STORAGE_KEY)
+    }
+  }
+
+  const handleLoadSample = async (samplePath: string) => {
+    try {
+      const response = await fetch(samplePath)
+      if (!response.ok) throw new Error('Failed to load sample')
+      const sampleProject = await response.json()
+      setProject(sampleProject)
+      setShowInput(false)
+      setReflowKey((k) => k + 1)
+    } catch (err) {
+      setError('Failed to load sample project')
     }
   }
 
@@ -271,6 +287,27 @@ export default function Home() {
               </button>
 
               <button
+                onClick={() => handleLoadSample('/data/genesis-1-10-translated.json')}
+                className="px-3 py-1.5 text-sm border border-purple-400 text-purple-700 rounded hover:bg-purple-50"
+              >
+                Genesis (DE)
+              </button>
+
+              <button
+                onClick={() => handleLoadSample('/data/genesis-1-afrikaans-translated.json')}
+                className="px-3 py-1.5 text-sm border border-green-400 text-green-700 rounded hover:bg-green-50"
+              >
+                Genesis (AF)
+              </button>
+
+              <button
+                onClick={() => handleLoadSample('/data/luke-1-2-afrikaans-translated.json')}
+                className="px-3 py-1.5 text-sm border border-blue-400 text-blue-700 rounded hover:bg-blue-50"
+              >
+                Luke 1-2 (AF)
+              </button>
+
+              <button
                 onClick={handleExport}
                 className="px-3 py-1.5 text-sm border border-gray-300 rounded hover:bg-gray-50"
               >
@@ -336,42 +373,97 @@ export default function Home() {
 
           {/* Preview area */}
           <div className="flex-grow overflow-x-auto">
-            {/* Recto/Verso toggle */}
-            <div className="mb-4 flex flex-wrap items-center gap-2 no-print">
-              <span className="text-sm text-gray-600">Preview Page:</span>
-              <div className="flex rounded-lg overflow-hidden border border-gray-300">
-                <button
-                  onClick={() => setPreviewPageType('recto')}
-                  className={`px-3 py-1 text-sm ${
-                    previewPageType === 'recto'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  Recto (Odd)
-                </button>
-                <button
-                  onClick={() => setPreviewPageType('verso')}
-                  className={`px-3 py-1 text-sm ${
-                    previewPageType === 'verso'
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-50'
-                  }`}
-                >
-                  Verso (Even)
-                </button>
+            {/* View mode toggle */}
+            <div className="mb-4 flex flex-wrap items-center gap-4 no-print">
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-600">View:</span>
+                <div className="flex rounded-lg overflow-hidden border border-gray-300">
+                  <button
+                    onClick={() => setViewMode('pdf')}
+                    className={`px-3 py-1 text-sm ${
+                      viewMode === 'pdf'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    PDF
+                  </button>
+                  <button
+                    onClick={() => setViewMode('spread')}
+                    className={`px-3 py-1 text-sm ${
+                      viewMode === 'spread'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    Book Spread
+                  </button>
+                  <button
+                    onClick={() => setViewMode('single')}
+                    className={`px-3 py-1 text-sm ${
+                      viewMode === 'single'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white text-gray-700 hover:bg-gray-50'
+                    }`}
+                  >
+                    Single Page
+                  </button>
+                </div>
               </div>
-              <span className="text-xs text-gray-400 ml-2 hidden sm:inline">
-                {previewPageType === 'recto' ? 'Inner margin on left' : 'Inner margin on right'}
-              </span>
+
+              {/* Recto/Verso toggle - only show in single page mode */}
+              {viewMode === 'single' && (
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-600">Page Type:</span>
+                  <div className="flex rounded-lg overflow-hidden border border-gray-300">
+                    <button
+                      onClick={() => setPreviewPageType('recto')}
+                      className={`px-3 py-1 text-sm ${
+                        previewPageType === 'recto'
+                          ? 'bg-blue-600 text-white'
+                          : 'bg-white text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      Recto (Odd)
+                    </button>
+                    <button
+                      onClick={() => setPreviewPageType('verso')}
+                      className={`px-3 py-1 text-sm ${
+                        previewPageType === 'verso'
+                          ? 'bg-blue-600 text-white'
+                          : 'bg-white text-gray-700 hover:bg-gray-50'
+                      }`}
+                    >
+                      Verso (Even)
+                    </button>
+                  </div>
+                  <span className="text-xs text-gray-400 ml-2 hidden sm:inline">
+                    {previewPageType === 'recto' ? 'Inner margin on left' : 'Inner margin on right'}
+                  </span>
+                </div>
+              )}
             </div>
-            <PrintPreview
-              project={project}
-              reflowKey={reflowKey}
-              editMode={editMode}
-              onTokenClick={handleTokenClick}
-              previewPageType={previewPageType}
-            />
+
+            {/* Render based on view mode */}
+            {viewMode === 'pdf' ? (
+              <PDFViewer
+                project={project}
+                reflowKey={reflowKey}
+              />
+            ) : viewMode === 'spread' ? (
+              <BookSpreadViewer
+                project={project}
+                reflowKey={reflowKey}
+              />
+            ) : (
+              <PrintPreview
+                project={project}
+                reflowKey={reflowKey}
+                editMode={editMode}
+                onTokenClick={handleTokenClick}
+                previewPageType={previewPageType}
+              />
+            )}
           </div>
         </div>
       </div>

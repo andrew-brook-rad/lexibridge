@@ -49,6 +49,22 @@ body {
   padding-right: var(--margin-right);
 }
 
+/* Typeset content area */
+.typeset-content {
+  width: 100%;
+}
+
+/* Typeset line - each justified line */
+.typeset-line {
+  display: block;
+  width: 100%;
+  line-height: 2.4;
+  font-size: var(--font-size-base);
+  /* Prevent inline elements from wrapping - we control line breaks programmatically */
+  white-space: nowrap;
+  overflow: visible;
+}
+
 /* Interlinear text styles */
 .interlinear-text {
   text-align: justify;
@@ -109,13 +125,13 @@ ruby rb, ruby .source-text {
 /* Gloss text (rt) */
 ruby rt, ruby .gloss-text {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: var(--font-size-gloss);
+  font-size: 5pt;
   line-height: 1;
-  white-space: normal;
-  max-width: 5ch;
+  white-space: nowrap;
   text-align: center;
   color: #6b7280;
-  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Verse numbers */

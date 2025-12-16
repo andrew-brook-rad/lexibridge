@@ -1,7 +1,8 @@
 'use client'
 
-import { BookProject, Token, PAGE_SIZES } from '@/types'
+import { BookProject, Token, PAGE_SIZES, DEFAULT_TYPOGRAPHY } from '@/types'
 import InterlinearWord from './InterlinearWord'
+import TypesetRenderer from './TypesetRenderer'
 
 interface PrintPreviewProps {
   project: BookProject
@@ -28,6 +29,9 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
     ? printSettings.margins.outer
     : printSettings.margins.inner
 
+  // Get typography settings with defaults - merge to handle missing properties from older saved projects
+  const typography = { ...DEFAULT_TYPOGRAPHY, ...printSettings.typography }
+
   // CSS custom properties for dynamic styling
   const customStyles = {
     '--page-width': `${pageDimensions.width}in`,
@@ -38,11 +42,20 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
     '--margin-outer': `${printSettings.margins.outer}in`,
     '--margin-left': `${marginLeft}in`,
     '--margin-right': `${marginRight}in`,
+    // Typography settings
+    '--font-main': typography.mainFont,
+    '--font-gloss': typography.glossFont,
+    '--font-size-main': `${typography.mainFontSize}pt`,
+    '--font-size-gloss': `${typography.glossFontSize}pt`,
+    '--font-size-verse': `${typography.verseNumSize}pt`,
+    '--verse-color': typography.verseNumColor,
+    '--verse-offset': `${typography.verseNumOffset}pt`,
+    '--verse-offset-x': `${typography.verseNumOffsetX}pt`,
+    '--line-height': typography.lineHeight,
+    // Legacy variables for compatibility
     '--font-size-base': `${printSettings.baseFontSize}pt`,
-    '--font-size-gloss': `${Math.round(printSettings.baseFontSize * 0.58)}pt`,
-    '--font-size-verse': `${Math.round(printSettings.baseFontSize * 0.67)}pt`,
-    '--font-size-chapter': `${Math.round(printSettings.baseFontSize * 1.5)}pt`,
-    '--font-size-title': `${Math.round(printSettings.baseFontSize * 2)}pt`,
+    '--font-size-chapter': `${Math.round(typography.mainFontSize * 1.5)}pt`,
+    '--font-size-title': `${Math.round(typography.mainFontSize * 2)}pt`,
   } as React.CSSProperties
 
   const renderToken = (
@@ -96,25 +109,14 @@ export default function PrintPreview({ project, reflowKey, editMode, onTokenClic
         <h1 className="book-title">{meta.title}</h1>
       )}
 
-      {/* Chapters */}
-      {chapters.map((chapter, chapterIndex) => (
-        <div key={chapterIndex} className="chapter">
-          {/* Chapter Header with drop cap number */}
-          <h2 className="chapter-header">
-            <span className="chapter-number">{chapter.number}</span>
-            <span className="chapter-label">Chapter</span>
-          </h2>
-
-          {/* Paragraphs */}
-          {chapter.paragraphs.map((paragraph, paragraphIndex) => (
-            <p key={paragraphIndex} className="paragraph interlinear-text">
-              {paragraph.map((token, tokenIndex) =>
-                renderToken(token, chapterIndex, paragraphIndex, tokenIndex)
-              )}
-            </p>
-          ))}
-        </div>
-      ))}
+      {/* Programmatic Typesetting Renderer */}
+      <TypesetRenderer
+        project={project}
+        editMode={editMode}
+        previewPageType={previewPageType}
+        onTokenClick={onTokenClick}
+        reflowKey={reflowKey}
+      />
 
       {/* Empty state */}
       {chapters.length === 0 && (

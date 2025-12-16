@@ -1,6 +1,6 @@
 'use client'
 
-import { PrintSettings, PAGE_SIZES, KDP_MARGINS } from '@/types'
+import { PrintSettings, PAGE_SIZES, KDP_MARGINS, DEFAULT_TYPOGRAPHY } from '@/types'
 
 interface SettingsPanelProps {
   settings: PrintSettings
@@ -9,6 +9,16 @@ interface SettingsPanelProps {
   isCollapsed: boolean
   onToggleCollapse: () => void
 }
+
+const FONT_OPTIONS = [
+  { value: 'Georgia, serif', label: 'Georgia (Serif)' },
+  { value: '"Times New Roman", Times, serif', label: 'Times New Roman' },
+  { value: 'Garamond, serif', label: 'Garamond' },
+  { value: '"Palatino Linotype", Palatino, serif', label: 'Palatino' },
+  { value: 'Inter, sans-serif', label: 'Inter (Sans)' },
+  { value: 'system-ui, sans-serif', label: 'System UI' },
+  { value: '"Helvetica Neue", Helvetica, sans-serif', label: 'Helvetica' },
+]
 
 export default function SettingsPanel({
   settings,
@@ -38,6 +48,19 @@ export default function SettingsPanel({
 
   const applyKDPPreset = () => {
     onSettingsChange({ ...settings, margins: KDP_MARGINS })
+  }
+
+  // Get typography with defaults - merge to handle missing properties from older saved projects
+  const typography = { ...DEFAULT_TYPOGRAPHY, ...settings.typography }
+
+  const handleTypographyChange = <K extends keyof typeof DEFAULT_TYPOGRAPHY>(
+    key: K,
+    value: typeof DEFAULT_TYPOGRAPHY[K]
+  ) => {
+    onSettingsChange({
+      ...settings,
+      typography: { ...typography, [key]: value },
+    })
   }
 
   if (isCollapsed) {
@@ -71,17 +94,41 @@ export default function SettingsPanel({
         </button>
       </div>
 
-      {/* Page Size */}
+      {/* Page Size - KDP Trim Sizes */}
       <div>
-        <label>Page Size</label>
+        <label>Page Size (KDP Trim)</label>
         <select
           value={settings.pageSize}
-          onChange={(e) => handlePageSizeChange(e.target.value as PrintSettings['pageSize'])}
+          onChange={(e) => handlePageSizeChange(e.target.value)}
+          className="text-sm"
         >
-          <option value="6x9">6" x 9" (Trade)</option>
-          <option value="5.5x8.5">5.5" x 8.5" (Digest)</option>
-          <option value="A5">A5 (148 x 210 mm)</option>
-          <option value="custom">Custom</option>
+          <optgroup label="Popular Sizes">
+            {Object.entries(PAGE_SIZES)
+              .filter(([key]) => ['5x8', '5.5x8.5', '6x9'].includes(key))
+              .map(([key, size]) => (
+                <option key={key} value={key}>{size.label}</option>
+              ))
+            }
+          </optgroup>
+          <optgroup label="Other KDP Sizes">
+            {Object.entries(PAGE_SIZES)
+              .filter(([key]) => !['5x8', '5.5x8.5', '6x9', 'A5', 'A4'].includes(key))
+              .map(([key, size]) => (
+                <option key={key} value={key}>{size.label}</option>
+              ))
+            }
+          </optgroup>
+          <optgroup label="International">
+            {Object.entries(PAGE_SIZES)
+              .filter(([key]) => ['A5', 'A4'].includes(key))
+              .map(([key, size]) => (
+                <option key={key} value={key}>{size.label}</option>
+              ))
+            }
+          </optgroup>
+          <optgroup label="Custom">
+            <option value="custom">Custom Size...</option>
+          </optgroup>
         </select>
       </div>
 
@@ -172,21 +219,137 @@ export default function SettingsPanel({
         </div>
       </div>
 
-      {/* Font Size */}
-      <div>
-        <label>Base Font Size: {settings.baseFontSize}pt</label>
-        <input
-          type="range"
-          min="10"
-          max="14"
-          step="1"
-          value={settings.baseFontSize}
-          onChange={(e) => handleFontSizeChange(parseInt(e.target.value))}
-          className="w-full"
-        />
-        <div className="flex justify-between text-xs text-gray-400">
-          <span>10pt</span>
-          <span>14pt</span>
+      {/* Typography Section */}
+      <div className="border-t pt-4">
+        <h3 className="text-sm font-semibold text-gray-700 mb-3">Typography</h3>
+
+        {/* Main Text */}
+        <div className="mb-3">
+          <label className="text-xs text-gray-500 mb-1 block">Main Text</label>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="text-xs text-gray-400">Font</label>
+              <select
+                value={typography.mainFont}
+                onChange={(e) => handleTypographyChange('mainFont', e.target.value)}
+                className="w-full text-xs"
+              >
+                {FONT_OPTIONS.map((font) => (
+                  <option key={font.value} value={font.value}>
+                    {font.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">Size (pt)</label>
+              <input
+                type="number"
+                step="0.5"
+                value={typography.mainFontSize}
+                onChange={(e) => handleTypographyChange('mainFontSize', parseFloat(e.target.value) || 12)}
+                className="w-full text-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Gloss Text */}
+        <div className="mb-3">
+          <label className="text-xs text-gray-500 mb-1 block">Gloss (Translation)</label>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="text-xs text-gray-400">Font</label>
+              <select
+                value={typography.glossFont}
+                onChange={(e) => handleTypographyChange('glossFont', e.target.value)}
+                className="w-full text-xs"
+              >
+                {FONT_OPTIONS.map((font) => (
+                  <option key={font.value} value={font.value}>
+                    {font.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">Size (pt)</label>
+              <input
+                type="number"
+                step="0.5"
+                value={typography.glossFontSize}
+                onChange={(e) => handleTypographyChange('glossFontSize', parseFloat(e.target.value) || 5)}
+                className="w-full text-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Verse Number Settings */}
+        <div className="mb-3">
+          <label className="text-xs text-gray-500 mb-1 block">Verse Number</label>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="text-xs text-gray-400">Size (pt)</label>
+              <input
+                type="number"
+                step="0.5"
+                value={typography.verseNumSize}
+                onChange={(e) => handleTypographyChange('verseNumSize', parseFloat(e.target.value) || 8)}
+                className="w-full text-sm"
+              />
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">Color</label>
+              <div className="flex items-center gap-1">
+                <input
+                  type="color"
+                  value={typography.verseNumColor}
+                  onChange={(e) => handleTypographyChange('verseNumColor', e.target.value)}
+                  className="w-6 h-6 rounded cursor-pointer flex-shrink-0"
+                />
+                <input
+                  type="text"
+                  value={typography.verseNumColor}
+                  onChange={(e) => handleTypographyChange('verseNumColor', e.target.value)}
+                  className="flex-1 text-xs"
+                  placeholder="#6b7280"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">Y Offset (pt)</label>
+              <input
+                type="number"
+                step="0.5"
+                value={typography.verseNumOffset}
+                onChange={(e) => handleTypographyChange('verseNumOffset', parseFloat(e.target.value) || 0)}
+                className="w-full text-sm"
+              />
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">X Offset (pt)</label>
+              <input
+                type="number"
+                step="0.5"
+                value={typography.verseNumOffsetX}
+                onChange={(e) => handleTypographyChange('verseNumOffsetX', parseFloat(e.target.value) || 0)}
+                className="w-full text-sm"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Line Height */}
+        <div className="mb-3">
+          <label className="text-xs text-gray-500 mb-1 block">Line Height</label>
+          <input
+            type="number"
+            step="0.1"
+            value={typography.lineHeight}
+            onChange={(e) => handleTypographyChange('lineHeight', parseFloat(e.target.value) || 2.4)}
+            className="w-full text-sm"
+          />
         </div>
       </div>
 

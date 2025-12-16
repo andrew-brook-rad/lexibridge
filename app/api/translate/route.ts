@@ -12,14 +12,11 @@ Your task is to process German biblical text and produce a morphologically-analy
 
 RULES:
 1. Respect Verse Numbers: Return them as distinct objects with type "verse_num" and value being the number string.
-2. Morphology: Split complex German compound words into roots for line-breaking.
-   - Example: "Handschuh" -> parts: [{text: "Hand", gloss: "HAND"}, {text: "schuh", gloss: "SHOE"}]
-   - Example: "Unterschied" -> parts: [{text: "Unter", gloss: "UNDER"}, {text: "schied", gloss: "DIFFERENCE"}]
-   - Example: "Finsternis" -> parts: [{text: "Finster", gloss: "DARK"}, {text: "nis", gloss: "NESS"}]
-   - Example for ge- prefix: "geschah" -> parts: [{text: "ge", gloss: "PAST"}, {text: "schah", gloss: "HAPPENED"}]
-   - Example for three-part compound: "Unabhängigkeit" -> parts: [{text: "Un", gloss: "UN"}, {text: "abhängig", gloss: "DEPENDENT"}, {text: "keit", gloss: "NESS"}]
-   - Simple words should NOT be split, just have a single part.
-3. Gloss: Provide literal UPPERCASE English translations for each part.
+2. Morphology: Do NOT split words. Treat every word as a single unit.
+   - Example: "Handschuh" -> parts: [{text: "Handschuh", gloss: "glove"}]
+   - Example: "Unterschied" -> parts: [{text: "Unterschied", gloss: "difference"}]
+   - Always provide a single part for the word.
+3. Gloss: Provide literal lowercase English translations for the full word.
 4. Punctuation: Keep punctuation as separate tokens with type "punctuation".
 5. Paragraphs:
    - The input text may contain [PARAGRAPH_BREAK] markers indicating where paragraph breaks should occur.

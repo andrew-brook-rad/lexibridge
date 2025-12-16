@@ -24,7 +24,7 @@
   --font-size-title: 24pt;
 
   /* Colors */
-  --verse-color: #dc2626;
+  --verse-color: #6b7280; /* Muted gray for professional look */
   --text-color: #1f2937;
   --bg-color: #ffffff;
 }
@@ -134,13 +134,15 @@ ruby rt, ruby .gloss-text {
   text-overflow: ellipsis;
 }
 
-/* Verse numbers */
+/* Verse numbers - superscript, muted, non-intrusive */
 .verse-number {
   font-size: var(--font-size-verse);
   color: var(--verse-color);
   vertical-align: super;
-  font-weight: bold;
-  margin-right: 2px;
+  font-weight: 600;
+  margin-right: 0.1em;
+  margin-left: 0.05em;
+  font-family: var(--font-gloss, system-ui, sans-serif);
 }
 
 /* Chapter header */

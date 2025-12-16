@@ -136,10 +136,10 @@ export const DEFAULT_TYPOGRAPHY = {
   mainFontSize: 10,
   glossFont: 'Inter, sans-serif',
   glossFontSize: 5,
-  verseNumSize: 5,
-  verseNumColor: '#000000',
-  verseNumOffset: -1, // pt units (negative = up, positive = down)
-  verseNumOffsetX: 2, // pt units (negative = left, positive = right)
+  verseNumSize: 6,
+  verseNumColor: '#6b7280', // Muted gray-500 for non-intrusive verse numbers
+  verseNumOffset: -2, // pt units (negative = up, positive = down) - superscript position
+  verseNumOffsetX: 1, // pt units (negative = left, positive = right)
   lineHeight: 1.8,
 }
 

@@ -87,6 +87,7 @@ export function generatePDF(options: PDFRenderOptions): jsPDF {
     // Render title page (page 1, recto)
     renderTitlePage(pdf, {
         title: meta.title || 'Untitled',
+        subtitle: meta.language ? `${meta.language} Interlinear Edition` : 'Interlinear Edition',
         pageWidth: pageWidthMM,
         pageHeight: pageHeightMM,
         marginInner,
@@ -109,13 +110,15 @@ export function generatePDF(options: PDFRenderOptions): jsPDF {
         let currentY = marginTop
 
         // Render each line
-        page.lines.forEach((line) => {
+        page.lines.forEach((line, lineIndex) => {
+            const isLastLine = lineIndex === page.lines.length - 1
             currentY = renderLine(pdf, line, {
                 x: marginLeft,
                 y: currentY,
                 contentWidth,
                 typography,
                 lineHeightMM,
+                forceJustify: !isLastLine, // Don't justify the last line of a page
             })
         })
 
@@ -139,6 +142,7 @@ export function generatePDF(options: PDFRenderOptions): jsPDF {
 
 interface TitlePageOptions {
     title: string
+    subtitle?: string
     pageWidth: number
     pageHeight: number
     marginInner: number
@@ -148,28 +152,53 @@ interface TitlePageOptions {
 }
 
 function renderTitlePage(pdf: jsPDF, options: TitlePageOptions) {
-    const { title, pageWidth, pageHeight, typography } = options
+    const { title, subtitle, pageWidth, pageHeight, typography, marginTop } = options
 
     // Map fonts
     const mainPdfFont = mapCSSFontToPDF(typography.mainFont)
     const glossPdfFont = mapCSSFontToPDF(typography.glossFont)
 
-    // Center title on page
-    const titleFontSize = typography.mainFontSize * 3
+    const centerX = pageWidth / 2
+
+    // Decorative line at top third
+    const lineY = pageHeight * 0.25
+    const lineWidth = pageWidth * 0.3
+    pdf.setDrawColor(180, 180, 180)
+    pdf.setLineWidth(0.3)
+    pdf.line(centerX - lineWidth/2, lineY, centerX + lineWidth/2, lineY)
+
+    // Main title - elegant and large
+    const titleFontSize = typography.mainFontSize * 3.5
     pdf.setFontSize(titleFontSize)
-    pdf.setTextColor(0, 0, 0)
+    pdf.setTextColor(31, 41, 55) // gray-800
     pdf.setFont(mainPdfFont, 'bold')
 
-    const centerX = pageWidth / 2
-    const centerY = pageHeight / 3
+    const titleY = pageHeight * 0.35
 
-    pdf.text(title, centerX, centerY, { align: 'center' })
+    // Handle long titles by splitting
+    const titleLines = pdf.splitTextToSize(title.toUpperCase(), pageWidth * 0.7)
+    pdf.text(titleLines, centerX, titleY, { align: 'center' })
+
+    // Decorative divider below title
+    const dividerY = titleY + (titleLines.length * titleFontSize * PT_TO_MM) + 15
+    pdf.setDrawColor(180, 180, 180)
+    pdf.setLineWidth(0.2)
+    // Small ornamental line
+    pdf.line(centerX - 10, dividerY, centerX + 10, dividerY)
 
     // Subtitle
-    pdf.setFontSize(typography.mainFontSize)
-    pdf.setFont(glossPdfFont, 'normal')
-    pdf.setTextColor(107, 114, 128) // gray-500
-    pdf.text('Interlinear Edition', centerX, centerY + 30, { align: 'center' })
+    if (subtitle) {
+        pdf.setFontSize(typography.mainFontSize * 1.2)
+        pdf.setFont(glossPdfFont, 'italic')
+        pdf.setTextColor(107, 114, 128) // gray-500
+        pdf.text(subtitle, centerX, dividerY + 15, { align: 'center' })
+    }
+
+    // Bottom decorative line
+    const bottomLineY = pageHeight * 0.75
+    pdf.setDrawColor(180, 180, 180)
+    pdf.setLineWidth(0.3)
+    pdf.line(centerX - lineWidth/2, bottomLineY, centerX + lineWidth/2, bottomLineY)
 }
 
 interface RenderLineOptions {
@@ -178,6 +207,7 @@ interface RenderLineOptions {
     contentWidth: number
     typography: typeof DEFAULT_TYPOGRAPHY
     lineHeightMM: number
+    forceJustify?: boolean // If true, always justify (unless last line)
 }
 
 interface MeasuredToken {
@@ -188,7 +218,7 @@ interface MeasuredToken {
 }
 
 function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number {
-    const { x: startX, y, contentWidth, typography, lineHeightMM } = options
+    const { x: startX, y, contentWidth, typography, lineHeightMM, forceJustify = true } = options
 
     // Map CSS fonts to PDF fonts
     const mainPdfFont = mapCSSFontToPDF(typography.mainFont)
@@ -261,9 +291,11 @@ function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number 
     const availableSpace = contentWidth - totalContentWidth
     const spacePerGap = gapCount > 0 ? availableSpace / gapCount : 0
 
-    // Only justify if we have enough gaps and not too much space
-    // (Don't justify last lines or lines with very few words)
-    const shouldJustify = gapCount > 1 && spacePerGap > 0 && spacePerGap < 15
+    // Justify if:
+    // 1. forceJustify is true (not last line)
+    // 2. We have at least 2 expandable gaps
+    // 3. Space per gap is positive and not excessively large (max 20mm per gap)
+    const shouldJustify = forceJustify && gapCount >= 2 && spacePerGap > 0 && spacePerGap < 20
 
     // Second pass: render tokens with justification
     let currentX = startX
@@ -282,12 +314,16 @@ function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number 
             pdf.text(token.value, currentX + offsetX, y + offsetY, { baseline: 'top' })
             currentX += width
         } else if (token.type === 'chapter_num') {
-            pdf.setFontSize(typography.mainFontSize * 1.5)
+            // Render chapter number as a large decorative drop-cap style numeral
+            const chapterFontSize = typography.mainFontSize * 2.5
+            pdf.setFontSize(chapterFontSize)
             pdf.setFont(mainPdfFont, 'bold')
-            pdf.setTextColor(31, 41, 55)
+            pdf.setTextColor(51, 51, 51) // Dark gray
 
-            pdf.text(String(token.value), currentX, y, { baseline: 'top' })
-            currentX += width
+            // Position chapter number slightly raised
+            const chapterY = y - 1
+            pdf.text(String(token.value), currentX, chapterY, { baseline: 'top' })
+            currentX += width + 2 // Add extra padding after chapter number
 
             // Add justification space if allowed
             if (shouldJustify && canHaveSpaceAfter) {

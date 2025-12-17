@@ -1,128 +1,41 @@
 [
   {
     "category": "rendering",
-    "description": "Text is perfectly justified edge-to-edge (left and right margins aligned)",
+    "description": "Last line of each page maintains minimum word spacing (not squeezed together)",
     "steps": [
-      "Step 1: Load example German or Afrikaans text",
-      "Step 2: Render to PDF preview",
-      "Step 3: Verify text fills from left margin to right margin",
-      "Step 4: Check there is no ragged right edge",
-      "Step 5: Verify consistent spacing between words",
-      "Step 6: Export to PDF and verify justification is maintained"
+      "Step 1: Load example German text",
+      "Step 2: Export to PDF",
+      "Step 3: Check the last line on each page",
+      "Step 4: Verify words have minimum spacing between them (not compressed)",
+      "Step 5: Verify the line doesn't have words touching or nearly touching",
+      "Step 6: Compare with other lines - spacing should be consistent or left-aligned"
     ],
     "passes": true
   },
   {
     "category": "rendering",
-    "description": "Long compound words hyphenate properly at line end",
+    "description": "Justified text respects minimum and maximum word spacing constraints",
     "steps": [
-      "Step 1: Load text with long German compound words",
-      "Step 2: Set narrow page width to force line breaks",
-      "Step 3: Verify compound words break with hyphen at line end",
-      "Step 4: Verify the continuation appears on the next line",
-      "Step 5: Check the gloss/translation follows the word parts correctly"
-    ],
-    "passes": true
-  },
-  {
-    "category": "rendering",
-    "description": "Ruby/gloss text can wrap to next line without creating gaps",
-    "steps": [
-      "Step 1: Load text with words that have long glosses",
-      "Step 2: Verify glosses don't create horizontal gaps in the text",
-      "Step 3: Check that interlinear elements flow naturally",
-      "Step 4: Verify the overall text block remains justified"
-    ],
-    "passes": true
-  },
-  {
-    "category": "style",
-    "description": "Book title page has elegant professional typography",
-    "steps": [
-      "Step 1: Create/load a book with title",
-      "Step 2: Verify title page uses large elegant serif font",
-      "Step 3: Check title is centered on its own page",
-      "Step 4: Verify subtitle/language info appears below title",
-      "Step 5: Check for decorative elements (lines, flourishes) if applicable",
-      "Step 6: Export to PDF and verify title page looks professional"
-    ],
-    "passes": true
-  },
-  {
-    "category": "style",
-    "description": "Chapter headers have professional styling with proper spacing",
-    "steps": [
-      "Step 1: Load text with multiple chapters",
-      "Step 2: Verify chapter headers use elegant typography",
-      "Step 3: Check for drop cap or decorative first letter option",
-      "Step 4: Verify generous whitespace above and below chapter headers",
-      "Step 5: Check chapters start on new pages (recto/odd pages preferred)",
-      "Step 6: Export to PDF and verify chapter styling"
-    ],
-    "passes": true
-  },
-  {
-    "category": "style",
-    "description": "Verse numbers are styled correctly (superscript, muted, non-intrusive)",
-    "steps": [
-      "Step 1: Load biblical text with verse numbers",
-      "Step 2: Verify verse numbers appear as superscript",
-      "Step 3: Check verse numbers use smaller font size",
-      "Step 4: Verify verse numbers don't break text flow or justification",
-      "Step 5: Check verse numbers are visually distinct but not distracting"
+      "Step 1: Load text that fills multiple pages",
+      "Step 2: Verify full lines have even word spacing",
+      "Step 3: Verify no line has words compressed below minimum spacing",
+      "Step 4: Verify no line has excessive gaps between words",
+      "Step 5: Last lines of paragraphs should be left-aligned (not force-justified)",
+      "Step 6: Export to PDF and verify spacing is maintained"
     ],
     "passes": true
   },
   {
     "category": "functional",
-    "description": "Edit mode updates underlying JSON and re-renders preview",
+    "description": "User can adjust minimum and maximum word spacing in Print Settings",
     "steps": [
-      "Step 1: Load text and render preview",
-      "Step 2: Click on a word to enter edit mode",
-      "Step 3: Change the gloss/translation text",
-      "Step 4: Save the edit",
-      "Step 5: Verify the preview updates with the new text",
-      "Step 6: Export to PDF and verify the edit appears in output",
-      "Step 7: Verify the JSON data structure was updated"
-    ],
-    "passes": true
-  },
-  {
-    "category": "rendering",
-    "description": "PDF margins are correct for KDP book binding",
-    "steps": [
-      "Step 1: Set page size to standard KDP trim (6x9 inches)",
-      "Step 2: Verify inner/gutter margin is larger than outer margin",
-      "Step 3: Check left pages have gutter on right side",
-      "Step 4: Check right pages have gutter on left side",
-      "Step 5: Export to PDF and measure margins match KDP requirements"
-    ],
-    "passes": true
-  },
-  {
-    "category": "rendering",
-    "description": "Page numbers appear correctly in footer (alternating position)",
-    "steps": [
-      "Step 1: Load enough text to generate multiple pages",
-      "Step 2: Export to PDF",
-      "Step 3: Verify odd pages have page number on right",
-      "Step 4: Verify even pages have page number on left",
-      "Step 5: Check page numbers use appropriate font and size"
-    ],
-    "passes": true
-  },
-  {
-    "category": "rendering",
-    "description": "Overall PDF output looks like a professionally typeset book",
-    "steps": [
-      "Step 1: Load complete example text (German or Afrikaans)",
-      "Step 2: Export to PDF",
-      "Step 3: Open PDF and review as if buying from Amazon",
-      "Step 4: Check text justification is perfect throughout",
-      "Step 5: Check typography is elegant and consistent",
-      "Step 6: Check margins and spacing are professional",
-      "Step 7: Check chapter/verse styling is polished",
-      "Step 8: Verify PDF is ready to upload to Amazon KDP without modifications"
+      "Step 1: Open Print Settings panel",
+      "Step 2: Locate word spacing controls (min space, max space)",
+      "Step 3: Adjust minimum word spacing value",
+      "Step 4: Verify preview updates with new spacing",
+      "Step 5: Adjust maximum word spacing value",
+      "Step 6: Verify preview reflects the constraint",
+      "Step 7: Export to PDF and verify spacing settings are applied"
     ],
     "passes": true
   }

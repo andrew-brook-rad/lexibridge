@@ -77,6 +77,8 @@ export interface PrintSettings {
     verseNumOffset: number // Vertical offset in pt units (negative = up)
     verseNumOffsetX: number // Horizontal offset in pt units (negative = left)
     lineHeight: number
+    minWordSpace: number // Minimum space between words in mm
+    maxWordSpace: number // Maximum space between words in mm
   }
 }
 
@@ -141,6 +143,8 @@ export const DEFAULT_TYPOGRAPHY = {
   verseNumOffset: -2, // pt units (negative = up, positive = down) - superscript position
   verseNumOffsetX: 1, // pt units (negative = left, positive = right)
   lineHeight: 1.8,
+  minWordSpace: 1.5, // mm - minimum space between words (~4pt)
+  maxWordSpace: 8.0, // mm - maximum space between words (~22pt)
 }
 
 // Default project state

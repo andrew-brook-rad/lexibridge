@@ -351,6 +351,37 @@ export default function SettingsPanel({
             className="w-full text-sm"
           />
         </div>
+
+        {/* Word Spacing */}
+        <div className="mb-3">
+          <label className="text-xs text-gray-500 mb-1 block">Word Spacing (mm)</label>
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="text-xs text-gray-400">Min</label>
+              <input
+                type="number"
+                step="0.25"
+                min="0.5"
+                max="5"
+                value={typography.minWordSpace ?? 1.5}
+                onChange={(e) => handleTypographyChange('minWordSpace', parseFloat(e.target.value) || 1.5)}
+                className="w-full text-sm"
+              />
+            </div>
+            <div>
+              <label className="text-xs text-gray-400">Max</label>
+              <input
+                type="number"
+                step="0.5"
+                min="2"
+                max="15"
+                value={typography.maxWordSpace ?? 8.0}
+                onChange={(e) => handleTypographyChange('maxWordSpace', parseFloat(e.target.value) || 8.0)}
+                className="w-full text-sm"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Reflow Button */}

@@ -7,6 +7,10 @@ const PT_TO_MM = 0.352778
 // Inches to mm conversion
 const INCH_TO_MM = 25.4
 
+// Default word spacing in mm (can be overridden by typography settings)
+const DEFAULT_MIN_WORD_SPACE_MM = 1.5  // ~4pt minimum space between words
+const DEFAULT_MAX_WORD_SPACE_MM = 8.0  // ~22pt maximum space between words
+
 // Map CSS font families to jsPDF built-in fonts
 // jsPDF only supports: helvetica, times, courier (built-in)
 type PDFFontFamily = 'helvetica' | 'times' | 'courier'
@@ -289,13 +293,36 @@ function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number 
     // Only count tokens that can actually have space after them
     const gapCount = measuredTokens.filter(t => t.canHaveSpaceAfter).length
     const availableSpace = contentWidth - totalContentWidth
-    const spacePerGap = gapCount > 0 ? availableSpace / gapCount : 0
+    const rawSpacePerGap = gapCount > 0 ? availableSpace / gapCount : 0
 
-    // Justify if:
-    // 1. forceJustify is true (not last line)
-    // 2. We have at least 2 expandable gaps
-    // 3. Space per gap is positive and not excessively large (max 20mm per gap)
-    const shouldJustify = forceJustify && gapCount >= 2 && spacePerGap > 0 && spacePerGap < 20
+    // Get word spacing constraints from typography settings or use defaults
+    const minWordSpace = typography.minWordSpace ?? DEFAULT_MIN_WORD_SPACE_MM
+    const maxWordSpace = typography.maxWordSpace ?? DEFAULT_MAX_WORD_SPACE_MM
+
+    // Determine spacing strategy:
+    // - If justifying and space is within reasonable bounds: use calculated spacing
+    // - If space per gap would be < minimum: use minimum spacing (left-align remainder)
+    // - If space per gap would be > maximum: use maximum spacing (left-align remainder)
+    // - If not justifying (last line): use minimum spacing
+
+    let spacePerGap = minWordSpace  // Default to minimum
+    let shouldJustify = false
+
+    if (forceJustify && gapCount >= 1) {
+        if (rawSpacePerGap >= minWordSpace && rawSpacePerGap <= maxWordSpace) {
+            // Perfect - use calculated spacing for full justification
+            spacePerGap = rawSpacePerGap
+            shouldJustify = true
+        } else if (rawSpacePerGap > maxWordSpace) {
+            // Too much space - cap at maximum
+            spacePerGap = maxWordSpace
+            shouldJustify = false  // Will be left-aligned with capped spacing
+        } else {
+            // Too little space (or negative) - use minimum spacing
+            spacePerGap = minWordSpace
+            shouldJustify = false  // Will be left-aligned with minimum spacing
+        }
+    }
 
     // Second pass: render tokens with justification
     let currentX = startX
@@ -325,8 +352,8 @@ function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number 
             pdf.text(String(token.value), currentX, chapterY, { baseline: 'top' })
             currentX += width + 2 // Add extra padding after chapter number
 
-            // Add justification space if allowed
-            if (shouldJustify && canHaveSpaceAfter) {
+            // Add spacing after chapter number (always add spacing for readability)
+            if (canHaveSpaceAfter) {
                 currentX += spacePerGap
             }
         } else if (token.type === 'punctuation') {
@@ -376,8 +403,8 @@ function renderLine(pdf: jsPDF, line: Line, options: RenderLineOptions): number 
                 }
             }
 
-            // Add justification space after this word if allowed
-            if (shouldJustify && canHaveSpaceAfter) {
+            // Add spacing after this word (always add spacing for readability)
+            if (canHaveSpaceAfter) {
                 currentX += spacePerGap
             }
         }

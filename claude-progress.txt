@@ -13,8 +13,8 @@ Correcting German-to-English interlinear Bible translations for book publication
 - Revelation (rev)
 
 ## CURRENT STATUS
-1/7 books corrected in reduced scope
-Matthew (mat) - Next book to correct
+3/7 books corrected in reduced scope
+Luke (luk) - Next book to correct
 
 ## PREVIOUSLY COMPLETED (before scope reduction)
 19 books were corrected before reducing scope:
@@ -23,6 +23,118 @@ Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth,
 Ezra, Nehemiah, Esther, Job, Psalms
 
 ## SESSION LOG
+
+---
+### SESSION 25 - MARK CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Mark (mrk.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names (~10 fixes):
+   - Barabbas|BARABBAS, Alexander|ALEXANDER, Arimathia|ARIMATHEA
+   - Joses|JOSES (Mary's son)
+
+2. High Priest terms (~3 fixes):
+   - Hohepriester|HIGH-PRIEST (all 3 occurrences in chapters 14)
+
+3. Passion narrative vocabulary (~30+ fixes):
+   - wärmte|WARMED (Peter warming himself)
+   - brächten|BRING (to bring to death)
+   - stimmte|AGREED (testimonies)
+   - bedürfen|NEED (need witnesses)
+   - Hof|COURT (courtyard)
+   - kleinen|LITTLE, lautet|SOUNDS
+   - Antwortest|ANSWEREST
+   - pflegte|WAS-WONT (custom at feast)
+   - loszugeben|RELEASE, losgebe|RELEASE, losgäbe|RELEASE
+   - begehrten|DESIRED
+   - reizten|STIRRED-UP (chief priests stirring up)
+   - los|FREE, gekreuzigt|CRUCIFIED
+   - Richthaus|PRAETORIUM
+   - dornene|THORNY
+   - verspottet|MOCKED
+   - zwangen|COMPELLED
+   - teilten|DIVIDED, bekäme|GET
+   - "Er|"HE (quote mark fix)
+   - Übeltäter|TRANSGRESSORS
+   - lästerten|BLASPHEMED
+   - Pfui|AH (exclamation)
+   - selber|THYSELF, steig|COME
+   - steckte|PUT, Halt|LET-ALONE
+   - Vorsabbat|DAY-BEFORE-THE-SABBATH
+   - wagte|DARED
+   - schauten|BEHELD, hingelegt|LAID
+
+4. Resurrection narrative (~15 fixes):
+   - Spezerei|SPICES
+   - wälzt|ROLL, abgewälzt|ROLLED-AWAY
+   - langes|LONG
+   - auferstanden|RISEN, ausgetrieben|CAST-OUT
+   - verkündigte|TOLD
+   - glaubten|BELIEVED, geglaubt|BELIEVED, glaubt|BELIEVES
+   - verdammt|DAMNED
+   - vertreiben|TAKE-UP
+   - wirkte|WORKED, bekräftigte|CONFIRMED
+
+5. One chapter 12 fix:
+   - achtest|REGARDEST (regardest not the person of men)
+
+**Total Issues Fixed:** ~50+ bracketed word corrections
+**Verification:** grep confirms 0 remaining word|[bracket] patterns in mrk.tsv
+**feature_list.json:** Updated Mark entry to "passes": true
+**Note:** Python consolidation script could not be run (command not allowed)
+
+---
+### SESSION 24 - MATTHEW CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Matthew (mat.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names (~50+ fixes):
+   - Ram, Amminadab, Uriah, Abia, Asa, Ahaz, Amon, Abiud, Azor, Achim
+   - Bethphage, Bethany, Arimathaea, Barabbas, Barachias
+   - Herod (Herodes), Isaiah (Jesaja), Jonah (Jona), Moses (Mose)
+   - Magdala (Magdalas), Caiaphas (Kaiphas)
+
+2. Quote word brackets (~20 fixes):
+   - "Der|["Der] → "Der|"THE
+   - "Du|["Du] → "Du|"YOU
+   - "Sie|["Sie] → "Sie|"THEY
+   - "Wer|["Wer] → "Wer|"WHOEVER
+   - "|["] → | (closing quotes)
+
+3. German vocabulary glosses (~300+ fixes):
+   - Religious: Täufer→Baptist, Taufe→baptism, Heiligen→Holy, Hohenpriester→chief-priests
+   - Temple: Zinne→pinnacle, Schaubrote→shewbread, Sabbat→sabbath
+   - Nature: Heuschrecken→locusts, Spreu→chaff, Weizen→wheat, Feigenbaum→fig-tree
+   - Legal: Lästerung→blasphemy, Gotteslästerung→blasphemy, verdammt→condemned
+   - Parables: Kaufmann→merchant, Perle→pearl, Netz→net, Scheuer→barn, Mehl→meal
+   - Passion narrative: gekreuzigt→crucified, Verräter→betrayer, Dornenkrone→crown
+   - Judgment: Heulen→wailing, Zähneklappen→gnashing, höllische→hell
+
+4. Verbs (~150+ fixes):
+   - taufen/getauft→baptize/baptized, gefastet→fasted, hungerte→hungered
+   - verließ/verließen→left, folgten→followed, auferstanden/auferstehen→risen/rise-again
+   - verkürzt→shortened, verführt→deceived, zerbrochen→thrown-down
+   - flohen→fled, gegriffen→seized, verspottet→mocked, gekreuzigt→crucified
+
+5. Kingdom vocabulary:
+   - Himmelreich→kingdom-of-heaven, Himmelreichs→kingdom-of-heaven
+   - Himmelsreichs→kingdom-of-heaven, Königreich→kingdom
+
+6. Special terms:
+   - Menschensohnes→Son-of-Man, Hohepriester→high-priest
+   - Blutgeld→blood-money, Blutacker→field-of-blood, Töpfersacker→potter's-field
+   - Richtstuhl→judgment-seat, Lobgesang→hymn
+
+**Total Issues Fixed:** ~400+ bracketed word corrections
+**Verification:** grep confirms 0 remaining word|[bracket] patterns in mat.tsv
+**feature_list.json:** Updated Matthew entry to "passes": true
+**Note:** Python consolidation script could not be run (command not allowed)
 
 ---
 ### SESSION 23 - PROVERBS CORRECTIONS COMPLETE

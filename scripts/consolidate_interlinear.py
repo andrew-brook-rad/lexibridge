@@ -1,137 +1,120 @@
 #!/usr/bin/env python3
 """
-Consolidate Interlinear TSV Files into JSON
+Consolidate Interlinear TSV Files into LexiBridge JSON Format
 
-Reads all TSV files from the interlinear directory and merges them into
-a single JSON file with the following structure:
-
-{
-  "chapters": [
-    {
-      "number": 1,
-      "verses": [
-        {
-          "number": 1,
-          "words": [
-            {"de": "Am", "en": "IN-THE"},
-            {"de": "Anfang", "en": "BEGINNING"},
-            ...
-          ]
-        }
-      ]
-    }
-  ]
-}
+Reads TSV files (format: "1:1\tAm|in-the Anfang|beginning ...") and outputs
+JSON following docs/BIBLE_JSON_FORMAT.md
 """
 
 import os
 import json
-import glob
 import re
 
-
 def parse_tsv_file(filepath):
-    """Parse a single TSV file and return verses."""
+    """Parse TSV file, return list of (chapter, verse, words)."""
     verses = []
-
     with open(filepath, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
             if not line:
                 continue
-
-            # Split by tab
             parts = line.split('\t')
             if len(parts) != 2:
                 continue
-
             ref, word_pairs = parts
-
-            # Parse reference (chapter:verse)
-            ref_match = re.match(r'(\d+):(\d+)', ref)
-            if not ref_match:
+            match = re.match(r'(\d+):(\d+)', ref)
+            if not match:
                 continue
-
-            chapter = int(ref_match.group(1))
-            verse_num = int(ref_match.group(2))
-
-            # Parse word pairs
             words = []
             for pair in word_pairs.split(' '):
                 if '|' in pair:
                     de, en = pair.split('|', 1)
-                    words.append({'de': de, 'en': en})
-
-            verses.append({
-                'chapter': chapter,
-                'verse': verse_num,
-                'words': words
-            })
-
+                    words.append((de, en))
+            verses.append((int(match.group(1)), int(match.group(2)), words))
     return verses
 
+def build_chapter_tokens(verses):
+    """Convert verses to token array (one paragraph per chapter)."""
+    tokens = []
+    for verse_num, words in verses:
+        tokens.append({"type": "verse_num", "value": str(verse_num)})
+        for de, en in words:
+            tokens.append({
+                "type": "word",
+                "original_full": de,
+                "parts": [{"text": de, "gloss": en.upper()}]
+            })
+    return tokens
 
-def consolidate_files(input_dir, output_file):
-    """Consolidate all TSV files into a single JSON file."""
+DEFAULT_PRINT_SETTINGS = {
+    "pageSize": "6x9",
+    "margins": {"top": 0.75, "bottom": 0.75, "inner": 0.875, "outer": 0.5},
+    "baseFontSize": 12,
+    "typography": {
+        "mainFont": "Georgia, serif",
+        "mainFontSize": 10,
+        "glossFont": "Inter, sans-serif",
+        "glossFontSize": 5,
+        "verseNumSize": 6,
+        "verseNumColor": "#6b7280",
+        "verseNumOffset": -2,
+        "verseNumOffsetX": 1,
+        "lineHeight": 1.8,
+        "minWordSpace": 1.5,
+        "maxWordSpace": 8.0
+    }
+}
 
-    # Get all TSV files
-    tsv_files = sorted(glob.glob(os.path.join(input_dir, '*.tsv')))
-
-    if not tsv_files:
-        print(f"No TSV files found in {input_dir}")
+def consolidate_file(tsv_file, output_file, title, language="DE"):
+    """Convert a single TSV file into LexiBridge JSON format."""
+    if not os.path.exists(tsv_file):
+        print(f"TSV file not found: {tsv_file}")
         return
 
-    print(f"Found {len(tsv_files)} TSV files")
+    all_verses = parse_tsv_file(tsv_file)
 
-    # Parse all files
-    all_verses = []
-    for filepath in tsv_files:
-        print(f"  Processing {os.path.basename(filepath)}...")
-        verses = parse_tsv_file(filepath)
-        all_verses.extend(verses)
-
-    print(f"Total verses: {len(all_verses)}")
-
-    # Organize by chapter
+    # Group by chapter
     chapters_dict = {}
-    for verse in all_verses:
-        chapter_num = verse['chapter']
-        if chapter_num not in chapters_dict:
-            chapters_dict[chapter_num] = {
-                'number': chapter_num,
-                'verses': []
-            }
+    for chapter, verse, words in all_verses:
+        if chapter not in chapters_dict:
+            chapters_dict[chapter] = []
+        chapters_dict[chapter].append((verse, words))
 
-        chapters_dict[chapter_num]['verses'].append({
-            'number': verse['verse'],
-            'words': verse['words']
-        })
-
-    # Sort chapters and verses
+    # Build output
     chapters = []
     for chapter_num in sorted(chapters_dict.keys()):
-        chapter = chapters_dict[chapter_num]
-        chapter['verses'] = sorted(chapter['verses'], key=lambda v: v['number'])
-        chapters.append(chapter)
+        verses = sorted(chapters_dict[chapter_num], key=lambda x: x[0])
+        tokens = build_chapter_tokens(verses)
+        chapters.append({"number": chapter_num, "paragraphs": [tokens]})
 
-    # Build output structure
     output = {
-        'chapters': chapters
+        "meta": {"title": title, "language": language},
+        "printSettings": DEFAULT_PRINT_SETTINGS,
+        "chapters": chapters
     }
 
-    # Write JSON
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"Wrote {len(chapters)} chapters to {output_file}")
 
-
 if __name__ == '__main__':
-    # Default paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_dir = os.path.dirname(script_dir)
+    input_dir = os.path.join(project_dir, 'tools', 'interlinear', 'output')
+    bibles_dir = os.path.join(project_dir, 'data', 'bibles')
 
-    input_dir = os.path.join(project_dir, 'data', 'interlinear')
-    output_file = os.path.join(project_dir, 'data', 'genesis_interlinear.json')
+    # Book configurations: (tsv_name, folder_name, title)
+    books = [
+        ('gen', 'genesis-de', 'Genesis'),
+        ('exo', 'exodus-de', 'Exodus'),
+    ]
 
-    consolidate_files(input_dir, output_file)
+    for tsv_name, folder_name, title in books:
+        tsv_file = os.path.join(input_dir, f'{tsv_name}.tsv')
+        if not os.path.exists(tsv_file):
+            continue
+        output_dir = os.path.join(bibles_dir, folder_name)
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, f'{tsv_name.lower()}.json')
+        consolidate_file(tsv_file, output_file, title)

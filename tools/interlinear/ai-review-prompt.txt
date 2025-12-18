@@ -1,0 +1,97 @@
+Review these German Bible verses that have duplicate English glosses.
+Provide corrected literal word-for-word translations.
+
+Format your response as TSV: reference<TAB>word1|gloss1 word2|gloss2 ...
+
+---
+
+1:11: "Und Gott sprach Es lasse die Erde aufgehen Gras und Kraut das sich besame und fruchtbare Bäume da ein jeglicher nach seiner Art Frucht trage und habe seinen eigenen Samen bei sich selbst auf Erden Und es geschah also"
+Current: and God spoke let bring-forth the earth sprout grass and herb that itself seeds and fruit-bearing trees where each one according-to its kind fruit bears and has its own seed in itself itself upon earth and it happened so
+
+1:12: "Und die Erde ließ aufgehen Gras und Kraut das sich besamte ein jegliches nach seiner Art und Bäume die da Frucht trugen und ihren eigenen Samen bei sich selbst hatten ein jeglicher nach seiner Art Und Gott sah daß es gut war"
+Current: and the earth brought-forth sprout grass and herb that itself seeded each one according-to its kind and trees that there fruit bore and their own seed in themselves themselves had each one according-to its kind and God saw that it good was
+
+1:16: "Und Gott machte zwei große Lichter ein großes Licht das den Tag regiere und ein kleines Licht das die Nacht regiere dazu auch Sterne"
+Current: and God made two great lights a great light that the day rules and a small light that the night rules also also stars
+
+2:5: "Und allerlei Bäume auf dem Felde waren noch nicht auf Erden und allerlei Kraut auf dem Felde war noch nicht gewachsen denn Gott der HERR hatte noch nicht regnen lassen auf Erden und es war kein Mensch der das Land baute"
+Current: and every shrub of the field was not-yet not in earth and every plant of the field had not-yet not sprouted for God the LORD had not not rain caused upon earth and there was no man to the ground work
+
+2:17: "aber von dem Baum der Erkenntnis des Guten und des Bösen sollst du nicht essen denn welches Tages du davon ißt wirst du des Todes sterben"
+Current: but from the tree of knowledge of good and of evil shall you not eat for in-the day you of-it eat will you surely die die
+
+3:1: "Und die Schlange war listiger denn alle Tiere auf dem Felde die Gott der HERR gemacht hatte und sprach zu dem Weibe Ja sollte Gott gesagt haben Ihr sollt nicht essen von den Früchten der Bäume im Garten"
+Current: now the serpent was more-cunning than any beast of the field that God the LORD made had and said to the woman indeed did God say say you shall not eat from any tree in-the garden in-the garden
+
+3:4: "Da sprach die Schlange zum Weibe Ihr werdet mitnichten des Todes sterben"
+Current: and said the serpent to-the woman you will surely not die die
+
+3:6: "Und das Weib schaute an daß von dem Baum gut zu essen wäre und daß er lieblich anzusehen und ein lustiger Baum wäre weil er klug machte und sie nahm von der Frucht und aß und gab ihrem Mann auch davon und er aß"
+Current: and the woman saw that that from the tree good to eat was and that it pleasing to-the-eyes and a desirable tree was for gaining wisdom make and she took from the fruit and ate and also-gave to-her husband with her and he ate
+
+3:7: "Da wurden ihrer beiden Augen aufgetan und sie wurden gewahr daß sie nackt waren und flochten Feigenblätter zusammen und machten sich Schürze"
+Current: then were of-them both eyes opened and they knew knew that they naked were and sewed fig-leaves together and made themselves loincloths
+
+3:12: "Da sprach Adam Das Weib das du mir zugesellt hast gab mir von von dem Baum und ich aß"
+Current: and said the-man the woman whom you with-me gave gave gave me from from the tree and I ate
+
+3:17: "Und zu Adam sprach er Dieweil du hast gehorcht der Stimme deines Weibes und hast gegessen von dem Baum davon ich dir gebot und sprach Du sollst nicht davon essen verflucht sei der Acker um deinetwillen mit Kummer sollst du dich darauf nähren dein Leben lang"
+Current: and to Adam said he because you have listened to-the voice of-your wife and have eaten from the tree from-which I you commanded and saying you shall not from-it eat cursed is the ground because-of you in toil shall you of-it eat eat your life all-the-days-of
+
+3:24: "und trieb Adam aus und lagerte vor den Garten Eden die Cherubim mit dem bloßen hauenden Schwert zu bewahren den Weg zu dem Baum des Lebens"
+Current: and drove-out the-man out and placed at-the-east-of the garden of-Eden the cherubim and a flaming sword sword to guard the way to the tree of life
+
+4:1: "Und Adam erkannte sein Weib Eva und sie ward schwanger und gebar den Kain und sprach Ich habe einen Mann gewonnen mit dem HERRN"
+Current: and the-man knew his wife Eve and she conceived conceived and bore the Cain and said I have a man gotten with the LORD
+
+4:2: "Und sie fuhr fort und gebar Abel seinen Bruder Und Abel ward ein Schäfer Kain aber ward ein Ackermann"
+Current: and she again again and bore Abel his brother and Abel was a keeper Cain but was a worker-of-the-ground
+
+4:3: "Es begab sich nach etlicher Zeit daß Kain dem HERRN Opfer brachte von den Früchten des Feldes"
+Current: and in-the-course of time time time that Cain to-the LORD offering brought of the fruit of-the ground
+
+4:4: "und Abel brachte auch von den Erstlingen seiner Herde und von ihrem Fett Und der HERR sah gnädig an Abel und sein Opfer"
+Current: and Abel also-brought also from the firstborn of-his flock and and-of their fat and the LORD had-regard for for Abel and his offering
+
+4:5: "aber Kain und sein Opfer sah er nicht gnädig an Da ergrimmte Kain sehr und seine Gebärde verstellte sich"
+Current: but Cain and his offering had-regard he not for for so was-angry Cain very and his face fell fell
+
+4:7: "Ist's nicht also Wenn du fromm bist so bist du angenehm bist du aber nicht fromm so ruht die Sünde vor der Tür und nach dir hat sie Verlangen du aber herrsche über sie"
+Current: if not well if you do-well do-well will will acceptance be do you but not do-well is crouching the sin at the door and for you is its desire you but must-rule over it
+
+4:8: "Da redete Kain mit seinem Bruder Abel Und es begab sich da sie auf dem Felde waren erhob sich Kain wider seinen Bruder Abel und schlug ihn tot"
+Current: and spoke Cain to his brother Abel and when when they were they in the field were rose-up rose-up Cain against his brother Abel and killed him killed
+
+4:11: "Und nun verflucht seist du auf der Erde die ihr Maul hat aufgetan und deines Bruders Blut von deinen Händen empfangen"
+Current: and now cursed are-you you from the ground which its mouth opened opened and your brother's blood from your hand receive
+
+4:12: "Wenn du den Acker bauen wirst soll er dir hinfort sein Vermögen nicht geben Unstet und flüchtig sollst du sein auf Erden"
+Current: when you the ground work work shall it to-you no-longer its strength no-longer yield fugitive and wanderer shall you be on earth
+
+4:17: "Und Kain erkannte sein Weib die ward schwanger und gebar den Henoch Und er baute eine Stadt die nannte er nach seines Sohnes Namen Henoch"
+Current: and Cain knew his wife she conceived conceived and bore the Enoch and he built a city it called he after his son's name Enoch
+
+4:18: "Henoch aber zeugte Irad Irad zeugte Mahujael Mahujael zeugte Methusael Methusael zeugte Lamech"
+Current: Enoch and fathered Irad Irad fathered Mehujael Mehujael fathered Methushael Methushael fathered Lamech
+
+4:24: "Kain soll siebenmal gerächt werden aber Lamech siebenundsiebzigmal"
+Current: Cain shall sevenfold be-avenged be-avenged but Lamech seventy-sevenfold
+
+4:25: "Adam erkannte abermals sein Weib und sie gebar einen Sohn den hieß sie Seth denn Gott hat mir sprach sie einen andern Samen gesetzt für Abel den Kain erwürgt hat"
+Current: Adam knew again his wife and she bore a son and called named Seth for God has for-me said she another another offspring appointed instead of-Abel whom Cain killed killed
+
+5:2: "und schuf sie einen Mann und ein Weib und segnete sie und hieß ihren Namen Mensch zur Zeit da sie geschaffen wurden"
+Current: and created them a male and a female and blessed them and called their name man when when when they created were
+
+5:22: "Und nachdem er Methusalah gezeugt hatte blieb er in einem göttlichen Leben dreihundert Jahre und zeugte Söhne und Töchter"
+Current: and after he Methuselah fathered had walked walked with with God God three-hundred years and fathered sons and daughters
+
+5:24: "Und dieweil er ein göttliches Leben führte nahm ihn Gott hinweg und er ward nicht mehr gesehen"
+Current: and since Enoch with God walked walked took him God away and he was no more found
+
+6:4: "Es waren auch zu den Zeiten Tyrannen auf Erden denn da die Kinder Gottes zu den Töchtern der Menschen eingingen und sie ihnen Kinder gebaren wurden daraus Gewaltige in der Welt und berühmte Männer"
+Current: there were also in those days giants on earth when when the sons of-God to the daughters of-the men went-in and they them children bore became from-them mighty-ones in the world and famous men
+
+6:9: "Dies ist das Geschlecht Noahs Noah war ein frommer Mann und ohne Tadel und führte ein göttliches Leben zu seinen Zeiten"
+Current: these are the generations of-Noah Noah was a righteous man and blameless blameless and walked with God walked in his generation
+

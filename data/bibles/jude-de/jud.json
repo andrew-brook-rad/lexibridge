@@ -1,0 +1,5898 @@
+{
+  "meta": {
+    "title": "Jude",
+    "language": "DE"
+  },
+  "printSettings": {
+    "pageSize": "6x9",
+    "margins": {
+      "top": 0.75,
+      "bottom": 0.75,
+      "inner": 0.875,
+      "outer": 0.5
+    },
+    "baseFontSize": 12,
+    "typography": {
+      "mainFont": "Georgia, serif",
+      "mainFontSize": 10,
+      "glossFont": "Inter, sans-serif",
+      "glossFontSize": 5,
+      "verseNumSize": 6,
+      "verseNumColor": "#6b7280",
+      "verseNumOffset": -2,
+      "verseNumOffsetX": 1,
+      "lineHeight": 1.8,
+      "minWordSpace": 1.5,
+      "maxWordSpace": 8.0
+    }
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "paragraphs": [
+        [
+          {
+            "type": "verse_num",
+            "value": "1"
+          },
+          {
+            "type": "word",
+            "original_full": "Judas",
+            "parts": [
+              {
+                "text": "Judas",
+                "gloss": "JUDA(-H"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ein",
+            "parts": [
+              {
+                "text": "ein",
+                "gloss": "A"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Knecht",
+            "parts": [
+              {
+                "text": "Knecht",
+                "gloss": "SERVANT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jesu",
+            "parts": [
+              {
+                "text": "Jesu",
+                "gloss": "JESUS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Christi",
+            "parts": [
+              {
+                "text": "Christi",
+                "gloss": "CHRIST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ein",
+            "parts": [
+              {
+                "text": "ein",
+                "gloss": "A"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Bruder",
+            "parts": [
+              {
+                "text": "Bruder",
+                "gloss": "BROTHER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jakobus",
+            "parts": [
+              {
+                "text": "Jakobus",
+                "gloss": "JAMES"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Berufenen",
+            "parts": [
+              {
+                "text": "Berufenen",
+                "gloss": "CALLED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "THEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "geheiligt",
+            "parts": [
+              {
+                "text": "geheiligt",
+                "gloss": "[GEHEILIGT]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gott",
+            "parts": [
+              {
+                "text": "Gott",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Vater",
+            "parts": [
+              {
+                "text": "Vater",
+                "gloss": "FATHER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "bewahrt",
+            "parts": [
+              {
+                "text": "bewahrt",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "IN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jesu",
+            "parts": [
+              {
+                "text": "Jesu",
+                "gloss": "JESUS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Christo",
+            "parts": [
+              {
+                "text": "Christo",
+                "gloss": "CHRIST"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "2"
+          },
+          {
+            "type": "word",
+            "original_full": "Gott",
+            "parts": [
+              {
+                "text": "Gott",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gebe",
+            "parts": [
+              {
+                "text": "gebe",
+                "gloss": "MULTIPLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "viel",
+            "parts": [
+              {
+                "text": "viel",
+                "gloss": "MULTIPLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Barmherzigkeit",
+            "parts": [
+              {
+                "text": "Barmherzigkeit",
+                "gloss": "MERCY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Frieden",
+            "parts": [
+              {
+                "text": "Frieden",
+                "gloss": "PEACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Liebe",
+            "parts": [
+              {
+                "text": "Liebe",
+                "gloss": "MY"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "3"
+          },
+          {
+            "type": "word",
+            "original_full": "Ihr",
+            "parts": [
+              {
+                "text": "Ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lieben",
+            "parts": [
+              {
+                "text": "Lieben",
+                "gloss": "[LIEBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nachdem",
+            "parts": [
+              {
+                "text": "nachdem",
+                "gloss": "WHEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ich",
+            "parts": [
+              {
+                "text": "ich",
+                "gloss": "I"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "vorhatte",
+            "parts": [
+              {
+                "text": "vorhatte",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "TO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "schreiben",
+            "parts": [
+              {
+                "text": "schreiben",
+                "gloss": "WRITE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unser",
+            "parts": [
+              {
+                "text": "unser",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aller",
+            "parts": [
+              {
+                "text": "aller",
+                "gloss": "COMMON"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Heil",
+            "parts": [
+              {
+                "text": "Heil",
+                "gloss": "SALVATION"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "hielt",
+            "parts": [
+              {
+                "text": "hielt",
+                "gloss": "HAVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ich",
+            "parts": [
+              {
+                "text": "ich",
+                "gloss": "I"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "s",
+            "parts": [
+              {
+                "text": "s",
+                "gloss": "[S]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "für",
+            "parts": [
+              {
+                "text": "für",
+                "gloss": "FOR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nötig",
+            "parts": [
+              {
+                "text": "nötig",
+                "gloss": "[NÖTIG]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "WITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Schriften",
+            "parts": [
+              {
+                "text": "Schriften",
+                "gloss": "WRITE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "TO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ermahnen",
+            "parts": [
+              {
+                "text": "ermahnen",
+                "gloss": "BESEECH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "daß",
+            "parts": [
+              {
+                "text": "daß",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihr",
+            "parts": [
+              {
+                "text": "ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "für",
+            "parts": [
+              {
+                "text": "für",
+                "gloss": "FOR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Glauben",
+            "parts": [
+              {
+                "text": "Glauben",
+                "gloss": "FAITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "kämpfet",
+            "parts": [
+              {
+                "text": "kämpfet",
+                "gloss": "EARNESTLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "einmal",
+            "parts": [
+              {
+                "text": "einmal",
+                "gloss": "ONCE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Heiligen",
+            "parts": [
+              {
+                "text": "Heiligen",
+                "gloss": "[HEILIGEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "übergeben",
+            "parts": [
+              {
+                "text": "übergeben",
+                "gloss": "[ÜBERGEBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ist",
+            "parts": [
+              {
+                "text": "ist",
+                "gloss": "DELIVER"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "4"
+          },
+          {
+            "type": "word",
+            "original_full": "Denn",
+            "parts": [
+              {
+                "text": "Denn",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "es",
+            "parts": [
+              {
+                "text": "es",
+                "gloss": "IT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "etliche",
+            "parts": [
+              {
+                "text": "etliche",
+                "gloss": "CERTAIN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Menschen",
+            "parts": [
+              {
+                "text": "Menschen",
+                "gloss": "MAN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nebeneingeschlichen",
+            "parts": [
+              {
+                "text": "nebeneingeschlichen",
+                "gloss": "CREEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "FROM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "denen",
+            "parts": [
+              {
+                "text": "denen",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "vorzeiten",
+            "parts": [
+              {
+                "text": "vorzeiten",
+                "gloss": "[VORZEITEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "geschrieben",
+            "parts": [
+              {
+                "text": "geschrieben",
+                "gloss": "[GESCHRIEBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ist",
+            "parts": [
+              {
+                "text": "ist",
+                "gloss": "WRITE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "solches",
+            "parts": [
+              {
+                "text": "solches",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Urteil",
+            "parts": [
+              {
+                "text": "Urteil",
+                "gloss": "JUDGMENT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Die",
+            "parts": [
+              {
+                "text": "Die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gottlose",
+            "parts": [
+              {
+                "text": "Gottlose",
+                "gloss": "WICKED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ziehen",
+            "parts": [
+              {
+                "text": "ziehen",
+                "gloss": "TRANSLATE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gnade",
+            "parts": [
+              {
+                "text": "Gnade",
+                "gloss": "GRACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unsers",
+            "parts": [
+              {
+                "text": "unsers",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gottes",
+            "parts": [
+              {
+                "text": "Gottes",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auf",
+            "parts": [
+              {
+                "text": "auf",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Mutwillen",
+            "parts": [
+              {
+                "text": "Mutwillen",
+                "gloss": "MOCK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "verleugnen",
+            "parts": [
+              {
+                "text": "verleugnen",
+                "gloss": "[VERLEUGNEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gott",
+            "parts": [
+              {
+                "text": "Gott",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unsern",
+            "parts": [
+              {
+                "text": "unsern",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERRN",
+            "parts": [
+              {
+                "text": "HERRN",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jesus",
+            "parts": [
+              {
+                "text": "Jesus",
+                "gloss": "JESUS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Christus",
+            "parts": [
+              {
+                "text": "Christus",
+                "gloss": "CHRIST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "einigen",
+            "parts": [
+              {
+                "text": "einigen",
+                "gloss": "ONLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Herrscher",
+            "parts": [
+              {
+                "text": "Herrscher",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "5"
+          },
+          {
+            "type": "word",
+            "original_full": "Ich",
+            "parts": [
+              {
+                "text": "Ich",
+                "gloss": "I"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "will",
+            "parts": [
+              {
+                "text": "will",
+                "gloss": "WILL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erinnern",
+            "parts": [
+              {
+                "text": "erinnern",
+                "gloss": "REMEMBER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihr",
+            "parts": [
+              {
+                "text": "ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dies",
+            "parts": [
+              {
+                "text": "dies",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ja",
+            "parts": [
+              {
+                "text": "ja",
+                "gloss": "YES"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "schon",
+            "parts": [
+              {
+                "text": "schon",
+                "gloss": "ALREADY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wisset",
+            "parts": [
+              {
+                "text": "wisset",
+                "gloss": "KNOW"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "daß",
+            "parts": [
+              {
+                "text": "daß",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERR",
+            "parts": [
+              {
+                "text": "HERR",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "THEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "er",
+            "parts": [
+              {
+                "text": "er",
+                "gloss": "HE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Volk",
+            "parts": [
+              {
+                "text": "Volk",
+                "gloss": "PEOPLE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aus",
+            "parts": [
+              {
+                "text": "aus",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Ägypten",
+            "parts": [
+              {
+                "text": "Ägypten",
+                "gloss": "EARTH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "half",
+            "parts": [
+              {
+                "text": "half",
+                "gloss": "SAVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "andere",
+            "parts": [
+              {
+                "text": "andere",
+                "gloss": "OTHER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Mal",
+            "parts": [
+              {
+                "text": "Mal",
+                "gloss": "SECOND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "umbrachte",
+            "parts": [
+              {
+                "text": "umbrachte",
+                "gloss": "[UMBRACHTE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "THEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nicht",
+            "parts": [
+              {
+                "text": "nicht",
+                "gloss": "NOT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "glaubten",
+            "parts": [
+              {
+                "text": "glaubten",
+                "gloss": "BELIEVE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "6"
+          },
+          {
+            "type": "word",
+            "original_full": "Auch",
+            "parts": [
+              {
+                "text": "Auch",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Engel",
+            "parts": [
+              {
+                "text": "Engel",
+                "gloss": "ANGEL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihr",
+            "parts": [
+              {
+                "text": "ihr",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fürstentum",
+            "parts": [
+              {
+                "text": "Fürstentum",
+                "gloss": "[FÜRSTENTUM]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nicht",
+            "parts": [
+              {
+                "text": "nicht",
+                "gloss": "NOT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "bewahrten",
+            "parts": [
+              {
+                "text": "bewahrten",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sondern",
+            "parts": [
+              {
+                "text": "sondern",
+                "gloss": "BUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "verließen",
+            "parts": [
+              {
+                "text": "verließen",
+                "gloss": "[VERLIESSEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihre",
+            "parts": [
+              {
+                "text": "ihre",
+                "gloss": "PRIVATELY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Behausung",
+            "parts": [
+              {
+                "text": "Behausung",
+                "gloss": "HOUSE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "hat",
+            "parts": [
+              {
+                "text": "hat",
+                "gloss": "HAS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "er",
+            "parts": [
+              {
+                "text": "er",
+                "gloss": "HE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "behalten",
+            "parts": [
+              {
+                "text": "behalten",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zum",
+            "parts": [
+              {
+                "text": "zum",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gericht",
+            "parts": [
+              {
+                "text": "Gericht",
+                "gloss": "JUDGMENT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "großen",
+            "parts": [
+              {
+                "text": "großen",
+                "gloss": "GREAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Tages",
+            "parts": [
+              {
+                "text": "Tages",
+                "gloss": "DAY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "WITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ewigen",
+            "parts": [
+              {
+                "text": "ewigen",
+                "gloss": "EVERLASTING"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Banden",
+            "parts": [
+              {
+                "text": "Banden",
+                "gloss": "BOND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Finsternis",
+            "parts": [
+              {
+                "text": "Finsternis",
+                "gloss": "DARKNESS"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "7"
+          },
+          {
+            "type": "word",
+            "original_full": "Wie",
+            "parts": [
+              {
+                "text": "Wie",
+                "gloss": "AS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auch",
+            "parts": [
+              {
+                "text": "auch",
+                "gloss": "AS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Sodom",
+            "parts": [
+              {
+                "text": "Sodom",
+                "gloss": "SODOM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gomorra",
+            "parts": [
+              {
+                "text": "Gomorra",
+                "gloss": "GOMORRHA"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "umliegenden",
+            "parts": [
+              {
+                "text": "umliegenden",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Städte",
+            "parts": [
+              {
+                "text": "Städte",
+                "gloss": "CITY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gleicherweise",
+            "parts": [
+              {
+                "text": "gleicherweise",
+                "gloss": "LIKE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wie",
+            "parts": [
+              {
+                "text": "wie",
+                "gloss": "AS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "diese",
+            "parts": [
+              {
+                "text": "diese",
+                "gloss": "THESE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Unzucht",
+            "parts": [
+              {
+                "text": "Unzucht",
+                "gloss": "[UNZUCHT]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "getrieben",
+            "parts": [
+              {
+                "text": "getrieben",
+                "gloss": "SENT-AWAY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "haben",
+            "parts": [
+              {
+                "text": "haben",
+                "gloss": "GIVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nach",
+            "parts": [
+              {
+                "text": "nach",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "einem",
+            "parts": [
+              {
+                "text": "einem",
+                "gloss": "A"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "andern",
+            "parts": [
+              {
+                "text": "andern",
+                "gloss": "ANOTHER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fleisch",
+            "parts": [
+              {
+                "text": "Fleisch",
+                "gloss": "FLESH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gegangen",
+            "parts": [
+              {
+                "text": "gegangen",
+                "gloss": "CAME-OUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zum",
+            "parts": [
+              {
+                "text": "zum",
+                "gloss": "AS-A"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Beispiel",
+            "parts": [
+              {
+                "text": "Beispiel",
+                "gloss": "EXAMPLE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gesetzt",
+            "parts": [
+              {
+                "text": "gesetzt",
+                "gloss": "MADE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "BEFIRST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "leiden",
+            "parts": [
+              {
+                "text": "leiden",
+                "gloss": "SUFFER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ewigen",
+            "parts": [
+              {
+                "text": "ewigen",
+                "gloss": "EVERLASTING"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Feuers",
+            "parts": [
+              {
+                "text": "Feuers",
+                "gloss": "FIRE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Pein",
+            "parts": [
+              {
+                "text": "Pein",
+                "gloss": "VENGEANCE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "8"
+          },
+          {
+            "type": "word",
+            "original_full": "Desgleichen",
+            "parts": [
+              {
+                "text": "Desgleichen",
+                "gloss": "LIKEWISE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auch",
+            "parts": [
+              {
+                "text": "auch",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "diese",
+            "parts": [
+              {
+                "text": "diese",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Träumer",
+            "parts": [
+              {
+                "text": "Träumer",
+                "gloss": "DREAM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fleisch",
+            "parts": [
+              {
+                "text": "Fleisch",
+                "gloss": "FLESH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "beflecken",
+            "parts": [
+              {
+                "text": "beflecken",
+                "gloss": "DEFILE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Herrschaft",
+            "parts": [
+              {
+                "text": "Herrschaft",
+                "gloss": "DOMINION"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "verachten",
+            "parts": [
+              {
+                "text": "verachten",
+                "gloss": "[VERACHTEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Majestäten",
+            "parts": [
+              {
+                "text": "Majestäten",
+                "gloss": "GLORY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "lästern",
+            "parts": [
+              {
+                "text": "lästern",
+                "gloss": "[LÄSTERN]"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "9"
+          },
+          {
+            "type": "word",
+            "original_full": "Michael",
+            "parts": [
+              {
+                "text": "Michael",
+                "gloss": "MICHAEL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Erzengel",
+            "parts": [
+              {
+                "text": "Erzengel",
+                "gloss": "[ERZENGEL]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "WHEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "er",
+            "parts": [
+              {
+                "text": "er",
+                "gloss": "HE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "WITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Teufel",
+            "parts": [
+              {
+                "text": "Teufel",
+                "gloss": "DEVIL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "stritt",
+            "parts": [
+              {
+                "text": "stritt",
+                "gloss": "DOUBT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "WITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihm",
+            "parts": [
+              {
+                "text": "ihm",
+                "gloss": "HIM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "redete",
+            "parts": [
+              {
+                "text": "redete",
+                "gloss": "DISPUTE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "über",
+            "parts": [
+              {
+                "text": "über",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Leichnam",
+            "parts": [
+              {
+                "text": "Leichnam",
+                "gloss": "BODY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Mose",
+            "parts": [
+              {
+                "text": "Mose",
+                "gloss": "[MOSE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "s",
+            "parts": [
+              {
+                "text": "s",
+                "gloss": "MOSES"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wagte",
+            "parts": [
+              {
+                "text": "wagte",
+                "gloss": "DURST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "er",
+            "parts": [
+              {
+                "text": "er",
+                "gloss": "HE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Urteil",
+            "parts": [
+              {
+                "text": "Urteil",
+                "gloss": "JUDGMENT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lästerung",
+            "parts": [
+              {
+                "text": "Lästerung",
+                "gloss": "[LÄSTERUNG]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nicht",
+            "parts": [
+              {
+                "text": "nicht",
+                "gloss": "NO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "TO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "fällen",
+            "parts": [
+              {
+                "text": "fällen",
+                "gloss": "BRING"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sondern",
+            "parts": [
+              {
+                "text": "sondern",
+                "gloss": "BUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sprach",
+            "parts": [
+              {
+                "text": "sprach",
+                "gloss": "SAY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Der",
+            "parts": [
+              {
+                "text": "Der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERR",
+            "parts": [
+              {
+                "text": "HERR",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "strafe",
+            "parts": [
+              {
+                "text": "strafe",
+                "gloss": "REBUKE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dich",
+            "parts": [
+              {
+                "text": "dich",
+                "gloss": "THEE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "10"
+          },
+          {
+            "type": "word",
+            "original_full": "Diese",
+            "parts": [
+              {
+                "text": "Diese",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "lästern",
+            "parts": [
+              {
+                "text": "lästern",
+                "gloss": "[LÄSTERN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "alles",
+            "parts": [
+              {
+                "text": "alles",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "davon",
+            "parts": [
+              {
+                "text": "davon",
+                "gloss": "WHATSOEVER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nichts",
+            "parts": [
+              {
+                "text": "nichts",
+                "gloss": "NO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wissen",
+            "parts": [
+              {
+                "text": "wissen",
+                "gloss": "KNOW"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "was",
+            "parts": [
+              {
+                "text": "was",
+                "gloss": "WHATSOEVER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "natürlich",
+            "parts": [
+              {
+                "text": "natürlich",
+                "gloss": "NATURALLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erkennen",
+            "parts": [
+              {
+                "text": "erkennen",
+                "gloss": "KNOW"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wie",
+            "parts": [
+              {
+                "text": "wie",
+                "gloss": "AS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unvernünftigen",
+            "parts": [
+              {
+                "text": "unvernünftigen",
+                "gloss": "[UNVERNÜNFTIGEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Tiere",
+            "parts": [
+              {
+                "text": "Tiere",
+                "gloss": "BEAST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "darin",
+            "parts": [
+              {
+                "text": "darin",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "verderben",
+            "parts": [
+              {
+                "text": "verderben",
+                "gloss": "DESTROY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "CORRUPT"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "11"
+          },
+          {
+            "type": "word",
+            "original_full": "Weh",
+            "parts": [
+              {
+                "text": "Weh",
+                "gloss": "WOE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihnen",
+            "parts": [
+              {
+                "text": "ihnen",
+                "gloss": "THEM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "denn",
+            "parts": [
+              {
+                "text": "denn",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gehen",
+            "parts": [
+              {
+                "text": "gehen",
+                "gloss": "GO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Weg",
+            "parts": [
+              {
+                "text": "Weg",
+                "gloss": "WAY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Kains",
+            "parts": [
+              {
+                "text": "Kains",
+                "gloss": "CAIN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "fallen",
+            "parts": [
+              {
+                "text": "fallen",
+                "gloss": "SHED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "IN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Irrtum",
+            "parts": [
+              {
+                "text": "Irrtum",
+                "gloss": "ERROR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Bileam",
+            "parts": [
+              {
+                "text": "Bileam",
+                "gloss": "[BILEAM]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "um",
+            "parts": [
+              {
+                "text": "um",
+                "gloss": "FOR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gewinnes",
+            "parts": [
+              {
+                "text": "Gewinnes",
+                "gloss": "REWARD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "willen",
+            "parts": [
+              {
+                "text": "willen",
+                "gloss": "SAKE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "kommen",
+            "parts": [
+              {
+                "text": "kommen",
+                "gloss": "COME"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "um",
+            "parts": [
+              {
+                "text": "um",
+                "gloss": "FOR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "IN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Aufruhr",
+            "parts": [
+              {
+                "text": "Aufruhr",
+                "gloss": "[AUFRUHR]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Korahs",
+            "parts": [
+              {
+                "text": "Korahs",
+                "gloss": "[KORAHS]"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "12"
+          },
+          {
+            "type": "word",
+            "original_full": "Diese",
+            "parts": [
+              {
+                "text": "Diese",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Unfläter",
+            "parts": [
+              {
+                "text": "Unfläter",
+                "gloss": "SPOT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "prassen",
+            "parts": [
+              {
+                "text": "prassen",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "bei",
+            "parts": [
+              {
+                "text": "bei",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euren",
+            "parts": [
+              {
+                "text": "euren",
+                "gloss": "YOUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Liebesmahlen",
+            "parts": [
+              {
+                "text": "Liebesmahlen",
+                "gloss": "[LIEBESMAHLEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ohne",
+            "parts": [
+              {
+                "text": "ohne",
+                "gloss": "WITHOUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Scheu",
+            "parts": [
+              {
+                "text": "Scheu",
+                "gloss": "[SCHEU]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "weiden",
+            "parts": [
+              {
+                "text": "weiden",
+                "gloss": "FEED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sich",
+            "parts": [
+              {
+                "text": "sich",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "selbst",
+            "parts": [
+              {
+                "text": "selbst",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Wolken",
+            "parts": [
+              {
+                "text": "Wolken",
+                "gloss": "CLOUD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ohne",
+            "parts": [
+              {
+                "text": "ohne",
+                "gloss": "WITHOUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Wasser",
+            "parts": [
+              {
+                "text": "Wasser",
+                "gloss": "WATER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Winde",
+            "parts": [
+              {
+                "text": "Winde",
+                "gloss": "[WINDE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "umgetrieben",
+            "parts": [
+              {
+                "text": "umgetrieben",
+                "gloss": "BEAR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "kahle",
+            "parts": [
+              {
+                "text": "kahle",
+                "gloss": "WHOSEFRUIT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unfruchtbare",
+            "parts": [
+              {
+                "text": "unfruchtbare",
+                "gloss": "[UNFRUCHTBARE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Bäume",
+            "parts": [
+              {
+                "text": "Bäume",
+                "gloss": "TREE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zweimal",
+            "parts": [
+              {
+                "text": "zweimal",
+                "gloss": "TWICE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erstorben",
+            "parts": [
+              {
+                "text": "erstorben",
+                "gloss": "[ERSTORBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ausgewurzelt",
+            "parts": [
+              {
+                "text": "ausgewurzelt",
+                "gloss": "PLUCK"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "13"
+          },
+          {
+            "type": "word",
+            "original_full": "wilde",
+            "parts": [
+              {
+                "text": "wilde",
+                "gloss": "[WILDE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Wellen",
+            "parts": [
+              {
+                "text": "Wellen",
+                "gloss": "WAVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Meeres",
+            "parts": [
+              {
+                "text": "Meeres",
+                "gloss": "SEA"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihre",
+            "parts": [
+              {
+                "text": "ihre",
+                "gloss": "THEIR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "eigene",
+            "parts": [
+              {
+                "text": "eigene",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Schande",
+            "parts": [
+              {
+                "text": "Schande",
+                "gloss": "DISGRACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ausschäumen",
+            "parts": [
+              {
+                "text": "ausschäumen",
+                "gloss": "FOAM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "irre",
+            "parts": [
+              {
+                "text": "irre",
+                "gloss": "WANDERING"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Sterne",
+            "parts": [
+              {
+                "text": "Sterne",
+                "gloss": "STARS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "welchen",
+            "parts": [
+              {
+                "text": "welchen",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "behalten",
+            "parts": [
+              {
+                "text": "behalten",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ist",
+            "parts": [
+              {
+                "text": "ist",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Dunkel",
+            "parts": [
+              {
+                "text": "Dunkel",
+                "gloss": "DARKNESS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Finsternis",
+            "parts": [
+              {
+                "text": "Finsternis",
+                "gloss": "DARKNESS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Ewigkeit",
+            "parts": [
+              {
+                "text": "Ewigkeit",
+                "gloss": "[EWIGKEIT]"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "14"
+          },
+          {
+            "type": "word",
+            "original_full": "Es",
+            "parts": [
+              {
+                "text": "Es",
+                "gloss": "IT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "hat",
+            "parts": [
+              {
+                "text": "hat",
+                "gloss": "HAS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auch",
+            "parts": [
+              {
+                "text": "auch",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "FROM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "solchen",
+            "parts": [
+              {
+                "text": "solchen",
+                "gloss": "THESE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "geweissagt",
+            "parts": [
+              {
+                "text": "geweissagt",
+                "gloss": "PROPHESY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Henoch",
+            "parts": [
+              {
+                "text": "Henoch",
+                "gloss": "ENOCH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "siebente",
+            "parts": [
+              {
+                "text": "siebente",
+                "gloss": "SEVENTH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "FROM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Adam",
+            "parts": [
+              {
+                "text": "Adam",
+                "gloss": "THE-MAN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gesprochen",
+            "parts": [
+              {
+                "text": "gesprochen",
+                "gloss": "SPEAK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "“",
+            "parts": [
+              {
+                "text": "“",
+                "gloss": "[“]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Siehe",
+            "parts": [
+              {
+                "text": "Siehe",
+                "gloss": "BEHOLD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERR",
+            "parts": [
+              {
+                "text": "HERR",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "kommt",
+            "parts": [
+              {
+                "text": "kommt",
+                "gloss": "COME"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "vielen",
+            "parts": [
+              {
+                "text": "vielen",
+                "gloss": "[VIELEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "tausend",
+            "parts": [
+              {
+                "text": "tausend",
+                "gloss": "THOUSANDS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Heiligen",
+            "parts": [
+              {
+                "text": "Heiligen",
+                "gloss": "[HEILIGEN]"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "15"
+          },
+          {
+            "type": "word",
+            "original_full": "Gericht",
+            "parts": [
+              {
+                "text": "Gericht",
+                "gloss": "JUDGMENT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "TO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "halten",
+            "parts": [
+              {
+                "text": "halten",
+                "gloss": "DO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "über",
+            "parts": [
+              {
+                "text": "über",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "alle",
+            "parts": [
+              {
+                "text": "alle",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "TO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "strafen",
+            "parts": [
+              {
+                "text": "strafen",
+                "gloss": "CONVINCE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "alle",
+            "parts": [
+              {
+                "text": "alle",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gottlosen",
+            "parts": [
+              {
+                "text": "Gottlosen",
+                "gloss": "WICKED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "um",
+            "parts": [
+              {
+                "text": "um",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "alle",
+            "parts": [
+              {
+                "text": "alle",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Werke",
+            "parts": [
+              {
+                "text": "Werke",
+                "gloss": "WORKS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihres",
+            "parts": [
+              {
+                "text": "ihres",
+                "gloss": "HER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gottlosen",
+            "parts": [
+              {
+                "text": "gottlosen",
+                "gloss": "WICKED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Wandels",
+            "parts": [
+              {
+                "text": "Wandels",
+                "gloss": "WORK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "womit",
+            "parts": [
+              {
+                "text": "womit",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gottlos",
+            "parts": [
+              {
+                "text": "gottlos",
+                "gloss": "[GOTTLOS]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gewesen",
+            "parts": [
+              {
+                "text": "gewesen",
+                "gloss": "BEEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "um",
+            "parts": [
+              {
+                "text": "um",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "all",
+            "parts": [
+              {
+                "text": "all",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Harte",
+            "parts": [
+              {
+                "text": "Harte",
+                "gloss": "HARD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gottlosen",
+            "parts": [
+              {
+                "text": "gottlosen",
+                "gloss": "WICKED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Sünder",
+            "parts": [
+              {
+                "text": "Sünder",
+                "gloss": "[SÜNDER]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wider",
+            "parts": [
+              {
+                "text": "wider",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihn",
+            "parts": [
+              {
+                "text": "ihn",
+                "gloss": "HIM"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "geredet",
+            "parts": [
+              {
+                "text": "geredet",
+                "gloss": "SPOKEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "haben",
+            "parts": [
+              {
+                "text": "haben",
+                "gloss": "SPEAK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "”",
+            "parts": [
+              {
+                "text": "”",
+                "gloss": "[”]"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "16"
+          },
+          {
+            "type": "word",
+            "original_full": "Diese",
+            "parts": [
+              {
+                "text": "Diese",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "murren",
+            "parts": [
+              {
+                "text": "murren",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "klagen",
+            "parts": [
+              {
+                "text": "klagen",
+                "gloss": "[KLAGEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "immerdar",
+            "parts": [
+              {
+                "text": "immerdar",
+                "gloss": "COMPLAINER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wandeln",
+            "parts": [
+              {
+                "text": "wandeln",
+                "gloss": "GO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dabei",
+            "parts": [
+              {
+                "text": "dabei",
+                "gloss": "BESIDE-IT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nach",
+            "parts": [
+              {
+                "text": "nach",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihren",
+            "parts": [
+              {
+                "text": "ihren",
+                "gloss": "THEIR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lüsten",
+            "parts": [
+              {
+                "text": "Lüsten",
+                "gloss": "LUST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihr",
+            "parts": [
+              {
+                "text": "ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Mund",
+            "parts": [
+              {
+                "text": "Mund",
+                "gloss": "MOUTH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "redet",
+            "parts": [
+              {
+                "text": "redet",
+                "gloss": "SPEAK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "stolze",
+            "parts": [
+              {
+                "text": "stolze",
+                "gloss": "[STOLZE]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Worte",
+            "parts": [
+              {
+                "text": "Worte",
+                "gloss": "GREAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "achten",
+            "parts": [
+              {
+                "text": "achten",
+                "gloss": "MARVEL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Ansehen",
+            "parts": [
+              {
+                "text": "Ansehen",
+                "gloss": "SEE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Person",
+            "parts": [
+              {
+                "text": "Person",
+                "gloss": "FACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "um",
+            "parts": [
+              {
+                "text": "um",
+                "gloss": "GRACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Nutzens",
+            "parts": [
+              {
+                "text": "Nutzens",
+                "gloss": "PROFIT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "willen",
+            "parts": [
+              {
+                "text": "willen",
+                "gloss": "SAKE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "17"
+          },
+          {
+            "type": "word",
+            "original_full": "Ihr",
+            "parts": [
+              {
+                "text": "Ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "meine",
+            "parts": [
+              {
+                "text": "meine",
+                "gloss": "MY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lieben",
+            "parts": [
+              {
+                "text": "Lieben",
+                "gloss": "[LIEBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erinnert",
+            "parts": [
+              {
+                "text": "erinnert",
+                "gloss": "REMEMBER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Worte",
+            "parts": [
+              {
+                "text": "Worte",
+                "gloss": "WORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zuvor",
+            "parts": [
+              {
+                "text": "zuvor",
+                "gloss": "FORMER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gesagt",
+            "parts": [
+              {
+                "text": "gesagt",
+                "gloss": "SAID"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "FORETELL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "von",
+            "parts": [
+              {
+                "text": "von",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Aposteln",
+            "parts": [
+              {
+                "text": "Aposteln",
+                "gloss": "[APOSTELN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unsers",
+            "parts": [
+              {
+                "text": "unsers",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERRN",
+            "parts": [
+              {
+                "text": "HERRN",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jesu",
+            "parts": [
+              {
+                "text": "Jesu",
+                "gloss": "JESUS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Christi",
+            "parts": [
+              {
+                "text": "Christi",
+                "gloss": "CHRIST"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "18"
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sagten",
+            "parts": [
+              {
+                "text": "sagten",
+                "gloss": "SPEAK"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "daß",
+            "parts": [
+              {
+                "text": "daß",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "letzten",
+            "parts": [
+              {
+                "text": "letzten",
+                "gloss": "LAST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Zeit",
+            "parts": [
+              {
+                "text": "Zeit",
+                "gloss": "TIME"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "werden",
+            "parts": [
+              {
+                "text": "werden",
+                "gloss": "BE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Spötter",
+            "parts": [
+              {
+                "text": "Spötter",
+                "gloss": "MOCKERS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sein",
+            "parts": [
+              {
+                "text": "sein",
+                "gloss": "BE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nach",
+            "parts": [
+              {
+                "text": "nach",
+                "gloss": "AFTER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihren",
+            "parts": [
+              {
+                "text": "ihren",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "eigenen",
+            "parts": [
+              {
+                "text": "eigenen",
+                "gloss": "OWN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lüsten",
+            "parts": [
+              {
+                "text": "Lüsten",
+                "gloss": "LUST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "des",
+            "parts": [
+              {
+                "text": "des",
+                "gloss": "OF-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "gottlosen",
+            "parts": [
+              {
+                "text": "gottlosen",
+                "gloss": "WICKED"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Wesens",
+            "parts": [
+              {
+                "text": "Wesens",
+                "gloss": "[WESENS]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wandeln",
+            "parts": [
+              {
+                "text": "wandeln",
+                "gloss": "GO"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "19"
+          },
+          {
+            "type": "word",
+            "original_full": "Diese",
+            "parts": [
+              {
+                "text": "Diese",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sind",
+            "parts": [
+              {
+                "text": "sind",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "es",
+            "parts": [
+              {
+                "text": "es",
+                "gloss": "ARE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Trennungen",
+            "parts": [
+              {
+                "text": "Trennungen",
+                "gloss": "[TRENNUNGEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "machen",
+            "parts": [
+              {
+                "text": "machen",
+                "gloss": "MAKE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fleischliche",
+            "parts": [
+              {
+                "text": "Fleischliche",
+                "gloss": "NATURAL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "da",
+            "parts": [
+              {
+                "text": "da",
+                "gloss": "THEN"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "keinen",
+            "parts": [
+              {
+                "text": "keinen",
+                "gloss": "NOT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Geist",
+            "parts": [
+              {
+                "text": "Geist",
+                "gloss": "SPIRIT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "haben",
+            "parts": [
+              {
+                "text": "haben",
+                "gloss": "HAVE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "20"
+          },
+          {
+            "type": "word",
+            "original_full": "Ihr",
+            "parts": [
+              {
+                "text": "Ihr",
+                "gloss": "YE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "meine",
+            "parts": [
+              {
+                "text": "meine",
+                "gloss": "MY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Lieben",
+            "parts": [
+              {
+                "text": "Lieben",
+                "gloss": "[LIEBEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erbauet",
+            "parts": [
+              {
+                "text": "erbauet",
+                "gloss": "BUILD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auf",
+            "parts": [
+              {
+                "text": "auf",
+                "gloss": "ON"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euren",
+            "parts": [
+              {
+                "text": "euren",
+                "gloss": "YOUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "allerheiligsten",
+            "parts": [
+              {
+                "text": "allerheiligsten",
+                "gloss": "[ALLERHEILIGSTEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Glauben",
+            "parts": [
+              {
+                "text": "Glauben",
+                "gloss": "FAITH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "durch",
+            "parts": [
+              {
+                "text": "durch",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "heiligen",
+            "parts": [
+              {
+                "text": "heiligen",
+                "gloss": "[HEILIGEN]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Geist",
+            "parts": [
+              {
+                "text": "Geist",
+                "gloss": "SPIRIT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "betet",
+            "parts": [
+              {
+                "text": "betet",
+                "gloss": "PRAY"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "21"
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erhaltet",
+            "parts": [
+              {
+                "text": "erhaltet",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "HIMSELF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "in",
+            "parts": [
+              {
+                "text": "in",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Liebe",
+            "parts": [
+              {
+                "text": "Liebe",
+                "gloss": "MY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gottes",
+            "parts": [
+              {
+                "text": "Gottes",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "wartet",
+            "parts": [
+              {
+                "text": "wartet",
+                "gloss": "[WARTET]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auf",
+            "parts": [
+              {
+                "text": "auf",
+                "gloss": "RECEIVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "die",
+            "parts": [
+              {
+                "text": "die",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Barmherzigkeit",
+            "parts": [
+              {
+                "text": "Barmherzigkeit",
+                "gloss": "MERCY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unsers",
+            "parts": [
+              {
+                "text": "unsers",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "HERRN",
+            "parts": [
+              {
+                "text": "HERRN",
+                "gloss": "LORD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Jesu",
+            "parts": [
+              {
+                "text": "Jesu",
+                "gloss": "JESUS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Christi",
+            "parts": [
+              {
+                "text": "Christi",
+                "gloss": "CHRIST"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zum",
+            "parts": [
+              {
+                "text": "zum",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ewigen",
+            "parts": [
+              {
+                "text": "ewigen",
+                "gloss": "EVERLASTING"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Leben",
+            "parts": [
+              {
+                "text": "Leben",
+                "gloss": "LIFE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "22"
+          },
+          {
+            "type": "word",
+            "original_full": "Und",
+            "parts": [
+              {
+                "text": "Und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "haltet",
+            "parts": [
+              {
+                "text": "haltet",
+                "gloss": "DOUBT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "diesen",
+            "parts": [
+              {
+                "text": "diesen",
+                "gloss": "THIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Unterschied",
+            "parts": [
+              {
+                "text": "Unterschied",
+                "gloss": "DOUBT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "daß",
+            "parts": [
+              {
+                "text": "daß",
+                "gloss": "THAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ihr",
+            "parts": [
+              {
+                "text": "ihr",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "etlicher",
+            "parts": [
+              {
+                "text": "etlicher",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "erbarmet",
+            "parts": [
+              {
+                "text": "erbarmet",
+                "gloss": "HAVE"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "23"
+          },
+          {
+            "type": "word",
+            "original_full": "etliche",
+            "parts": [
+              {
+                "text": "etliche",
+                "gloss": "WHICH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Furcht",
+            "parts": [
+              {
+                "text": "Furcht",
+                "gloss": "FEAR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "selig",
+            "parts": [
+              {
+                "text": "selig",
+                "gloss": "HAPPY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "machet",
+            "parts": [
+              {
+                "text": "machet",
+                "gloss": "SAVE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "rücket",
+            "parts": [
+              {
+                "text": "rücket",
+                "gloss": "[RÜCKET]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sie",
+            "parts": [
+              {
+                "text": "sie",
+                "gloss": "THEY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aus",
+            "parts": [
+              {
+                "text": "aus",
+                "gloss": "OF"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Feuer",
+            "parts": [
+              {
+                "text": "Feuer",
+                "gloss": "FIRE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "hasset",
+            "parts": [
+              {
+                "text": "hasset",
+                "gloss": "HATE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "auch",
+            "parts": [
+              {
+                "text": "auch",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "den",
+            "parts": [
+              {
+                "text": "den",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Rock",
+            "parts": [
+              {
+                "text": "Rock",
+                "gloss": "COAT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "vom",
+            "parts": [
+              {
+                "text": "vom",
+                "gloss": "FROM-THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fleische",
+            "parts": [
+              {
+                "text": "Fleische",
+                "gloss": "FLESH"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "befleckt",
+            "parts": [
+              {
+                "text": "befleckt",
+                "gloss": "SPOT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ist",
+            "parts": [
+              {
+                "text": "ist",
+                "gloss": "IS"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "24"
+          },
+          {
+            "type": "word",
+            "original_full": "Dem",
+            "parts": [
+              {
+                "text": "Dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aber",
+            "parts": [
+              {
+                "text": "aber",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "euch",
+            "parts": [
+              {
+                "text": "euch",
+                "gloss": "YOU"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "kann",
+            "parts": [
+              {
+                "text": "kann",
+                "gloss": "ABLE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "behüten",
+            "parts": [
+              {
+                "text": "behüten",
+                "gloss": "KEEP"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ohne",
+            "parts": [
+              {
+                "text": "ohne",
+                "gloss": "WITHOUT"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Fehl",
+            "parts": [
+              {
+                "text": "Fehl",
+                "gloss": "[FEHL]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "stellen",
+            "parts": [
+              {
+                "text": "stellen",
+                "gloss": "STAND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "vor",
+            "parts": [
+              {
+                "text": "vor",
+                "gloss": "BEFORE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "das",
+            "parts": [
+              {
+                "text": "das",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Angesicht",
+            "parts": [
+              {
+                "text": "Angesicht",
+                "gloss": "FACE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "seiner",
+            "parts": [
+              {
+                "text": "seiner",
+                "gloss": "HIS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Herrlichkeit",
+            "parts": [
+              {
+                "text": "Herrlichkeit",
+                "gloss": "GLORY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unsträflich",
+            "parts": [
+              {
+                "text": "unsträflich",
+                "gloss": "[UNSTRÄFLICH]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "mit",
+            "parts": [
+              {
+                "text": "mit",
+                "gloss": "BY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Freuden",
+            "parts": [
+              {
+                "text": "Freuden",
+                "gloss": "JOY"
+              }
+            ]
+          },
+          {
+            "type": "verse_num",
+            "value": "25"
+          },
+          {
+            "type": "word",
+            "original_full": "dem",
+            "parts": [
+              {
+                "text": "dem",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gott",
+            "parts": [
+              {
+                "text": "Gott",
+                "gloss": "GOD"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "der",
+            "parts": [
+              {
+                "text": "der",
+                "gloss": "THE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "allein",
+            "parts": [
+              {
+                "text": "allein",
+                "gloss": "ONLY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "weise",
+            "parts": [
+              {
+                "text": "weise",
+                "gloss": "WISE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "ist",
+            "parts": [
+              {
+                "text": "ist",
+                "gloss": "IS"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "unserm",
+            "parts": [
+              {
+                "text": "unserm",
+                "gloss": "OUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Heiland",
+            "parts": [
+              {
+                "text": "Heiland",
+                "gloss": "SAVIOUR"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "sei",
+            "parts": [
+              {
+                "text": "sei",
+                "gloss": "BE"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Ehre",
+            "parts": [
+              {
+                "text": "Ehre",
+                "gloss": "GLORY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Majestät",
+            "parts": [
+              {
+                "text": "Majestät",
+                "gloss": "MAJESTY"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "AND"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Gewalt",
+            "parts": [
+              {
+                "text": "Gewalt",
+                "gloss": "POWER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Macht",
+            "parts": [
+              {
+                "text": "Macht",
+                "gloss": "POWER"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "nun",
+            "parts": [
+              {
+                "text": "nun",
+                "gloss": "NOW"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "und",
+            "parts": [
+              {
+                "text": "und",
+                "gloss": "ALSO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "zu",
+            "parts": [
+              {
+                "text": "zu",
+                "gloss": "INTO"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "aller",
+            "parts": [
+              {
+                "text": "aller",
+                "gloss": "ALL"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Ewigkeit",
+            "parts": [
+              {
+                "text": "Ewigkeit",
+                "gloss": "[EWIGKEIT]"
+              }
+            ]
+          },
+          {
+            "type": "word",
+            "original_full": "Amen",
+            "parts": [
+              {
+                "text": "Amen",
+                "gloss": "[AMEN]"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

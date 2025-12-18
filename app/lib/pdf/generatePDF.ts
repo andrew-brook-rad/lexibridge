@@ -41,13 +41,14 @@ function mapCSSFontToPDF(cssFont: string): PDFFontFamily {
 interface PDFRenderOptions {
     project: BookProject
     showPageNumbers?: boolean
+    previewPages?: number[] // If provided, only render these page numbers (1-indexed)
 }
 
 /**
  * Generate a PDF from a BookProject using jsPDF
  */
 export function generatePDF(options: PDFRenderOptions): jsPDF {
-    const { project, showPageNumbers = true } = options
+    const { project, showPageNumbers = true, previewPages } = options
     const { chapters, printSettings, meta } = project
 
     // Get typography settings with defaults
@@ -88,21 +89,35 @@ export function generatePDF(options: PDFRenderOptions): jsPDF {
     // Run layout engine to get pages
     const pages = layoutBook(chapters, printSettings)
 
-    // Render title page (page 1, recto)
-    renderTitlePage(pdf, {
-        title: meta.title || 'Untitled',
-        subtitle: meta.language ? `${meta.language} Interlinear Edition` : 'Interlinear Edition',
-        pageWidth: pageWidthMM,
-        pageHeight: pageHeightMM,
-        marginInner,
-        marginOuter,
-        marginTop,
-        typography,
-    })
+    // Determine which pages to render
+    const shouldRenderPage = (pageNum: number) => !previewPages || previewPages.includes(pageNum)
+    let isFirstRenderedPage = true
+
+    // Render title page (page 1, recto) if included
+    if (shouldRenderPage(1)) {
+        renderTitlePage(pdf, {
+            title: meta.title || 'Untitled',
+            subtitle: meta.language ? `${meta.language} Interlinear Edition` : 'Interlinear Edition',
+            pageWidth: pageWidthMM,
+            pageHeight: pageHeightMM,
+            marginInner,
+            marginOuter,
+            marginTop,
+            typography,
+        })
+        isFirstRenderedPage = false
+    }
 
     // Render content pages
     pages.forEach((page, pageIndex) => {
-        pdf.addPage()
+        const pageNum = pageIndex + 2 // Title is page 1, content starts at 2
+        if (!shouldRenderPage(pageNum)) return
+
+        if (isFirstRenderedPage) {
+            isFirstRenderedPage = false
+        } else {
+            pdf.addPage()
+        }
 
         // Determine if this is verso (even page number, left side) or recto (odd, right side)
         // In a book spread, page 1 is recto, page 2 is verso, etc.
@@ -128,7 +143,6 @@ export function generatePDF(options: PDFRenderOptions): jsPDF {
 
         // Page number
         if (showPageNumbers) {
-            const pageNum = pageIndex + 2 // Title is page 1, content starts at 2
             const pageNumX = isVerso ? marginLeft : pageWidthMM - marginRight
             pdf.setFontSize(mainFontSize * 0.8)
             pdf.setTextColor(128, 128, 128)
@@ -432,8 +446,8 @@ function hexToRGB(hex: string): [number, number, number] {
 /**
  * Generate PDF and return as data URL for preview
  */
-export function generatePDFDataURL(project: BookProject): string {
-    const pdf = generatePDF({ project })
+export function generatePDFDataURL(project: BookProject, previewPages?: number[]): string {
+    const pdf = generatePDF({ project, previewPages })
     return pdf.output('dataurlstring')
 }
 

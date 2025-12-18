@@ -287,10 +287,17 @@ export default function Home() {
               </button>
 
               <button
-                onClick={() => handleLoadSample('/data/genesis-1-10-translated.json')}
+                onClick={() => handleLoadSample('/data/bibles/genesis-de/gen.json')}
                 className="px-3 py-1.5 text-sm border border-purple-400 text-purple-700 rounded hover:bg-purple-50"
               >
                 Genesis (DE)
+              </button>
+
+              <button
+                onClick={() => handleLoadSample('/data/bibles/exodus-de/exo.json')}
+                className="px-3 py-1.5 text-sm border border-orange-400 text-orange-700 rounded hover:bg-orange-50"
+              >
+                Exodus (DE)
               </button>
 
               <button
@@ -305,6 +312,13 @@ export default function Home() {
                 className="px-3 py-1.5 text-sm border border-blue-400 text-blue-700 rounded hover:bg-blue-50"
               >
                 Luke 1-2 (AF)
+              </button>
+
+              <button
+                onClick={() => handleLoadSample('/data/arquitecta-spanish-translated.json')}
+                className="px-3 py-1.5 text-sm border border-pink-400 text-pink-700 rounded hover:bg-pink-50"
+              >
+                Arquitecta (ES)
               </button>
 
               <button

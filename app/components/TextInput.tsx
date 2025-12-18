@@ -196,6 +196,15 @@ const MARK_2_SPANISH = `Chapter 2
 
 23 Aconteció que al pasar él por los sembrados un día de reposo, sus discípulos, andando, comenzaron a arrancar espigas. 24 Entonces los fariseos le dijeron: Mira, ¿por qué hacen en el día de reposo lo que no es lícito? 25 Pero él les dijo: ¿Nunca leísteis lo que hizo David cuando tuvo necesidad, y sintió hambre, él y los que con él estaban; 26 cómo entró en la casa de Dios, siendo Abiatar sumo sacerdote, y comió los panes de la proposición, de los cuales no es lícito comer sino a los sacerdotes, y aun dio a los que con él estaban? 27 También les dijo: El día de reposo fue hecho por causa del hombre, y no el hombre por causa del día de reposo. 28 Por tanto, el Hijo del Hombre es Señor aun del día de reposo.`
 
+const ARQUITECTA_SPANISH = `Chapter 1
+1 Soy arquitecta. Los arquitectos diseñan y construyen edificios porque les gustan los edificios y las casas al igual que yo. Por eso Ma me llama su "pequeña arquitecta".
+
+2 Para construir una casa, necesita espacio en algún lugar.
+
+3 Su casa podría estar en un bosque lleno de árboles, un lugar caliente del desierto, un lugar en lo alto de las montañas.
+
+4 Un lugar donde hay blanco nieve alrededor ¡brrr!… Un lugar lluvioso ¡plic!…¡ploc!, en un pueblo verde fangoso o un lugar altísimo como los rascacielos.`
+
 export default function TextInput({ onTranslate, isLoading }: TextInputProps) {
   const [text, setText] = useState('')
 
@@ -220,6 +229,10 @@ export default function TextInput({ onTranslate, isLoading }: TextInputProps) {
 
   const loadMark2Spanish = () => {
     setText(MARK_2_SPANISH)
+  }
+
+  const loadArquitecta = () => {
+    setText(ARQUITECTA_SPANISH)
   }
 
   return (
@@ -254,6 +267,13 @@ export default function TextInput({ onTranslate, isLoading }: TextInputProps) {
             className="text-sm text-orange-600 hover:text-orange-800"
           >
             Load Mark 2 (ES)
+          </button>
+          <button
+            type="button"
+            onClick={loadArquitecta}
+            className="text-sm text-pink-600 hover:text-pink-800"
+          >
+            Load Arquitecta (ES)
           </button>
         </div>
       </div>

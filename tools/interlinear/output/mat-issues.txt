@@ -1,0 +1,302 @@
+# Verses needing AI review
+
+1:2: Abraham zeugte Isaak Isaak zeugte Jakob Jakob zeugte Juda und seine Brüder
+Current: Abraham begat Isaac Isaac begat Jacob Jacob begat Juda(-h also his brothers
+
+1:3: Juda zeugte Perez und Serah von Thamar Perez zeugte Hezron Hezron zeugte Ram
+Current: Juda(-h begat Phares also Zara of Thamar Phares begat Esrom Esrom begat [Ram]
+
+1:4: Ram zeugte Amminadab Amminadab zeugte Nahesson Nahesson zeugte Salma
+Current: [Ram] begat [Amminadab] [Amminadab] begat Naasson Naasson begat Salmon
+
+1:6: Jesse zeugte den König David Der König David zeugte Salomo von dem Weib des Uria
+Current: Jesse begat the King David the King David begat Solomon of which wife of-the [Uria]
+
+1:7: Salomo zeugte Rehabeam Rehabeam zeugte Abia Abia zeugte Asa
+Current: Solomon begat Roboam Roboam begat [Abia] [Abia] begat [Asa]
+
+1:8: Asa zeugte Josaphat Josaphat zeugte Joram Joram zeugte Usia
+Current: [Asa] begat Josaphat Josaphat begat Joram Joram begat Ozias
+
+1:9: Usia zeugte Jotham Jotham zeugte Ahas Ahas zeugte Hiskia
+Current: Ozias begat Joatham Joatham begat [Ahas] [Ahas] begat Ezekias
+
+1:10: Hiskia zeugte Manasse Manasse zeugte Amon Amon zeugte Josia
+Current: Ezekias begat Manasses Manasses begat [Amon] [Amon] begat Josias
+
+1:11: Josia zeugte Jechonja und seine Brüder um die Zeit der babylonischen Gefangenschaft
+Current: Josias begat Jechonias also his brothers for the on the [babylonischen] X brought
+
+1:12: Nach der babylonischen Gefangenschaft zeugte Jechonja Sealthiel Sealthiel zeugte Serubabel
+Current: with the [babylonischen] X brought begat Jechonias Salathiel Salathiel begat Zorobabel
+
+1:13: Serubabel zeugte Abiud Abiud zeugte Eliakim Eliakim zeugte Asor
+Current: Zorobabel begat [Abiud] [Abiud] begat Eliakim Eliakim begat [Asor]
+
+1:14: Asor zeugte Zadok Zadok zeugte Achim Achim zeugte Eliud
+Current: [Asor] begat Sadoc Sadoc begat [Achim] [Achim] begat Eliud
+
+1:15: Eliud zeugte Eleasar Eleasar zeugte Matthan Matthan zeugte Jakob
+Current: Eliud begat Eleazar Eleazar begat Matthan Matthan begat Jacob
+
+1:17: Alle Glieder von Abraham bis auf David sind vierzehn Glieder Von David bis auf die Gefangenschaft sind vierzehn Glieder Von der babylonischen Gefangenschaft bis auf Christus sind vierzehn Glieder
+Current: all generation from Abraham till on David are fourteen generation from David till on the X brought are fourteen generation from the [babylonischen] X brought till on Christ are fourteen generation
+
+1:18: Die Geburt Christi war aber also getan Als Maria seine Mutter dem Joseph vertraut war fand sich s ehe er sie heimholte daß sie schwanger war von dem heiligen Geist
+Current: the birth Christ was and so done when Mary his mother the Joseph [vertraut] espouse found himself [s] before or they resort that they by womb of the [heiligen] Spirit
+
+1:20: Indem er aber also gedachte siehe da erschien ihm ein Engel des HERRN im Traum und sprach Joseph du Sohn Davids fürchte dich nicht Maria dein Gemahl zu dir zu nehmen denn das in ihr geboren ist das ist von dem heiligen Geist
+Current: these he but so think behold then appear him a angel of-the Lord after dream and speak Joseph you son David fear you not Mary your women to thy to take and the by you born begat the is of the [heiligen] Spirit
+
+1:23: “ Siehe eine Jungfrau wird schwanger sein und einen Sohn gebären und sie werden seinen Namen Immanuel heißen ” das ist verdolmetscht Gott mit uns
+Current: [“] behold a virgin will by womb also a son bear also they be his name Emmanuel call [”] which is interpret god with our
+
+2:1: Da Jesus geboren war zu Bethlehem im jüdischen Lande zur Zeit des Königs Herodes siehe da kamen die Weisen vom Morgenland nach Jerusalem und sprachen
+Current: and Jesus born begat by Bethlehem in-the [jüdischen] Judaea by day of-the King Antipas behold then came the sorcerer from-the land-of-the-east into Jerusalem and speak
+
+2:2: Wo ist der neugeborene König der Juden Wir haben seinen Stern gesehen im Morgenland und sind gekommen ihn anzubeten
+Current: where is the bear King the Jew we have his [Stern] know by land-of-the-east also are come him worship
+
+2:4: Und ließ versammeln alle Hohenpriester und Schriftgelehrten unter dem Volk und erforschte von ihnen wo Christus sollte geboren werden
+Current: also had gather all [Hohenpriester] also scribe under the people and ask of them where Christ would begat be
+
+2:6: “ Und du Bethlehem im jüdischen Lande bist mitnichten die kleinste unter den Fürsten Juda s denn aus dir soll mir kommen der Herzog der über mein Volk Israel ein HERR sei ”
+Current: [“] also thou Bethlehem in-the Juda(-h earth be not the least by the governor Judah Juda(-h and of thy shall me come the count which over my people Israel a LORD feed [”]
+
+2:7: Da berief Herodes die Weisen heimlich und erlernte mit Fleiß von ihnen wann der Stern erschienen wäre
+Current: then called Antipas the sorcerer privily and [erlernte] with [Fleiß] of them when the [Stern] appeared appear
+
+2:8: und wies sie gen Bethlehem und sprach Ziehet hin und forschet fleißig nach dem Kindlein wenn ihr s findet so sagt mir s wieder daß ich auch komme und es anbete
+Current: also send they into Bethlehem and say [Ziehet] go and search [fleißig] of the child when you [s] find then say me me back that I I come and it worship
+
+2:9: Als sie nun den König gehört hatten zogen sie hin Und siehe der Stern den sie im Morgenland gesehen hatten ging vor ihnen hin bis daß er kam und stand oben über da das Kindlein war
+Current: and they now the King heard had went they go also behold the [Stern] which by in-the land-of-the-east seen know bring (forth before them away till that he come and stand over over where the child was
+
+2:10: Da sie den Stern sahen wurden sie hoch erfreut
+Current: then and the [Stern] know were rejoice exceeding joy
+
+2:11: und gingen in das Haus und fanden das Kindlein mit Maria seiner Mutter und fielen nieder und beteten es an und taten ihre Schätze auf und schenkten ihm Gold Weihrauch und Myrrhe
+Current: also come into the house and find know child with Mary his mother also fell fall and [beteten] it worship also did their treasure on and gift him gold frankincense also myrrh
+
+2:12: Und Gott befahl ihnen im Traum daß sie sich nicht sollten wieder zu Herodes lenken und sie zogen durch einen anderen Weg wieder in ihr Land
+Current: also God commanded call after dream that they himself not should back unto Antipas [lenken] and they went by a others way back into you country
+
+2:13: Da sie aber hinweggezogen waren siehe da erschien der Engel des HERRN dem Joseph im Traum und sprach Stehe auf und nimm das Kindlein und seine Mutter zu dir und flieh nach Ägyptenland und bleib allda bis ich dir sage denn es ist vorhanden daß Herodes das Kindlein suche dasselbe umzubringen
+Current: then they and [hinweggezogen] were behold then appear the angel of-the Lord the Joseph after dream and speak stand rise and take the child also his mother to you also flee into Egypt-land also be there till I thee say and it is around that Antipas the child seek the [umzubringen]
+
+2:14: Und er stand auf und nahm das Kindlein und seine Mutter zu sich bei der Nacht und entwich nach Ägyptenland
+Current: and and rose rise and take the child also his mother night himself with the night also [entwich] into Egypt-land
+
+2:15: Und blieb allda bis nach dem Tod des Herodes auf daß erfüllet würde was der HERR durch den Propheten gesagt hat der da spricht “ Aus Ägypten habe ich meinen Sohn gerufen ”
+Current: also was there till after the death of-the Antipas on that [erfüllet] fulfil which of Lord by the prophet said speak the then speak [“] of Egypt have I my son call [”]
+
+2:16: Da Herodes nun sah daß er von den Weisen betrogen war ward er sehr zornig und schickte aus und ließ alle Kinder zu Bethlehem töten und an seinen ganzen Grenzen die da zweijährig und darunter waren nach der Zeit die er mit Fleiß von den Weisen erlernt hatte
+Current: then Antipas now know that he of the sorcerer deceived then was he exceeding be wroth also sent from and had all servant by Bethlehem kill also by his all coast the then two years old also down were after the after which of with [Fleiß] from the sorcerer [erlernt] had
+
+2:18: “Auf dem Gebirge hat man ein Geschrei gehört viel Klagens Weinens und Heulens Rahel beweinte ihre Kinder und wollte sich nicht trösten lassen denn es war aus mit ihnen ”
+Current: [“Auf] the Rama by one a voice heard many lamentation weeping also mourning Rachel weep their child also desire himself no bring-relief beseech that it are from with no [”]
+
+2:22: Da er aber hörte daß Archelaus im jüdischen Lande König war anstatt seines Vaters Herodes fürchtete er sich dahin zu kommen Und im Traum empfing er Befehl von Gott und zog in die Örter des galiläischen Landes
+Current: and he but heard that [Archelaus] on [jüdischen] Judaea King was [anstatt] his Father Antipas was-afraid fear there there to come and after dream [empfing] he orders from call and went into the part of-the [galiläischen] Galilee
+
+2:23: und kam und wohnte in der Stadt die da heißt Nazareth auf das erfüllet würde was da gesagt ist durch die Propheten Er soll Nazarenus heißen
+Current: also come and dwell into the city the then speak Nazareth on that [erfüllet] fulfil which then said speak by the prophet he shall Nazarene call
+
+3:1: Zu der Zeit kam Johannes der Täufer und predigte in der Wüste des jüdischen Landes
+Current: by that day come John the [Täufer] and preach by the wilderness of-the [jüdischen] Judaea
+
+3:3: Und er ist der von dem der Prophet Jesaja gesagt hat und gesprochen “Es ist eine Stimme eines Predigers in der Wüste Bereitet dem HERRN den Weg und macht richtig seine Steige ”
+Current: and this is is speak the of prophet Esaias said has and speak [“Es] is a voice one [Predigers] by the wilderness prepare the Lord the way and do straight his path [”]
+
+3:4: Er aber Johannes hatte ein Kleid von Kamelhaaren und einen ledernen Gürtel um seine Lenden seine Speise aber war Heuschrecken und wilder Honig
+Current: he but John have a raiment from camel also a leathern girdle of his loins his meat but was [Heuschrecken] also wild honey
+
+3:5: Da ging zu ihm hinaus die Stadt Jerusalem und das ganze jüdische Land und alle Länder an dem Jordan
+Current: then went unto him proceed the city Jerusalem also the all [jüdische] Judaea also all earth country  about the Jordan
+
+3:6: und ließen sich taufen von ihm im Jordan und bekannten ihre Sünden
+Current: also of himself [taufen] from him by Jordan and confess their sins
+
+3:7: Als er nun viele Pharisäer und Sadduzäer sah zu seiner Taufe kommen sprach er zu ihnen Ihr Otterngezüchte wer hat denn euch gewiesen daß ihr dem künftigen Zorn entrinnen werdet
+Current: when he and many Pharisee also on know to his [Taufe] come say he to them you fruit what has for you show that you the shall wrath flee will
+
+3:8: Sehet zu tut rechtschaffene Frucht der Buße
+Current: therefore to do [rechtschaffene] fruit the repentance
+
+3:10: Es ist schon die Axt den Bäumen an die Wurzel gelegt Darum welcher Baum nicht gute Frucht bringt wird abgehauen und ins Feuer geworfen
+Current: and now also the [Axt] the tree unto the root lie therefore all therefore not good fruit do will cut down(off also into fire [geworfen]
+
+3:11: Ich taufe euch mit Wasser zur Buße der aber nach mir kommt ist stärker denn ich dem ich nicht genugsam bin seine Schuhe zu tragen der wird euch mit dem Heiligen Geist und mit Feuer taufen
+Current: I [taufe] you by water into repentance the and after my come is mighty for my which I no many am his shoe to bear the will you by the [Heiligen] Spirit also with fire [taufen]
+
+3:12: Und er hat seine Wurfschaufel in der Hand er wird seine Tenne fegen und den Weizen in seine Scheune sammeln aber die Spreu wird er verbrennen mit ewigem Feuer
+Current: and he also which fan by the hand he will his threshing-floor thoroughly purge also the wheat into his [Scheune] gather but the [Spreu] will he burn with [ewigem] fire
+
+3:13: Zu der Zeit kam Jesus aus Galiläa an den Jordan zu Johannes daß er sich von ihm taufen ließe
+Current: to the then come Jesus from Galilee on the Jordan unto John that he himself of him [taufen] [ließe]
+
+3:14: Aber Johannes wehrte ihm und sprach Ich bedarf wohl daß ich von dir getauft werde und du kommst zu mir
+Current: and John forbid him and speak I need well that I of thy [getauft] will also thou come unto me
+
+3:15: Jesus aber antwortete und sprach zu ihm Laß es jetzt also sein also gebührt es uns alle Gerechtigkeit zu erfüllen Da ließ er s ihm zu
+Current: Jesus and answered and say unto him let it was-giving-birth so and so become is us all righteousness to fulfil then had he [s] him to
+
+3:16: Und da Jesus getauft war stieg er alsbald herauf aus dem Wasser und siehe da tat sich der Himmel auf Über ihm Und er sah den Geist Gottes gleich als eine Taube herabfahren und über ihn kommen
+Current: also then Jesus [getauft] was went-down he straight up from the water also behold then did himself the heaven on over him also he know the Spirit god about when a dove descend also on him come
+
+3:17: Und siehe eine Stimme vom Himmel herab sprach Dies ist mein lieber Sohn an welchem ich Wohlgefallen habe
+Current: also behold a voice of heaven down speak this is my more son by which I [Wohlgefallen] please
+
+4:2: Und da er vierzig Tage und vierzig Nächte gefastet hatte hungerte ihn
+Current: also then he forty day also forty night [gefastet] fast [hungerte] hunger
+
+4:4: Und er antwortete und sprach Es steht geschrieben “Der Mensch lebt nicht vom Brot allein sondern von einem jeglichen Wort das durch den Mund Gottes geht ”
+Current: and he answered and say it is write [“Der] man live no on bread only but on all one word the by the mouth god proceed [”]
+
+4:5: Da führte ihn der Teufel mit sich in die Heilige Stadt und stellte ihn auf die Zinne des Tempels
+Current: then brought him the devil with take into the [Heilige] city also stand him on pinnacle [Zinne] of-the temple
+
+4:6: und sprach zu ihm Bist du Gottes Sohn so laß dich hinab denn es steht geschrieben Er wird seinen Engeln über dir Befehl tun und sie werden dich auf Händen tragen auf daß du deinen Fuß nicht an einen Stein stoßest
+Current: also speak to him be you god son then let thyself down and it is write he will his [Engeln] of thy orders command also they be thee on hand bear on that lest thy foot not unto a stone stumble
+
+4:7: Da sprach Jesus zu ihm Wiederum steht auch geschrieben “Du sollst Gott deinen HERRN nicht versuchen ”
+Current: then say Jesus to him again is also write [“Du] shall Lord thy god no tempt [”]
+
+4:10: Da sprach Jesus zu ihm Hebe dich weg von mir Satan denn es steht geschrieben “Du sollst anbeten Gott deinen HERRN und ihm allein dienen ”
+Current: then speak Jesus to him lift you go from me Satan and it is write [“Du] shall worship god thy Lord also him only serve [”]
+
+4:11: Da verließ ihn der Teufel und siehe da traten die Engel zu ihm und dienten ihm
+Current: then [verließ] him the devil also behold then come the angel to him also serve him
+
+4:12: Da nun Jesus hörte daß Johannes überantwortet war zog er in das galiläische Land
+Current: then and Jesus heard that John [überantwortet] deliver went he into the [galiläische] Galilee
+
+4:14: auf das erfüllet würde was da gesagt ist durch den Propheten Jesaja der da spricht
+Current: that the [erfüllet] fulfil which then said speak by the prophet Esaias the then speak
+
+4:15: “Das Land Sebulon und das Land Naphthali am Wege des Meeres jenseit des Jordans und das heidnische Galiläa
+Current: [“Das] earth Zabulon also the earth Nephthalim on-the way of-the sea beyond of-the Jordan and the [heidnische] Galilee
+
+4:16: das Volk das in Finsternis saß hat ein großes Licht gesehen und die da saßen am Ort und Schatten des Todes denen ist ein Licht aufgegangen ”
+Current: the people which by darkness sit has a great light know also the which sit by country also shadow of-the death them is a light risen [”]
+
+4:17: Von der Zeit an fing Jesus an zu predigen und zu sagen Tut Buße das Himmelreich ist nahe herbeigekommen
+Current: from the time then began Jesus to to preach also to speak do repent the [Himmelreich] is near approach
+
+4:18: Als nun Jesus an dem Galiläischen Meer ging sah er zwei Brüder Simon der da heißt Petrus und Andreas seinen Bruder die warfen ihre Netze ins Meer denn sie waren Fischer
+Current: and now Jesus of the Galilee sea walk know he two brothers Simeon the then speak Peter also [Andreas] his brother the threw their [Netze] into sea and they was [Fischer]
+
+4:19: Und er sprach zu ihnen Folget mir nach ich will euch zu Menschenfischern machen
+Current: also he speak to them come my after I will you to [Menschenfischern] do
+
+4:20: Alsbald verließen sie ihre Netze und folgten ihm nach
+Current: immediately [verließen] they their net and [folgten] him after
+
+4:22: Alsbald verließen sie das Schiff und ihren Vater und folgten ihm nach
+Current: immediately [verließen] they the ship also their Father and [folgten] him after
+
+4:23: Und Jesus ging umher im ganzen galiläischen Lande lehrte sie in ihren Schulen und predigte das Evangelium von dem Reich und heilte allerlei Seuche und Krankheit im Volk
+Current: also Jesus went compass in-the all [galiläischen] Galilee teach they by their synagogue also preach the gospel from the rich also heal all disease also disease by people
+
+4:24: Und sein Gerücht erscholl in das ganze Syrienland Und sie brachten zu ihm allerlei Kranke mit mancherlei Seuchen und Qual behaftet die Besessenen die Mondsüchtigen und Gichtbrüchigen und er machte sie alle gesund
+Current: also his news [erscholl] into the all Syria also they offer to him all evil with divers disease also [Qual] throng the have a (be vexedwith the be a lunatic also thathad  the palsy also he made they all heal
+
+4:25: Und es folgte ihm nach viel Volks aus Galiläa aus den Zehn- Städten von Jerusalem aus dem jüdischen Lande und von jenseits des Jordans
+Current: also it went him after many people from Galilee from the [Zehn-] Decapolis from Jerusalem from the [jüdischen] Judaea also from beyond of-the Jordan
+
+5:3: Selig sind die da geistlich arm sind denn das Himmelreich ist ihr
+Current: blessed are the then Spirit [arm] poor that the [Himmelreich] is you
+
+5:10: Selig sind die um Gerechtigkeit willen verfolgt werden denn das Himmelreich ist ihr
+Current: blessed are the for righteousness sake [verfolgt] persecute that the [Himmelreich] is you
+
+5:11: Selig seid ihr wenn euch die Menschen um meinetwillen schmähen und verfolgen und reden allerlei Übles gegen euch so sie daran lügen
+Current: blessed are are when you the man for me upbraid also persecute also say all evil after your then they by-this lie
+
+5:13: Ihr seid das Salz der Erde Wo nun das Salz dumm wird womit soll man s salzen Es ist hinfort zu nichts nütze denn das man es hinausschütte und lasse es die Leute zertreten
+Current: ye are the [Salz] the earth if and the [Salz] [dumm] become fool by shall one [s] [salzen] it is never to nothing avail into the one it without also bring-forth it of men trample
+
+5:14: Ihr seid das Licht der Welt Es kann die Stadt die auf einem Berge liegt nicht verborgen sein
+Current: ye are the light world earth it able the city the over a mountain lie no [verborgen] hide
+
+5:15: Man zündet auch nicht ein Licht an und setzt es unter einen Scheffel sondern auf einen Leuchter so leuchtet es denn allen die im Hause sind
+Current: neither [zündet] also not a candle burn also lay it of a bushel but on a candlestick also shine it for all the by house are
+
+5:16: Also laßt euer Licht leuchten vor den Leuten daß sie eure guten Werke sehen und euren Vater im Himmel preisen
+Current: so let your light shine before the nations that your good good work know also your Father by heaven glorify
+
+5:17: Ihr sollt nicht wähnen daß ich gekommen bin das Gesetz oder die Propheten aufzulösen ich bin nicht gekommen aufzulösen sondern zu erfüllen
+Current: you shall not suppose that I come come the law or the prophet destroy I am no come destroy but to fulfil
+
+5:18: Denn ich sage euch wahrlich Bis daß Himmel und Erde zergehe wird nicht zergehen der kleinste Buchstabe noch ein Tüttel vom Gesetz bis daß es alles geschehe
+Current: and I speak you [wahrlich] till that heaven also earth pass will not pass one jot jot or one tittle from-the law till that it all be
+
+5:19: Wer nun eines von diesen kleinsten Geboten auflöst und lehrt die Leute also der wird der Kleinste heißen im Himmelreich wer es aber tut und lehrt der wird groß heißen im Himmelreich
+Current: which therefore one from these least commandment loose also teach the men so the will the least call by [Himmelreich] which it and do and teach this will great call by [Himmelreich]
+
+5:20: Denn ich sage euch Es sei denn eure Gerechtigkeit besser als der Schriftgelehrten und Pharisäer so werdet ihr nicht in das Himmelreich kommen
+Current: and speak you that it be except your righteousness more when the scribe also Pharisee then will into not in the [Himmelreich] enter
+
+5:21: Ihr habt gehört daß zu den Alten gesagt ist “Du sollst nicht töten wer aber tötet der soll des Gerichts schuldig sein ”
+Current: you have heard that to the old-man said speak [“Du] shall no kill which and kill the shall of-the judgment in dangerof be [”]
+
+5:22: Ich aber sage euch Wer mit seinem Bruder zürnet der ist des Gerichts schuldig wer aber zu seinem Bruder sagt Racha der ist des Rats schuldig wer aber sagt Du Narr der ist des höllischen Feuers schuldig
+Current: I and speak that all with his brother be angry the be of-the judgment in dangerof who but to his brother say Raca the be of-the council in dangerof which and say you foolish the be of-the [höllischen] fire in dangerof
+
+5:24: so laß allda vor dem Altar deine Gabe und gehe zuvor hin und versöhne dich mit deinem Bruder und alsdann komm und opfere deine Gabe
+Current: then let there before the altar thy gift also go go away first reconcile you with thy brother also then come and offer thy gift
+
+5:25: Sei willfährig deinem Widersacher bald dieweil du noch bei ihm auf dem Wege bist auf daß dich der Widersacher nicht dermaleinst überantworte dem Richter und der Richter überantworte dich dem Diener und wirst in den Kerker geworfen
+Current: be agree thy [Widersacher] quickly till you whiles with him by the way be lest that you the [Widersacher] lest thee deliver the judge also the judge deliver thee the officer also will into the prison [geworfen]
+
+5:26: Ich sage dir wahrlich Du wirst nicht von dannen herauskommen bis du auch den letzten Heller bezahlest
+Current: I speak thee [wahrlich] you will not thence not come till you also the last [Heller] [bezahlest]
+
+5:27: Ihr habt gehört daß zu den Alten gesagt ist “Du sollst nicht ehebrechen ”
+Current: you have heard that to the old-man said speak [“Du] shall no commit adultery [”]
+
+5:29: Ärgert dich aber dein rechtes Auge so reiß es aus und wirf s von dir Es ist dir besser daß eins deiner Glieder verderbe und nicht der ganze Leib in die Hölle geworfen werde
+Current: offend thee if thy right eye then deliver it deliver also [wirf] [s] from thy it profit thee profit that one thy member destroy also not thy all body into the hell [geworfen] will
+
+5:30: Ärgert dich deine rechte Hand so haue sie ab und wirf sie von dir Es ist dir besser daß eins deiner Glieder verderbe und nicht der ganze Leib in die Hölle geworfen werde
+Current: offend thee thy right hand then cut down(off they cut down(off also [wirf] they from thy it profit thee profit that one thy member destroy also not thy all body into the hell [geworfen] will
+
+5:31: Es ist auch gesagt “ Wer sich von seinem Weibe scheidet der soll ihr geben einen Scheidebrief ”
+Current: it is and speak [“] which himself from his women [scheidet] the shall you give a [Scheidebrief] [”]
+
+5:32: Ich aber sage euch Wer sich von seinem Weibe scheidet es sei denn um Ehebruch der macht daß sie die Ehe bricht und wer eine Abgeschiedene freit der bricht die Ehe
+Current: I and speak you that which from his women [scheidet] it be saving word fornication the do that they the commit adultery commit adultery also which a [Abgeschiedene] marry the commit adultery the commit adultery
+
+5:33: Ihr habt weiter gehört daß zu den Alten gesagt ist “Du sollst keinen falschen Eid tun und sollst Gott deinen Eid halten ”
+Current: you have again heard that to the old-man said speak [“Du] shall no forswear self forswear self forswear self and shall Lord thy oath keep [”]
+
+5:36: Auch sollst du nicht bei deinem Haupt schwören denn du vermagst nicht ein einziges Haar schwarz oder weiß zu machen
+Current: neither shall you not by thy head swear that you [vermagst] no one [einziges] hair black or white able do
+
+5:37: Eure Rede aber sei Ja ja nein nein Was darüber ist das ist vom Übel
+Current: your word and be yea yea no no what more is the is of evil
+
+5:38: Ihr habt gehört daß da gesagt ist “ Auge um Auge Zahn um Zahn ”
+Current: you have heard that then said speak [“] eye for eye tooth for tooth [”]
+
+5:39: Ich aber sage euch daß ihr nicht widerstreben sollt dem Übel sondern so dir jemand einen Streich gibt auf deinen rechten Backen dem biete den andern auch dar
+Current: I and speak you that you not [widerstreben] shall the evil but then thee which a smite smite on thy right cheek the turn the another also out
+
+5:41: Und so dich jemand nötigt eine Meile so gehe mit ihm zwei
+Current: also then thee which [nötigt] one mile then go with him two
+
+5:43: Ihr habt gehört daß gesagt ist “Du sollst deinen Nächsten lieben und deinen Feind hassen ”
+Current: you have heard that said speak [“Du] shall thy neighbour [lieben] also thy enemy hate [”]
+
+5:44: Ich aber sage euch Liebet eure Feinde segnet die euch fluchen tut wohl denen die euch hassen bittet für die so euch beleidigen und verfolgen
+Current: I and speak you [Liebet] your enemy bless the you curse do well them the you hate pray for which then you use despitefully also persecute
+
+5:45: auf daß ihr Kinder seid eures Vater im Himmel denn er läßt seine Sonne aufgehen über die Bösen und über die Guten und läßt regnen über Gerechte und Ungerechte
+Current: on that you son be your Father by heaven that he let his sun sprout on the evil also over the good also let rain on righteous also [Ungerechte]
+
+5:46: Denn so ihr liebet die euch lieben was werdet ihr für Lohn haben Tun nicht dasselbe auch die Zöllner
+Current: for if you [liebet] which you [lieben] what will have for reward have do not the also the publican
+
+6:2: Wenn du Almosen gibst sollst du nicht lassen vor dir posaunen wie die Heuchler tun in den Schulen und auf den Gassen auf daß sie von den Leuten gepriesen werden Wahrlich ich sage euch Sie haben ihren Lohn dahin
+Current: when therefore alms do before thy not sound before you [posaunen] as the hypocrite do by the synagogue also by the street on that they of the nations [gepriesen] glorify [Wahrlich] I speak you they have their reward there
+

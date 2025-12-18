@@ -1,0 +1,302 @@
+# Verses needing AI review
+
+1:1: Die erste Rede habe ich getan lieber Theophilus von alle dem das Jesus anfing beides zu tun und zu lehren
+Current: the indeed word have I do O Theophilus of all the the Jesus [anfing] and to do also to teach
+
+1:2: bis an den Tag da er aufgenommen ward nachdem er den Aposteln welche er hatte erwählt durch den Heiligen Geist Befehl getan hatte
+Current: until to the day which he [aufgenommen] was when he the [Aposteln] which he had choose by the [Heiligen] Spirit orders done command
+
+1:3: welchen er sich nach seinem Leiden lebendig erzeigt hatte durch mancherlei Erweisungen und ließ sich sehen unter ihnen vierzig Tage lang und redete mit ihnen vom Reich Gottes
+Current: which he himself with his suffer live [erzeigt] present by many infallibleproof. tekm rion and had himself see under them forty day long also speak with them of rich god
+
+1:5: denn Johannes hat mit Wasser getauft ihr aber sollt mit dem Heiligen Geist getauft werden nicht lange nach diesen Tagen
+Current: that John has with water [getauft] ye and shall by the [Heiligen] Spirit [getauft] be no with after these day
+
+1:6: Die aber so zusammengekommen waren fragten ihn und sprachen HERR wirst du auf diese Zeit wieder aufrichten das Reich Israel
+Current: indeed therefore then [zusammengekommen] resort ask him and speak Lord will you by this time back establish the rich Israel
+
+1:8: sondern ihr werdet die Kraft des Heiligen Geistes empfangen welcher auf euch kommen wird und werdet meine Zeugen sein zu Jerusalem und in ganz Judäa und Samarien und bis an das Ende der Erde
+Current: but you receive the power of-the [Heiligen] Spirit receive which on you come come also be me witness be by Jerusalem also by all Judaea also Samaria also till to the last the earth
+
+1:9: Und da er solches gesagt ward er aufgehoben zusehends und eine Wolke nahm ihn auf vor ihren Augen weg
+Current: also then he these say was he exaltself [zusehends] also a cloud suppose him suppose before their eye way
+
+1:11: welche auch sagten Ihr Männer von Galiläa was stehet ihr und sehet gen Himmel Dieser Jesus welcher von euch ist aufgenommen gen Himmel wird kommen wie ihr ihn gesehen habt gen Himmel fahren
+Current: which also say you men from Galilaean what [stehet] stand and behold into heaven this Jesus which from your is [aufgenommen] into heaven come come way you him seen see into heaven go
+
+1:13: Und als sie hineinkamen stiegen sie auf den Söller da denn sich aufhielten Petrus und Jakobus Johannes und Andreas Philippus und Thomas Bartholomäus und Matthäus Jakobus des Alphäus Sohn und Simon Zelotes und Judas des Jakobus Sohn
+Current: also when they enter going-up they into the upper chamber where for himself was Peter also James John also [Andreas] Philip also Thomas [Bartholomäus] also Matthew James of-the [Alphäus] son also Simeon Zelotes also Juda(-h of-the James son
+
+1:16: Ihr Männer und Brüder es mußte die Schrift erfüllet werden welche zuvor gesagt hat der Heilige Geist durch den Mund Davids von Judas der ein Führer war derer die Jesus fingen
+Current: you men and brothers it must this scripture [erfüllet] fulfil which former said forewarn the [Heilige] Spirit by the mouth David of Juda(-h which a guide be [derer] the Jesus take
+
+1:18: Dieser hat erworben den Acker um den ungerechten Lohn und ist abgestürzt und mitten entzweigeborsten und all sein Eingeweide ausgeschüttet
+Current: this has possess the field of the [ungerechten] reward also is be and midst burst asunder. l sch also all his bowels shed
+
+1:19: Und es ist kund geworden allen die zu Jerusalem wohnen also daß dieser Acker genannt wird auf ihrer Sprache Hakeldama das ist ein Blutacker
+Current: also it be [kund] known all the to Jerusalem dwell wherefore that this field call will on their tongue [Hakeldama] that is is a field
+
+1:20: Denn es steht geschrieben im Psalmbuch “ Seine Behausung müsse wüst werden und sei niemand der darin wohne ” und “ Sein Bistum empfange ein anderer ”
+Current: and it is write by [Psalmbuch] [“] his habitation be wilderness be also be not the by dwell [”] also [“] his visitation receive a another [”]
+
+1:22: von der Taufe des Johannes an bis auf den Tag da er von uns genommen ist ein Zeuge seiner Auferstehung mit uns werden
+Current: from the [Taufe] of-the John to until till the day which he from our taken is one witness his [Auferstehung] with us be
+
+1:23: Und sie stellten zwei Joseph genannt Barsabas mit dem Zunahmen Just und Matthias
+Current: also they stand two Joseph call [Barsabas] with which call Justus.Io stos also Matthias
+
+1:24: beteten und sprachen HERR aller Herzen Kündiger zeige an welchen du erwählt hast unter diesen zweien
+Current: pray and say Lord all heart which knowest the hearts [zeige] to one you [erwählt] choose of these two
+
+1:25: daß einer empfange diesen Dienst und Apostelamt davon Judas abgewichen ist daß er hinginge an seinen Ort
+Current: that one receive this ministry also [Apostelamt] of Juda(-h [abgewichen] transgression that he go into privately place
+
+1:26: Und sie warfen das Los über sie und das Los fiel auf Matthias und er ward zugeordnet zu den elf Aposteln
+Current: also they give the lot over they also the lot fall on Matthias also he was number with the eleven [Aposteln]
+
+2:1: Und als der Tag der Pfingsten erfüllt war waren sie alle einmütig beieinander
+Current: also by the day the Pentecost fill fill was they all with one accord on
+
+2:2: Und es geschah schnell ein Brausen vom Himmel wie eines gewaltigen Windes und erfüllte das ganze Haus da sie saßen
+Current: also it be [schnell] a sound of heaven as one [gewaltigen] wind also fulfil the all house where they was
+
+2:4: und sie wurden alle voll des Heiligen Geistes und fingen an zu predigen mit anderen Zungen nach dem der Geist ihnen gab auszusprechen
+Current: also they fill all fill of-the [Heiligen] Spirit also began to to speak with another tongue as the the Spirit them give [auszusprechen]
+
+2:7: Sie entsetzten sich aber alle verwunderten sich und sprachen untereinander Siehe sind nicht diese alle die da reden aus Galiläa
+Current: they [entsetzten] bewitch and all marveled marvel and speak unto behold are no this all which then speak from Galilaean
+
+2:9: Parther und Meder und Elamiter und die wir wohnen in Mesopotamien und in Judäa und Kappadozien Pontus und Asien
+Current: Parthian also Mede also Elamites also the we dwell in Mesopotamia and in Judaea also Cappadocia Pontus also [Asien]
+
+2:11: Juden und Judengenossen Kreter und Araber wir hören sie mit unsern Zungen die großen Taten Gottes reden
+Current: Jew and proselyte Cretians also [Araber] we hears they with our tongue the great great things god speak
+
+2:12: Sie entsetzten sich aber alle und wurden irre und sprachen einer zu dem andern Was will das werden
+Current: they [entsetzten] bewitch and all also were doubt and speak one unto the another what desire this desire
+
+2:13: Die andern aber hatten s ihren Spott und sprachen Sie sind voll süßen Weins
+Current: the another and had [s] their mock and speak they are fill [süßen] [Weins]
+
+2:16: sondern das ist s was durch den Propheten Joel zuvor gesagt ist
+Current: but this is is what by the prophet [Joel] former said say
+
+2:17: “ Und es soll geschehen in den letzten Tagen spricht Gott ich will ausgießen von meinem Geist auf alles Fleisch und eure Söhne und eure Töchter sollen weissagen und eure Jünglinge sollen Gesichte sehen und eure Ältesten sollen Träume haben
+Current: [“] also it shall be by the last day speak god I will shed from my Spirit on all flesh also your son also your daughter shall prophesy also your young man see vision see also your elder dream dream dream
+
+2:19: Und ich will Wunder tun oben im Himmel und Zeichen unten auf Erden Blut und Feuer und Rauchdampf
+Current: also I give wonder give on-top by heaven also sign down on earth blood also fire also [Rauchdampf]
+
+2:21: Und soll geschehen wer den Namen des HERRN anrufen wird der soll selig werden ”
+Current: also shall be which the name of-the Lord [anrufen] call the shall happy save [”]
+
+2:22: Ihr Männer von Israel höret diese Worte Jesum von Nazareth den Mann von Gott unter euch mit Taten und Wundern und Zeichen erwiesen welche Gott durch ihn tat unter euch wie denn auch ihr selbst wisset
+Current: you men from Israel hear these word Jesus from Nazarene the man from god into you with power also wonder also sign [erwiesen] which god by him do by your as for also you itself know
+
+2:23: denselben nachdem er aus bedachtem Rat und Vorsehung Gottes übergeben war habt ihr genommen durch die Hände der Ungerechten und ihn angeheftet und erwürgt
+Current: this when he from determine counsel also foreknowledge god [übergeben] delivered have you receive by the hand the [Ungerechten] and him crucify and killed
+
+2:24: Den hat Gott auferweckt und aufgelöst die Schmerzen des Todes wie es denn unmöglich war daß er sollte von ihm gehalten werden
+Current: which has god [auferweckt] and loose the sorrow of-the death because it because no was that he hold of him kept hold
+
+2:25: Denn David spricht von ihm “Ich habe den HERRN allezeit vorgesetzt vor mein Angesicht denn er ist an meiner Rechten auf daß ich nicht bewegt werde
+Current: and David speak into him [“Ich] foresee the Lord by foresee before my face that he is of my right on that I lest [bewegt] shake
+
+2:26: Darum ist mein Herz fröhlich und meine Zunge freuet sich denn auch mein Fleisch wird ruhen in der Hoffnung
+Current: by rejoice my heart rejoice also my tongue [freuet] himself and also my flesh will lodge on the hope
+
+2:28: Du hast mir kundgetan die Wege des Lebens du wirst mich erfüllen mit Freuden vor deinem Angesicht ”
+Current: you declare me declare the way of-the life you fulfil me fulfil with joy with thy face [”]
+
+2:29: Ihr Männer liebe Brüder lasset mich frei reden zu euch von dem Erzvater David Er ist gestorben und begraben und sein Grab ist bei uns bis auf diesen Tag
+Current: you men my brothers say may with say unto you of the patriarch David he die die also bury also his sepulchre is by us until on this day
+
+2:31: hat er s zuvor gesehen und geredet von der Auferstehung Christi daß seine Seele nicht dem Tode gelassen ist und sein Fleisch die Verwesung nicht gesehen hat
+Current: has he [s] former foresee and speak of the [Auferstehung] Christ that his soul no into death [gelassen] leave neither his flesh the corruption neither seen know
+
+2:32: Diesen Jesus hat Gott auferweckt des sind wir alle Zeugen
+Current: this Jesus has god [auferweckt] which are we all witness
+
+2:33: Nun er durch die Rechte Gottes erhöht ist und empfangen hat die Verheißung des Heiligen Geistes vom Vater hat er ausgegossen dies das ihr sehet und höret
+Current: therefore he through the right god [erhöht] exalt and receive receive the promise of-the [Heiligen] Spirit of Father has he shed this which ye see also hear
+
+2:34: Denn David ist nicht gen Himmel gefahren Er spricht aber “Der HERR hat gesagt zu meinem HERRN Setze dich zu meiner Rechten
+Current: and David is no into heaven [gefahren] he speak and [“Der] Lord has say to my Lord sit sit of my right
+
+2:35: bis daß ich deine Feinde lege zum Schemel deiner Füße ”
+Current: until till I thy enemy put as-a foot thy foot [”]
+
+2:36: So wisse nun das ganze Haus Israel gewiß daß Gott diesen Jesus den ihr gekreuzigt habt zu einem HERRN und Christus gemacht hat
+Current: therefore know now the all house Israel surely that god this Jesus which ye [gekreuzigt] crucify also a Lord also Christ made do
+
+2:37: Da sie aber das hörten ging s ihnen durchs Herz und fragten Petrus und die andern Apostel Ihr Männer was sollen wir tun
+Current: then they and the heard went prick them through-the heart and say Peter also the other [Apostel] you men what shall we do
+
+2:38: Petrus sprach zu ihnen Tut Buße und lasse sich ein jeglicher taufen auf den Namen Jesu Christi zur Vergebung der Sünden so werdet ihr empfangen die Gabe des Heiligen Geistes
+Current: Peter say unto them do repent also bring-forth himself a every [taufen] on the name Jesus Christ into [Vergebung] the sins also will you receive the gift of-the [Heiligen] Spirit
+
+2:39: Denn euer und eurer Kinder ist diese Verheißung und aller die ferne sind welche Gott unser HERR herzurufen wird
+Current: and you also your child is these promise also all the far into whatsoever Lord our god [herzurufen] will
+
+2:41: Die nun sein Wort gern annahmen ließen sich taufen und wurden hinzugetan an dem Tage bei dreitausend Seelen
+Current: the indeed his word for [annahmen] sent himself [taufen] also were add to that day about three thousand soul
+
+2:42: Sie blieben aber beständig in der Apostel Lehre und in der Gemeinschaft und im Brotbrechen und im Gebet
+Current: they was and continue in the [Apostel] doctrine also in the fellowship also in-the breaking also in-the prayer
+
+2:43: Es kam auch alle Seelen Furcht an und geschahen viel Wunder und Zeichen durch die Apostel
+Current: it be and all soul fear be and be many wonder also sign by the [Apostel]
+
+2:44: Alle aber die gläubig waren geworden waren beieinander und hielten alle Dinge gemein
+Current: all and the [gläubig] were believe was on also have all [Dinge] common
+
+2:47: nahmen die Speise und lobten Gott mit Freuden und einfältigem Herzen und hatten Gnade beim ganzen Volk Der HERR aber tat hinzu täglich die da selig wurden zu der Gemeinde
+Current: eat the meat and [lobten] god by joy also integrity heart also have grace unto all people the Lord and did add after the then happy save to the church
+
+3:1: Petrus aber und Johannes gingen miteinander hinauf in den Tempel um die neunte Stunde da man pflegt zu beten
+Current: Peter and also John went on up into the temple for the ninth hour then one [pflegt] to prayer
+
+3:2: Und es war ein Mann lahm von Mutterleibe der ließ sich tragen und sie setzten ihn täglich vor des Tempels Tür die da heißt “die schöne ” daß er bettelte das Almosen von denen die in den Tempel gingen
+Current: also it was certain man be of mother the had himself bear and they lay which day unto of-the temple door which then speak [“die] beautiful [”] that he [bettelte] the alms of them the into the temple enter
+
+3:7: Und griff ihn bei der rechten Hand und richtete ihn auf Alsobald standen seine Schenkel und Knöchel fest
+Current: also take him with the right hand and pitched him rise and establish his [Schenkel] also ancle bone. sphyr n establish
+
+3:8: sprang auf konnte gehen und stehen und ging mit ihnen in den Tempel wandelte und sprang und lobte Gott
+Current: also leap up stand walk also stand also enter with them into the temple walk also [sprang] also blessed god
+
+3:10: Sie kannten ihn auch daß er s war der um Almosen gesessen hatte vor der schönen Tür des Tempels und sie wurden voll Wunderns und Entsetzens über das was ihm widerfahren war
+Current: they know him and that he this was which unto alms [gesessen] sit on the beautiful gate of-the temple also they were fill wonder also trance on the what him [widerfahren] happen
+
+3:11: Als aber dieser Lahme der nun gesund war sich zu Petrus und Johannes hielt lief alles Volk zu ihnen in die Halle die da heißt Salomos und wunderten sich
+Current: when and this lame the now [gesund] heal himself to Peter also John hold run all people unto them on the porch the then call Solomon and [wunderten] himself
+
+3:12: Als Petrus das sah antwortete er dem Volk Ihr Männer von Israel was wundert ihr euch darüber oder was sehet ihr auf uns als hätten wir diesen wandeln gemacht durch unsere eigene Kraft oder Verdienst
+Current: and Peter the know answered unto the people you men from Israel what [wundert] marvel you on or what see you on us as do we this walk do through our privately power or godliness
+
+3:13: Der Gott Abrahams und Isaaks und Jakobs der Gott unserer Väter hat seinen Knecht Jesus verklärt welchen ihr überantwortet und verleugnet habt vor Pilatus da der urteilte ihn loszulassen
+Current: the god Abraham's also Isaac also Jacob the god our Father glorify his servant Jesus glorify which ye deliver also [verleugnet] have after Pilate then the judge that [loszulassen]
+
+3:14: Ihr aber verleugnetet den Heiligen und Gerechten und batet daß man euch den Mörder schenkte
+Current: ye and [verleugnetet] the [Heiligen] also righteous also [batet] that one you the murderer forgive
+
+3:15: aber den Fürsten des Lebens habt ihr getötet Den hat Gott auferweckt von den Toten des sind wir Zeugen
+Current: and the chiefs of-the life have you [getötet] which rise god rise of the dead which are we witness
+
+3:17: Nun liebe Brüder ich weiß daß ihr s durch Unwissenheit getan habt wie auch eure Obersten
+Current: now my brothers I know that you do after [Unwissenheit] done do as also your chief
+
+3:18: Gott aber was er durch den Mund aller seiner Propheten zuvor verkündigt hat wie Christus leiden sollte hat s also erfüllet
+Current: god and which he by the mouth all his prophet former reveals foretell as Christ [leiden] suffer has fulfil so fulfil
+
+3:19: So tut nun Buße und bekehrt euch daß eure Sünden vertilgt werden
+Current: then repent therefore repent also [bekehrt] turn into your sins was blot out
+
+3:20: auf daß da komme die Zeit der Erquickung von dem Angesichte des HERRN wenn er senden wird den der euch jetzt zuvor gepredigt wird Jesus Christus
+Current: on that then come the time the [Erquickung] from the [Angesichte] of-the Lord also he send will the the you was-giving-birth former [gepredigt] before preach Jesus Christ
+
+3:21: welcher muß den Himmel einnehmen bis auf die Zeit da herwiedergebracht werde alles was Gott geredet hat durch den Mund aller seiner heiligen Propheten von der Welt an
+Current: which must the heaven receive until on the time then [herwiedergebracht] will all which god spoken speak by the mouth all his [heiligen] prophet from the earth to
+
+3:22: Denn Moses hat gesagt zu den Vätern “Einen Propheten wird euch der HERR euer Gott erwecken aus euren Brüdern gleich wie mich den sollt ihr hören in allem was er zu euch sagen wird
+Current: and Moses say say unto the Father [“Einen] prophet will you the Lord your god [erwecken] of your brothers like as me the shall you hears after all whatsoever he unto you say speak
+
+3:23: Und es wird geschehen welche Seele denselben Propheten nicht hören wird die soll vertilgt werden aus dem Volk ”
+Current: and it will be all soul that prophet not hears will which shall was destroy of the people [”]
+
+3:25: Ihr seid der Propheten und des Bundes Kinder welchen Gott gemacht hat mit euren Vätern da er sprach zu Abraham “Durch deinen Samen sollen gesegnet werden alle Völker auf Erden ”
+Current: ye are the prophet also of-the covenant son which god made make unto our Father then he speak unto Abraham [“Durch] thy seed shall blessed bless all lineage on earth [”]
+
+3:26: Euch zuvörderst hat Gott auferweckt seinen Knecht Jesus und hat ihn zu euch gesandt euch zu segnen daß ein jeglicher sich bekehre von seiner Bosheit
+Current: you first has god [auferweckt] his servant Jesus and has him to you sent you to bless by a every himself [bekehre] from his wickedness
+
+4:2: sie verdroß daß sie das Volk lehrten und verkündigten an Jesu die Auferstehung von den Toten
+Current: they grieve by they the people teach also preach by Jesus the [Auferstehung] of the dead
+
+4:4: Aber viele unter denen die dem Wort zuhörten wurden gläubig und ward die Zahl der Männer bei fünftausend
+Current: and many under them the the word hearing were believe also be the [Zahl] the men about five
+
+4:5: Als es nun kam auf den Morgen versammelten sich ihre Obersten und Ältesten und Schriftgelehrten gen Jerusalem
+Current: and it now be on the morning [versammelten] gather their chief also elder also scribe into Jerusalem
+
+4:6: Hannas der Hohepriester und Kaiphas und Johannes und Alexander und wie viel ihrer waren vom Hohenpriestergeschlecht
+Current: [Hannas] the [Hohepriester] also Caiaphas also John also [Alexander] also as whatsoever their was of kind
+
+4:8: Petrus voll des Heiligen Geistes sprach zu ihnen Ihr Obersten des Volkes und ihr Ältesten von Israel
+Current: Peter fill of-the [Heiligen] Spirit say unto them you chief of-the people also you elder from Israel
+
+4:9: so wir heute werden gerichtet über dieser Wohltat an dem kranken Menschen durch welche er ist geheilt worden
+Current: if we thisday be vindicated on this benefit to the [kranken] man by what this is [geheilt] save
+
+4:12: Und ist in keinem andern- Heil ist auch kein andrer Name unter dem Himmel den Menschen gegeben darin wir sollen selig werden
+Current: and is by also [andern-] nothing is also neither another name of the heaven by man give by us must happy save
+
+4:13: Sie sahen aber an die Freudigkeit des Petrus und Johannes und verwunderten sich denn sie waren gewiß daß es ungelehrte Leute und Laien waren kannten sie auch wohl daß sie mit Jesu gewesen waren
+Current: they see and to the boldness of-the Peter also John also marveled take that they are marvel that it [ungelehrte] men also unlearned were recognized they also know that they with Jesus been was
+
+4:14: Sie sahen aber den Menschen der geheilt worden war bei ihnen stehen und hatten nichts dawider zu reden
+Current: they saw and the man the heal [worden] was with them stand and have nothing [dawider] to speak
+
+4:16: Was wollen wir diesen Menschen tun Denn das offenbare Zeichen durch sie geschehen ist allen kund die zu Jerusalem wohnen und wir können s nicht leugnen
+Current: what will we these man do and that known sign by they be manifest all all dwell to Jerusalem dwell also we can no able [leugnen]
+
+4:17: Aber auf daß es nicht weiter einreiße unter das Volk lasset uns ernstlich sie bedrohen daß sie hinfort keinem Menschen von diesem Namen sagen
+Current: but on that it lest on spread into the people leave us [ernstlich] they [bedrohen] that they no nothing man on this name speak
+
+4:18: Und sie riefen sie und geboten ihnen daß sie sich allerdinge nicht hören ließen noch lehrten in dem Namen Jesu
+Current: also they call they and command them that at all himself [allerdinge] not hears speak neither teach on the name Jesus
+
+4:19: Petrus aber und Johannes antworteten und sprachen zu ihnen Richtet ihr selbst ob es vor Gott recht sei daß wir euch mehr gehorchen denn Gott
+Current: Peter and also John answered and say unto them [Richtet] judge itself if it before god righteous is that we your more [gehorchen] or god
+
+4:21: Aber sie drohten ihnen und ließen sie gehen und fanden nicht wie sie sie peinigten um des Volkes willen denn sie lobten alle Gott über das was geschehen war
+Current: and they i. e. threaten further them and sent they go and find nothing how they they punish by of-the people sake that they glorify all god on the what happened be
+
+4:23: Und als man sie hatte gehen lassen kamen sie zu den Ihren und verkündigten ihnen was die Hohenpriester und Ältesten zu ihnen gesagt hatten
+Current: and when one they had go let came come unto the privately also told whatsoever what the [Hohenpriester] also elder unto them say had
+
+4:25: der du durch den Mund Davids deines Knechtes gesagt hast “ Warum empören sich die Heiden und die Völker nehmen vor was umsonst ist
+Current: which you by the mouth David thy servant said say [“] why rage himself the Gentiles also the people take premeditate what vain is
+
+4:26: Die Könige der Erde treten zusammen und die Fürsten versammeln sich zuhauf wider den HERRN und wider seinen Christus ”
+Current: the kings the earth [treten] present also the chiefs gather on after against the Lord also after his Christ [”]
+
+4:27: wahrlich ja sie haben sich versammelt über deinen heiligen Knecht Jesus welchen du gesalbt hast Herodes und Pontius Pilatus mit den Heiden und dem Volk Israel
+Current: [wahrlich] on they have himself gather on thy [heiligen] servant Jesus which you anointed anoint Antipas also Pontius. P ntios Pilate with the Gentiles also the people Israel
+
+4:28: zu tun was deine Hand und dein Rat zuvor bedacht hat daß es geschehen sollte
+Current: to do whatsoever thy hand also thy counsel former [bedacht] predestinate that it be would
+
+4:29: Und nun HERR siehe an ihr Drohen und gib deinen Knechten mit aller Freudigkeit zu reden dein Wort
+Current: also now Lord behold to you [Drohen] also give thy servant with all boldness to speak thy word
+
+4:30: und strecke deine Hand aus daß Gesundheit und Zeichen und Wunder geschehen durch den Namen deines heiligen Knechtes Jesus
+Current: by cast thy hand into that cure also sign also wonder be by the name thy [heiligen] servant Jesus
+
+4:31: Und da sie gebetet hatten bewegte sich die Stätte da sie versammelt waren und sie wurden alle voll des Heiligen Geistes und redeten das Wort Gottes mit Freudigkeit
+Current: also then they [gebetet] pray shake himself the place by they gather was also they were all fill of-the [Heiligen] Spirit also speak the word god with boldness
+
+4:33: Und mit großer Kraft gaben die Apostel Zeugnis von der Auferstehung des HERRN Jesu und war große Gnade bei ihnen allen
+Current: also with great power gave the [Apostel] testimony from the [Auferstehung] of-the Lord Jesus and was great grace on them all
+
+4:34: Es war auch keiner unter ihnen der Mangel hatte denn wie viel ihrer waren die da Äcker oder Häuser hatten die verkauften sie und brachten das Geld des verkauften Guts
+Current: certain be also neither by them the [Mangel] lack and as whatsoever their be the then field or house possessor the sell they and bring the honour of-the sold sell
+
+4:35: und legten es zu der Apostel Füßen und man gab einem jeglichen was ihm not war
+Current: also lay it of the [Apostel] foot and one distribute a every because have not certain
+
+4:36: Joses aber mit dem Zunamen Barnabas das heißt ein Sohn des Trostes von Geschlecht ein Levit aus Zypern
+Current: Joses = &quot and with the call [Barnabas] which is a son of-the consolation from kind a Levite from Cyprus
+
+4:37: der hatte einen Acker und verkaufte ihn und brachte das Geld und legte es zu der Apostel Füßen
+Current: the be a field and sell him and bring the money also lay it of the [Apostel] foot
+
+5:1: Ein Mann aber mit Namen Ananias samt seinem Weibe Saphira verkaufte sein Gut
+Current: certain man and with name [Ananias] with his women Sapphira sell his possession
+
+5:2: und entwandte etwas vom Gelde mit Wissen seines Weibes und brachte einen Teil und legte ihn zu der Apostel Füßen
+Current: also purloin anything from-the honour also consider his women also bring certain part and lay him of the [Apostel] foot
+
+5:3: Petrus aber sprach Ananias warum hat der Satan dein Herz erfüllt daß du dem heiligen Geist lögest und entwendetest etwas vom Gelde des Ackers
+Current: Peter and say [Ananias] why has the Satan thy heart fulfil that you the [heiligen] Spirit lie also purloin anything from-the honour of-the field
+

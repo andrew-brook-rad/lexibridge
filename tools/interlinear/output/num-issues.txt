@@ -1,0 +1,302 @@
+# Verses needing AI review
+
+1:2: Nehmet die Summe der ganzen Gemeinde der Kinder Israel nach ihren Geschlechtern und Vaterhäusern und Namen alles was männlich ist von Haupt zu Haupt
+Current: bear the head the whole congregation the old Israelites after their families and [Vaterhäusern] and name all what male is from head to poll
+
+1:3: von zwanzig Jahren an und darüber was ins Heer zu ziehen taugt in Israel ihr sollt sie zählen nach ihren Heeren du und Aaron
+Current: from twenty year to and upward what into-the host to go bring in Israelites you shall they number after their host you and [Aaron]
+
+1:4: Und sollt zu euch nehmen je vom Stamm einen Hauptmann über sein Vaterhaus
+Current: and shall to you take two from-the tribe a head over his [Vaterhaus]
+
+1:5: Dies sind die Namen der Hauptleute die neben euch stehen sollen von Ruben sei Elizur der Sohn Sedeurs
+Current: this are the name the [Hauptleute] the beside you standing stood from Reuben be [Elizur] the old Shedeur
+
+1:6: von Simeon sei Selumiel der Sohn Zuri- Saddais
+Current: from Simeon be Shelumiel the old [Zuri-] Zurishaddai
+
+1:9: von Sebulon sei Eliab der Sohn Helons
+Current: from Zebulun be [Eliab] the old Helon
+
+1:10: von den Kindern Josephs von Ephraim sei Elisama der Sohn Ammihuds von Manasse sei Gamliel der Sohn Pedazurs
+Current: from the old Joseph from Ephraim be [Elisama] the old Ammihud from Manasseh be Gamaliel the old Pedahzur
+
+1:11: von Benjamin sei Abidan der Sohn des Gideoni
+Current: from Benjamin be [Abidan] the old of-the Gideoni
+
+1:12: von Dan sei Ahieser der Sohn Ammi- Saddais
+Current: from Dan be [Ahieser] the old [Ammi-] Ammishaddai
+
+1:14: von Gad sei Eljasaph der Sohn Deguels
+Current: from Gad be [Eljasaph] the old Deuel
+
+1:15: von Naphthali sei Ahira der Sohn Enans
+Current: from Naphtali be [Ahira] the old Enan
+
+1:16: Das sind die Vornehmsten der Gemeinde die Fürsten unter den Stämmen ihrer Väter die da Häupter über die Tausende in Israel waren
+Current: the famous the call the congregation the prince under the tribe their fathers walk then head over the [Tausende] in Israelites were
+
+1:17: Und Mose und Aaron nahmen sie zu sich wie sie da mit Namen genannt sind
+Current: and Moses and [Aaron] take they to himself as they then with name called curse
+
+1:18: und sammelten auch die ganze Gemeinde am ersten Tage des zweiten Monats und rechneten nach ihrer Geburt nach ihren Geschlechtern und Vaterhäusern und Namen von zwanzig Jahren an und darüber von Haupt zu Haupt
+Current: and gather also the whole congregation on-the firstborn days of-the second month and [rechneten] after their beget after their families and [Vaterhäusern] and name from twenty year to and upward from head to poll
+
+1:20: Der Kinder Ruben des ersten Sohnes Israels nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von Haupt zu Haupt alles was männlich war von zwanzig Jahren und darüber und ins Heer zu ziehen taugte
+Current: the old Reuben of-the firstborn firstborn Israelites after their generations and families their [Vaterhäusern] and name from head to poll all what male was from twenty year and upward and into-the host to go bring
+
+1:22: Der Kinder Simeon nach ihrer Geburt und Geschlecht ihren Vaterhäusern Zahl und Namen von Haupt zu Haupt alles was männlich war von zwanzig Jahren und darüber und ins Heer zu ziehen taugte
+Current: the old Simeon after their generations and families their [Vaterhäusern] number and name from head to poll all what male was from twenty year and upward and into-the host to go bring
+
+1:24: Der Kinder Gad nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber und ins Heer zu ziehen taugte
+Current: the old Gad after their generations and families their [Vaterhäusern] and name from twenty year and upward and into-the host to go bring
+
+1:26: Der Kinder Juda nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Judah after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:27: wurden gezählt zum Stamm Juda vierundsiebzigtausend und sechshundert
+Current: were number as-a tribe Judah [vierundsiebzigtausend] and six
+
+1:28: Der Kinder Isaschar nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Issachar after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:29: wurden gezählt zum Stamm Isaschar vierundfünfzigtausend und vierhundert
+Current: were number as-a tribe Issachar [vierundfünfzigtausend] and four-hundred
+
+1:30: Der Kinder Sebulon nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Zebulun after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:32: Der Kinder Joseph von Ephraim nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Joseph from Ephraim after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:33: wurden gezählt zum Stamm Ephraim vierzigtausend und fünfhundert
+Current: were number as-a tribe Ephraim [vierzigtausend] and five
+
+1:34: Der Kinder Manasse nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Manasseh after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:36: Der Kinder Benjamin nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Benjamin after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:38: Der Kinder Dan nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Dan after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:40: Der Kinder Asser nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Asher after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:41: wurden gezählt zum Stamm Asser einundvierzigtausend und fünfhundert
+Current: were number as-a tribe Asher [einundvierzigtausend] and five
+
+1:42: Der Kinder Naphthali nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte
+Current: the old Naphtali after their generations and families their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring
+
+1:44: Dies sind die Mose und Aaron zählten samt den zwölf Fürsten Israels deren je einer über ein Vaterhaus war
+Current: this are the Moses and [Aaron] number along-with the ten prince Israelites whose two one over a [Vaterhaus] was
+
+1:45: Und die Summe der Kinder Israel nach ihrer Geburt und Geschlecht ihren Vaterhäusern und Namen von zwanzig Jahren und darüber was ins Heer zu ziehen taugte in Israel
+Current: and the number the old Israelites after their giving-birth and generations their [Vaterhäusern] and name from twenty year and upward what into-the host to go bring in Israelites
+
+2:1: Und der HERR redete mit Mose und Aaron und sprach
+Current: and the GOD speak with Moses and [Aaron] and said
+
+2:2: Die Kinder Israel sollen vor der Hütte des Stifts umher sich lagern ein jeglicher unter seinem Panier und Zeichen nach ihren Vaterhäusern
+Current: the old Israelites pitch tell the tent of-the congregation circuits himself pitch a one under his standard and sign after their [Vaterhäusern]
+
+2:3: Gegen Morgen sollen lagern Juda mit seinem Panier und Heer ihr Hauptmann Nahesson der Sohn Amminadabs
+Current: east east shall pitch Judah with his standard and host old prince Nahshon the old Amminadab
+
+2:4: und sein Heer zusammen vierundsiebzigtausend und sechshundert
+Current: and his host number [vierundsiebzigtausend] and six
+
+2:6: und sein Heer zusammen vierundfünfzigtausend und vierhundert
+Current: and his host number [vierundfünfzigtausend] and four-hundred
+
+2:7: Dazu der Stamm Sebulon ihr Hauptmann Eliab der Sohn Helons
+Current: also the tribe Zebulun old prince [Eliab] the old Helon
+
+2:9: Daß alle die ins Lager Juda s gehören seien zusammen hundert sechsundachtzigtausend und vierhundert die zu ihrem Heer gehören und sie sollen vornean ziehen
+Current: that all the into-the camp Judah Judah [gehören] be number hundred six and four-hundred the to her host [gehören] and they shall first journey
+
+2:10: Gegen Mittag soll liegen das Gezelt und Panier Rubens mit ihrem Heer ihr Hauptmann Elizur der Sohn Sedeurs
+Current: toward south shall remain the tent and standard Reuben with her host old prince [Elizur] the old Shedeur
+
+2:12: Neben ihm soll sich lagern der Stamm Simeon ihr Hauptmann Selumiel der Sohn Zuri- Saddais
+Current: beside him shall himself pitch the tribe Simeon old prince Shelumiel the old [Zuri-] Zurishaddai
+
+2:14: Dazu der Stamm Gad ihr Hauptmann Eljasaph der Sohn Reguels
+Current: also the tribe Gad old prince [Eljasaph] the old Reuel
+
+2:16: Daß alle die ins Lager Rubens gehören seien zusammen hunderteinundfünfzigtausend vierhundertfünfzig die zu ihrem Heer gehören sie sollen die zweiten im Ausziehen sein
+Current: that all the into-the camp Reuben [gehören] be number hundred [vierhundertfünfzig] the to her host [gehören] they shall the second in-the journey his
+
+2:18: Gegen Abend soll liegen das Gezelt und Panier Ephraims mit ihrem Heer ihr Hauptmann soll sein Elisama der Sohn Ammihuds
+Current: toward sea shall remain the tent and standard Ephraim's with her host old prince shall his [Elisama] the old Ammihud
+
+2:19: und sein Heer zusammen vierzigtausend und fünfhundert
+Current: and his host number [vierzigtausend] and five
+
+2:22: Dazu der Stamm Benjamin ihr Hauptmann Abidan der Sohn des Gideoni
+Current: also the tribe Benjamin old prince [Abidan] the old of-the Gideoni
+
+2:24: Daß alle die ins Lager Ephraims gehören seien zusammen hundertundachttausend und einhundert die zu seinem Heer gehören und sie sollen die dritten im Ausziehen sein
+Current: that all the into-the camp Ephraim's [gehören] be number hundred and hundred the to his host [gehören] and they shall the third in-the journey his
+
+2:25: Gegen Mitternacht soll liegen das Gezelt und Panier Dans mit ihrem Heer ihr Hauptmann Ahieser der Sohn Ammi- Saddais
+Current: toward north shall remain the camp and standard Dan with her host old prince [Ahieser] the old [Ammi-] Ammishaddai
+
+2:28: und sein Heer zusammen einundvierzigtausend und fünfhundert
+Current: and his host number [einundvierzigtausend] and five
+
+2:29: Dazu der Stamm Naphthali ihr Hauptmann Ahira der Sohn Enans
+Current: also the tribe Naphtali old prince [Ahira] the old Enan
+
+2:31: Daß alle die ins Lager Dans gehören seien zusammen hundertsiebenundfünfzigtausend und sechshundert und sie sollen die letzten sein im Ausziehen mit ihrem Panier
+Current: that all the into-the camp Dan [gehören] be number hundred and six and they shall the [letzten] his in-the journey with her standard
+
+2:32: Dies ist die Summe der Kinder Israel nach ihren Vaterhäusern und Lagern mit ihren Heeren sechshunderttausend und dreitausend fünfhundertfünfzig
+Current: this is the number the old Israelites after their [Vaterhäusern] and camp with their host six and three five
+
+2:34: Und die Kinder Israel taten alles wie der HERR dem Mose geboten hatte und lagerten sich unter ihre Paniere und zogen aus ein jeglicher in seinem Geschlecht nach seinem Vaterhaus
+Current: and the old Israelites make all as the GOD the Moses commanded command and [lagerten] pitch under their standard and went journey a one in his families after his [Vaterhaus]
+
+3:1: Dies ist das Geschlecht Aarons und Mose s zu der Zeit da der HERR mit Mose redete auf dem Berge Sinai
+Current: this is the generations [Aarons] and [Mose] Moses to the time then the GOD with Moses speak on the mountain Sinai
+
+3:2: Und dies sind die Namen der Söhne Aarons der Erstgeborene Nadab darnach Abihu Eleasar und Ithamar
+Current: and this are the name the old [Aarons] the firstborn Nadab after [Abihu] [Eleasar] and [Ithamar]
+
+3:3: Das sind die Namen der Söhne Aarons die zu Priestern gesalbt waren und deren Hände gefüllt wurden zum Priestertum
+Current: the are the name the old [Aarons] the to priest anointed anoint and whose by [gefüllt] fill as-a decketh
+
+3:4: Aber Nadab und Abihu starben vor dem HERRN da sie fremdes Feuer opferten vor dem HERRN in der Wüste Sinai und hatten keine Söhne Eleasar aber und Ithamar pflegten des Priesteramtes unter ihrem Vater Aaron
+Current: but [Nadab] Nadab [Abihu] die face the GOD then they stranger fire offer face the GOD in the wilderness Sinai and had no old [Eleasar] but and [Ithamar] would of-the decketh face her father [Aaron]
+
+3:6: Bringe den Stamm Levi herzu und stelle sie vor den Priester Aaron daß sie ihm dienen
+Current: offer the tribe Levi offer and stood they face the priest [Aaron] that they him serve
+
+3:9: Und sollst die Leviten Aaron und seinen Söhnen zuordnen zum Geschenk von den Kindern Israel
+Current: and shall the Levite [Aaron] and his old put as-a put from the old Israelites
+
+3:10: Aaron aber und seine Söhne sollst du setzen daß sie ihres Priestertums warten Wo ein Fremder sich herzutut der soll sterben
+Current: [Aaron] but and his old shall you number that they her priesthood keep where a stranger himself approach the shall die
+
+3:13: Denn die Erstgeburten sind mein seit der Zeit da ich alle Erstgeburt schlug in Ägyptenland da heiligte ich mir alle Erstgeburt in Israel vom Menschen an bis auf das Vieh daß sie mein sein sollen ich der HERR
+Current: for the firstborn are my [seit] the time then I all firstborn smite in Egypt then sanctified I sanctify all firstborn in Israelites from-the man to until on the livestock that they my his shall I the GOD
+
+3:15: Zähle die Kinder Levi nach ihren Vaterhäusern und Geschlechtern alles was männlich ist einen Monat alt und darüber
+Current: number the old Levi after their [Vaterhäusern] and families all what male is a month old and upward
+
+3:20: Die Kinder Meraris nach ihren Geschlechtern waren Maheli und Musi Dies sind die Geschlechter Levis nach ihren Vaterhäusern
+Current: the old Merari after their families were Mahli and Mushi walk are the families Levite after their [Vaterhäusern]
+
+3:23: Und dieselben Geschlechter der Gersoniter sollen sich lagern hinter der Wohnung gegen Abend
+Current: and [dieselben] families the Gershonite shall himself pitch behind the tabernacle toward sea
+
+3:24: Ihr Oberster sei Eljasaph der Sohn Laels
+Current: you prince be [Eljasaph] the old [Laels]
+
+3:26: des Umhangs am Vorhof und des Tuches in der Tür des Vorhofs welcher um die Wohnung und um den Altar her geht und ihre Seile und alles dessen was zu ihrem Dienst gehört
+Current: of-the hangings on-the court and of-the hanging in the door of-the court which circuits the tabernacle and circuits the altar circuits goes and their cord and all [dessen] what to her service heard
+
+3:30: Ihr Oberster sei Elizaphan der Sohn Usiels
+Current: you prince be [Elizaphan] the old Uzziel
+
+3:32: Aber der Oberste über alle Obersten der Leviten soll Eleasar sein Aarons Sohn des Priesters über die so verordnet sind zu warten der Sorge für das Heiligtum
+Current: but the prince over all prince the Levite shall [Eleasar] his [Aarons] son of-the priest visitation the then reserved are to keep the charge for the holy
+
+3:35: Ihr Oberster sei Zuriel der Sohn Abihails Und sollen sich lagern an die Seite der Wohnung gegen Mitternacht
+Current: you prince be Zuriel the old [Abihails] and shall himself pitch to the thigh the tabernacle toward north
+
+3:38: Aber vor der Wohnung und vor der Hütte des Stifts gegen Morgen sollen sich lagern Mose und Aaron und seine Söhne daß sie des Heiligtums warten für die Kinder Israel Wenn sich ein Fremder herzutut der soll sterben
+Current: but face the tabernacle and face the tent of-the congregation east east shall himself pitch Moses and [Aaron] and his old that they of-the sanctuary keep charge the old Israelites when himself a stranger approach the shall die
+
+3:39: Alle Leviten zusammen die Mose und Aaron zählten nach ihren Geschlechtern nach dem Wort des HERRN eitel Mannsbilder einen Monat alt und darüber waren zweiundzwanzigtausend
+Current: all Levite number the Moses and [Aaron] number after their families after the mouth of-the GOD bitter male a month old and upward were two
+
+3:46: Aber als Lösegeld von den zweihundertdreiundsiebzig Erstgeburten der Kinder Israel die über der Leviten Zahl sind
+Current: but when redeemed from the hundred firstborn the old Israelites the remains the Levite remains remains
+
+3:48: und sollst das Geld für die so überzählig sind unter ihnen geben Aaron und seinen Söhnen
+Current: and shall the silver for redeemed then [überzählig] remains under them put [Aaron] and his old
+
+3:49: Da nahm Mose das Lösegeld von denen die über der Leviten Zahl waren
+Current: then take Moses the redemption from them the remains the Levite remains remains
+
+3:50: von den Erstgeburten der Kinder Israel tausenddreihundert und fünfundsechzig Silberlinge nach dem Lot des Heiligtums
+Current: from the firstborn the old Israelites [tausenddreihundert] and five pieces-of-silver after the shekel of-the holy
+
+3:51: und gab s Aaron und seinen Söhnen nach dem Worte des HERRN wie der HERR dem Mose geboten hatte
+Current: Moses gave put [Aaron] and his old after the mouth of-the GOD as the GOD the Moses commanded command
+
+4:1: Und der HERR redete mit Mose und Aaron und sprach
+Current: and the GOD speak with Moses and [Aaron] and said
+
+4:2: Nimm die Summe der Kinder Kahath aus den Kindern Levi nach ihren Geschlechtern und Vaterhäusern
+Current: bear the head the old Kohath midst the old Levi after their families and [Vaterhäusern]
+
+4:3: von dreißig Jahren an bis ins fünfzigste Jahr alle die zum Dienst taugen daß sie tun die Werke in der Hütte des Stifts
+Current: from thirty year upward until into-the fifty year all the as-a host [taugen] that they make the work in the tent of-the congregation
+
+4:5: Wenn das Heer aufbricht so sollen Aaron und seine Söhne hineingehen und den Vorhang abnehmen und die Lade des Zeugnisses darein winden
+Current: when the camp journey then shall [Aaron] and his old come and the vail descend and the coffin of-the testimony to cover
+
+4:6: und darauf tun die Decke von Dachsfellen und obendrauf eine ganz blaue Decke breiten und ihre Stangen daran legen
+Current: and on-it put the covering from badger and upward a perfect blue covering spread and their [Stangen] by-this put
+
+4:8: Und sollen darüber breiten eine scharlachrote Decke und dieselbe bedecken mit einer Decke von Dachsfellen und seine Stangen daran legen
+Current: and shall over-it spread a scarlet covering and that cover with one covering from badger and his [Stangen] by-this put
+
+4:11: Also sollen sie auch über den goldenen Altar eine blaue Decke breiten und sie bedecken mit der Decke von Dachsfellen und seine Stangen daran tun
+Current: so shall they also over the gold altar a blue covering spread and they cover with the covering from badger and his [Stangen] by-this put
+
+4:12: Alle Gerät womit sie schaffen im Heiligtum sollen sie nehmen und blaue Decken darüber tun und mit einer Decke von Dachsfellen bedecken und auf Stangen legen
+Current: all vessel how they serve in-the holy shall they take and blue [Decken] over-it put and with one covering from badger cover and on bar put
+
+4:13: Sie sollen auch die Asche vom Altar fegen und eine Decke von rotem Purpur über ihn breiten
+Current: they shall also the anoint from-the altar anoint and a covering from [rotem] [Purpur] over him spread
+
+4:14: und alle seine Geräte darauf schaffen Kohlenpfannen Gabeln Schaufeln Becken mit allem Gerät des Altars und sollen darüber breiten eine Decke von Dachsfellen und seine Stangen daran tun
+Current: and all his vessel on-it put censer fleshhook shovel basons with all vessel of-the altar and shall over-it spread a covering from badger and his [Stangen] by-this put
+
+4:15: Wenn nun Aaron und seine Söhne solches ausgerichtet und das Heiligtum und all sein Gerät bedeckt haben wenn das Heer aufbricht darnach sollen die Kinder Kahath hineingehen daß sie es tragen und sollen das Heiligtum nicht anrühren daß sie nicht sterben Dies sind die Lasten der Kinder Kahath an der Hütte des Stifts
+Current: when now [Aaron] and his old this consume and the holy and all holy vessel covered cover when the camp journey after shall the old Kohath come that they it bear and shall the holy not touch that they not die this are the burden the old Kohath to the tent of-the congregation
+
+4:16: Und Eleasar Aarons des Priesters Sohn soll das Amt haben daß er ordne das Öl zum Licht und die Spezerei zum Räuchwerk und das tägliche Speisopfer und das Salböl daß er beschicke die ganze Wohnung und alles was darin ist im Heiligtum und seinem Geräte
+Current: and [Eleasar] [Aarons] of-the priest old shall the position visitation that he [ordne] the oil as-a light and the incense as-a sweet and the continually offering and the anointing that he visitation the whole tabernacle and all what in-it is in-the holy and his vessel
+
+4:17: Und der HERR redete mit Mose und Aaron und sprach
+Current: and the GOD speak with Moses and [Aaron] and said
+
+4:19: sondern das sollt ihr mit ihnen tun daß sie leben und nicht sterben wo sie werden anrühren das Hochheilige Aaron und seine Söhne sollen hineingehen und einen jeglichen stellen zu seinem Amt und seiner Last
+Current: but the shall you with them make that they live and not die where they be come the holy [Aaron] and his old shall come and a one put to his service and his burden
+
+4:20: Sie sollen aber nicht hineingehen zu schauen das Heiligtum auch nur einen Augenblick daß sie nicht sterben
+Current: they shall but not come to see the holy also only a [Augenblick] that they not die
+
+4:22: Nimm die Summe der Kinder Gerson auch nach ihren Vaterhäusern und Geschlechtern
+Current: bear the head the old Gershon also after their [Vaterhäusern] and families
+
+4:23: von dreißig Jahren an und darüber bis ins fünfzigste Jahr und ordne sie alle die da zum Dienst tüchtig sind daß sie ein Amt haben in der Hütte des Stifts
+Current: from thirty year to and upward until into-the fifty year and [ordne] number all the then as-a host able are that they a service serve in the tent of-the congregation
+
+4:27: Nach dem Wort Aarons und seiner Söhne soll alles Amt der Kinder Gerson geschehen alles was sie tragen und schaffen sollen und ihr sollt zusehen daß sie aller ihrer Last warten
+Current: after the mouth [Aarons] and his old shall all service the old Gershonite happened all what they burden and multiply service and you shall number that they all their burden charge
+
+4:28: Das soll das Amt der Geschlechter der Kinder der Gersoniter sein in der Hütte des Stifts und ihr Dienst soll unter der Hand Ithamars sein des Sohnes Aarons des Priesters
+Current: the shall the service the families the old the Gershonite his in the tent of-the congregation and you charge shall under the by [Ithamars] his of-the old [Aarons] of-the priest
+
+4:29: Die Kinder Merari nach ihren Geschlechtern und Vaterhäusern sollst du auch ordnen
+Current: the old Merari after their families and [Vaterhäusern] shall you also number
+
+4:30: von dreißig Jahren an und darüber bis ins fünfzigste Jahr alle die zum Dienst taugen daß sie ein Amt haben in der Hütte des Stifts
+Current: from thirty year to and upward until into-the fifty year all the as-a host [taugen] that they a service serve in the tent of-the congregation
+
+4:33: Das sei das Amt der Geschlechter der Kinder Merari alles was sie schaffen sollen in der Hütte des Stifts unter der Hand Ithamars des Priesters des Sohnes Aarons
+Current: the be the service the families the old Merari all what they multiply service in the tent of-the congregation under the by [Ithamars] of-the priest of-the old [Aarons]
+
+4:34: Und Mose und Aaron samt den Hauptleuten der Gemeinde zählten die Kinder der Kahathiter nach ihren Geschlechtern und Vaterhäusern
+Current: and Moses and [Aaron] along-with the prince the congregation number the old the Kohathite after their families and [Vaterhäusern]
+
+4:35: von dreißig Jahren an und darüber bis ins fünfzigste Jahr alle die zum Dienst taugten daß sie Amt in der Hütte des Stifts hätten
+Current: from thirty year to and upward until into-the fifty year all the as-a host [taugten] that they service in the tent of-the congregation had
+

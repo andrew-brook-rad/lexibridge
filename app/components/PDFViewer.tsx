@@ -27,7 +27,8 @@ export default function PDFViewer({ project, reflowKey }: PDFViewerProps) {
         // Use setTimeout to allow UI to update before heavy PDF generation
         const timer = setTimeout(() => {
             try {
-                const dataURL = generatePDFDataURL(project)
+                // Only render pages 2 and 3 for preview (first content spread)
+                const dataURL = generatePDFDataURL(project, [2, 3])
                 setPdfDataURL(dataURL)
             } catch (err) {
                 console.error('PDF generation error:', err)
@@ -87,7 +88,7 @@ export default function PDFViewer({ project, reflowKey }: PDFViewerProps) {
         <div className="pdf-viewer">
             {/* Controls */}
             <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-medium text-gray-700">PDF Preview</h3>
+                <h3 className="text-sm font-medium text-gray-700">PDF Preview (Pages 2-3)</h3>
                 <button
                     onClick={handleDownload}
                     className="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition-colors"

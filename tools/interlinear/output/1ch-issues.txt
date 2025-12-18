@@ -1,0 +1,302 @@
+# Verses needing AI review
+
+1:13: Kanaan aber zeugte Sidon seinen ersten Sohn und Heth
+Current: Canaan but beget Zidon his firstborn firstborn and Heth
+
+1:18: Arphachsad aber zeugte Salah Salah zeugte Eber
+Current: Arpachshad but beget Salah Salah beget Eber
+
+1:29: Dies ist ihr Geschlecht der erste Sohn Ismaels Nebajoth Kedar Adbeel Mibsam
+Current: this is you generations the first firstborn Ishmael Nebajoth Kedar [Adbeel] Mibsam
+
+1:32: Die Kinder aber Keturas des Kebsweibs Abraham die gebar Simran Joksan Medan Midian Jesbak Suah Aber die Kinder Joksans sind Saba und Dedan
+Current: the old but [Keturas] of-the concubine Abraham the beget Zimran Jokshan Medan Midian Ishbak Shuah but the old Jokshan are Sheba and Dedan
+
+1:39: Die Kinder Lotans sind Hori Homam und Thimna war eine Schwester Lotans
+Current: the old Lotan are Hori [Homam] and Timna was a sister Lotan
+
+1:41: Die Kinder Anas Dison Die Kinder Disons sind Hamran Esban Jethran Cheran
+Current: the old Anah Dishon the old Dishon are [Hamran] Eshban Ithran Cheran
+
+1:42: Die Kinder Ezers sind Bilhan Saawan Jaakan Die Kinder Disans sind Uz und Aran
+Current: the old of-Ezer are Bilhan Zavan [Jaakan] the old Dishan are Uz and Aran
+
+1:49: Da Saul starb ward König an seiner Statt Baal- Hanan der Sohn Achbors
+Current: then Saul die was reign to his Toah [Baal-] Baalhanan the old Achbor
+
+1:50: Da Baal- Hanan starb ward König an seiner Statt Hadad und seine Stadt hieß Pagi und sein Weib hieß Mehetabeel eine Tochter Matreds die Mesahabs Tochter war
+Current: then [Baal-] Baalhanan die was reign to his Toah Hadad and his town name Pai and his wife name Mehetabel a daughter Matred the Me-zahab's daughter was
+
+1:53: Fürst Kenas Fürst Theman Fürst Mizbar
+Current: chief Kenaz chief Teman chief [Mizbar]
+
+2:3: Die Kinder Juda s sind Ger Onan Sela Die drei wurden ihm geboren von der Kanaanitin der Tochter Suas Ger aber der erste Sohn Juda s war böse vor dem HERRN darum tötete er ihn
+Current: the old Judah Judah are Er Onan Shelah the three were him beget stringed instrument the Canaanite the daughter [Suas] Er but the first firstborn Judah Judah be thou evil eye the GOD therefore die he him
+
+2:4: Thamar aber seine Schwiegertochter gebar ihm Perez und Serah daß aller Kinder Juda s waren fünf
+Current: Tamar but his bride beget him Pharez and Zerah that all (manner old Judah Judah were five
+
+2:6: Die Kinder aber Serahs sind Simri Ethan Heman Chalkol Dara Diese alle sind fünf
+Current: the old but Zerah are Zimri [Ethan] Heman [Chalkol] [Dara] these all (manner are five
+
+2:7: Die Kinder Charmis sind Achan welcher Israel betrübte da er sich am Verbannten vergriff
+Current: the old Carmi are [Achan] which Israelites trouble then he himself on-the net trespass
+
+2:8: Die Kinder Ethans sind Asarja
+Current: the old [Ethans] are Azariah
+
+2:9: Die Kinder aber Hezrons die ihm geboren sind Jerahmeel Ram Chalubai
+Current: the old but Hezron the him beget are Jerahmeel Ram [Chalubai]
+
+2:10: Ram aber zeugte Amminadab Amminadab zeugte Nahesson den Fürsten der Kinder Juda
+Current: Ram but beget Amminadab Amminadab beget Nahshon the prince the old Judah
+
+2:11: Nahesson zeugte Salma Salma zeugte Boas
+Current: Nahshon beget [Salma] [Salma] beget Boaz
+
+2:12: Boas zeugte Obed Obed zeugte Isai
+Current: Boaz beget Obed Obed beget Jesse
+
+2:13: Isai zeugte seinen ersten Sohn Eliab Abinadab den zweiten Simea den dritten
+Current: Jesse beget his firstborn firstborn [Eliab] [Abinadab] the second [Simea] the third
+
+2:14: Nathanel den vierten Raddai den fünften
+Current: Nethaneel the fourth [Raddai] the fifth
+
+2:15: Ozem den sechsten David den siebenten
+Current: [Ozem] the sixth David the seventh
+
+2:16: Und ihre Schwestern waren Zeruja und Abigail Die Kinder Zerujas sind Abisai Joab Asahael die drei
+Current: and their [Schwestern] were [Zeruja] and [Abigail] the old [Zerujas] are [Abisai] Joab Asahel the three
+
+2:17: Abigail aber gebar Amasa Der Vater aber Amasas war Jether ein Ismaeliter
+Current: [Abigail] but beget [Amasa] the father but [Amasas] was Jether a Ishmeelite
+
+2:18: Kaleb der Sohn Hezrons zeugte mit Asuba seiner Frau und mit Jerigoth und dies sind derselben Kinder Jeser Sobab und Ardon
+Current: Caleb the old Hezron beget with [Asuba] his mistress and with [Jerigoth] and this are same old [Jeser] [Sobab] and [Ardon]
+
+2:19: Da aber Asuba starb nahm Kaleb Ephrath die gebar ihm Hur
+Current: then but [Asuba] die take Caleb Ephrath the beget him Hur
+
+2:20: Hur zeugte Uri Uri zeugte Bezaleel
+Current: Hur beget [Uri] [Uri] beget Bezaleel
+
+2:21: Darnach kam Hezron zu der Tochter Machirs des Vaters Gileads und er nahm sie da er sechzig Jahre alt war und sie gebar ihm Segub
+Current: after came Hezron to the daughter Machir of-the father's Gilead and he take they then he threescore year old was and they beget him [Segub]
+
+2:22: Segub aber zeugte Jair der hatte dreiundzwanzig Städte im Lande Gilead
+Current: [Segub] but beget Jair the had three town in-the land Gilead
+
+2:24: Nach dem Tode Hezrons in Kaleb Ephratha gebar Hezrons Weib Abia ihm Ashur den Vater Thekoas
+Current: after the death Hezron in [Kaleb] [Ephratha] beget Hezron wife [Abia] him [Ashur] the father Tekoa
+
+2:25: Jerahmeel der erste Sohn Hezrons hatte Kinder den ersten Ram Buna Oren und Ozem und Ahia
+Current: Jerahmeel the first firstborn Hezron be thou old the firstborn Ram [Buna] [Oren] and [Ozem] and [Ahia]
+
+2:26: Und Jerahmeel hatte noch ein anderes Weib die hieß Atara die ist die Mutter Onams
+Current: and Jerahmeel be thou still a other wife the name [Atara] he is the mother [Onams]
+
+2:27: Die Kinder aber Rams des ersten Sohnes Jerahmeels sind Maaz Jamin und Eker
+Current: the old but Ram of-the firstborn firstborn Jerahmeel be thou [Maaz] Jamin and [Eker]
+
+2:28: Aber Onam hatte Kinder Sammai und Jada Die Kinder aber Sammais sind Nadab und Abisur
+Current: but Onam be thou old [Sammai] and [Jada] the old but [Sammais] are Nadab and [Abisur]
+
+2:29: Das Weib aber Abisurs hieß Abihail die gebar Achban und Molid
+Current: the wife but [Abisurs] name [Abihail] the beget [Achban] and [Molid]
+
+2:30: Die Kinder aber Nadabs sind Seled und Appaim und Seled starb ohne Kinder
+Current: the old but Nadab are [Seled] and [Appaim] and [Seled] die not old
+
+2:31: Die Kinder Appaims sind Jesai Die Kinder Jesais sind Sesan Die Kinder Sesans sind Ahelai
+Current: the old [Appaims] are [Jesai] the old [Jesais] are [Sesan] the old [Sesans] are [Ahelai]
+
+2:32: Die Kinder aber Jadas des Bruders Sammais sind Jether und Jonathan Jether aber starb ohne Kinder
+Current: the old but [Jadas] of-the brother [Sammais] are Jether and Jonathan Jether but die not old
+
+2:33: Die Kinder aber Jonathans sind Peleth und Sasa Das sind die Kinder Jerahmeels
+Current: the old but Jonathan are Peleth and [Sasa] the be thou the old Jerahmeel
+
+2:34: Sesan aber hatte nicht Söhne sondern Töchter Und Sesan hatte einen ägyptischen Knecht der hieß Jarha
+Current: [Sesan] but be thou not old and daughter and [Sesan] had a Egyptian servant the name [Jarha]
+
+2:35: Und Sesan gab Jarha seinem Knecht seine Tochter zum Weibe die gebar ihm Atthai
+Current: and [Sesan] put [Jarha] his servant his daughter as-a wife the beget him [Atthai]
+
+2:36: Atthai zeugte Nathan Nathan zeugte Sabad
+Current: [Atthai] beget Nathan Nathan beget Zabad
+
+2:37: Sabad zeugte Ephlal Ephlal zeugte Obed
+Current: Zabad beget [Ephlal] [Ephlal] beget Obed
+
+2:38: Obed zeugte Jehu Jehu zeugte Asarja
+Current: Obed beget Jehu Jehu beget Azariah
+
+2:39: Asarja zeugte Helez Helez zeugte Eleasa
+Current: Azariah beget [Helez] [Helez] beget [Eleasa]
+
+2:40: Eleasa zeugte Sisemai Sisemai zeugte Sallum
+Current: [Eleasa] beget [Sisemai] [Sisemai] beget Shallum
+
+2:41: Sallum zeugte Jekamja Jekamja zeugte Elisama
+Current: Shallum beget [Jekamja] [Jekamja] beget [Elisama]
+
+2:44: Sama aber zeugte Raham den Vater Jorkeams Rekem zeugte Sammai
+Current: Shema but beget [Raham] the father [Jorkeams] Rekem beget [Sammai]
+
+2:45: Der Sohn aber Sammais hieß Maon und Maon war der Vater Beth- Zurs
+Current: the old but [Sammais] called Maon and Maon was the father [Beth-] Bethzur
+
+2:46: Epha aber das Kebsweib Kalebs gebar Haran Moza und Gases Haran aber zeugte Gases
+Current: Ephah but the concubine Caleb beget Haran [Moza] and [Gases] Haran but beget [Gases]
+
+2:47: Die Kinder aber Jahdais sind Regem Jotham Gesan Pelet Epha und Saaph
+Current: the old but [Jahdais] are [Regem] Jotham [Gesan] [Pelet] Ephah and [Saaph]
+
+2:48: Aber Maacha das Kebsweib Kalebs gebar Seber und Thirhena
+Current: but Maachah the concubine Caleb beget [Seber] and [Thirhena]
+
+2:49: und gebar auch Saaph den Vater Madmannas und Sewa den Vater Machbenas und den Vater Gibeas Aber Achsa war Kalebs Tochter
+Current: and beget also [Saaph] the father Madmannah and [Sewa] the father [Machbenas] and the father [Gibeas] but Achsah was Caleb daughter
+
+2:50: Dies waren die Kinder Kalebs die Söhne Hurs des ersten Sohn s von der Ephratha Sobal der Vater Kirjath- Jearims
+Current: this be thou the old Caleb the old Hur of-the firstborn son firstborn from the [Ephratha] Shobal the father [Kirjath-] Kirjathjearim
+
+2:51: Salma der Vater Bethlehems Hareph der Vater Bethgaders
+Current: [Salma] the father Bethlehem [Hareph] the father [Bethgaders]
+
+2:52: Und Sobal der Vater Kirjath- Jearims hatte Söhne Haroe und die Hälfte der Manahthiter
+Current: and Shobal the father [Kirjath-] Kirjathjearim be thou old [Haroe] and the half the [Manahthiter]
+
+2:53: Die Freundschaften aber zu Kirjath- Jearim waren die Jethriter Puthiter Sumathiter und Misraiter Von diesen sind ausgegangen die Zorathiter und Esthaoliter
+Current: the families but to [Kirjath-] Kirjathjearim were the [Jethriter] [Puthiter] [Sumathiter] and [Misraiter] stringed instrument this are bring the [Zorathiter] and [Esthaoliter]
+
+2:54: Die Kinder Salmas sind Bethlehem und die Netophathiter Atharoth des Hauses Joabs und die Hälfte der Manahthiter das sind die Zoraiter
+Current: the old [Salmas] are Bethlehem and the Netophathite Ataroth of-the household [Joabs] and the half the [Manahthiter] the are the [Zoraiter]
+
+2:55: Und die Freundschaften der Schreiber die zu Jabez wohnten sind die Thireathiter Simeathiter Suchathiter Das sind die Kiniter die da gekommen sind von Hammath dem Vater des Hauses Rechabs
+Current: and the families the scribe the to [Jabez] dwell are the [Thireathiter] [Simeathiter] [Suchathiter] walk are the Kenite the then come are stringed instrument Hamath the father of-the household Rechab
+
+3:1: Die sind die Kinder Davids die ihm zu Hebron geboren sind der erste Amnon von Ahinoam der Jesreelitin der zweite Daniel von Abigail der Karmelitin
+Current: the show the old David the him to Hebron born beget the firstborn [Amnon] from [Ahinoam] the [Jesreelitin] the second Daniel from [Abigail] the [Karmelitin]
+
+3:2: der dritte Absalom der Sohn Maachas der Tochter Thalmais des Königs zu Gessur der vierte Adonia der Sohn Haggiths
+Current: the third [Absalom] the old Maachah the daughter Talmai of-the royal to Geshur the fourth [Adonia] the old [Haggiths]
+
+3:3: der fünfte Sephatja von Abital der sechste Jethream von seinem Weibe Egla
+Current: the fifth Shephatiah from [Abital] the sixth [Jethream] from his wife [Egla]
+
+3:5: Und diese sind ihm geboren zu Jerusalem Simea Sobab Nathan Salomo die vier von Bath- Sua der Tochter Ammiels
+Current: and these are him beget to Jerusalem [Simea] [Sobab] Nathan Solomon the four from [Bath-] Shua the daughter Ammiel
+
+3:6: dazu Jibhar Elisama Eliphelet
+Current: also [Jibhar] [Elisama] [Eliphelet]
+
+3:7: Nogah Nepheg Japhia
+Current: [Nogah] Nepheg Japhia
+
+3:8: Elisama Eljada Eliphelet die neun
+Current: [Elisama] [Eljada] [Eliphelet] the nine
+
+3:10: Salomos Sohn war Rehabeam des Sohn war Abia des Sohn war Asa des Sohn war Josaphat
+Current: Solomon old was [Rehabeam] of-the old was [Abia] of-the old was [Asa] of-the old was Jehoshaphat
+
+3:11: des Sohn war Joram des Sohn war Ahasja des Sohn war Joas
+Current: of-the old was [Joram] of-the old was [Ahasja] of-the old was Joash
+
+3:12: des Sohn war Amazja des Sohn war Asarja des Sohn war Jotham
+Current: of-the old was [Amazja] of-the old was Azariah of-the old was Jotham
+
+3:13: des Sohn war Ahas des Sohn war Hiskia des Sohn war Manasse
+Current: of-the old was [Ahas] of-the old was Hezekiah of-the old was Manasseh
+
+3:14: des Sohn war Amon des Sohn war Josia
+Current: of-the old was [Amon] of-the old was Josiah
+
+3:18: Malchiram Pedaja Seneazzar Jekamja Hosama Nedabja
+Current: [Malchiram] Pedaiah [Seneazzar] [Jekamja] [Hosama] [Nedabja]
+
+3:20: dazu Hasuba Ohel Berechja Hasadja Jusab- Hesed die fünf
+Current: also [Hasuba] [Ohel] Berechiah [Hasadja] [Jusab-] [Hesed] the five
+
+3:21: Die Kinder aber Hananjas waren Pelatja und Jesaja die Söhne Rephajas die Söhne Arnans die Söhne Obadja die Söhne Sechanjas
+Current: the old but Hananiah were Pelatiah and Isaiah the old Rephaiah the old [Arnans] the old Obadiah the old Shechaniah
+
+3:22: Die Kinder aber Sechanjas waren Semaja Die Kinder Semajas waren Hattus Jigeal Bariah Nearja Saphat die sechs
+Current: the old but Shechaniah were Shemaiah the old Shemaiah were Hattush Igal [Bariah] [Nearja] Shaphat the six
+
+3:23: Die Kinder aber Nearjas waren Eljoenai Hiskia Asrikam die drei
+Current: the old but [Nearjas] were [Eljoenai] Hezekiah Azrikam the three
+
+3:24: Die Kinder aber Eljoenais waren Hodavja Eljasib Pelaja Akkub Johanan Delaja Anani die sieben
+Current: the old but [Eljoenais] were [Hodavja] [Eljasib] Pelaiah Akkub Johanan Delaiah [Anani] the seven
+
+4:1: Die Kinder Juda s waren Perez Hezron Karmi Hur und Sobal
+Current: the old Judah Judah were Pharez Hezron Carmi Hur and Shobal
+
+4:2: Reaja aber der Sohn Sobals zeugte Jahath Jahath zeugte Ahumai und Lahad Das sind die Freundschaften der Zorathiter
+Current: Reaiah but the old Shobal beget [Jahath] [Jahath] beget [Ahumai] and [Lahad] the are the families the [Zorathiter]
+
+4:3: Und dies ist der Stamm des Vaters Etams Jesreel Jisma Jidbas und ihre Schwester hieß Hazlelponi
+Current: and this is the [Stamm] of-the father's Etam Jezreel [Jisma] [Jidbas] and their sister name [Hazlelponi]
+
+4:4: und Pnuel der Vater Gedors und Eser der Vater Husas Das sind die Kinder Hurs des ersten Sohnes der Ephrata des Vaters Bethlehems
+Current: and Penuel the father [Gedors] and Ezer the father [Husas] the are the old Hur of-the firstborn firstborn the [Ephrata] of-the father's Bethlehem
+
+4:5: Ashur aber der Vater Thekoas hatte zwei Weiber Helea und Naera
+Current: [Ashur] but the father Tekoa be thou two wives [Helea] and Naarah
+
+4:6: Und Naera gebar ihm Ahussam Hepher Themni Ahastari Das sind die Kinder Naeras
+Current: and Naarah beget him [Ahussam] Hepher [Themni] [Ahastari] the are the old Naarah
+
+4:7: Aber die Kinder Heleas waren Zereth Jizhar und Ethnan
+Current: but the old [Heleas] were [Zereth] Zoar and [Ethnan]
+
+4:8: Koz aber zeugte Anub und Hazobeba und die Freundschaft Aharhels des Sohnes Harums
+Current: Koz but beget [Anub] and [Hazobeba] and the families [Aharhels] of-the old [Harums]
+
+4:9: Jaebez aber war herrlicher denn seine Brüder und seine Mutter hieß ihn Jaebez denn sie sprach Ich habe ihn mit Kummer geboren
+Current: [Jaebez] but be thou honour stringed instrument his brothers and his mother name him [Jaebez] and they said I have him with sorrow beget
+
+4:10: Und Jaebez rief den Gott Israels an und sprach Ach daß du mich segnetest und meine Grenze mehrtest und deine Hand mit mir wäre und schafftest mit dem Übel daß mich s nicht bekümmere Und Gott ließ kommen was er bat
+Current: and [Jaebez] call the God Israelites to and said oh that you me bless and my border multiply and your by hide me be thou and make stringed instrument the evil that me [s] because un grieve and God had come what he ask
+
+4:11: Kalub aber der Bruder Suhas zeugte Mehir der ist der Vater Esthons
+Current: [Kalub] but the brother [Suhas] beget [Mehir] he is the father [Esthons]
+
+4:12: Esthon aber zeugte Beth- Rapha Paseah und Thehinna den Vater der Stadt Nahas das sind die Männer von Recha
+Current: [Esthon] but beget [Beth-] [Rapha] Paseah and [Thehinna] the father the city [Nahas] the are the men from Rechabites
+
+4:13: Die Kinder des Kenas waren Othniel und Seraja Die Kinder aber Othniels waren Hathath
+Current: the old of-the Kenaz were Othniel and Seraiah the old but Othniel were [Hathath]
+
+4:14: Und Meonothai zeuget Ophra Und Seraja zeugte Joab den Vater des Tals der Zimmerleute denn sie waren Zimmerleute
+Current: and [Meonothai] beget Ophrah and Seraiah beget Joab the father of-the valley the [Zimmerleute] and they be thou craftsmen
+
+4:15: Die Kinder aber Kalebs des Sohnes Jephunnes waren Iru Ela und Naam und die Kinder des Ela und Kenas
+Current: the old but Caleb of-the old Jephunneh were [Iru] Elah and [Naam] and the old of-the Elah and Kenaz
+
+4:16: Die Kinder aber Jehallel- Els waren Siph Sipha Thirja und Asareel
+Current: the old but [Jehallel-] [Els] were Ziph [Sipha] [Thirja] and [Asareel]
+
+4:17: Die Kinder aber Esras waren Jether Mered Epher und Jalon Und das sind die Kinder Bithjas der Tochter Pharaos die der Mered nahm sie gebar Mirjam Sammai Jesbah den Vater Esthemoas
+Current: the old but [Esras] were Jether [Mered] Epher and [Jalon] and the are the old [Bithjas] the daughter Pharaoh the the [Mered] take they conceive Miriam [Sammai] [Jesbah] the father [Esthemoas]
+
+4:18: Und sein jüdisches Weib gebar Jered den Vater Gedors Heber den Vater Sochos Jekuthiel den Vater Sanoahs
+Current: and his [jüdisches] wife beget Jared the father [Gedors] Heber the father Socoh [Jekuthiel] the father Zanoah
+
+4:19: Die Kinder des Weibes Hodijas der Schwester Nahams waren der Vater Kegilas der Garmiter und Esthemoa der Maachathiter
+Current: the old of-the wife [Hodijas] the sister [Nahams] were the father [Kegilas] the [Garmiter] and [Esthemoa] the Maachathite
+
+4:20: Die Kinder Simons waren Amnon und Rinna Ben- Hanan und Thilon Die Kinder Jeseis waren Soheth und Ben- Soheth
+Current: the old [Simons] were [Amnon] and [Rinna] [Ben-] [Hanan] and [Thilon] the old [Jeseis] were [Soheth] and [Ben-] [Soheth]
+
+4:21: Die Kinder aber Selas des Sohnes Juda s waren Ger der Vater Lechas Laeda der Vater Maresas und die Freundschaft der Leinweber von dem Hause Asbeas
+Current: the old but Shelah of-the old Judah Judah were Er the father [Lechas] [Laeda] the father Mareshah and the families the service from the household [Asbeas]
+
+4:22: dazu Jokim und die Männer von Koseba und Joas und Saraph die da Herren wurden über Moab und sie kehrten nach Lahem zurück wie die alte Rede lautet
+Current: also [Jokim] and the men from [Koseba] and Joash and [Saraph] the then lords marry over Moab and they turned after [Lahem] [zurück] as the ancient word [lautet]
+
+4:23: Sie waren Töpfer und wohnten unter Pflanzungen und Zäunen bei dem König zu seinem Geschäft und blieben daselbst
+Current: walk were form and dwell under [Pflanzungen] and hedge hide the royal to his work and dwell in it
+

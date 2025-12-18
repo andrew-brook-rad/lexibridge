@@ -6,10 +6,84 @@ Correcting German-to-English interlinear Bible translations for book publication
 66 books total (39 OT + 27 NT)
 
 ## CURRENT STATUS
-10/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges + Ruth + 1 Samuel + 2 Samuel COMPLETE)
-1 Kings (1ki) - Next book to correct
+11/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges + Ruth + 1 Samuel + 2 Samuel + 1 Kings COMPLETE)
+2 Kings (2ki) - Next book to correct
 
 ## SESSION LOG
+
+---
+### SESSION 14 - 1 KINGS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all 1 Kings (1ki.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names (~100+ fixes):
+   - Adonia|[Adonia] → Adonia|Adonijah
+   - Abisag|[Abisag] → Abisag|Abishag
+   - Haggith|[Haggith] → Haggith|Haggith
+   - Zeruja|[Zeruja] → Zeruja|Zeruiah
+   - Abjathar|[Abjathar] → Abjathar|Abiathar
+   - Bath-|[Bath-] → Bath-|Bathsheba
+   - Elia|[Elia] → Elia|Elijah
+   - Ahab|[Ahab] → Ahab|Ahab
+   - Isebel|[Isebel] → Isebel|Jezebel
+   - Benhadad|[Benhadad] → Benhadad|Benhadad
+   - Naboth|[Naboth] → Naboth|Naboth
+   - Ahasja|[Ahasja] → Ahasja|Ahaziah
+   - Joram|[Joram] → Joram|Joram
+
+2. Place names (~30+ fixes):
+   - Sunem|[Sunem] → Sunem|Shunem
+   - Beth-|[Beth-] → Beth-|Beth-
+   - Abel-Beth-|[Abel-Beth-] → Abel-Beth-|Abel-Beth-
+   - Beer-|[Beer-] → Beer-|Beer-
+   - Krith|[Krith] → Krith|Cherith
+   - Aphek|[Aphek] → Aphek|Aphek
+   - Ijon|[Ijon] → Ijon|Ijon
+
+3. Temple/building terms (~40+ fixes):
+   - Chor|[Chor] → Chor|ORACLE
+   - Halle|[Halle] → Halle|PORCH
+   - Balken|[Balken] → Balken|BEAMS
+   - Säulen|[Säulen] → Säulen|PILLARS
+   - gegossene|[gegossene] → gegossene|MOLTEN
+   - überzog|[überzog] → überzog|OVERLAID
+
+4. German verbs/words requiring proper glosses (~150+ fixes):
+   - warm|[warm] → warm|WARM
+   - hineinkommen|[hineinkommen] → hineinkommen|ENTER
+   - entschlafen|[entschlafen] → entschlafen|SLEEP
+   - erwählt|[erwählt] → erwählt|CHOSEN
+   - getötet|[getötet] → getötet|KILLED
+   - geschrieben|[geschrieben] → geschrieben|WRITTEN
+   - zerbrochen|[zerbrochen] → zerbrochen|BROKEN
+   - verloren|[verloren] → verloren|LOST
+   - gestritten|[gestritten] → gestritten|FOUGHT
+
+5. Numbers:
+   - vierhundertzwanzig|[vierhundertzwanzig] → vierhundertzwanzig|420
+   - vierhundertfünfzig|[vierhundertfünfzig] → vierhundertfünfzig|450
+   - vierzigtausend|[vierzigtausend] → vierzigtausend|40,000
+   - einundvierzig|[einundvierzig] → einundvierzig|41
+
+6. Ethnic/regional names:
+   - Jesreeliter|[Jesreeliter] → Jesreeliter|JEZREELITE
+   - Ammonitin|[Ammonitin] → Ammonitin|AMMONITESS
+   - Syrern|[Syrern] → Syrern|SYRIANS
+   - Hurer|[Hurer] → Hurer|SODOMITES
+
+7. Religious terms:
+   - Göttin|[Göttin] → Göttin|GODDESS
+   - Göttern|[Göttern] → Göttern|GODS
+   - Ascherah|[Ascherah] → Ascherah|Asherah
+   - Ascherahbilder|[Ascherahbilder] → Ascherahbilder|ASHERAH-IMAGES
+   - Greuelbild|[Greuelbild] → Greuelbild|IDOL
+
+**Total issues fixed: ~300+ bracketed words**
+**Status: VERIFIED - 0 bracketed glosses remaining**
+**1 Kings marked as PASSING in feature_list.json**
 
 ---
 ### SESSION 13 - 2 SAMUEL CORRECTIONS COMPLETE

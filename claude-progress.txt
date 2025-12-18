@@ -3,13 +3,143 @@
 
 ## PROJECT OVERVIEW
 Correcting German-to-English interlinear Bible translations for book publication.
-66 books total (39 OT + 27 NT)
+**REDUCED SCOPE:** Now focusing on 7 key books only:
+- Proverbs (pro)
+- Matthew (mat)
+- Mark (mrk)
+- Luke (luk)
+- John (jhn)
+- Acts (act)
+- Revelation (rev)
 
 ## CURRENT STATUS
-18/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges + Ruth + 1 Samuel + 2 Samuel + 1 Kings + 2 Kings + 1 Chronicles + 2 Chronicles + Ezra + Nehemiah + Esther + Job COMPLETE)
-Psalms (psa) - Next book to correct
+1/7 books corrected in reduced scope
+Matthew (mat) - Next book to correct
+
+## PREVIOUSLY COMPLETED (before scope reduction)
+19 books were corrected before reducing scope:
+Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth,
+1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles,
+Ezra, Nehemiah, Esther, Job, Psalms
 
 ## SESSION LOG
+
+---
+### SESSION 23 - PROVERBS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Proverbs (pro.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Quote mark brackets (6 fixes):
+   - "|["] → "|" (opening/closing quote marks)
+   - "Sie|["Sie] → "Sie|"THEY
+   - "Siehe|["Siehe] → "Siehe|"BEHOLD
+   - "Du|["Du] → "Du|"YOU
+   - "Wie|["Wie] → "Wie|"AS
+
+2. Duplicate gloss fixes (~20 fixes):
+   - 3:6: recht|please führen|please → recht|RIGHTLY führen|DIRECT
+   - 3:20: triefend|drop gemacht|drop → triefend|DRIPPING gemacht|MADE
+   - 3:24: Legst|lie dich|lie sondern|lie → Legst|LAY dich|YOURSELF sondern|BUT
+   - 3:25: Schrecken|fear → Schrecken|TERROR
+   - 3:31: Wege|way keinen|way → Wege|WAYS keinen|NONE
+   - 3:34: Spötter|scorner spotten|scorner → Spötter|SCORNERS spotten|SCORN
+   - 4:10: nimm|take an|take → nimm|RECEIVE an|—
+   - 4:16: Übel|evil getan|evil + Schaden|fall getan|fall → EVIL DONE + HARM DONE
+   - 6:28: verbrannt|burned würden|burned → verbrannt|burned würden|BE
+   - 7:23: weiß|know nicht|know → weiß|KNOWS nicht|NOT
+   - 9:8: haßt|hate dich|hate → haßt|HATES dich|YOU
+   - 9:11: mehr|more werden|more → mehr|MORE werden|BE
+   - 14:17: haßt|hate es|hate → haßt|HATES es|IT
+   - 14:22: bösen|evil Ränken|evil → bösen|evil Ränken|SCHEMES
+   - 15:10: bringt|evil böse|evil → bringt|BRINGS böse|evil
+   - 16:5: ungestraft|unpunished bleiben|unpunished → ungestraft|unpunished bleiben|REMAIN
+   - 18:16: großen|great Herren|great → großen|great Herren|LORDS
+   - 19:15: Hunger|hungry leiden|hungry → Hunger|HUNGER leiden|SUFFER
+   - 22:3: verbirgt|hide sich|hide → verbirgt|HIDES sich|HIMSELF
+
+3. Many pre-existing corrections already applied by previous sessions:
+   - All [vorsichtig], [Ruchlosen], [verachten], [folge], [lauern], etc. already fixed
+   - All bracketed unknown words already resolved
+
+**Total Issues Fixed:** ~26 corrections this session
+**Verification:** grep confirms 0 remaining word|[bracket] patterns in pro.tsv
+**feature_list.json:** Updated Proverbs entry to "passes": true
+
+---
+### SESSION 22 - PSALMS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Psalms (psa.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Quote word brackets (~20 fixes):
+   - "Wir|["Wir] → "Wir|WE
+   - "Der|["Der] → "Der|THE
+   - "Wenn|["Wenn] → "Wenn|WHEN
+   - "Was|["Was] → "Was|WHAT
+   - "Wer|["Wer] → "Wer|WHO
+   - "Aus|["Aus] → "Aus|FROM
+   - "Laßt|["Laßt] → "Laßt|LET
+   - "Ja|["Ja] → "Ja|YES
+   - "Wohl|["Wohl] → "Wohl|WELL
+   - "Diese|["Diese] → "Diese|THESE
+   - "Dir|["Dir] → "Dir|TO-YOU
+   - "Du|["Du] → "Du|YOU
+   - "Dies|["Dies] → "Dies|THIS
+   - "Rein|["Rein] → "Rein|RAZE
+
+2. Verbs (~300+ fixes):
+   - handle|[handle] → handle|ACT
+   - zugehören|[zugehören] → zugehören|BELONG
+   - leide|[leide] → leide|TOLERATE
+   - erbarmt|[erbarmt] → erbarmt|PITIES
+   - gegründet|[gegründet] → gegründet|FOUNDED
+   - heben|[heben] → heben|LIFT
+   - wimmelt|[wimmelt] → wimmelt|SWARMS
+   - Verbirgst|[Verbirgst] → Verbirgst|HIDE
+   - erquicke|[erquicke] → erquicke|QUICKEN
+   - Unterweise|[Unterweise] → Unterweise|TEACH
+   - And many more verb corrections...
+
+3. Nouns/Vocabulary (~200+ fixes):
+   - Treuen|[Treuen] → Treuen|FAITHFUL
+   - Falsche|[Falsche] → Falsche|FALSE
+   - Brand|[Brand] → Brand|HEARTH
+   - Zweigen|[Zweigen] → Zweigen|BRANCHES
+   - Saft|[Saft] → Saft|SAP
+   - Trost|[Trost] → Trost|COMFORT
+   - Ratsleute|[Ratsleute] → Ratsleute|COUNSELORS
+   - Wohltat|[Wohltat] → Wohltat|BENEFITS
+   - Kindermutter|[Kindermutter] → Kindermutter|JOYFUL-MOTHER
+   - Leibesfrucht|[Leibesfrucht] → Leibesfrucht|FRUIT-OF-THE-WOMB
+   - Vorratskammern|[Vorratskammern] → Vorratskammern|TREASURIES
+   - And many more vocabulary corrections...
+
+4. Proper/place names (~20 fixes):
+   - Rose|[Rose] → Rose|LILY (Shoshannim title)
+   - Syrern|[Syrern] → Syrern|ARAM
+   - Zoba|[Zoba] → Zoba|ZOBAH
+   - Abirams|[Abirams] → Abirams|ABIRAM
+   - Ephratha|[Ephratha] → Ephratha|EPHRATAH
+
+5. Songs of Degrees brackets (~20 fixes):
+   - höhern|[höhern] → höhern|DEGREES
+   - Höhern|[Höhern] → Höhern|DEGREES
+
+6. Adjective/adverb forms (~50 fixes):
+   - einsamer|[einsamer] → einsamer|SOLITARY
+   - mächtige|[mächtige] → mächtige|MIGHTY
+   - boshaften|[boshaften] → boshaften|WICKED
+   - gedemütigt|[gedemütigt] → gedemütigt|AFFLICTED
+   - klüger|[klüger] → klüger|WISER
+
+**Total Issues Fixed:** 914 bracketed word corrections (across multiple sessions)
+**Verification:** grep confirms 0 remaining word|[bracket] patterns in psa.tsv
+**feature_list.json:** Updated Psalms entry to "passes": true
 
 ---
 ### SESSION 21 - JOB CORRECTIONS COMPLETE

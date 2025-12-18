@@ -1,147 +1,926 @@
 [
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 1-5 using LLM",
+    "description": "Correct interlinear translations for Genesis (gen)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 1-5",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_001-005.tsv",
-      "Step 6: Verify the file contains all verses from chapters 1-5 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/gen-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/gen.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules (see ai-review-instructions.md)",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
     "passes": true
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 6-10 using LLM",
+    "description": "Correct interlinear translations for Exodus (exo)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 6-10",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_006-010.tsv",
-      "Step 6: Verify the file contains all verses from chapters 6-10 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/exo-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/exo.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 11-15 using LLM",
+    "description": "Correct interlinear translations for Leviticus (lev)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 11-15",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_011-015.tsv",
-      "Step 6: Verify the file contains all verses from chapters 11-15 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/lev-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/lev.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 16-20 using LLM",
+    "description": "Correct interlinear translations for Numbers (num)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 16-20",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_016-020.tsv",
-      "Step 6: Verify the file contains all verses from chapters 16-20 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/num-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/num.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 21-25 using LLM",
+    "description": "Correct interlinear translations for Deuteronomy (deu)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 21-25",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_021-025.tsv",
-      "Step 6: Verify the file contains all verses from chapters 21-25 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/deu-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/deu.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 26-30 using LLM",
+    "description": "Correct interlinear translations for Joshua (jos)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 26-30",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_026-030.tsv",
-      "Step 6: Verify the file contains all verses from chapters 26-30 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/jos-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jos.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 31-35 using LLM",
+    "description": "Correct interlinear translations for Judges (jdg)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 31-35",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_031-035.tsv",
-      "Step 6: Verify the file contains all verses from chapters 31-35 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/jdg-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jdg.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 36-40 using LLM",
+    "description": "Correct interlinear translations for Ruth (rut)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 36-40",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_036-040.tsv",
-      "Step 6: Verify the file contains all verses from chapters 36-40 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/rut-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/rut.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 41-45 using LLM",
+    "description": "Correct interlinear translations for 1 Samuel (1sa)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 41-45",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_041-045.tsv",
-      "Step 6: Verify the file contains all verses from chapters 41-45 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/1sa-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1sa.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create interlinear German-English translation for Genesis chapters 46-50 using LLM",
+    "description": "Correct interlinear translations for 2 Samuel (2sa)",
     "steps": [
-      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 46-50",
-      "Step 2: Parse the USFM format to extract each German word with its verse reference",
-      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
-      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
-      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_046-050.tsv",
-      "Step 6: Verify the file contains all verses from chapters 46-50 with German|English word pairs"
+      "Step 1: Read tools/interlinear/output/2sa-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2sa.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
   },
   {
     "category": "data-processing",
-    "description": "Create consolidation script to merge interlinear TSV files into single JSON",
+    "description": "Correct interlinear translations for 1 Kings (1ki)",
     "steps": [
-      "Step 1: Create a Python script at generations/lexibridge/scripts/consolidate_interlinear.py",
-      "Step 2: Script should read all TSV files from generations/lexibridge/data/interlinear/ directory",
-      "Step 3: Parse each line: ref<TAB>word1|gloss1 word2|gloss2 format",
-      "Step 4: Build JSON structure with chapters containing verses containing word pairs",
-      "Step 5: Output format should be: {chapters: [{number: 1, verses: [{number: 1, words: [{de: 'Am', en: 'In-the'}, ...]}]}]}",
-      "Step 6: Write consolidated output to generations/lexibridge/data/genesis_interlinear.json",
-      "Step 7: Run the script to generate the final JSON file",
-      "Step 8: Verify the JSON file contains all 50 chapters with correct structure"
+      "Step 1: Read tools/interlinear/output/1ki-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1ki.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": true
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Kings (2ki)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2ki-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2ki.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 Chronicles (1ch)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1ch-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1ch.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Chronicles (2ch)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2ch-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2ch.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Ezra (ezr)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/ezr-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/ezr.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Nehemiah (neh)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/neh-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/neh.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Esther (est)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/est-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/est.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Job (job)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/job-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/job.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Psalms (psa)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/psa-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/psa.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Proverbs (pro)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/pro-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/pro.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Ecclesiastes (ecc)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/ecc-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/ecc.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Song of Solomon (sng)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/sng-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/sng.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Isaiah (isa)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/isa-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/isa.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Jeremiah (jer)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jer-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jer.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Lamentations (lam)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/lam-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/lam.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Ezekiel (ezk)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/ezk-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/ezk.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Daniel (dan)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/dan-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/dan.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Hosea (hos)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/hos-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/hos.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Joel (jol)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jol-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jol.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Amos (amo)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/amo-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/amo.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Obadiah (oba)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/oba-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/oba.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Jonah (jon)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jon-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jon.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Micah (mic)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/mic-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mic.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Nahum (nam)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/nam-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/nam.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Habakkuk (hab)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/hab-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/hab.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Zephaniah (zep)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/zep-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/zep.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Haggai (hag)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/hag-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/hag.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Zechariah (zec)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/zec-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/zec.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Malachi (mal)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/mal-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mal.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Matthew (mat)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/mat-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mat.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Mark (mrk)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/mrk-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mrk.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Luke (luk)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/luk-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/luk.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for John (jhn)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jhn-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jhn.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Acts (act)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/act-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/act.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Romans (rom)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/rom-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/rom.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 Corinthians (1co)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1co-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1co.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Corinthians (2co)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2co-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2co.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Galatians (gal)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/gal-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/gal.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Ephesians (eph)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/eph-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/eph.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Philippians (php)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/php-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/php.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Colossians (col)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/col-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/col.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 Thessalonians (1th)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1th-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1th.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Thessalonians (2th)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2th-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2th.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 Timothy (1ti)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1ti-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1ti.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Timothy (2ti)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2ti-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2ti.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Titus (tit)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/tit-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/tit.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Philemon (phm)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/phm-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/phm.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Hebrews (heb)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/heb-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/heb.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for James (jas)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jas-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jas.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 Peter (1pe)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1pe-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1pe.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 Peter (2pe)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2pe-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2pe.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 1 John (1jn)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/1jn-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/1jn.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 2 John (2jn)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/2jn-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/2jn.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for 3 John (3jn)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/3jn-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/3jn.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Jude (jud)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/jud-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jud.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data-processing",
+    "description": "Correct interlinear translations for Revelation (rev)",
+    "steps": [
+      "Step 1: Read tools/interlinear/output/rev-issues.txt to identify flagged verses",
+      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/rev.tsv",
+      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
+      "Step 4: Apply the correct fix based on German grammar rules",
+      "Step 5: Edit the TSV file with corrected glosses",
+      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
+      "Step 7: Verify corrections by checking the updated TSV lines"
+    ],
+    "passes": false
   }
 ]

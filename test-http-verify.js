@@ -2,7 +2,7 @@ const http = require('http');
 
 const req = http.request({
   hostname: 'localhost',
-  port: 3000,
+  port: 3001,
   path: '/',
   method: 'GET'
 }, (res) => {

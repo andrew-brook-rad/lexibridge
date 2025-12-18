@@ -6,9 +6,265 @@ Correcting German-to-English interlinear Bible translations for book publication
 66 books total (39 OT + 27 NT)
 
 ## CURRENT STATUS
-4/66 books corrected (Genesis + Exodus + Leviticus + Numbers COMPLETE)
+7/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges COMPLETE)
+Ruth (rut) - Next book to correct
 
 ## SESSION LOG
+
+---
+### SESSION 10 - JUDGES CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Judges (jdg.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names (~20+ fixes):
+   - Mehola|[Mehola] → Mehola|Abel-Meholah
+   - Tabbath|[Tabbath] → Tabbath|Tabbath
+   - Abiesers|[Abiesers] → Abiesers|Abiezer's
+   - Aruma|[Aruma] → Aruma|Arumah
+   - Berith|[Berith] → Berith|Berith
+   - Kamon|[Kamon] → Kamon|Camon
+   - Arnon|[Arnon] → Arnon|Arnon
+   - Ebzan|[Ebzan] → Ebzan|Ibzan
+   - Esthaol|[Esthaol] → Esthaol|Eshtaol
+   - Bethlehem-|[Bethlehem-] → Bethlehem-|Bethlehem-
+   - Beer-|[Beer-] → Beer-|Beer-
+   - Gibea-|[Gibea-] → Gibea-|Gibeah-
+   - Eleasars|[Eleasars] → Eleasars|Eleazar's
+   - Aarons|[Aarons] → Aarons|Aaron's
+   - Menuha|[Menuha] → Menuha|Menuhah
+   - Lebona|[Lebona] → Lebona|Lebonah
+
+2. Samson narrative terms (Chapters 13-16):
+   - Mutterleibe|[Mutterleibe] → Mutterleibe|WOMB
+   - starkes|[starkes] → starkes|STRONG
+   - Fresser|[Fresser] → Fresser|EATER
+   - Löwen|[Löwen] → Löwen|LION
+   - bände/bänden|[bände/bänden] → BOUND
+   - verdorrt|[verdorrt] → verdorrt|DRIED
+   - frischem|[frischem] → frischem|FRESH
+   - zusammenflöchtest|[zusammenflöchtest] → zusammenflöchtest|WEAVEST
+   - Gewebe|[Gewebe] → Gewebe|WEB
+   - geflochtenen|[geflochtenen] → geflochtenen|WOVEN
+   - Nagel|[Nagel] → Nagel|PIN
+   - zerplagte|[zerplagte] → zerplagte|PRESSED
+   - schwach|[schwach] → schwach|WEAK
+   - ehernen|[ehernen] → ehernen|BRONZE
+   - geschoren|[geschoren] → geschoren|SHAVED
+
+3. Verb forms (~60+ fixes):
+   - jagten|[jagten] → jagten|PURSUED
+   - geraubt|[geraubt] → geraubt|PLUNDERED
+   - versammelten|[versammelten] → versammelten|GATHERED
+   - gedachten|[gedachten] → gedachten|THOUGHT
+   - gestärkt|[gestärkt] → gestärkt|STRENGTHENED
+   - verließen|[verließen] → verließen|TRUSTED
+   - lasen|[lasen] → lasen|GATHERED
+   - geherrscht|[geherrscht] → geherrscht|REIGNED
+   - vertrieben|[vertrieben] → vertrieben|DRIVEN-OUT
+   - gestoßen|[gestoßen] → gestoßen|EXPELLED
+   - ergriff|[ergriff] → ergriff|SEIZED
+   - lobten|[lobten] → lobten|PRAISED
+   - holten|[holten] → holten|FETCHED
+   - ermannte|[ermannte] → ermannte|ENCOURAGED
+   - stellten|[stellten] → stellten|ARRAYED
+
+4. Large numbers:
+   - tausendsiebenhundert|[tausendsiebenhundert] → 1,700
+   - tausendundhundert|[tausendundhundert] → 1,100
+   - vierhundertausend|[vierhundertausend] → 400,000
+   - vierhunderttausend|[vierhunderttausend] → 400,000
+   - zweitausend|[zweitausend] → 2,000
+
+5. Vocabulary terms (~50+ fixes):
+   - sicher|[sicher] → sicher|SECURE
+   - Dornbusch|[Dornbusch] → Dornbusch|BRAMBLE
+   - Zedern|[Zedern] → Zedern|CEDARS
+   - Hinterhalt|[Hinterhalt] → Hinterhalt|AMBUSH
+   - Purpurkleider|[Purpurkleider] → Purpurkleider|PURPLE-GARMENTS
+   - Leibrock|[Leibrock] → Leibrock|EPHOD
+   - Abgötterei|[Abgötterei] → Abgötterei|IDOLATRY
+   - Kleidung|[Kleidung] → Kleidung|CLOTHING
+   - Jungfrauen|[Jungfrauen] → Jungfrauen|VIRGINS
+   - Schleuder|[Schleuder] → Schleuder|SLING
+   - links|[links] → links|LEFT-HANDED
+
+6. Ramath-Lehi place name (Chapter 15):
+   - Ramath-|[Ramath-] → Ramath-|Ramath-
+   - Lehi|[Lehi] → Lehi|Lehi
+   - Kinnbackenhöhe|[Kinnbackenhöhe] → Kinnbackenhöhe|Ramath-Lehi
+   - Anrufers|[Anrufers] → Anrufers|CALLER'S
+
+7. Death idiom corrections (2 instances):
+   - 13:22: müssen|die des|of-the Todes|die sterben|die → müssen|MUST des|OF-THE Todes|DEATH sterben|DIE
+   - 21:5: sollte|die des|of-the Todes|die sterben|die → sollte|SHOULD des|OF-THE Todes|DEATH sterben|DIE
+
+**Verification:**
+- 0 remaining |[alphabetic] unknown word brackets
+- All 21 chapters reviewed and corrected
+- Death idiom pattern fixed in both occurrences
+
+**Judges marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Ruth (rut) corrections
+
+---
+### SESSION 9 - JOSHUA CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Joshua (jos.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names:
+   - Mose|[Mose] → Mose|Moses
+   - Josua|[Josua] → Josua|Joshua
+   - Aaron|[Aaron] → Aaron|Aaron
+   - Aarons|[Aarons] → Aarons|Aaron's
+   - Adoni-|[Adoni-] → Adoni-|Adoni-
+   - Zedek|[Zedek] → Zedek|Zedek
+   - Abiesers|[Abiesers] → Abiesers|Abiezer
+   - Asriels|[Asriels] → Asriels|Asriel
+   - Nepheths|[Nepheths] → Nepheths|Naphoth
+   - Gaas|[Gaas] → Gaas|Gaash
+
+2. Verb forms (~100+ words):
+   - unverzagt|[unverzagt] → unverzagt|COURAGEOUS
+   - freudig|[freudig] → freudig|COURAGEOUS
+   - verbannt|[verbannt] → verbannt|DESTROYED
+   - versammelten|[versammelten] → versammelten|GATHERED
+   - verstockt|[verstockt] → verstockt|HARDENED
+   - rottete|[rottete] → rottete|CUT-OFF
+   - herausgebracht|[herausgebracht] → herausgebracht|BROUGHT-OUT
+   - erwählt|[erwählt] → erwählt|CHOSEN
+   - schrieen|[schrieen] → schrieen|CRIED
+   - lebten|[lebten] → lebten|LIVED
+
+3. Vocabulary fixes:
+   - Kriegsmänner|[Kriegsmänner] → Kriegsmänner|MEN-OF-WAR
+   - Kriegsvolks|[Kriegsvolks] → Kriegsvolks|MEN-OF-WAR
+   - Vaterhäuser|[Vaterhäuser] → Vaterhäuser|FATHERS'-HOUSES
+   - Göttern|[Göttern] → Göttern|GODS
+   - Hagel|[Hagel] → Hagel|HAIL
+   - Los|[Los] → Los|LOT
+   - streitet|[streitet] → streitet|FIGHTS
+   - liebhabt|[liebhabt] → liebhabt|LOVE
+   - gefehlt|[gefehlt] → gefehlt|FAILED
+   - rechtschaffen|[rechtschaffen] → rechtschaffen|UPRIGHTLY
+
+4. Numbers:
+   - zweitausend|[zweitausend] → zweitausend|2,000
+   - vierzigtausend|[vierzigtausend] → vierzigtausend|40,000
+
+5. Place names (from territory descriptions chapters 15-21):
+   - Beth-|[Beth-] → Beth-|Beth-
+   - Kades-|[Kades-] → Kades-|Kadesh-
+   - Many compound city names preserved with proper hyphenation
+
+**Verification:**
+- 0 remaining |[alphabetic] unknown word brackets
+- All 24 chapters reviewed and corrected
+
+**Joshua marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Judges (jdg) corrections
+
+---
+### SESSION 8 - DEUTERONOMY CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Deuteronomy (deu.tsv) corrections:
+
+**Key Fixes Applied This Session (Chapters 5-34):**
+
+1. Animal names (Chapter 14 dietary laws):
+   - Steinbock|[Steinbock] → Steinbock|IBEX
+   - Elen|[Elen] → Elen|ELK
+   - Hase|[Hase] → Hase|HARE
+   - Fischaar|[Fischaar] → Fischaar|OSPREY
+   - Weih|[Weih] → Weih|KITE
+   - Häher|[Häher] → Häher|HERON
+   - Schwalbe|[Schwalbe] → Schwalbe|BAT
+
+2. Verb forms (~100+ words):
+   - magst|[magst] → magst|MAY
+   - hinkommst|[hinkommst] → hinkommst|COME
+   - eingenommen|[eingenommen] → eingenommen|POSSESSED
+   - geschrieen|[geschrieen] → geschrieen|CRIED
+   - umgekehrt|[umgekehrt] → umgekehrt|OVERTHREW
+   - verstreut|[verstreut] → verstreut|SCATTERED
+   - geschrieben|[geschrieben] → geschrieben|WRITTEN
+
+3. Vocabulary fixes:
+   - Strick|[Strick] → Strick|SNARE
+   - liebhabt|[liebhabt] → liebhabt|LOVE
+   - erwirbst|[erwirbst] → erwirbst|GET
+   - Knöpfe|[Knöpfe] → Knöpfe|TASSELS
+   - Decke|[Decke] → Decke|BLANKET
+   - selber|[selber] → selber|HIMSELF
+
+4. Proper names:
+   - Josua|[Josua] → Josua|Joshua
+
+5. Special patterns:
+   - -die|[-die] → -die|WHOM (relative clause marker)
+   - -|[-] → -|— (em dash)
+
+**Verification:**
+- 0 remaining |[alphabetic] unknown word brackets
+- Only verse numbering brackets remain (intentional)
+- All chapters 1-34 reviewed and corrected
+
+**Deuteronomy marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Joshua (jos) corrections
+
+---
+### SESSION 7 - DEUTERONOMY CORRECTIONS (PARTIAL)
+Date: 2024-12-18
+
+Started Deuteronomy (deu.tsv) corrections:
+
+**Progress This Session:**
+- Fixed ~100 bracketed words out of 325 total
+- Chapters 1-4 duplicates largely addressed
+- Many verb and vocabulary fixes applied
+
+**Key Fixes Applied:**
+
+1. Place names:
+   - Disahab→Dizahab, Kades-→Kadesh-, Edrei→Edrei
+   - Elath→Elath, Ezeon-→Ezion-, Arnon→Arnon
+   - Argob→Argob, Pisga→Pisgah, Beth-→Beth-
+   - Baal-→Baal-, Beeroth-Bne-→Beeroth-Bne-, Jaakan→Jaakan
+
+2. Proper names:
+   - Aaron→Aaron, Eleasar→Eleazar, Abiram→Abiram, Eliabs→Eliab's
+
+3. Chapter 1-4 verb forms:
+   - antwortetet→ANSWERED, spracht→SAID, kamt→CAME
+   - wurdet→BECAME, gehorchtet→HEARKENED, bliebet→REMAINED
+   - vierzigsten→FORTIETH, auszulegen→EXPLAIN, ziehet→GO
+
+4. Vocabulary fixes (~100 words):
+   - lieben→LOVE, hassen→HATE, verzehre→CONSUME
+   - hineinkommet/hineinkommest→ENTER, umkommen→PERISH
+   - verständige→UNDERSTANDING, Kriegsleute→MEN-OF-WAR
+   - Ellenbogen→CUBIT, streitbar→ARMED, unverzagt→COURAGEOUS
+   - verzehrendes→CONSUMING, steinerne/steinernen→STONE
+   - eisernen→IRON, Göttern→GODS, Dörfer→VILLAGES
+   - And many more...
+
+5. Duplicate gloss fixes:
+   - Chapter 2: "make make", "dwell dwell", "way way way way" fixed
+   - Chapter 3: "fear fear", "by by", "rest rest", "see see" fixed
+   - Chapter 4: "more more", "diminish diminish", "live live" fixed
+   - "forget forget", "swore sware", "well well well" fixed
 
 ---
 ### SESSION 6 - NUMBERS CORRECTIONS COMPLETE

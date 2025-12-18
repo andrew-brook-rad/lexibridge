@@ -1,8 +1,24 @@
 const http = require('http');
 
-http.get('http://localhost:3001', (res) => {
-  console.log('Server status:', res.statusCode);
-  let data = '';
-  res.on('data', c => data += c);
-  res.on('end', () => console.log('Got', data.length, 'bytes'));
-}).on('error', e => console.log('Error:', e.message));
+const ports = [3000, 3001, 3002];
+let completed = 0;
+
+ports.forEach(port => {
+  const req = http.get('http://localhost:' + port, (res) => {
+    let data = '';
+    res.on('data', c => data += c);
+    res.on('end', () => {
+      console.log('Port ' + port + ': Status ' + res.statusCode + ', ' + data.length + ' bytes');
+      if (++completed === ports.length) process.exit(0);
+    });
+  });
+  req.on('error', (e) => {
+    console.log('Port ' + port + ': Error - ' + e.message);
+    if (++completed === ports.length) process.exit(0);
+  });
+  req.setTimeout(3000, () => {
+    console.log('Port ' + port + ': Timeout');
+    req.destroy();
+    if (++completed === ports.length) process.exit(0);
+  });
+});

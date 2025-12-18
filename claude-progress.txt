@@ -6,10 +6,69 @@ Correcting German-to-English interlinear Bible translations for book publication
 66 books total (39 OT + 27 NT)
 
 ## CURRENT STATUS
-7/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges COMPLETE)
-Ruth (rut) - Next book to correct
+8/66 books corrected (Genesis + Exodus + Leviticus + Numbers + Deuteronomy + Joshua + Judges + Ruth COMPLETE)
+1 Samuel (1sa) - Next book to correct
 
 ## SESSION LOG
+
+---
+### SESSION 11 - RUTH CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Ruth (rut.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper names (~10 fixes):
+   - Elimelech|[Elimelech] → Elimelech|Elimelech
+   - Elimelechs|[Elimelechs] → Elimelechs|Elimelech's
+   - Ephrather|[Ephrather] → Ephrathiter|Ephrathites
+   - Bethlehem-|[Bethlehem-] → Bethlehem-|Bethlehem-
+   - Boas|[Boas] → Boas|Boaz
+   - Ephratha|[Ephratha] → Ephratha|Ephrathah
+   - Salma|[Salma] → Salma|Salmon
+
+2. German verbs/words requiring proper glosses (~25 fixes):
+   - spräche|[spräche] → spräche|said
+   - könntet|[könntet] → könntet|could
+   - solltet|[solltet] → solltet|should
+   - Sinn|[Sinn] → Sinn|mind
+   - hineinkamen|[hineinkamen] → hineinkamen|entered
+   - regte|[regte] → regte|stirred
+   - beugte|[beugte] → beugte|bowed
+   - Zuversicht|[Zuversicht] → Zuversicht|refuge
+   - Essenszeit|[Essenszeit] → Essenszeit|mealtime
+   - Körner|[Körner] → Körner|grain
+   - schelte|[schelte] → schelte|rebuke
+   - las|[las] → las|gleaned
+   - aufgelesen|[aufgelesen] → aufgelesen|gleaned
+   - gelesen|[gelesen] → gelesen|gleaned
+   - gearbeitet|[gearbeitet] → gearbeitet|worked
+   - eingeerntet|[eingeerntet] → eingeerntet|harvested
+   - bade|[bade] → bade|wash
+   - salbe|[salbe] → salbe|anoint
+   - Jünglingen|[Jünglingen] → Jünglingen|young-men
+   - gelüstet|[gelüstet] → gelüstet|let-him-redeem
+   - anhast|[anhast] → anhast|wear
+   - halt|[halt] → halt|hold
+   - Setzt|[Setzt] → Setzt|sit
+   - bietet|[bietet] → bietet|offers
+   - Gewohnheit|[Gewohnheit] → Gewohnheit|custom
+   - beerben|[beerben] → beerben|should-redeem
+   - gebaut|[gebaut] → gebaut|built
+   - geliebt|[geliebt] → geliebt|loves
+   - Wärterin|[Wärterin] → Wärterin|nurse
+
+3. German contraction "s" fixes (~8 fixes):
+   - s|[s] → s|it (contracted form of "es")
+
+4. Separable verb prefix corrections:
+   - hervor|bring → hervor|FORTH (separable prefix of "hervorbringen")
+   - auf|— for various separated verbs like "aufheben", "aufstehen"
+   - hin|— for various separated verbs like "hingehen"
+
+**Total issues fixed: ~50+**
+**Status: VERIFIED - All bracketed unknown words removed**
 
 ---
 ### SESSION 10 - JUDGES CORRECTIONS COMPLETE

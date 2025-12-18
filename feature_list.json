@@ -1,41 +1,146 @@
 [
   {
-    "category": "rendering",
-    "description": "Last line of each page maintains minimum word spacing (not squeezed together)",
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 1-5 using LLM",
     "steps": [
-      "Step 1: Load example German text",
-      "Step 2: Export to PDF",
-      "Step 3: Check the last line on each page",
-      "Step 4: Verify words have minimum spacing between them (not compressed)",
-      "Step 5: Verify the line doesn't have words touching or nearly touching",
-      "Step 6: Compare with other lines - spacing should be consistent or left-aligned"
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 1-5",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_001-005.tsv",
+      "Step 6: Verify the file contains all verses from chapters 1-5 with German|English word pairs"
     ],
     "passes": true
   },
   {
-    "category": "rendering",
-    "description": "Justified text respects minimum and maximum word spacing constraints",
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 6-10 using LLM",
     "steps": [
-      "Step 1: Load text that fills multiple pages",
-      "Step 2: Verify full lines have even word spacing",
-      "Step 3: Verify no line has words compressed below minimum spacing",
-      "Step 4: Verify no line has excessive gaps between words",
-      "Step 5: Last lines of paragraphs should be left-aligned (not force-justified)",
-      "Step 6: Export to PDF and verify spacing is maintained"
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 6-10",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_006-010.tsv",
+      "Step 6: Verify the file contains all verses from chapters 6-10 with German|English word pairs"
     ],
     "passes": true
   },
   {
-    "category": "functional",
-    "description": "User can adjust minimum and maximum word spacing in Print Settings",
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 11-15 using LLM",
     "steps": [
-      "Step 1: Open Print Settings panel",
-      "Step 2: Locate word spacing controls (min space, max space)",
-      "Step 3: Adjust minimum word spacing value",
-      "Step 4: Verify preview updates with new spacing",
-      "Step 5: Adjust maximum word spacing value",
-      "Step 6: Verify preview reflects the constraint",
-      "Step 7: Export to PDF and verify spacing settings are applied"
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 11-15",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_011-015.tsv",
+      "Step 6: Verify the file contains all verses from chapters 11-15 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 16-20 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 16-20",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_016-020.tsv",
+      "Step 6: Verify the file contains all verses from chapters 16-20 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 21-25 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 21-25",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_021-025.tsv",
+      "Step 6: Verify the file contains all verses from chapters 21-25 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 26-30 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 26-30",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_026-030.tsv",
+      "Step 6: Verify the file contains all verses from chapters 26-30 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 31-35 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 31-35",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_031-035.tsv",
+      "Step 6: Verify the file contains all verses from chapters 31-35 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 36-40 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 36-40",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_036-040.tsv",
+      "Step 6: Verify the file contains all verses from chapters 36-40 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 41-45 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 41-45",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_041-045.tsv",
+      "Step 6: Verify the file contains all verses from chapters 41-45 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create interlinear German-English translation for Genesis chapters 46-50 using LLM",
+    "steps": [
+      "Step 1: Read generations/lexibridge/data/deu1912_usfm/02-GENdeu1912.usfm and extract chapters 46-50",
+      "Step 2: Parse the USFM format to extract each German word with its verse reference",
+      "Step 3: For each German word, generate a literal English translation (word-for-word) - use your language knowledge, not a dictionary",
+      "Step 4: Use the inline format: ref<TAB>word1|gloss1 word2|gloss2 ... (one verse per line)",
+      "Step 5: Write output to generations/lexibridge/data/interlinear/genesis_046-050.tsv",
+      "Step 6: Verify the file contains all verses from chapters 46-50 with German|English word pairs"
+    ],
+    "passes": true
+  },
+  {
+    "category": "data-processing",
+    "description": "Create consolidation script to merge interlinear TSV files into single JSON",
+    "steps": [
+      "Step 1: Create a Python script at generations/lexibridge/scripts/consolidate_interlinear.py",
+      "Step 2: Script should read all TSV files from generations/lexibridge/data/interlinear/ directory",
+      "Step 3: Parse each line: ref<TAB>word1|gloss1 word2|gloss2 format",
+      "Step 4: Build JSON structure with chapters containing verses containing word pairs",
+      "Step 5: Output format should be: {chapters: [{number: 1, verses: [{number: 1, words: [{de: 'Am', en: 'In-the'}, ...]}]}]}",
+      "Step 6: Write consolidated output to generations/lexibridge/data/genesis_interlinear.json",
+      "Step 7: Run the script to generate the final JSON file",
+      "Step 8: Verify the JSON file contains all 50 chapters with correct structure"
     ],
     "passes": true
   }

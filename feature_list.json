@@ -249,7 +249,7 @@
       "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
       "Step 7: Verify corrections by checking the updated TSV lines"
     ],
-    "passes": false
+    "passes": true
   },
   {
     "category": "data-processing",

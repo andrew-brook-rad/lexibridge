@@ -1,6 +1,6 @@
 const http = require('http');
 
-http.get('http://localhost:3000', (res) => {
+http.get('http://localhost:3001', (res) => {
   console.log('Server status:', res.statusCode);
   let data = '';
   res.on('data', c => data += c);

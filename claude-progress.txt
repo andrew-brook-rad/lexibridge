@@ -6,9 +6,175 @@ Correcting German-to-English interlinear Bible translations for book publication
 66 books total (39 OT + 27 NT)
 
 ## CURRENT STATUS
-1/66 books corrected (Genesis COMPLETE)
+4/66 books corrected (Genesis + Exodus + Leviticus + Numbers COMPLETE)
 
 ## SESSION LOG
+
+---
+### SESSION 6 - NUMBERS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Numbers (num.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Clan/tribe name brackets (Chapter 26 census):
+   - Osni|[Osni] → Osni|Ozni, Osniter|[Osniter] → Osniter|Oznites
+   - Eriter|[Eriter] → Eriter|Erites
+   - Arod|[Arod] → Arod|Arod, Aroditer|[Aroditer] → Aroditer|Arodites
+   - Ariel|[Ariel] → Ariel|Areli, Arieliter|[Arieliter] → Arieliter|Arelites
+   - Hamuliter, Phuvaniter, Simroniter, Eloniter, Jahleeliter
+   - Hieser/Hieseriter, Helekiter, Asriel/Asrieliter, Sichemiter
+   - Hepheriter, Thahaniter, Eraniter, Asbeliter, Ahiram/Ahiramiter
+   - Huphamiter, Arditer, Naemaniter, Beriiter, Melchieliter
+   - Guniter, Sillemiter, Merariter
+
+2. Large number brackets:
+   - vierundsechzigtausend → 64,000
+   - eintausend → 1,000
+   - einundsechzigtausend → 61,000
+   - einundsechzig → 61
+
+3. Chapter 30 vow terminology:
+   - verbindet|[verbindet] → verbindet|BINDS
+   - Verbündnis|[Verbündnis] → Verbündnis|BOND (15+ occurrences)
+   - Verbündnisse|[Verbündnisse] → Verbündnisse|BONDS
+   - aufgelegt|[aufgelegt] → aufgelegt|LAID-ON
+   - entfahren|[entfahren] → entfahren|UTTERED
+   - auflegt|[auflegt] → auflegt|LAYS-ON
+
+4. Chapter 31-36 military and inheritance terms:
+   - Kriegsvolk|[Kriegsvolk] → Kriegsvolk|MEN-OF-WAR
+   - Kriegsleute/Kriegsleuten → MEN-OF-WAR
+   - genommene|[genommene] → genommene|TAKEN
+   - geraubte/geraubt → PLUNDERED
+   - Totschlag|[Totschlag] → Totschlag|SLAYING
+   - freien|[freien] → freien|MARRY
+   - freiten|[freiten] → freiten|MARRIED
+
+5. Place names (Chapter 33 journeys):
+   - Etham, Elim, Alus→Alush, Rimmon-, Bne-→Bene-
+   - Ezeon-→Ezion-, Dibon-, Almon-, Abel-, Beth-
+   - Sittim → Shittim, Zedad, etc.
+
+6. Proper names (Chapter 34):
+   - Elidad, Chislons→Chislon's, Joglis→Jogli's
+   - Ephods→Ephod's, Siphtans→Shiphtan's
+   - Parnachs→Parnach's, Assans→Azzan's, etc.
+
+7. Miscellaneous vocabulary:
+   - Widdern|[Widdern] → Widdern|RAMS (8 occurrences)
+   - Lichts|[Lichts] → Lichts|URIM
+   - Zinn|[Zinn] → Zinn|TIN
+   - Mädchen|[Mädchen] → Mädchen|MAIDENS
+   - Menschenseelen|[Menschenseelen] → Menschenseelen|PERSONS
+   - Heiliget|[Heiliget] → Heiliget|SANCTIFY
+
+**Verification:**
+- 0 remaining [alphabetic] unknown word brackets
+- Only verse numbering brackets remain (intentional: [[30] 3]|[3]] format)
+
+**Numbers marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Deuteronomy (deu) corrections
+
+---
+### SESSION 5 - LEVITICUS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Leviticus (lev.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper name brackets fixed:
+   - Aarons|[Aarons] → Aarons|Aaron's (30+ occurrences)
+   - Aaron|[Aaron] → Aaron|Aaron
+
+2. s|[s] bracket fixes:
+   - All s|[s] → s|IT (107+ occurrences)
+
+3. Finger|[Finger] bracket fixes:
+   - Finger|[Finger] → Finger|FINGER
+
+4. Offering term brackets fixed:
+   - Schuldopfer|[Schuldopfer] → Schuldopfer|GUILT-OFFERING
+   - Sündopfer|[Sündopfer] → Sündopfer|SIN-OFFERING
+   - Gedächtnis|[Gedächtnis] → Gedächtnis|MEMORIAL
+
+5. Miscellaneous German word brackets (~100+ words):
+   - Haut|[Haut] → Haut|SKIN, Rost|[Rost] → Rost|GRATE
+   - gemeinen|[gemeinen] → gemeinen|COMMON, Feuern|[Feuern] → Feuern|OFFERINGS
+   - verloren|[verloren] → verloren|LOST, nimmer|[nimmer] → nimmer|NEVER
+   - Many more vocabulary fixes
+
+6. Duplicate gloss fixes:
+   - sündigen|sin würde|sin → sündigen|sin würde|WOULD
+   - gesalbt|anointed ist|anointed → gesalbt|anointed ist|IS
+   - getan|done hat|sin → getan|done hat|HAS
+   - fünften|fifth Teil|fifth → fünften|fifth Teil|PART
+   - tut|make ... sollte|make → tut|DOES ... sollte|SHOULD
+   - innewird|know → innewird|BECOMES-AWARE
+   - opfere|offer er|offer → opfere|offer er|HE (1:3, 1:10)
+
+**Verification:**
+- 0 remaining [alphabetic] unknown word brackets
+- 0 remaining duplicate gloss patterns from issues file
+- Only verse numbering brackets remain (intentional: [[5] 20] format)
+
+**Leviticus marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Numbers (num) corrections
+
+---
+### SESSION 4 - EXODUS CORRECTIONS COMPLETE
+Date: 2024-12-18
+
+Completed all Exodus (exo.tsv) corrections:
+
+**Key Fixes Applied This Session:**
+
+1. Proper name brackets fixed:
+   - Aaron|[Aaron] → Aaron|Aaron
+   - Aarons|[Aarons] → Aarons|Aaron's
+   - Mose|[Mose] → Mose|Moses
+   - Elzaphan, Sithri, Eliseba→Elisheba, Abihu, Eleazar, Ithamar
+   - Assir, Elkanah, Abiasaph, Oholiab→Aholiab, Ahisamach, Uri, Ithamar
+
+2. Place name brackets fixed:
+   - Elim, Etham, Abib
+
+3. s|[s] bracket fixes:
+   - All s|[s] → s|IT (replace_all)
+
+4. Vocabulary bracket fixes (~150+ words):
+   - beredt→ELOQUENT, seit→SINCE, Stamm→TRIBE, versammelten→GATHERED
+   - beteten→WORSHIPPED, frei→FREE, feiern→REST, gleichwohl→NEVERTHELESS
+   - Heuschrecken→LOCUSTS, verzehrendes→DEVOURING, roter→RED
+   - Construction terms: Stangen→STAVES, Gitter→GRATE, Querstäbe→FILLETS
+   - Colors/materials: blauem→BLUE, weißer→WHITE, Purpur→PURPLE
+   - Tabernacle terms: Widderfellen→RAM-SKINS, Leibrocks→EPHOD, etc.
+   - Numbers: tausendsiebenhundertfünfzig→1775, zweitausendvierhundert→2400
+
+5. Verb and action brackets:
+   - verbrennt→BURN, angezündet→KINDLED, Stiehlt→STEAL
+   - geweiht→CONSECRATED, geheiligt→SANCTIFIED
+   - backen→BAKE, kochen→SEETHE, gemurrt→MURMURED
+
+6. German grammar corrections:
+   - Reflexive and separable verbs handled
+   - Contraction glosses maintained (im→IN-THE, am→ON-THE)
+
+**Verification:**
+- 0 remaining [alphabetic] unknown word brackets
+- Only verse numbering brackets remain (intentional: [[7] 26]|[26]] format)
+- No duplicate gloss issues found
+
+**Exodus marked as PASSING in feature_list.json**
+
+**Next Session:**
+- Start Leviticus (lev) corrections
 
 ---
 ### SESSION 3 - GENESIS CORRECTIONS COMPLETE

@@ -14,7 +14,9 @@ Correcting German-to-English interlinear Bible translations for book publication
 
 ## CURRENT STATUS
 3/7 books corrected in reduced scope
-Luke (luk) - Next book to correct
+Luke (luk) - IN PROGRESS (~468 bracketed issues remaining from 618 original)
+- Corrected ~150 bracketed glosses in this session
+- Chapters 1-5 mostly done, more work needed on chapters 6-24
 
 ## PREVIOUSLY COMPLETED (before scope reduction)
 19 books were corrected before reducing scope:

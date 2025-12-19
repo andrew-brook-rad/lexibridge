@@ -32,6 +32,48 @@ Ezra, Nehemiah, Esther, Job, Psalms
 ## SESSION LOG
 
 ---
+### SESSION 29 - FINAL DUPLICATE GLOSS CLEANUP
+Date: 2024-12-19
+
+Performed final cleanup of duplicate gloss issues across NT books.
+
+**Issues Found and Fixed:**
+
+1. **John (4 fixes):**
+   - 5:43: `bin|I` → `bin|AM` (verb "to be")
+   - 10:1: `Mörder|thief` → `Mörder|MURDERER`
+   - 16:4: `s|I` → `s|IT` (contraction of "es")
+   - 18:40: `Mörder|thief` → `Mörder|MURDERER`, `Barabbas|BARABBAS Barabbas|BARABBAS` → `Barabbas|BARABBAS Barabbas|—`
+
+2. **Matthew (4 fixes):**
+   - 2:8: `auch|I` → `auch|ALSO`
+   - 10:33: `auch|I` → `auch|ALSO`
+   - 26:22: `s|I` → `s|IT`
+   - 26:25: `s|I` → `s|IT`
+
+3. **Mark (1 fix):**
+   - 14:19: `Bin|I` → `Bin|AM` (2 occurrences), `s|I` → `s|IT` (already fixed earlier)
+
+4. **Luke (2 fixes):**
+   - 1:3: `s|I` → `s|IT`
+   - 11:9: `Und|I` → `Und|AND`
+
+5. **Revelation (2 fixes):**
+   - 2:6: `auch|I` → `auch|ALSO`
+   - 3:10: `auch|I` → `auch|ALSO`
+
+**Pattern Analysis:**
+- `s|I` errors: German "s" is contraction of "es" (it), was incorrectly glossed as "I"
+- `auch|I` errors: German "auch" means "also", was incorrectly glossed as "I"
+- `bin|I` errors: German "bin" is first-person singular of "sein" (to be), should be "AM"
+- `Mörder|thief` errors: German "Mörder" means "murderer", not "thief"
+
+**Verification:** All 7 books now have 0 problematic duplicates.
+- John's 25 remaining matches are legitimate "VERILY wahrlich|VERILY" patterns (Jesus' amen, amen formula)
+
+**Commit:** b91c5ce - Fix remaining duplicate gloss issues across NT books
+
+---
 ### SESSION 28 - ACTS FINAL CORRECTIONS COMPLETE
 Date: 2024-12-18
 

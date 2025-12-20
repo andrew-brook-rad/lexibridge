@@ -2152,5 +2152,78 @@ Date: 2024-12-20
 - Ezekiel (ezk.tsv) is now COMPLETE
 - All problematic patterns have been corrected
 
-**Books Completed: 26/66**
+**Books Completed: 27/66**
+
+---
+### SESSION 32 - DANIEL COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+**Completed comprehensive cleanup of all issues in Daniel (dan.tsv).**
+
+**Corrections Made:**
+
+1. **|old pattern fixes (9 occurrences):**
+   - `Kindern|old Israel` → `Kindern|children Israel` (children of Israel)
+   - `Kindern|old Juda` → `Kindern|children Juda` (children of Judah)
+   - `Menschenkind|old` → `Menschenkind|son-of-man` (son of man - prophetic term)
+   - `Sohnes|old` → `Sohnes|son` (genitive - of the son)
+   - `Menschen|old` → `Menschen|man` (man/human)
+   - `Söhne|old` → `Söhne|sons` (sons)
+   - `Abtrünnige|old` → `Abtrünnige|apostates` (apostates/rebellious ones)
+   - `Kinder|old Ammon` → `Kinder|children Ammon` (children of Ammon)
+   - `Kinder|old deines` → `Kinder|children deines` (children of your)
+
+2. **Bracketed unknown word fixes (~150 occurrences):**
+   - Names: `Aspenas|[Aspenas]` → `Aspenas|ASHPENAZ`, `Abed-Nego|[Abed-Nego]` → `Abed-Nego|ABED-NEGO`
+   - Verbs: `wählen|[wählen]` → `wählen|CHOOSE`, `verunreinigen|[verunreinigen]` → `verunreinigen|DEFILE`
+   - Numbers: `zweitausend|[zweitausend]` → `zweitausend|TWO-THOUSAND`, `einundzwanzig|[einundzwanzig]` → `einundzwanzig|TWENTY-ONE`
+   - Body parts: `Finger|[Finger]` → `Finger|FINGERS`, `Beine|[Beine]` → `Beine|KNEES`, `Zehen|[Zehen]` → `Zehen|TOES`
+   - Temple items: `Schatzkammer|[Schatzkammer]` → `Schatzkammer|TREASURY`, `goldenen|[goldenen]` → `goldenen|GOLDEN`
+   - Royal terms: `Vogt|[Vogt]` → `Vogt|OVERSEER`, `Fürsten|[Fürsten]` → `Fürsten|PRINCES`
+   - Animals: `Adlersflügeln|[Adlersflügeln]` → `Adlersflügeln|EAGLE'S-WINGS`, `Bären|[Bären]` → `Bären|BEAR`
+   - Many more including: Mose→MOSES, Ulai→ULAI, Ahasveros→AHASUERUS, Mediens→MEDIA'S
+
+3. **Death idiom verification:**
+   - No `Todes|DIE` or `|die` patterns found requiring correction
+
+**Statistics:**
+- Starting bracketed patterns: ~150 lines
+- Ending bracketed patterns: 0 lines
+- Starting |old patterns: 9 lines
+- Ending |old patterns: 0 lines
+
+**Status:**
+- Daniel (dan.tsv) is now COMPLETE
+- All problematic patterns have been corrected
+- Consolidation script run successfully
+
+**Books Completed: 27/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Song of Solomon (sng)
+- [x] Isaiah (isa)
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [x] Ezekiel (ezk)
+- [x] Daniel (dan) ← NEWLY COMPLETED
+- [ ] Hosea (hos) - next
 

@@ -1508,7 +1508,8 @@ Completed comprehensive cleanup of all issues in Job (job.tsv).
 - [x] Psalms (psa)
 - [x] Proverbs (pro)
 - [x] Ecclesiastes (ecc)
-- [ ] Song of Solomon (sng) - next
+- [x] Song of Solomon (sng)
+- [ ] Isaiah (isa) - next
 
 ---
 ### SESSION 20 - PROVERBS COMPREHENSIVE CLEANUP

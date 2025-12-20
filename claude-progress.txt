@@ -705,6 +705,136 @@ Completed comprehensive cleanup of 2 Samuel (2sa.tsv).
 - [ ] 1 Kings (1ki) - next
 
 ---
+### SESSION 12 - 1 KINGS COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of 1 Kings (1ki.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Sohn|old` → `Sohn|son` (163+ occurrences)
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Kinder|old` → `Kinder|children`
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Ammoniter|old` → `Ammoniter|Ammonites`
+   - `Buben|old` → `Buben|SCOUNDRELS`
+   - `gegen|old` → `gegen|EAST`
+   - `er|old` → `er|HE` (specific context)
+
+2. **"stringed instrument" mistranslation fixes (~201 occurrences):**
+   This was a major systematic error where many German words were incorrectly glossed:
+   - `von|stringed instrument` → `von|FROM`
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `aus|stringed instrument` → `aus|FROM`
+   - `vor|stringed instrument` → `vor|BEFORE`
+   - `da|stringed instrument` → `da|THERE`
+   - `denn|stringed instrument` → `denn|THAN`
+   - `sein|stringed instrument` → `sein|HIS`
+   - `aber|stringed instrument` → `aber|BUT`
+   - `sich|stringed instrument` → `sich|HIMSELF`
+   - `ist|stringed instrument` → `ist|IS`
+   - `auf|stringed instrument` → `auf|ON`
+   - `nicht|stringed instrument` → `nicht|NOT`
+   - `und|stringed instrument` → `und|AND`
+   - `dem|stringed instrument` → `dem|THE`
+   - `umher|stringed instrument` → `umher|AROUND`
+   - `mir|stringed instrument` → `mir|ME`
+   - `um|stringed instrument` → `um|FOR`
+   - `so|stringed instrument` → `so|SO`
+   - `nun|stringed instrument` → `nun|NOW`
+   - `es|stringed instrument` → `es|IT`
+   - `inwendig|stringed instrument` → `inwendig|WITHIN`
+   - `daß|stringed instrument` → `daß|THAT`
+   - `in|stringed instrument` → `in|IN`
+   - `die|stringed instrument` → `die|THE`
+   - `oben|stringed instrument` → `oben|ABOVE`
+   - `unten|stringed instrument` → `unten|BELOW`
+   - `der|stringed instrument` → `der|THE`
+   - `an|stringed instrument` → `an|AT`
+   - `zur|stringed instrument` → `zur|TO-THE`
+   - `das|stringed instrument` → `das|THE`
+   - `ich|stringed instrument` → `ich|I`
+   - `Aus|stringed instrument` → `Aus|FROM`
+   - `Dienst|stringed instrument` → `Dienst|SERVICE`
+   - `Seiten|stringed instrument` → `Seiten|SIDES`
+   - `waren|stringed instrument` → `waren|WERE`
+   - `am|stringed instrument` → `am|ON-THE`
+   - `ungewogen|stringed instrument` → `ungewogen|UNWEIGHED`
+   - `mitten|stringed instrument` → `mitten|MIDST`
+   - `daselbst|stringed instrument` → `daselbst|THERE`
+   - `außer|stringed instrument` → `außer|BESIDES`
+   - `was|stringed instrument` → `was|WHAT`
+   - `war|stringed instrument` → `war|WAS`
+   - `beiden|stringed instrument` → `beiden|BOTH`
+   - `abziehe|stringed instrument` → `abziehe|DEPART`
+   - `zu|stringed instrument` → `zu|TO`
+   - `über|stringed instrument` → `über|OVER`
+   - `nach|stringed instrument` → `nach|AFTER`
+   - `ihrer|stringed instrument` → `ihrer|OF-THEM`
+   - `dieser|stringed instrument` → `dieser|THESE`
+   - `wer|stringed instrument` → `wer|WHO`
+   - `ihm|stringed instrument` → `ihm|HIM`
+   - `ausgezogen|stringed instrument` → `ausgezogen|GONE-OUT`
+   - `unter|stringed instrument` → `unter|AMONG`
+   - `wird|stringed instrument` → `wird|WILL`
+   - `er|stringed instrument` → `er|HE`
+   - `wir|stringed instrument` → `wir|WE`
+   - `durch|stringed instrument` → `durch|THROUGH`
+   - `Von|stringed instrument` → `Von|FROM`
+   - `dir|stringed instrument` → `dir|YOU`
+   - `bei|stringed instrument` → `bei|BY`
+   - `ihn|stringed instrument` → `ihn|HIM`
+   - `jenseit|stringed instrument` → `jenseit|BEYOND`
+   - `deinem|stringed instrument` → `deinem|YOUR`
+
+3. **Death-related |die pattern fixes (~46 occurrences):**
+   - `starb|die` → `starb|DIED`
+   - `sterben|die` → `sterben|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `stirbt|die` → `stirbt|DIES`
+   - `stürbe|die` → `stürbe|DIE`
+   - `töte|die` → `töte|KILL`
+   - `tötet|die` → `tötet|KILL`
+   - `töten|die` → `töten|KILL`
+   - `tötete|die` → `tötete|KILLED`
+   - `tötetest|die` → `tötetest|KILLED`
+   - `tot|die` → `tot|DEAD`
+   - `toten|die` → `toten|DEAD`
+   - `Todes|die` → `Todes|DEATH`
+   - `sollte|die` → `sollte|SHOULD`
+   - `mußt|die` → `mußt|MUST`
+   - `würde|die` → `würde|WOULD`
+   - `nicht|die` → `nicht|—` (context: "nicht töten")
+   - `war|die` → `war|WAS`
+
+**Statistics:**
+- ~163+ |old patterns fixed
+- ~201 "stringed instrument" mistranslations fixed
+- ~46 death-related |die patterns fixed
+- Total: ~410+ individual word glosses corrected
+
+**Status:**
+- 1 Kings (1ki.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 11/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [ ] 2 Kings (2ki) - next
+
+---
 ### SESSION 8 - JUDGES COMPREHENSIVE CLEANUP
 Date: 2024-12-20
 

@@ -395,6 +395,98 @@ Completed comprehensive cleanup of all remaining issues in Numbers (num.tsv).
 - [x] Exodus (exo)
 - [x] Leviticus (lev)
 - [x] Numbers (num)
-- [ ] Deuteronomy (deu) - next
+- [x] Deuteronomy (deu)
+- [ ] Joshua (jos) - next
+
+---
+### SESSION 6 - DEUTERONOMY COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Deuteronomy (deu.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Kindern|old` → `Kindern|children` (many occurrences)
+   - `Kinder|old` → `Kinder|children`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohn|old` → `Sohn|son`
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Sohne|old` → `Sohne|son` (dative)
+   - `Kindeskinder|old` → `Kindeskinder|grandchildren`
+   - `Kindeskindern|old` → `Kindeskindern|grandchildren`
+   - `Jahre|year alt|old` → `Jahre|year alt|OLD`
+   - `alten|old-man` → `alten|FORMER` (context-appropriate)
+   - Various other `|old` context fixes
+
+2. **Bracketed unknown word fixes:**
+   - `versöhnt|[versöhnt]` → `versöhnt|ATONED`
+   - `würdig|[würdig]` → `würdig|WORTHY`
+   - `Dürftigen|[Dürftigen]` → `Dürftigen|NEEDY`
+   - `zerstoßen|[zerstoßen]` → `zerstoßen|CRUSHED`
+   - `weggeführt|[weggeführt]` → `weggeführt|LED-AWAY`
+   - `verläßt|[verläßt]` → `verläßt|TRUST`
+   - `bedrängen|[bedrängen]` → `bedrängen|DISTRESS`
+   - `wärest|[wärest]` → `wärest|WERE`
+   - `erwählest|[erwählest]` → `erwählest|CHOOSE`
+   - `fällt|[fällt]` → `fällt|FALL`
+   - `ausführt|[ausführt]` → `ausführt|STIRS-UP`
+   - `Flügeln|[Flügeln]` → `Flügeln|WINGS`
+   - `nährte|[nährte]` → `nährte|FED`
+   - `übergeben|[übergeben]` → `übergeben|DELIVERED`
+   - `Schätzen|[Schätzen]` → `Schätzen|TREASURES`
+   - `verlängern|[verlängern]` → `verlängern|PROLONG`
+
+3. **Death idiom and |die pattern fixes:**
+   - `Todes|die` → `Todes|DEATH`
+   - `sterben|die` → `sterben|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `stirbt|die` → `stirbt|DIES`
+   - `stirbst|die` → `stirbst|DIE`
+   - `starb|die` → `starb|DIED`
+   - `stürbe|die` → `stürbe|DIED`
+   - `gestorben|die` → `gestorben|DIED`
+   - `Toten|die` → `Toten|DEAD`
+   - `Tode|die` → `Tode|DEATH`
+   - `tot|die` → `tot|DEAD`
+   - `tötete|die` → `tötete|KILLED`
+   - `töten|die` → `töten|KILL`
+   - `getötet|die` → `getötet|KILLED`
+   - `Verstorbenen|die` → `Verstorbenen|DECEASED`
+   - `verstorbenen|die` → `verstorbenen|DECEASED`
+
+4. **Separable verb particle fixes:**
+   - `hinauf|offer` → `hinauf|UP`
+   - `heraus|bring` → `heraus|OUT`
+   - `hinein|in` → `hinein|INTO`
+   - `hinab|descend` → `hinab|DOWN`
+   - `hinaus|without` → `hinaus|OUT`
+   - `herab|down` → `herab|DOWN`
+   - `herab|look` → `herab|DOWN`
+   - `hinzu|offer` → `hinzu|NEAR`
+
+5. **Miscellaneous |die pattern fixes:**
+   - Various context-specific fixes for pronouns and verbs incorrectly glossed as "die"
+
+**Statistics:**
+- Total corrections: ~150+ individual word glosses
+- All `|old` patterns for family/age words fixed
+- All bracketed unknown words fixed with appropriate glosses
+- All `|die` death-related patterns fixed
+- Separable verb particles now correctly glossed
+
+**Status:**
+- Deuteronomy (deu.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+- Ready to proceed to next book (Joshua) in future session
+
+**Books Completed: 5/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [ ] Joshua (jos) - next
 
 ---

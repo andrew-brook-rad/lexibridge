@@ -319,3 +319,82 @@ Completed comprehensive cleanup of all remaining issues in Leviticus (lev.tsv).
 - [ ] Numbers (num) - next
 
 ---
+### SESSION 5 (continued) - NUMBERS COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Numbers (num.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Kinder|old` → `Kinder|children` (many occurrences)
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Sohn|old` → `Sohn|son`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Sohne|old` → `Sohne|son` (dative)
+   - `junge|old` → `junge|young`
+   - `jungen|old` → `jungen|young`
+   - `jähriges|old` → `jähriges|YEAR-OLD`
+   - `jährige|old` → `jährige|YEAR-OLD`
+   - `jahrige|old` → `jahrige|YEAR-OLD`
+   - `ihr|old` → `ihr|their`
+   - `sie|old` → `sie|they`
+   - `ihnen|old` → `ihnen|them`
+   - `und|old` → `und|and`
+   - `s|old` → `s|IT`
+   - `alt|old` → `alt|OLD`
+   - `Simeon|old` → `Simeon|Simeon`
+   - `Stämmen|old` → `Stämmen|tribes`
+
+2. **Death idiom pattern fixes:**
+   - `Todes|die` → `Todes|DEATH`
+   - `Tode|die` → `Tode|DEATH`
+
+3. **Death-related |die pattern fixes:**
+   - `sterben|die` → `sterben|DIE`
+   - `starben|die` → `starben|DIED`
+   - `starb|die` → `starb|DIED`
+   - `stirbt|die` → `stirbt|DIES`
+   - `sterbet|die` → `sterbet|DIE`
+   - `stürben|die` → `stürben|DIE`
+   - `gestorben|die` → `gestorben|DIED`
+   - `Totes|die` → `Totes|DEAD`
+   - `Toten|die` → `Toten|DEAD`
+   - `toten|die` → `toten|DEAD`
+   - `töten|die` → `töten|KILL`
+   - `tötest|die` → `tötest|SLAY`
+   - `getötet|die` → `getötet|SLAIN`
+   - `umkamen|die` → `umkamen|PERISHED`
+   - `verderben|die` → `verderben|PERISH`
+   - `untergehen|die` → `untergehen|PERISH`
+
+4. **Miscellaneous |die pattern fixes:**
+   - `wären|die` → `wären|WOULD`
+   - `waren|die` → `waren|WERE`
+   - `jemand|die` → `jemand|SOMEONE`
+   - `müsse|die` → `müsse|MUST`
+   - `werden|die` → `werden|BECOME`
+   - `bringen|die` → `bringen|BRING`
+   - `mag|die` → `mag|MAY`
+
+**Statistics:**
+- Total corrections: ~150+ individual word glosses
+- All `|old` patterns for family/age words fixed
+- All `|die` death-related patterns fixed
+- All death idiom patterns ("des Todes sterben") properly glossed
+
+**Status:**
+- Numbers (num.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+- Ready to proceed to next book (Deuteronomy) in future session
+
+**Books Completed: 4/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [ ] Deuteronomy (deu) - next
+
+---

@@ -194,3 +194,65 @@ Completed comprehensive cleanup of all remaining issues in Genesis (gen.tsv).
 - Ready to proceed to next book (Exodus) in future session
 
 ---
+### SESSION 4 - EXODUS COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Exodus (exo.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Kinder|old` → `Kinder|children` (97 occurrences)
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Sohn|old` → `Sohn|son`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+
+2. **Death idiom pattern fixes:**
+   - `Todes|die` → `Todes|DEATH` (9 occurrences)
+   - `soll|die des|of-the Todes|DEATH sterben|die` → `soll|SHALL des|OF-THE Todes|DEATH sterben|DIE`
+
+3. **Death-related |die pattern fixes:**
+   - `starb|die` → `starb|DIED`
+   - `starben|die` → `starben|DIED`
+   - `tot|die` → `tot|DEAD`
+   - `war|die` → `war|WAS`
+   - `tötet|die` → `tötet|KILL`
+   - `töten|die` → `töten|KILL`
+   - `töte|die` → `töte|KILL`
+   - `sterben|die` → `sterben|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `stirbt|die` → `stirbt|DIES`
+   - `sollen|die` → `sollen|SHALL`
+   - `gestorben|die` → `gestorben|DIED`
+   - `Toter|die` → `Toter|DEAD`
+   - `lasset|die` → `lasset|LET`
+   - `ließest|die` → `ließest|LET`
+   - `Aas|die` → `Aas|CARCASS`
+   - `müssen|die` → `müssen|MUST`
+
+4. **Separable verb particle fixes:**
+   - `hin|go` → `hin|—` (24 occurrences) - blank gloss for directional particle
+
+5. **Duplicate gloss fixes:**
+   - `habe|see gesehen|see` → `habe|HAVE gesehen|SEEN`
+   - Fixed typo: `gestorben|DIEDd` → `gestorben|DIED`
+
+**Statistics:**
+- Total corrections: ~150+ individual word glosses
+- All `|old` patterns for family words fixed
+- All `|die` death-related patterns fixed
+- All death idiom patterns ("des Todes sterben") properly glossed
+- Separable verb particles now use blank gloss (—)
+
+**Status:**
+- Exodus (exo.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+- Ready to proceed to next book (Leviticus) in future session
+
+**Books Completed: 2/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [ ] Leviticus (lev) - next
+
+---

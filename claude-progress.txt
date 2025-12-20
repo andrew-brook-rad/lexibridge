@@ -2225,31 +2225,72 @@ Date: 2024-12-20
 - [x] Lamentations (lam)
 - [x] Ezekiel (ezk)
 - [x] Daniel (dan)
-- [x] Hosea (hos) ← NEWLY COMPLETED
-- [ ] Joel (jol) - next
+- [x] Hosea (hos)
+- [x] Joel (jol) ← NEWLY COMPLETED
+- [ ] Amos (amo) - next
 
 ---
 
-## Session: Hosea (hos) Correction
+## Session: Joel (jol) Correction
 
-**Book:** Hosea (hos)
+**Book:** Joel (jol)
 **Status:** COMPLETED
 
 **Issues Fixed:**
 
-1. **|old patterns:** Fixed all instances (Sohn, Kinder, Kind, Leute → son, children, child, people)
+1. **|old patterns (10 occurrences):**
+   - `Sohn|old` → `Sohn|son` (Pethuel's son)
+   - `Kindern|old` → `Kindern|children` (multiple occurrences)
+   - `Kinder|old` → `Kinder|children` (children of Zion, Judah, Jerusalem)
+   - `Menschen|old` → `Menschen|MEN` (joy of men)
+   - `Söhne|old` → `Söhne|sons` (sons and daughters)
 
-2. **|stringed instrument mistranslations:** Fixed ~30+ instances (vom, von, aus, vor, nach, wider, etc. → FROM-THE, FROM, BEFORE, AFTER, AGAINST)
+2. **|stringed instrument mistranslations (5 occurrences):**
+   - `vom|stringed instrument` → `vom|FROM-THE` (from the house)
+   - `von|stringed instrument` → `von|FROM` (from you, from their borders)
+   - `aus|stringed instrument` → `aus|FROM` (from the place)
+   - `desgleichen|stringed instrument` → `desgleichen|THE-LIKE-OF-WHICH`
 
-3. **Bracketed unknown words:** Fixed ~80+ instances (Ahas→AHAZ, Lo-→LO-, Buhlen→LOVERS, verloben→BETROTH, Leibrock→EPHOD, and many more)
-
-4. **Death idiom patterns:** Fixed sterben|die, töten|die, getötet|die patterns
-
-5. **Duplicate gloss patterns:** Fixed separable verbs (hin|go→hin|—) and duplicate glosses
+3. **Bracketed unknown words (~50+ occurrences):**
+   - Verbs: `merket|[merket]` → `merket|HEED`, `Wachet|[Wachet]` → `Wachet|AWAKE`
+   - `Heuschrecken|[Heuschrecken]` → `Heuschrecken|LOCUSTS` (multiple)
+   - `frißt|[frißt]` → `frißt|DEVOURS`, `trauern|[trauern]` → `trauern|MOURN`
+   - `jämmerlich|[jämmerlich]` → `jämmerlich|MISERABLY`
+   - `kläglich|[kläglich]` → `kläglich|PITIFULLY`
+   - `Ackerleute|[Ackerleute]` → `Ackerleute|FARMERS`
+   - `O|[O] weh|[weh]` → `O|ALAS weh|WOE`
+   - `seufzt|[seufzt]` → `seufzt|GROAN`
+   - `verschmachten|[verschmachten]` → `verschmachten|LANGUISH`
+   - `Wasserbäche|[Wasserbäche]` → `Wasserbäche|WATERCOURSES`
+   - `dunkler|[dunkler]` → `dunkler|DARK`
+   - `verzehrend|[verzehrend]` → `verzehrend|DEVOURING`
+   - `lodert|[lodert]` → `lodert|CRACKLES`, `gerüstet|[gerüstet]` → `gerüstet|ARRAYED`
+   - `bleich|[bleich]` → `bleich|PALE`, `Krieger|[Krieger]` → `Krieger|WARRIORS`
+   - `stracks|[stracks]` → `stracks|STRAIGHT`
+   - `verwundet|[verwundet]` → `verwundet|WOUNDED`
+   - `hineinkommen|[hineinkommen]` → `hineinkommen|ENTER`
+   - `verhalten|[verhalten]` → `verhalten|WITHHOLD` (stars withhold brightness)
+   - `Bekehrt|[Bekehrt]` → `Bekehrt|TURN`, `bekehret|[bekehret]` → `bekehret|TURN`
+   - `geduldig|[geduldig]` → `geduldig|PATIENT`
+   - `mag|[mag]` → `mag|MAY`, `opfern|[opfern]` → `opfern|OFFER`
+   - `Halle|[Halle]` → `Halle|PORCH`, `stinken|[stinken]` → `stinken|STINK`
+   - `liebes|[liebes]` → `liebes|DEAR`, `Schanden|[Schanden]` → `Schanden|SHAME`
+   - `verwandelt|[verwandelt]` → `verwandelt|TURNED`
+   - `anrufen|[anrufen]` → `anrufen|CALLS`, `errettet|[errettet]` → `errettet|DELIVERED`
+   - `berufen|[berufen]` → `berufen|CALLS`, `wenden|[wenden]` → `wenden|TURN`
+   - `s|[s]` → `s|IT` (multiple occurrences)
+   - `Rufet|[Rufet]` → `Rufet|PROCLAIM`, `Kriegsleute|[Kriegsleute]` → `Kriegsleute|MEN-OF-WAR`
+   - `Rottet|[Rottet]` → `Rottet|ASSEMBLE`
+   - `laufen|[laufen]` → `laufen|RUN`, `beben|[beben]` → `beben|QUAKE`
+   - `süßem|[süßem]` → `süßem|SWEET`, `Bäche|[Bäche]` → `Bäche|STREAMS`
+   - `ungerächt|[ungerächt]` → `ungerächt|UNAVENGED`
 
 **Statistics:**
-- Total issues fixed: ~120+
-- Lines in hos.tsv: 197 verses
+- Total issues fixed: ~70+
+- Lines in jol.tsv: 73 verses
+- All |old patterns eliminated
+- All |stringed instrument patterns eliminated
+- All bracketed unknown words resolved
 
-**Books Completed: 28/66**
+**Books Completed: 29/66**
 

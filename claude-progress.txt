@@ -1279,6 +1279,68 @@ Completed comprehensive cleanup of all remaining issues in Ezra (ezr.tsv).
 - [x] 1 Chronicles (1ch)
 - [x] 2 Chronicles (2ch)
 - [x] Ezra (ezr)
-- [ ] Nehemiah (neh) - next
+- [x] Nehemiah (neh)
+- [ ] Esther (est) - next
+
+---
+### SESSION 16 - NEHEMIAH COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Nehemiah (neh.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Kinder|old` → `Kinder|children`
+   - `Kindern|old` → `Kindern|children`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons`
+   - `Sohn|old` → `Sohn|son`
+   - `Sohnes|old` → `Sohnes|son's`
+   - `und|old` → `und|AND`
+   - `Es|old` → `Es|IT`
+   - 2 legitimate `alte|old` patterns remain (meaning "old gate")
+
+2. **"stringed instrument" mistranslation fixes (~85 occurrences):**
+   - `von|stringed instrument` → `von|FROM`
+   - `Von|stringed instrument` → `Von|FROM`
+   - `aus|stringed instrument` → `aus|FROM`
+   - `da|stringed instrument` → `da|THERE`
+   - `vor|stringed instrument` → `vor|BEFORE`
+   - `etliche|stringed instrument` → `etliche|SOME`
+   - `gegenüber|stringed instrument` → `gegenüber|OPPOSITE`
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `ihnen|stringed instrument` → `ihnen|THEM`
+   - `unten|stringed instrument` → `unten|BELOW`
+   - `hinter|stringed instrument` → `hinter|BEHIND`
+   - `um|stringed instrument` → `um|FOR`
+   - `wollen|stringed instrument` → `wollen|WILL`
+   - `und|stringed instrument` → `und|AND`
+   - `sollen|stringed instrument` → `sollen|SHALL`
+   - `sie|stringed instrument` → `sie|THEY`
+   - `ausgenommen|stringed instrument` → `ausgenommen|BESIDES`
+   - `über|stringed instrument` → `über|ABOVE`
+   - `zu|stringed instrument` → `zu|TO`
+   - `seit|stringed instrument` → `seit|SINCE`
+   - `unter|stringed instrument` → `unter|AMONG`
+   - `Und|stringed instrument` → `Und|AND`
+   - `aber|stringed instrument` → `aber|BUT`
+   - `auf|stringed instrument` → `auf|ON`
+   - `hinan|stringed instrument` → `hinan|UP`
+   - `vormals|stringed instrument` → `vormals|FORMERLY`
+   - `meiner|stringed instrument` → `meiner|MY`
+   - `draußen|stringed instrument` → `draußen|OUTSIDE`
+
+**Statistics:**
+- ~125 |old patterns fixed (2 legitimate remain)
+- ~85 "stringed instrument" mistranslations fixed
+- 7 bracketed references are chapter:verse cross-references (not errors)
+- Total: ~210+ individual word glosses corrected
+
+**Status:**
+- Nehemiah (neh.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 16/66**
 
 ---

@@ -565,7 +565,144 @@ Completed comprehensive cleanup of 1 Samuel (1sa.tsv).
 - [x] Judges (jdg)
 - [x] Ruth (rut)
 - [x] 1 Samuel (1sa)
-- [ ] 2 Samuel (2sa) - next
+- [x] 2 Samuel (2sa)
+- [ ] 1 Kings (1ki) - next
+
+---
+### SESSION 11 - 2 SAMUEL COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of 2 Samuel (2sa.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Sohn|old` → `Sohn|son`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Kinder|old` → `Kinder|children`
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Jonathan|old` → `Jonathan|Jonathan`
+   - `freudig|old` → `freudig|BOLD`
+   - `Buben|old` → `Buben|SCOUNDRELS`
+   - `Kind|old` → `Kind|child`
+   - `frisch|old` → `frisch|VALIANT`
+   - `Hause|old` → `Hause|house`
+   - `Maachathiters|old` → `Maachathiters|Maachathite`
+
+2. **Death-related |die pattern fixes:**
+   - `starb|die` → `starb|DIED`
+   - `töte|die` → `töte|SLAY`
+   - `tötete|die` → `tötete|SLEW`
+   - `töteten|die` → `töteten|KILLED`
+   - `getötet|die` → `getötet|KILLED`
+   - `sterben|die` → `sterben|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `tot|die` → `tot|DEAD`
+   - `Todes|die` → `Todes|DEATH`
+   - `Tode|die` → `Tode|DEATH`
+   - `Toten|die` → `Toten|DEAD`
+   - `gestorben|die` → `gestorben|DIED`
+   - `starben|die` → `starben|DIED`
+   - `Tod|die` → `Tod|DEATH`
+   - `tötet|die` → `tötet|SLAY`
+   - `töten|die` → `töten|SLAY`
+
+3. **Bracketed unknown words fixed (~45 occurrences):**
+   - `entblößt|[entblößt]` → `entblößt|UNCOVERED`
+   - `erwählt|[erwählt]` → `erwählt|CHOSE`
+   - `beständig|[beständig]` → `beständig|STEADFAST`
+   - `Göttern|[Göttern]` → `Göttern|GODS`
+   - `nähre|[nähre]` → `nähre|NOURISH`
+   - `vierfältig|[vierfältig]` → `vierfältig|FOURFOLD`
+   - `lästern|[lästern]` → `lästern|BLASPHEME`
+   - `Sägen|[Sägen]` → `Sägen|SAWS`
+   - `geschwächt|[geschwächt]` → `geschwächt|HUMBLED`
+   - `verstoßen|[verstoßen]` → `verstoßen|BANISHED`
+   - `erhängte|[erhängte]` → `erhängte|HANGED`
+   - `Körner|[Körner]` → `Körner|GRAIN`
+   - `Rinderkäse|[Rinderkäse]` → `Rinderkäse|CHEESE`
+   - `fraß|[fraß]` → `fraß|DEVOURED`
+   - `übergeben|[übergeben]` → `übergeben|DELIVERED`
+   - `trägt|[trägt]` → `trägt|BEARS`
+   - `verhüllt|[verhüllt]` → `verhüllt|COVERED`
+   - `erlöste|[erlöste]` → `erlöste|RESCUED`
+   - `Fähre|[Fähre]` → `Fähre|FERRY`
+   - `zürnt|[zürnt]` → `zürnt|ANGRY`
+   - `Erwählten|[Erwählten]` → `Erwählten|CHOSEN`
+   - `gehängt|[gehängt]` → `gehängt|HANGED`
+   - `rüsten|[rüsten]` → `rüsten|ARM`
+   - `behütest|[behütest]` → `behütest|KEEPEST`
+   - `wächst|[wächst]` → `wächst|GROWS`
+   - `Spieß|[Spieß]` → `Spieß|SPEAR`
+   - `lüstern|[lüstern]` → `lüstern|LUSTED`
+   - `erwähle|[erwähle]` → `erwähle|CHOOSE`
+   - Plus 17 more bracketed word fixes
+
+4. **"stringed instrument" mistranslation fixes (~187 occurrences):**
+   This was a major systematic error where many German words were incorrectly glossed as "stringed instrument":
+   - `von|stringed instrument` → `von|FROM`
+   - `aus|stringed instrument` → `aus|FROM`
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `zu|stringed instrument` → `zu|TO`
+   - `auf|stringed instrument` → `auf|ON`
+   - `der|stringed instrument` → `der|THE`
+   - `an|stringed instrument` → `an|AT`
+   - `unter|stringed instrument` → `unter|AMONG`
+   - `vor|stringed instrument` → `vor|BEFORE`
+   - `im|stringed instrument` → `im|IN-THE`
+   - `gen|stringed instrument` → `gen|TO`
+   - `sowohl|stringed instrument` → `sowohl|BOTH`
+   - `seit|stringed instrument` → `seit|SINCE`
+   - `vorn|stringed instrument` → `vorn|FRONT`
+   - `gegenüber|stringed instrument` → `gegenüber|OPPOSITE`
+   - `beim|stringed instrument` → `beim|BY-THE`
+   - `Nach|stringed instrument` → `Nach|AFTER`
+   - `zur|stringed instrument` → `zur|TO-THE`
+   - `überwältigte|stringed instrument` → `überwältigte|OVERPOWERED`
+   - `über|stringed instrument` → `über|OVER`
+   - `hinter|stringed instrument` → `hinter|BEHIND`
+   - `nicht|stringed instrument` → `nicht|NOT`
+   - `daß|stringed instrument` → `daß|THAT`
+   - `holen|stringed instrument` → `holen|FETCH`
+   - `mir|stringed instrument` → `mir|ME`
+   - `wie|stringed instrument` → `wie|AS`
+   - `Zeit|stringed instrument` → `Zeit|TIME`
+   - `da|stringed instrument` → `da|THERE`
+   - `mehr|stringed instrument` → `mehr|MORE`
+   - `die|stringed instrument` → `die|THE`
+   - `am|stringed instrument` → `am|AT-THE`
+   - `Von|stringed instrument` → `Von|FROM`
+   - `deren|stringed instrument` → `deren|OF-WHICH`
+   - `s|stringed instrument` → `s|IT`
+   - `nach|stringed instrument` → `nach|AFTER`
+   - `dem|stringed instrument` → `dem|THE`
+   - `dir|stringed instrument` → `dir|YOU`
+
+**Statistics:**
+- ~198 |old patterns fixed
+- ~61 death-related |die patterns fixed
+- ~45 bracketed unknown words fixed
+- ~187 "stringed instrument" mistranslations fixed
+- Total: ~490+ individual word glosses corrected
+
+**Status:**
+- 2 Samuel (2sa.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 10/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [ ] 1 Kings (1ki) - next
 
 ---
 ### SESSION 8 - JUDGES COMPREHENSIVE CLEANUP

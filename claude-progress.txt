@@ -1505,6 +1505,87 @@ Completed comprehensive cleanup of all issues in Job (job.tsv).
 - [x] Nehemiah (neh)
 - [x] Esther (est)
 - [x] Job (job)
-- [ ] Psalms (psa) - next
+- [x] Psalms (psa)
+- [ ] Proverbs (pro) - next
+
+---
+### SESSION 19 - PSALMS COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all issues in Psalms (psa.tsv).
+
+**Corrections Made:**
+
+1. **|old pattern fixes (~91 occurrences):**
+   - `Sohn|old` → `Sohn|SON`
+   - `Sohne|old` → `Sohne|SON`
+   - `Sohnes|old` → `Sohnes|SON'S`
+   - `Söhne|old` → `Söhne|SONS`
+   - `Kinder|old` → `Kinder|CHILDREN`
+   - `Kindern|old` → `Kindern|CHILDREN`
+   - `Menschenkind|old` → `Menschenkind|CHILD-OF-MAN`
+   - `Menschenkinder|old` → `Menschenkinder|CHILDREN-OF-MEN`
+   - `Menschenkindern|old` → `Menschenkindern|CHILDREN-OF-MEN`
+   - `Menschen|old` → `Menschen|MEN'S`
+   - `Herren|old` → `Herren|MEN`
+   - `Leute|old` → `Leute|PEOPLE`
+   - `Fremde|old` → `Fremde|FOREIGNERS`
+   - `junges|old` → `junges|YOUNG`
+   - `jungen|old` → `jungen|YOUNG`
+   - `Schafe|old` → `Schafe|SHEEP`
+   - `Knaben|old` → `Knaben|LADS`
+   - `Kind|old` → `Kind|CHILD`
+   - `Kindeskind|old` → `Kindeskind|CHILDREN'S-CHILDREN`
+   - `beide|old` → `beide|BOTH`
+   - `Mann|old` → `Mann|MAN`
+   - Context-specific fixes for pronouns and articles incorrectly glossed as "old"
+   - 4 legitimate "alt|old" and "Alter|old" patterns remain (German for "old"/"old age")
+
+2. **"stringed instrument" mistranslation fixes (5 occurrences):**
+   - `von|stringed instrument` → `von|FROM` (multiple contexts)
+   - `vor|stringed instrument` → `vor|FROM`
+   - `ob|stringed instrument` → `ob|THOUGH`
+
+3. **Death-related |die pattern fixes (~15 occurrences):**
+   - `Toten|die` → `Toten|DEAD`
+   - `toten|die` → `toten|DEAD`
+   - `tötete|die` → `tötete|KILLED`
+   - `töten|die` → `töten|KILL`
+   - `vergehen|die` → `vergehen|PERISH`
+   - `ohnmächtig|die` → `ohnmächtig|FAINT`
+   - `Todes|die` → `Todes|DEATH`
+   - Remaining `sterben|die` patterns are correct (German "sterben" = "to die")
+
+**Statistics:**
+- ~91 |old patterns fixed (4 legitimate "alt|old" remain for age references)
+- 5 "stringed instrument" mistranslations fixed
+- ~15 death-related |die patterns fixed
+- Total: ~110+ individual word glosses corrected
+
+**Status:**
+- Psalms (psa.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 19/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [ ] Proverbs (pro) - next
 
 ---

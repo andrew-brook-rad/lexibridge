@@ -514,7 +514,58 @@ Completed comprehensive cleanup of Ruth (rut.tsv).
 **Status:**
 - Ruth (rut.tsv) is now COMPLETE
 
-**Books Completed: 8/66**
+**Books Completed: 9/66**
+
+---
+### SESSION 10 - 1 SAMUEL COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of 1 Samuel (1sa.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Sohn|old` → `Sohn|son`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Kinder|old` → `Kinder|children`
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - Plus many context-specific fixes
+
+2. **Death-related |die pattern fixes:**
+   - `sterben|die` → `sterben|DIE` (4 context-specific instances)
+   - `sterbe|die` → `sterbe|DIE`
+   - `starben|die` → `starben|DIED`
+   - `starb|die` → `starb|DIED`
+   - `töten|die` → `töten|KILL`
+   - `tötest|die` → `tötest|KILL`
+   - `tötet|die` → `tötet|KILL`
+   - `dich|die` → `dich|you` (accusative pronoun)
+   - `war|die` → `war|was`
+
+3. **Death idiom pattern fixes:**
+   - `Todes|DEATH sterben|DIE` correctly glossed throughout
+
+**Statistics:**
+- ~100+ |old patterns fixed (2 legitimate "alt|old" remain for age references)
+- ~15+ death-related |die patterns fixed
+- All issues resolved
+
+**Status:**
+- 1 Samuel (1sa.tsv) is now COMPLETE
+
+**Books Completed: 9/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [ ] 2 Samuel (2sa) - next
 
 ---
 ### SESSION 8 - JUDGES COMPREHENSIVE CLEANUP

@@ -1751,6 +1751,146 @@ Completed comprehensive cleanup of all issues in Psalms (psa.tsv).
 - [x] Esther (est)
 - [x] Job (job)
 - [x] Psalms (psa)
-- [ ] Proverbs (pro) - next
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [ ] Song of Solomon (sng) - next
+
+---
+### SESSION 26 - ECCLESIASTES COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Ecclesiastes (ecc.tsv).
+
+**Corrections Made:**
+
+1. **Bracketed unknown words fixed (~94 occurrences):**
+   - `s|[s]` → `s|IT` (German contracted pronoun "es")
+   - `fließen|[fließen]` → `fließen|FLOW`
+   - `nimmer|[nimmer]` → `nimmer|NEVER`
+   - `Ohr|[Ohr]` → `Ohr|EAR`
+   - `geschieht|[geschieht]` → `geschieht|HAPPENS`
+   - `langen|[langen]` → `langen|LONG`
+   - `gedenkt|[gedenkt]` → `gedenkt|REMEMBERS`
+   - `derer|[derer]` → `derer|OF-THOSE`
+   - `schlicht|[schlicht]` → `schlicht|STRAIGHT`
+   - `erkennte|[erkennte]` → `erkennte|KNEW`
+   - `Weisheit|[Weisheit]` → `Weisheit|WISDOM`
+   - `toll|[toll]` → `toll|FOOLISH`
+   - `gearbeitet|[gearbeitet]` → `gearbeitet|LABOURED`
+   - `gepflanzt|[gepflanzt]` → `gepflanzt|PLANTED`
+   - `verlieren|[verlieren]` → `verlieren|LOSE`
+   - `lieben|[lieben]` → `lieben|LOVE`
+   - `geplagt|[geplagt]` → `geplagt|TOIL`
+   - `solle|[solle]` → `solle|SHALL`
+   - `besteht|[besteht]` → `besteht|ENDURES`
+   - `fürchten|[fürchten]` → `fürchten|FEAR`
+   - `gottlos|[gottlos]` → `gottlos|UNGODLY`
+   - `Viehes|[Viehes]` → `Viehes|BEAST'S`
+   - `Tröster|[Tröster]` → `Tröster|COMFORTER`
+   - `einzelner|[einzelner]` → `einzelner|SOLITARY-ONE`
+   - `arbeite|[arbeite]` → `arbeite|LABOUR`
+   - `eins|[eins]` → `eins|ONE`
+   - `Fällt|[Fällt]` → `Fällt|IF-FALLS`
+   - `Weh|[Weh]` → `Weh|WOE`
+   - `wärmen|[wärmen]` → `wärmen|WARM`
+   - `warm|[warm]` → `warm|WARM`
+   - `mag|[mag]` → `mag|MAY`
+   - `überwältigt|[überwältigt]` → `überwältigt|OVERPOWERED`
+   - `reißt|[reißt]` → `reißt|BREAKS`
+   - `Narr|[Narr]` → `Narr|FOOL`
+   - `nachging|[nachging]` → `nachging|FOLLOWED-AFTER`
+   - `schnell|[schnell]` → `schnell|HASTY`
+   - `Sorgen|[Sorgen]` → `Sorgen|CARES`
+   - `verzieh|[verzieh]` → `verzieh|DELAY`
+   - `gelobst|[gelobst]` → `gelobst|VOW`
+   - `wundere|[wundere]` → `wundere|MARVEL`
+   - `Vornehmens|[Vornehmens]` → `Vornehmens|PURPOSE`
+   - `liebt|[liebt]` → `liebt|LOVES`
+   - `Nutzen|[Nutzen]` → `Nutzen|PROFIT`
+   - `genießt|[genießt]` → `genießt|ENJOYS`
+   - `hilft|[hilft]` → `hilft|HELPS`
+   - `begehrt|[begehrt]` → `begehrt|DESIRES`
+   - `genießen|[genießen]` → `genießen|ENJOY`
+   - `anderer|[anderer]` → `anderer|ANOTHER`
+   - `überlebte|[überlebte]` → `überlebte|OUTLIVED`
+   - `sättigte|[sättigte]` → `sättigte|SATISFIED`
+   - `bliebe|[bliebe]` → `bliebe|REMAINED`
+   - `unzeitige|[unzeitige]` → `unzeitige|UNTIMELY`
+   - `fährt|[fährt]` → `fährt|GOES`
+   - `genösse|[genösse]` → `genösse|ENJOYED`
+   - `anderm|[anderm]` → `anderm|OTHER`
+   - `jenem|[jenem]` → `jenem|THAT`
+   - `mildtätiges|[mildtätiges]` → `mildtätiges|GENEROUS`
+   - `geduldiger|[geduldiger]` → `geduldiger|PATIENT`
+   - `schnellen|[schnellen]` → `schnellen|HASTY`
+   - `freuen|[freuen]` → `freuen|REJOICE`
+   - `künftig|[künftig]` → `künftig|FUTURE`
+   - `narre|[narre]` → `narre|PLAY-THE-FOOL`
+   - `fassest|[fassest]` → `fassest|HOLD`
+   - `geflucht|[geflucht]` → `geflucht|CURSED`
+   - `dessen|[dessen]` → `dessen|WHOSE`
+   - `Bande|[Bande]` → `Bande|BONDS`
+   - `sucht|[sucht]` → `sucht|SEEKS`
+   - `Künste|[Künste]` → `Künste|SCHEMES`
+   - `erleuchtet|[erleuchtet]` → `erleuchtet|LIGHTS-UP`
+   - `machst|[machst]` → `machst|DO`
+   - `jeglich|[jeglich]` → `jeglich|EVERY`
+   - `wandelten|[wandelten]` → `wandelten|WALKED`
+   - `dadurch|[dadurch]` → `dadurch|THEREFORE`
+   - `forschen|[forschen]` → `forschen|EXPLORE`
+   - `liebhast|[liebhast]` → `liebhast|LOVE`
+   - `zugeht|[zugeht]` → `zugeht|HAPPENS`
+   - `geschickt|[geschickt]` → `geschickt|SKILLED`
+   - `Ding|[Ding]` → `Ding|THING`
+   - `belagerte|[belagerte]` → `belagerte|BESIEGED`
+   - `verachtet|[verachtet]` → `verachtet|DESPISED`
+   - `einziger|[einziger]` → `einziger|SINGLE`
+   - `verletzt|[verletzt]` → `verletzt|HURT`
+   - `stumpf|[stumpf]` → `stumpf|DULL`
+   - `ungeschliffen|[ungeschliffen]` → `ungeschliffen|UNSHARPENED`
+   - `speisen|[speisen]` → `speisen|FEAST`
+   - `rechter|[rechter]` → `rechter|PROPER`
+   - Plus additional chapter 11-12 words
+
+2. **Quotation mark formatting fixed:**
+   - Removed errant bracketed quotation marks `"|["]`
+   - Fixed `"Ich|["Ich]` → `"Ich|"I`
+
+**Statistics:**
+- ~94 bracketed unknown word patterns fixed
+- All unknown German words now have proper English glosses
+- Total: ~94 individual word glosses corrected
+
+**Status:**
+- Ecclesiastes (ecc.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 23/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [ ] Song of Solomon (sng) - next
 
 ---

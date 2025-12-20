@@ -488,7 +488,49 @@ Completed comprehensive cleanup of all remaining issues in Deuteronomy (deu.tsv)
 - [x] Numbers (num)
 - [x] Deuteronomy (deu)
 - [x] Joshua (jos)
-- [ ] Judges (jdg) - next
+- [x] Judges (jdg)
+- [ ] Ruth (rut) - next
+
+---
+### SESSION 8 - JUDGES COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of Judges (jdg.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes:**
+   - `Sohn|old` → `Sohn|son`
+   - `Söhne|old` → `Söhne|sons`
+   - `Söhnen|old` → `Söhnen|sons`
+   - `Sohnes|old` → `Sohnes|son's`
+   - `Kinder|old` → `Kinder|children`
+   - `Kindern|old` → `Kindern|children`
+   - Various context-specific fixes (ihnen|THEM, sie|THEY, aus|FROM, die|THOSE, etc.)
+   - `Hurenkind|old` → `Hurenkind|HARLOT'S-SON`
+   - `Enkel|old` → `Enkel|GRANDSONS`
+   - `Buben|old` → `Buben|SCOUNDRELS`
+
+2. **Death-related |die pattern fixes:**
+   - `starb|die` → `starb|DIED`
+   - `sterben|die` → `sterben|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `töten|die` → `töten|KILL`
+   - `töte|die` → `töte|KILL`
+   - `tot|die` → `tot|DEAD`
+   - `Toten|die` → `Toten|DEAD`
+   - `Tod|die` → `Tod|DEATH`
+   - `war|die` → `war|WAS`
+
+**Statistics:**
+- ~157 |old patterns fixed (1 legitimate "alt|old" remains for age)
+- ~21 death-related |die patterns fixed
+- All issues resolved
+
+**Status:**
+- Judges (jdg.tsv) is now COMPLETE
+
+**Books Completed: 7/66**
 
 ---
 ### SESSION 7 - JOSHUA COMPREHENSIVE CLEANUP

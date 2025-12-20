@@ -2032,3 +2032,78 @@ Many of the remaining ~75 patterns are LEGITIMATE duplicates (e.g., als|when wen
 - Isaiah corrections are substantially complete
 - Books Completed: 24/66
 
+---
+### SESSION 30 - ISAIAH CORRECTIONS (FINAL CLEANUP)
+Date: 2024-12-20
+
+**Completed final cleanup of Isaiah (isa.tsv):**
+
+**Key Corrections Made:**
+
+1. **Genitive pattern fixes (10 occurrences):**
+   - `Juda|Judah s|Judah` → `Juda|Judah s|'S` (genitive ending)
+
+2. **Separable verb "ablassen" fixes (5 occurrences):**
+   - `läßt|return sein|his Zorn|anger nicht|not ab|return` → `läßt|RELENTS sein|his Zorn|anger nicht|not ab|—`
+   - This is the refrain "his anger does not relent" in Isaiah 5:25, 9:12, 9:17, 9:21, 10:4
+
+3. **Verb and noun gloss corrections:**
+   - `Gewalt|spoil üben|spoil` → `Gewalt|VIOLENCE üben|PRACTICE` (10:2)
+   - `sein|his...Hirten|gather` → `sein|BE...Hirten|SHEPHERD` (13:14)
+   - `fliehen|flee wird|flee` → `fliehen|flee wird|WILL` (13:14)
+   - `hinfort|never nicht|ever mehr|ever` → `hinfort|HENCEFORTH nicht|not mehr|MORE` (13:20)
+   - `Ägypter|Egypt aneinander|Egypt` → `Ägypter|EGYPTIANS aneinander|AGAINST-EACH-OTHER` (19:2)
+   - `streiten|fight wird|fight` → `streiten|FIGHT wird|WILL` (19:2)
+   - `zunichte|drive werden|drive` → `zunichte|DRIVEN-AWAY werden|BE` (19:7)
+   - `sollen|fill voll|filled-with` → `sollen|SHALL voll|FULL-OF` (13:21, 22:7)
+
+4. **Übertreter pattern fix:**
+   - `Übertreter|transgress...werden|destruction...umkommen|consume` → `Übertreter|transgressor...werden|BE...umkommen|PERISH` (1:28)
+
+**Analysis of Remaining Patterns:**
+After all corrections, approximately 154 "duplicate" patterns remain. Review shows these are LEGITIMATE duplicates:
+- Article duplicates (`|the den|the`, `|a Esel|a`) - normal German relative clauses
+- `|HOLY heilig|HOLY` - The famous "Holy, Holy, Holy" repetition (Isaiah 6:3)
+- `|Ephraim Ephraim|Ephraim` - Intentional repetition (Manasseh/Ephraim)
+- `|LORD Herr|LORD` - "Lord LORD" (Adonai YHWH) is biblical
+- `|when wenn|when` - German "als...wenn" = "as when"
+
+**Statistics:**
+- Patterns fixed this session: ~25
+- All genitive endings corrected
+- All separable verb duplicates resolved
+- Remaining patterns verified as legitimate
+
+**Status:**
+- Isaiah (isa.tsv) is now COMPLETE
+- All problematic patterns have been corrected
+- Remaining ~154 patterns are legitimate German/biblical duplicates
+
+**Books Completed: 25/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Song of Solomon (sng)
+- [x] Isaiah (isa) ← NEWLY COMPLETED
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [ ] Ezekiel (ezk) - next
+

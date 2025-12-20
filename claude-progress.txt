@@ -256,3 +256,66 @@ Completed comprehensive cleanup of all remaining issues in Exodus (exo.tsv).
 - [ ] Leviticus (lev) - next
 
 ---
+### SESSION 5 - LEVITICUS COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in Leviticus (lev.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Söhne|old` → `Söhne|sons` (all occurrences)
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Kinder|old` → `Kinder|children`
+   - `Sohn|old` → `Sohn|son`
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Sohne|old` → `Sohne|son` (dative)
+   - `junge|old` → `junge|young`
+   - `jungen|old` → `jungen|young`
+   - `Jungen|old` → `Jungen|young`
+   - `jähriges|old` → `jähriges|YEAR-OLD`
+   - `jährig|old` → `jährig|YEAR-OLD`
+   - `jährige|old` → `jährige|YEAR-OLD`
+   - `ihre|old` → `ihre|their`
+   - `ein|old` → `ein|a`
+   - `alt|old` → `alt|OLD`
+   - `alten|old` → `alten|OLD`
+   - `Haus|old` → `Haus|house`
+   - `Leuten|old` → `Leuten|people`
+   - `Fremdlings|old` → `Fremdlings|stranger's`
+   - `Kind|old` → `Kind|child`
+   - `und|old` → `und|and`
+
+2. **Death idiom pattern fixes:**
+   - `Todes|die` → `Todes|DEATH` (multiple occurrences)
+   - Death idiom "des Todes sterben" now correctly glossed as "of-the DEATH DIE"
+
+3. **Death-related |die pattern fixes:**
+   - `sterben|die` → `sterben|DIE`
+   - `sterbet|die` → `sterbet|DIE`
+   - `sterbe|die` → `sterbe|DIE`
+   - `stirbt|die` → `stirbt|DIES`
+   - `starben|die` → `starben|DIED`
+   - `gestorben|die` → `gestorben|DIED`
+   - `tötet|die` → `tötet|KILL`
+   - `Toten|die` → `Toten|DEAD`
+
+**Statistics:**
+- Total corrections: ~100+ individual word glosses
+- All `|old` patterns for family/age words fixed
+- All `|die` death-related patterns fixed
+- All death idiom patterns ("des Todes sterben") properly glossed
+
+**Status:**
+- Leviticus (lev.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+- Ready to proceed to next book (Numbers) in future session
+
+**Books Completed: 3/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [ ] Numbers (num) - next
+
+---

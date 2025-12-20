@@ -1510,7 +1510,77 @@ Completed comprehensive cleanup of all issues in Job (job.tsv).
 - [x] Ecclesiastes (ecc)
 - [x] Song of Solomon (sng)
 - [x] Isaiah (isa)
-- [ ] Jeremiah (jer) - next
+- [x] Jeremiah (jer)
+- [ ] Lamentations (lam) - next
+
+---
+### SESSION 24 - JEREMIAH COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all issues in Jeremiah (jer.tsv).
+
+**Corrections Made:**
+
+1. **|old pattern fixes (~152 occurrences):**
+   - `Sohnes|old` → `Sohnes|SON'S`
+   - `Söhne|old` → `Söhne|SONS`
+   - `Söhnen|old` → `Söhnen|SONS`
+   - `Sohn|old` → `Sohn|SON`
+   - `Kindern|old` → `Kindern|CHILDREN`
+   - `Kinder|old` → `Kinder|CHILDREN`
+   - `Kindeskindern|old` → `Kindeskindern|GRANDCHILDREN`
+   - `Menschenkinder|old` → `Menschenkinder|CHILDREN-OF-MEN`
+   - `Königssohn|old` → `Königssohn|KING'S-SON`
+   - `Ammoniter|old` → `Ammoniter|AMMONITES`
+   - `Buben|old` → `Buben|SCOUNDRELS`
+   - `Fürsten|old` → `Fürsten|PRINCES`
+   - `Vätern|old` → `Vätern|FATHERS`
+   - `Zeiten|old` → `Zeiten|TIMES`
+   - `Königen|old` → `Königen|KINGS`
+   - 3 legitimate "alte/alten/alt|old" patterns remain (German for "old")
+
+2. **Death-related |die pattern fixes (~35 occurrences):**
+   - `sterben|die` → `sterben|DIE`
+   - `starb|die` → `starb|DIED`
+   - `sterbe|die` → `sterbe|DIE`
+   - `getötet|die` → `getötet|KILLED`
+   - `töteten|die` → `töteten|KILLED`
+   - `tötet|die` → `tötet|KILL`
+   - `töten|die` → `töten|KILL`
+   - `tötest|die` → `tötest|KILL`
+   - `tötete|die` → `tötete|KILLED`
+   - `Toten|die` → `Toten|DEAD`
+   - `Tode|die` → `Tode|DEATH`
+   - `tot|die` → `tot|DEAD`
+   - `Leiche|die` → `Leiche|CORPSE`
+
+3. **Bracketed unknown word fixes (~190 occurrences):**
+   - `Jeremia|[Jeremia]` → `Jeremia|JEREMIAH`
+   - `Amons|[Amons]` → `Amons|AMON'S`
+   - `Mutterleibe|[Mutterleibe]` → `Mutterleibe|WOMB`
+   - `s|[s]` → `s|IT` (German contracted pronoun "es")
+   - `Göttern|[Göttern]` → `Göttern|GODS`
+   - `dennoch|[dennoch]` → `dennoch|YET`
+   - `Zedekia|[Zedekia]` → `Zedekia|ZEDEKIAH`
+   - `Nebukadnezar|[Nebukadnezar]` → `Nebukadnezar|NEBUCHADNEZZAR`
+   - `Babel|[Babel]` → `Babel|BABYLON`
+   - `Ägypten|[Ägypten]` → `Ägypten|EGYPT`
+   - `Israel|[Israel]` → `Israel|ISRAEL`
+   - `Juda|[Juda]` → `Juda|JUDAH`
+   - `Jerusalem|[Jerusalem]` → `Jerusalem|JERUSALEM`
+   - And 80+ more proper nouns and common words
+
+**Statistics:**
+- ~152 |old patterns fixed (3 legitimate alt/alte/alten|old remain)
+- ~35 death-related |die patterns fixed
+- ~190 bracketed unknown word patterns fixed
+- Total: ~377 individual word glosses corrected
+
+**Status:**
+- Jeremiah (jer.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 24/66**
 
 ---
 ### SESSION 20 - PROVERBS COMPREHENSIVE CLEANUP

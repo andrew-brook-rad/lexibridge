@@ -1512,7 +1512,7 @@ Completed comprehensive cleanup of all issues in Job (job.tsv).
 - [x] Isaiah (isa)
 - [x] Jeremiah (jer)
 - [x] Lamentations (lam)
-- [ ] Ezekiel (ezk) - next
+- [x] Ezekiel (ezk)
 
 ---
 ### SESSION 24 - JEREMIAH COMPREHENSIVE CLEANUP
@@ -2102,8 +2102,55 @@ After all corrections, approximately 154 "duplicate" patterns remain. Review sho
 - [x] Proverbs (pro)
 - [x] Ecclesiastes (ecc)
 - [x] Song of Solomon (sng)
-- [x] Isaiah (isa) ← NEWLY COMPLETED
+- [x] Isaiah (isa)
 - [x] Jeremiah (jer)
 - [x] Lamentations (lam)
-- [ ] Ezekiel (ezk) - next
+- [x] Ezekiel (ezk) ← NEWLY COMPLETED
+
+---
+### SESSION 31 - EZEKIEL COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+**Completed comprehensive cleanup of all issues in Ezekiel (ezk.tsv).**
+
+**Corrections Made:**
+
+1. **Bracketed unknown words (~130+ occurrences fixed):**
+   - German verbs: `machtest|[machtest]` → `machtest|MADE`, `entsetzen|[entsetzen]` → `entsetzen|HORRIFIED`
+   - Place names: `Krämerland|[Krämerland]` → `Krämerland|MERCHANT-LAND`
+   - Religious terms: `Heiligtum|[Heiligtum]` → `Heiligtum|SANCTUARY`, `Ariel|[Ariel]` → `Ariel|ALTAR-HEARTH`
+   - Measurements: `Ruten|[Ruten]` → `Ruten|REEDS`, `Scheffel|[Scheffel]` → `Scheffel|EPHAH`
+   - Temple terminology: `Umgängen|[Umgängen]` → `Umgängen|GALLERIES`, `Hallen|[Hallen]` → `Hallen|PORCHES`
+   - Numbers: `elften|[elften]` → `elften|ELEVENTH`, `achtzehntausend|[achtzehntausend]` → `achtzehntausend|EIGHTEEN-THOUSAND`
+
+2. **|old pattern fixes (13 occurrences):**
+   - `Darum|old` → `Darum|THEREFORE`
+   - `alle|old` → `alle|ALL`
+   - `den|old` → `den|THE`
+   - `Die|old` → `Die|THE`
+   - `von|old` → `von|FROM`
+   - `die|old` → `die|THE`
+   - `dein|old` → `dein|YOUR`
+   - `Sie|old` → `Sie|THEY`
+   - `Menschen|old` → `Menschen|MEN`
+   - `zu|old` → `zu|TO`
+   - `alters|life her|old` → `alters|OF-OLD her|HERE`
+
+3. **Death idiom verification:**
+   - No `Todes|DIE` patterns found (already correct)
+
+4. **Duplicate gloss verification:**
+   - No problematic duplicate patterns found
+
+**Statistics:**
+- Starting bracketed patterns: 397 lines
+- Ending bracketed patterns: 0 lines
+- Starting |old patterns: 13 lines
+- Ending |old patterns: 0 lines
+
+**Status:**
+- Ezekiel (ezk.tsv) is now COMPLETE
+- All problematic patterns have been corrected
+
+**Books Completed: 26/66**
 

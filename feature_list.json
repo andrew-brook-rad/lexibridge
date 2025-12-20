@@ -1,100 +1,376 @@
 [
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Proverbs (pro)",
+    "category": "setup",
+    "description": "Initialize Next.js project with shadcn/ui",
     "steps": [
-      "Step 1: Read tools/interlinear/output/pro-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/pro.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules (see ai-review-instructions.md)",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Create Next.js 14+ project with TypeScript and App Router",
+      "Step 2: Install and configure Tailwind CSS",
+      "Step 3: Initialize shadcn/ui with 'npx shadcn@latest init'",
+      "Step 4: Install core shadcn components: Button, Select, Dialog, Sheet, Slider, Tabs, Command"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Matthew (mat)",
+    "category": "navigation",
+    "description": "Gloss language selector for choosing translation language",
     "steps": [
-      "Step 1: Read tools/interlinear/output/mat-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mat.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Create LanguageSelector using shadcn Select component",
+      "Step 2: List available gloss languages: English (initial), Spanish, French, Portuguese",
+      "Step 3: Show language availability indicator (which books have translations)",
+      "Step 4: Changing language navigates to /read/[lang]/[current-book] and reloads glosses"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Mark (mrk)",
+    "category": "navigation",
+    "description": "Book selector with OT/NT tabs",
     "steps": [
-      "Step 1: Read tools/interlinear/output/mrk-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/mrk.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Create BookSelector using shadcn Tabs (OT/NT) and Select components",
+      "Step 2: Show availability indicator for books in current gloss language",
+      "Step 3: List books with full names (e.g., 'Genesis', 'Matthew')",
+      "Step 4: Clicking a book navigates to /read/[lang]/[book]"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Luke (luk)",
+    "category": "navigation",
+    "description": "Chapter selector for quick navigation within current book",
     "steps": [
-      "Step 1: Read tools/interlinear/output/luk-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/luk.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Create ChapterSelector using shadcn Select component",
+      "Step 2: Display chapter numbers based on book metadata",
+      "Step 3: Clicking a chapter navigates to /read/[lang]/[book]/[chapter]",
+      "Step 4: Highlight the currently selected chapter"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for John (jhn)",
+    "category": "navigation",
+    "description": "Quick search/jump using Command palette (Cmd+K)",
     "steps": [
-      "Step 1: Read tools/interlinear/output/jhn-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/jhn.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Implement shadcn Command component for quick navigation",
+      "Step 2: Support searching by book name, chapter, or reference (e.g., 'John 3:16')",
+      "Step 3: Show keyboard shortcut hint (Cmd+K or Ctrl+K)",
+      "Step 4: Navigate to selected result and close palette"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Acts (act)",
+    "category": "navigation",
+    "description": "Next/Previous chapter buttons for sequential reading",
     "steps": [
-      "Step 1: Read tools/interlinear/output/act-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/act.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Create navigation using shadcn Button components",
+      "Step 2: Previous button goes to prior chapter, Next goes to next chapter",
+      "Step 3: Handle book boundaries within selected language",
+      "Step 4: Disable buttons at start/end of available content"
     ],
-    "passes": true
+    "passes": false
   },
   {
-    "category": "data-processing",
-    "description": "Correct interlinear translations for Revelation (rev)",
+    "category": "navigation",
+    "description": "URL routing with language prefix (/read/[lang]/[book]/[chapter])",
     "steps": [
-      "Step 1: Read tools/interlinear/output/rev-issues.txt to identify flagged verses",
-      "Step 2: For each flagged verse, read the corresponding line in tools/interlinear/output/rev.tsv",
-      "Step 3: Identify the issue type: consecutive duplicate glosses, separable verb particles, unknown words in brackets, or death idiom errors",
-      "Step 4: Apply the correct fix based on German grammar rules",
-      "Step 5: Edit the TSV file with corrected glosses",
-      "Step 6: After all corrections, run: python3 scripts/consolidate_interlinear.py",
-      "Step 7: Verify corrections by checking the updated TSV lines"
+      "Step 1: Set up Next.js dynamic routes: /read/[lang]/[book]/[chapter]/[verse]",
+      "Step 2: Validate language and book parameters",
+      "Step 3: Scroll to specific verse if verse parameter is provided",
+      "Step 4: Handle invalid routes with 404 or redirect to valid content"
     ],
-    "passes": true
+    "passes": false
+  },
+  {
+    "category": "navigation",
+    "description": "Breadcrumb showing current location (Language > Book > Chapter)",
+    "steps": [
+      "Step 1: Display current language, book name, and chapter in header",
+      "Step 2: Make each breadcrumb segment clickable for navigation",
+      "Step 3: Use shadcn components for consistent styling",
+      "Step 4: Show abbreviated version on mobile screens"
+    ],
+    "passes": false
+  },
+  {
+    "category": "navigation",
+    "description": "Home page with gloss language selection and quick start",
+    "steps": [
+      "Step 1: Create landing page with site title and description",
+      "Step 2: Prominent gloss language selector cards (English, Spanish, French, Portuguese)",
+      "Step 3: Show popular starting points (Genesis 1, Psalm 23, John 1, etc.)",
+      "Step 4: Include brief instructions on how to use the site"
+    ],
+    "passes": false
+  },
+  {
+    "category": "navigation",
+    "description": "Sidebar navigation using shadcn Sheet (mobile) and static (desktop)",
+    "steps": [
+      "Step 1: Create collapsible sidebar with language and book selectors",
+      "Step 2: Use shadcn Sheet for mobile slide-out navigation",
+      "Step 3: Show static sidebar on desktop (>1024px)",
+      "Step 4: Include chapter list for current book"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Parse and render TSV interlinear data",
+    "steps": [
+      "Step 1: Create utility to load TSV from /output/[lang]/{book}.tsv",
+      "Step 2: Parse TSV format: book_code TAB chapter:verse TAB interlinear_text",
+      "Step 3: Split interlinear_text into word pairs (German|GLOSS)",
+      "Step 4: Return structured data for rendering by chapter"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Ruby-style interlinear display (German above, gloss below)",
+    "steps": [
+      "Step 1: Create InterlinearWord component using HTML ruby/rt tags",
+      "Step 2: German text as ruby base, translated gloss as ruby text",
+      "Step 3: Position gloss below German (ruby-position: under)",
+      "Step 4: Handle punctuation separately (no gloss needed)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Verse numbers displayed as superscript markers",
+    "steps": [
+      "Step 1: Detect verse number tokens in the data",
+      "Step 2: Render verse numbers as superscript before first word",
+      "Step 3: Style with red/accent color and smaller font",
+      "Step 4: Add verse ID for scroll targeting"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Chapter headers at the start of each chapter",
+    "steps": [
+      "Step 1: Display 'Chapter N' header when chapter changes",
+      "Step 2: Style as prominent but not overwhelming (serif, centered)",
+      "Step 3: Add spacing before and after chapter header",
+      "Step 4: Include chapter ID for navigation targeting"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Justified text flow for natural reading",
+    "steps": [
+      "Step 1: Apply text-align: justify to reading container (LTR languages)",
+      "Step 2: Ensure ruby elements flow naturally inline",
+      "Step 3: Handle word-breaking for long compound words",
+      "Step 4: Maintain consistent line height across interlinear pairs"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Smooth scrolling when navigating to verses",
+    "steps": [
+      "Step 1: When navigating to specific verse, use smooth scroll",
+      "Step 2: Offset scroll position to account for fixed header",
+      "Step 3: Briefly highlight target verse (pulse animation)",
+      "Step 4: Remove highlight after 2 seconds"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Distinct styling for German text vs translated glosses",
+    "steps": [
+      "Step 1: German text: primary color, user-selected font size",
+      "Step 2: Glosses: uppercase, smaller (60-70%), muted gray",
+      "Step 3: Ensure sufficient contrast for readability",
+      "Step 4: Maintain proportion when font size changes"
+    ],
+    "passes": false
+  },
+  {
+    "category": "reading",
+    "description": "Loading state while fetching chapter data",
+    "steps": [
+      "Step 1: Show skeleton loader using shadcn Skeleton while loading",
+      "Step 2: Display chapter content once loaded",
+      "Step 3: Handle loading errors gracefully with retry option",
+      "Step 4: Preload adjacent chapters for faster navigation"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preferences",
+    "description": "Font size adjustment using shadcn Slider",
+    "steps": [
+      "Step 1: Create font size control using shadcn Slider component",
+      "Step 2: Range from 12px to 24px base size with visual indicator",
+      "Step 3: Apply size change immediately to reading view",
+      "Step 4: Scale all typography proportionally (glosses, verse numbers)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preferences",
+    "description": "Font family selection using shadcn Select",
+    "steps": [
+      "Step 1: Create font family selector using shadcn Select",
+      "Step 2: Offer serif options: Georgia, Times New Roman, Garamond",
+      "Step 3: Offer sans-serif options: Arial, Helvetica, Open Sans",
+      "Step 4: Apply font change immediately to reading view"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preferences",
+    "description": "Persist user preferences in localStorage",
+    "steps": [
+      "Step 1: Save font size, font family, and preferred gloss language to localStorage",
+      "Step 2: Load preferences on page load/refresh",
+      "Step 3: Apply saved preferences before first render (avoid flash)",
+      "Step 4: Sync preferences across tabs if possible"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preferences",
+    "description": "Settings panel using shadcn Dialog",
+    "steps": [
+      "Step 1: Add settings icon (gear) in header using shadcn Button",
+      "Step 2: Clicking opens settings Dialog/Sheet",
+      "Step 3: Panel contains font size slider, font family select, gloss language picker",
+      "Step 4: Panel can be dismissed by clicking outside or X button"
+    ],
+    "passes": false
+  },
+  {
+    "category": "preferences",
+    "description": "Reset preferences to default option",
+    "steps": [
+      "Step 1: Add 'Reset to defaults' shadcn Button in settings",
+      "Step 2: Clicking resets font size to medium (16px)",
+      "Step 3: Clicking resets font family to Georgia, gloss language to English",
+      "Step 4: Clear localStorage and apply defaults immediately"
+    ],
+    "passes": false
+  },
+  {
+    "category": "responsive",
+    "description": "Responsive layout for desktop (sidebar + main content)",
+    "steps": [
+      "Step 1: On desktop (>1024px), show sidebar + main content side by side",
+      "Step 2: Sidebar takes ~280px with language/book/chapter selectors",
+      "Step 3: Main content has max-width for comfortable reading (800px)",
+      "Step 4: Navigation footer sticks to bottom of viewport"
+    ],
+    "passes": false
+  },
+  {
+    "category": "responsive",
+    "description": "Responsive layout for tablet (collapsible sidebar)",
+    "steps": [
+      "Step 1: On tablet (768px-1024px), sidebar is collapsible",
+      "Step 2: Use shadcn Sheet for collapsible sidebar",
+      "Step 3: When collapsed, main content takes full width",
+      "Step 4: Navigation remains accessible via toggle button"
+    ],
+    "passes": false
+  },
+  {
+    "category": "responsive",
+    "description": "Responsive layout for mobile (bottom nav + Sheet)",
+    "steps": [
+      "Step 1: On mobile (<768px), hide sidebar completely",
+      "Step 2: Use shadcn Sheet for slide-out navigation",
+      "Step 3: Previous/Next buttons at bottom of screen",
+      "Step 4: Ensure touch targets are at least 44px for accessibility"
+    ],
+    "passes": false
+  },
+  {
+    "category": "responsive",
+    "description": "Touch-friendly interactions for mobile",
+    "steps": [
+      "Step 1: Increase tap target sizes using shadcn Button sizing",
+      "Step 2: Ensure Sheet slides smoothly on touch",
+      "Step 3: Select and Command components work well with touch",
+      "Step 4: Test on actual mobile devices"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data",
+    "description": "Load and cache TSV data by gloss language efficiently",
+    "steps": [
+      "Step 1: Load TSV file from /output/[lang]/{book}.tsv on first request",
+      "Step 2: Parse and cache in memory",
+      "Step 3: Return cached data on subsequent requests",
+      "Step 4: Handle missing or corrupted TSV files gracefully"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data",
+    "description": "Book and gloss language metadata configuration",
+    "steps": [
+      "Step 1: Create metadata file with book codes, full names, chapter counts",
+      "Step 2: Define available gloss languages and which books each supports",
+      "Step 3: Include book order for sequential navigation",
+      "Step 4: Use for showing availability indicators in UI"
+    ],
+    "passes": false
+  },
+  {
+    "category": "data",
+    "description": "Handle verse number formatting in TSV data",
+    "steps": [
+      "Step 1: Parse chapter:verse from TSV second column",
+      "Step 2: Insert verse number marker before first word of each verse",
+      "Step 3: Group verses by chapter for display",
+      "Step 4: Handle edge cases (verse ranges, missing verses)"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Clean header with site branding, breadcrumb, and settings",
+    "steps": [
+      "Step 1: Fixed header at top of page using shadcn styling",
+      "Step 2: Site title/logo on left",
+      "Step 3: Breadcrumb (Language > Book > Chapter) in center",
+      "Step 4: Settings and language icons on right using shadcn Button"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Footer navigation bar with prev/next using shadcn Button",
+    "steps": [
+      "Step 1: Fixed footer at bottom of reading view",
+      "Step 2: Previous shadcn Button on left with icon",
+      "Step 3: Current chapter/position in center",
+      "Step 4: Next shadcn Button on right with icon"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Consistent styling using shadcn theme and Tailwind",
+    "steps": [
+      "Step 1: Configure shadcn theme colors in tailwind.config",
+      "Step 2: Use consistent padding/margins from shadcn defaults",
+      "Step 3: Ensure visual hierarchy with shadcn typography",
+      "Step 4: Apply consistent border-radius and shadows from theme"
+    ],
+    "passes": false
+  },
+  {
+    "category": "ui",
+    "description": "Accessible color contrast and focus states",
+    "steps": [
+      "Step 1: Use shadcn's built-in accessible focus states",
+      "Step 2: Ensure text has WCAG AA contrast ratio",
+      "Step 3: Test keyboard navigation through all interactive elements",
+      "Step 4: Add appropriate ARIA labels where needed"
+    ],
+    "passes": false
   }
 ]

@@ -1,212 +1,209 @@
 <project_specification>
-  <project_name>LexiBridge Lite - Biblical Interlinear Generator</project_name>
+  <project_name>LexiBridge Public - Multilingual Interlinear Bible Reader</project_name>
+  <branch>public-main</branch>
 
   <overview>
-    Build a Next.js tool to generate professional, print-ready interlinear books.
-    **PRIMARY USE CASE:** Biblical texts (Bible books/chapters).
-    The tool must handle specific theological formatting (Verse numbers, Chapter headers, Book Titles)
-    while strictly adhering to space-efficient publishing standards. It generates "Hand-Shoe" style
-    literal translations using server-side AI and renders them into a justified, flowable layout
-    suitable for Print-on-Demand (KDP/IngramSpark).
+    Build a simple, elegant public-facing website for reading interlinear Bible texts in multiple languages.
+    The site displays pre-generated interlinear data (from TSV files) in a beautiful, readable format
+    with easy navigation between books, chapters, and verses.
 
-    **IMPORTANT: This is a PROTOTYPE. Focus on:**
-    - Beautiful rendering and typography
-    - The "Lego Method" working correctly (compound word splitting)
-    - Good visual output that looks print-ready
+    **PRIMARY GOAL:** Make it easy to read and study interlinear Bible texts online.
 
-    **DO NOT worry about:**
-    - Production-ready error handling
-    - Edge cases
-    - Authentication/security hardening
-    - Performance optimization
-    - Comprehensive test coverage
+    **MULTI-LANGUAGE SUPPORT:**
+    - Source language: German (Luther Bible 1912)
+    - Target/gloss languages: English (initial), Spanish, French, and others to be added
+    - Each target language has its own set of TSV files
+    - User can select which gloss language to display alongside German text
+
+    **KEY FEATURES:**
+    - Beautiful typography with configurable font size and font family
+    - Page-by-page navigation (next/previous)
+    - Quick navigation to any book, chapter, and verse
+    - Responsive design for desktop and mobile
+    - Clean, distraction-free reading experience
+
+    **KEEP IT SIMPLE:**
+    - Static site generation where possible
+    - No authentication required
+    - No AI/translation features (data is pre-generated)
+    - Minimal dependencies
   </overview>
 
   <technology_stack>
     <framework>Next.js 14+ with App Router (TypeScript)</framework>
-    <styling>Tailwind CSS (UI) + Custom CSS Paged Media (Print)</styling>
-    <state>React Hooks + LocalStorage</state>
-    <pdf_engine>Native Browser Print</pdf_engine>
-    <ai_integration>
-      <provider>OpenAI API (Server-side via API Routes)</provider>
-      <model>gpt-4o-mini</model>
-      <mode>JSON Object Mode</mode>
-      <api_key>OPENAI_API_KEY=your-api-key-here</api_key>
-      <note>Add this key to .env.local for the Next.js server-side API routes</note>
-    </ai_integration>
+    <styling>Tailwind CSS + shadcn/ui components</styling>
+    <ui_components>
+      shadcn/ui - Use for consistent, accessible UI components:
+      - Select/Dropdown for book and chapter selection
+      - Dialog/Sheet for settings panel and mobile navigation
+      - Button for navigation controls
+      - Slider for font size adjustment
+      - Tabs for OT/NT book grouping
+      - Command (cmdk) for quick search/jump functionality
+      - Popover for tooltips and quick actions
+    </ui_components>
+    <state>React Hooks + LocalStorage (for user preferences)</state>
+    <data_source>Pre-generated TSV files in tools/interlinear/output/</data_source>
   </technology_stack>
 
-  <publishing_constraints>
-    <!-- CRITICAL TYPESETTING RULES -->
-    <space_efficiency>
-      - **The "Lego" Method:** Standard Ruby tags act like solid bricks that refuse to break.
-        The renderer MUST split long words (German compounds) into components.
-      - **Flow:** Words like "Unabhängigkeitserklärung" must be able to break across lines:
-        "Unabhängig-" (Line 1) and "keitserklärung" (Line 2).
-    </space_efficiency>
+  <data_format>
+    <!-- TSV files contain interlinear data in this format -->
+    <tsv_structure>
+      Each line: book_code TAB chapter:verse TAB interlinear_text
+      Interlinear text format: GermanWord|GLOSS GermanWord|GLOSS ...
 
-    <visual_density>
-      - **Justification:** `text-align: justify` is mandatory.
-      - **Vertical Stacking:** English glosses must wrap *vertically* (stack) rather than
-        widening the source word. Use `max-width` on gloss tags.
-    </visual_density>
+      Example (English glosses): gen	1:1	Am|IN Anfang|BEGINNING schuf|CREATED Gott|GOD ...
+      Example (Spanish glosses): gen	1:1	Am|EN Anfang|PRINCIPIO schuf|CREÓ Gott|DIOS ...
+      Example (French glosses): gen	1:1	Am|AU Anfang|COMMENCEMENT schuf|CRÉA Gott|DIEU ...
+    </tsv_structure>
 
-    <biblical_formatting>
-      - **Verse Numbers:** Must be rendered inline but distinct (superscript, bold, or colored red).
-        They must not break the justification flow.
-      - **Chapter Headers:** Large, centered, elegant serif typography.
-      - **Book Titles:** Distinct title pages or headers (e.g., "THE GOSPEL OF JOHN").
-      - **Paragraphs:** If the source text contains paragraph markers (¶ or double newlines), use them.
-        Otherwise, let the AI determine natural paragraph breaks based on content/meaning.
-    </biblical_formatting>
+    <language_organization>
+      TSV files organized by target/gloss language:
+      - tools/interlinear/output/english/{book}.tsv (initial implementation)
+      - tools/interlinear/output/spanish/{book}.tsv (future)
+      - tools/interlinear/output/french/{book}.tsv (future)
+      - tools/interlinear/output/portuguese/{book}.tsv (future)
+    </language_organization>
 
-    <configurable_print_settings>
-      - **Page Size:** User-selectable (6x9", 5.5x8.5", A5, Custom)
-      - **Margins:** Configurable (with presets for KDP Safe Area)
-      - **Font Sizes:** Adjustable base size that scales all typography
-      - **Re-render:** A "Reflow" button that programmatically re-renders the layout when settings change
-    </configurable_print_settings>
-  </publishing_constraints>
+    <available_gloss_languages>
+      - english: English glosses - Full Bible (66 books)
+      - spanish: Spanish glosses - Full Bible (66 books) [future]
+      - french: French glosses - Full Bible (66 books) [future]
+      - portuguese: Portuguese glosses - Full Bible (66 books) [future]
+    </available_gloss_languages>
+
+    <available_books>
+      <!-- All 66 Bible books with 3-letter codes -->
+      OT: gen, exo, lev, num, deu, jos, jdg, rut, 1sa, 2sa, 1ki, 2ki, 1ch, 2ch,
+          ezr, neh, est, job, psa, pro, ecc, sng, isa, jer, lam, ezk, dan,
+          hos, jol, amo, oba, jon, mic, nam, hab, zep, hag, zec, mal
+      NT: mat, mrk, luk, jhn, act, rom, 1co, 2co, gal, eph, php, col, 1th, 2th,
+          1ti, 2ti, tit, phm, heb, jas, 1pe, 2pe, 1jn, 2jn, 3jn, jud, rev
+    </available_books>
+  </data_format>
 
   <core_features>
-    <input_processing>
-      - **Bible Parser:** Logic to detect standard verse numbering in raw text.
-        (Input: "1 Am Anfang... 2 Und die Erde..." -> output structure separates verses).
-      - **Chunking:** Split text by Chapter to manage API context limits.
-    </input_processing>
+    <navigation>
+      - **Book Selector:** Dropdown or sidebar listing all 66 books (grouped OT/NT)
+      - **Chapter Selector:** Quick jump to any chapter in the current book
+      - **Verse Jump:** Input field to jump directly to a specific verse
+      - **Next/Previous Page:** Navigate sequentially through the text
+      - **URL Routing:** Deep links like /read/jhn/3/16 for John 3:16
+    </navigation>
 
-    <translation_engine>
-      - **Server-side API Route:** `/api/translate` endpoint that calls OpenAI
-      - **Morphological Tokenizer (AI):** The system prompt must instruct the AI to:
-        1. Preserve Verse Numbers.
-        2. Split words into morphological roots.
-        3. Provide literal UPPERCASE glosses.
-        4. Suggest paragraph breaks if not present in source.
-    </translation_engine>
+    <reading_view>
+      - **Interlinear Display:** German text on top, English gloss below (ruby-style)
+      - **Verse Numbers:** Clear, non-intrusive verse markers (superscript red)
+      - **Chapter Headers:** Clear chapter number at the start of each chapter
+      - **Paragraph Flow:** Text flows naturally with justified alignment
+    </reading_view>
 
-    <interactive_editor>
-      - **Visual Feedback:** Verse numbers clearly visible.
-      - **Edit Mode:** Click any word to edit the gloss or split points.
-    </interactive_editor>
+    <user_preferences>
+      - **Font Size:** Slider or buttons to adjust (small/medium/large/x-large)
+      - **Font Family:** Choose between serif and sans-serif options
+        - Serif options: Georgia, Times New Roman, Garamond
+        - Sans-serif options: Arial, Helvetica, Open Sans
+      - **Gloss Language:** Select which translation language to display (English, Spanish, French, etc.)
+      - **Preferences Persistence:** Save to localStorage so settings persist
+    </user_preferences>
 
-    <rendering_engine>
-      - **Layout:** CSS Paged Media (`@page`) to handle margins, gutters, and page numbers.
-      - **The Lego Component:** Flex-row of adjacent `<ruby>` tags.
-      - **Verse Component:** A `<sup>` span that sits inline before the first word of a verse.
-      - **Programmatic Reflow:** A function/hook that forces re-render when print settings change.
-    </rendering_engine>
+    <gloss_language_selection>
+      - **Language Picker:** Selector for gloss/translation language
+      - **Available Languages:** English, Spanish, French, Portuguese (expandable)
+      - **Availability Indicator:** Show which books are available in each language
+      - **Fallback:** If a book isn't available in selected language, show message with option to switch
+      - **URL Structure:** Language is part of the URL path for shareability
+    </gloss_language_selection>
   </core_features>
 
-  <data_structure>
-    <book_project>
-      {
-        "meta": { "title": "Genesis", "language": "DE" },
-        "printSettings": {
-          "pageSize": "6x9",
-          "margins": { "top": 0.75, "bottom": 0.75, "inner": 0.875, "outer": 0.5 },
-          "baseFontSize": 12
-        },
-        "chapters": [
-          {
-            "number": 1,
-            "paragraphs": [
-              [ // A paragraph is an array of tokens
-                { "type": "verse_num", "value": "1" },
-                {
-                  "type": "word",
-                  "original_full": "Anfang",
-                  "parts": [{ "text": "Anfang", "gloss": "BEGINNING" }]
-                },
-                { "type": "punctuation", "value": "." },
-                { "type": "verse_num", "value": "2" },
-                { "type": "word", "original_full": "Und", ... }
-              ]
-            ]
-          }
-        ]
-      }
-    </book_project>
-  </data_structure>
-
-  <sample_test_data>
-    <!-- Luther Bible 1912 - Genesis 1:1-8 (Public Domain) -->
-    <german_bible_text>
-1 Am Anfang schuf Gott Himmel und Erde. 2 Und die Erde war wüst und leer, und es war finster auf der Tiefe; und der Geist Gottes schwebte auf dem Wasser. 3 Und Gott sprach: Es werde Licht! und es ward Licht. 4 Und Gott sah, daß das Licht gut war. Da schied Gott das Licht von der Finsternis 5 und nannte das Licht Tag und die Finsternis Nacht. Da ward aus Abend und Morgen der erste Tag.
-
-6 Und Gott sprach: Es werde eine Feste zwischen den Wassern, und die sei ein Unterschied zwischen den Wassern. 7 Da machte Gott die Feste und schied das Wasser unter der Feste von dem Wasser über der Feste. Und es geschah also. 8 Und Gott nannte die Feste Himmel. Da ward aus Abend und Morgen der andere Tag.
-    </german_bible_text>
-
-    <expected_compound_splits>
-      - "Unterschied" -> "Unter-schied" (UNDER-DIFFERENCE)
-      - "Finsternis" -> "Finster-nis" (DARK-NESS)
-    </expected_compound_splits>
-  </sample_test_data>
-
   <ui_layout>
-    <settings_panel>
-      - Page size dropdown (6x9, 5.5x8.5, A5, Custom)
-      - Margin inputs (with KDP preset button)
-      - Font size slider
-      - "Reflow" button to re-render
-    </settings_panel>
+    <header>
+      - Site title: "LexiBridge - German-English Interlinear Bible"
+      - Current location breadcrumb: "Matthew > Chapter 5 > Verse 1"
+      - Settings icon (opens preferences panel)
+    </header>
 
-    <print_preview>
-      - **Paper Simulation:** White background, drop shadow.
-      - **Margins:** Visual guides for Safe Area (prevent text being cut off in binding).
-      - **Typography:**
-        - Book Title: 24pt Serif, Centered.
-        - Chapter Num: 18pt Serif, Centered or Drop Cap.
-        - Body Text: 12pt Serif (Source), 7pt Sans-Condensed (Gloss).
-        - Verse Num: 8pt Bold/Red, Superscript.
-    </print_preview>
+    <sidebar_or_nav>
+      - Book list (collapsible OT/NT sections)
+      - Chapter list for current book
+      - Quick verse jump input
+    </sidebar_or_nav>
+
+    <main_reading_area>
+      - Chapter header (e.g., "Chapter 5")
+      - Interlinear text content
+      - Smooth scrolling within chapter
+    </main_reading_area>
+
+    <footer_navigation>
+      - Previous page/chapter button
+      - Current position indicator
+      - Next page/chapter button
+    </footer_navigation>
+
+    <settings_panel>
+      - Font size control (slider: 12px - 24px)
+      - Font family selector (dropdown)
+      - Theme toggle (light/dark) - optional nice-to-have
+    </settings_panel>
   </ui_layout>
 
-  <implementation_instructions>
-    <instruction type="prompt_engineering">
-      **System Prompt for /api/translate:**
-      "You are a Biblical Interlinear Generator.
-      1. Respect Verse Numbers: Return them as distinct objects `{type: 'verse_num', value: '1'}`.
-      2. Morphology: Split complex German compound words into roots for line-breaking
-         (e.g., 'Handschuh' -> ['Hand', 'schuh'], 'Unterschied' -> ['Unter', 'schied']).
-      3. Gloss: Provide literal UPPERCASE English translations for each part.
-      4. Paragraphs: If the input has paragraph markers (blank lines), preserve them.
-         If not, suggest natural paragraph breaks based on narrative flow.
-      5. Output strict JSON matching the schema."
-    </instruction>
+  <typography>
+    <german_text>
+      - Primary text (larger)
+      - User-selected font family
+      - User-selected font size
+    </german_text>
 
-    <instruction type="css_tricks">
-      - Use `ruby-position: under`.
-      - Use `text-align: justify`.
-      - Verse numbers should have `vertical-align: super; font-size: 0.7em; margin-right: 2px;`.
-      - Glosses (`rt`) must have `white-space: normal; line-height: 1; max-width: 5ch;` to force stacking.
-      - Use CSS custom properties (--page-width, --margin-inner, etc.) for dynamic reflow.
-    </instruction>
+    <english_gloss>
+      - Secondary text (smaller, ~60-70% of German size)
+      - Uppercase for literal translations
+      - Slightly muted color (gray) to distinguish from German
+    </english_gloss>
 
-    <instruction type="reflow_mechanism">
-      Create a `useReflow` hook or similar that:
-      1. Listens to print settings changes
-      2. Forces a re-render of the preview component
-      3. Updates CSS custom properties on the container
-      This allows users to see immediate visual feedback when changing page size/margins.
-    </instruction>
-  </implementation_instructions>
+    <verse_numbers>
+      - Superscript
+      - Red or accent color
+      - Small size (~60% of base)
+      - Non-breaking with following word
+    </verse_numbers>
+  </typography>
+
+  <routes>
+    /                       - Home page with introduction and language/book selection
+    /read                   - Redirects to first book in default language (English Genesis 1)
+    /read/[lang]            - Language home (e.g., /read/english, /read/spanish)
+    /read/[lang]/[book]     - First chapter of specified book with glosses in [lang]
+    /read/[lang]/[book]/[chapter]  - Specific chapter
+    /read/[lang]/[book]/[chapter]/[verse] - Specific verse (scrolls to and highlights)
+
+    Examples:
+    /read/english/gen/1     - Genesis 1 with English glosses
+    /read/spanish/psa/23    - Psalm 23 with Spanish glosses
+    /read/french/jhn/1      - John 1 with French glosses
+  </routes>
 
   <success_criteria>
-    <visual_check>
-      - Use the sample Genesis 1:1-8 text above.
-      - Check that Verse 1 flows naturally into Verse 2 without a line break unless it's a new paragraph.
-      - Check that Verse Numbers (superscript red) are visible but don't mess up the spacing.
-      - Check that compound words like "Unterschied" and "Finsternis" split across lines when
-        the page is narrow (test with 5.5x8.5 size).
-      - Change page size from 6x9 to 5.5x8.5 and verify the text reflows correctly.
-    </visual_check>
+    <usability>
+      - User can navigate to any verse in under 3 clicks
+      - Font size changes are immediately visible
+      - Navigation works smoothly on mobile devices
+      - Page loads quickly (< 2 seconds)
+    </usability>
+
+    <visual>
+      - Text is easy to read at default settings
+      - German and English are clearly distinguishable
+      - Verse numbers don't disrupt reading flow
+      - Consistent styling across all books
+    </visual>
   </success_criteria>
 
   <feature_count>
-    Generate approximately 100 features/test cases. Focus heavily on:
-    - Rendering quality (50% of features)
-    - The Lego Method / compound splitting (20% of features)
-    - Print settings and reflow (15% of features)
-    - Basic UI/UX (15% of features)
+    Generate approximately 30-40 features. Focus on:
+    - Navigation (40% of features)
+    - Reading experience / typography (30% of features)
+    - User preferences (20% of features)
+    - Responsive design (10% of features)
   </feature_count>
 </project_specification>

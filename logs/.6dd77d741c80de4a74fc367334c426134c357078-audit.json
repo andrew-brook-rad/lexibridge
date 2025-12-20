@@ -24,6 +24,16 @@
             "date": 1766018675585,
             "name": "/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/logs/mcp-puppeteer-2025-12-18.log",
             "hash": "65193024c49f70db3e6a610fd8b64dbb1e0e114fb52b36228dd524f1b3143946"
+        },
+        {
+            "date": 1766102406334,
+            "name": "/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/logs/mcp-puppeteer-2025-12-19.log",
+            "hash": "6e0c6102cba8451addc8fd5d2c5231712dd121f9e3357339f98f3fdc56b52e03"
+        },
+        {
+            "date": 1766249009190,
+            "name": "/home/ubuntu/RAD-autonomous-coding/generations/lexibridge/logs/mcp-puppeteer-2025-12-20.log",
+            "hash": "8aef62a18d7a6734ff1102a66e58f1571108327b89c0be938492255ddd95d482"
         }
     ],
     "hashType": "sha256"

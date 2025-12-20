@@ -1950,3 +1950,49 @@ Completed comprehensive cleanup of all remaining issues in Song of Solomon (sng.
 - All known issue patterns have been corrected
 
 ---
+
+---
+### SESSION 28 - ISAIAH CORRECTIONS (IN PROGRESS)
+Date: 2024-12-20
+
+Started corrections for Isaiah (isa.tsv) - the largest prophetic book with 66 chapters.
+
+**Issue Type Identified:**
+- Primary issue: Consecutive duplicate glosses (e.g., "mehr|more macht|more" instead of "mehr|more macht|MAKES")
+- These duplicates occur when German compounds or multi-word phrases get the same gloss for consecutive words
+
+**Progress So Far:**
+- Started with 210 duplicate gloss patterns
+- Fixed 36 patterns so far (176 remaining)
+- This represents approximately 17% of duplicate patterns fixed
+
+**Sample Corrections Made:**
+1. Chapter 1-10 verb duplicates:
+   - `mehr|more macht|more` → `mehr|more macht|MAKES`
+   - `übrig|leave ist|leave` → `übrig|LEFT ist|IS`
+   - `wären|be thou wir|be thou` → `wären|WERE wir|WE`
+   - `gleich|like wie|like` → `gleich|LIKE wie|AS`
+   - `beten|worship an|worship` → `beten|WORSHIP an|—`
+   - `demütigen|humble sich|humble` → `demütigen|HUMBLE sich|THEMSELVES`
+   - `aufmachen|arise wird|arise` → `aufmachen|ARISE wird|WILL`
+
+2. Chapter 10-26 patterns:
+   - `Verstörer|spoil verstört|spoil` → `Verstörer|SPOILER verstört|SPOILS`
+   - Fixed separable verb particles (auf|—, an|—)
+   - Fixed reflexive constructions (sich|—)
+
+**Status:**
+- Isaiah (isa.tsv) is IN PROGRESS
+- 174 duplicate patterns remain to fix
+- This is a large file requiring multiple sessions to complete
+
+**Books Completed: 24/66**
+- All previous books still marked as complete
+- Isaiah is the next book to complete after this session
+
+**Next Steps:**
+- Continue fixing remaining duplicate patterns in Isaiah
+- Run consolidation script after all fixes
+- Mark as complete in feature_list.json only when all issues resolved
+
+---

@@ -1509,7 +1509,8 @@ Completed comprehensive cleanup of all issues in Job (job.tsv).
 - [x] Proverbs (pro)
 - [x] Ecclesiastes (ecc)
 - [x] Song of Solomon (sng)
-- [ ] Isaiah (isa) - next
+- [x] Isaiah (isa)
+- [ ] Jeremiah (jer) - next
 
 ---
 ### SESSION 20 - PROVERBS COMPREHENSIVE CLEANUP

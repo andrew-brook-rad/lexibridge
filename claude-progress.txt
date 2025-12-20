@@ -1996,3 +1996,12 @@ Started corrections for Isaiah (isa.tsv) - the largest prophetic book with 66 ch
 - Mark as complete in feature_list.json only when all issues resolved
 
 ---
+
+**Session 28 Update (Continued):**
+- Fixed additional 39 duplicate patterns in Isaiah
+- Progress: Started with 210 duplicates, now at 171 remaining
+- Total fixed this session: 39 patterns (~19% of duplicates)
+- Chapters reviewed and corrected: 1-31 (partially)
+
+The remaining ~171 patterns are spread across chapters 32-66 and will need additional sessions to complete.
+

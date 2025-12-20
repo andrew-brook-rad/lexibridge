@@ -1042,6 +1042,107 @@ Completed comprehensive cleanup of all remaining issues in 2 Kings (2ki.tsv).
 - [x] 2 Samuel (2sa)
 - [x] 1 Kings (1ki)
 - [x] 2 Kings (2ki)
-- [ ] 1 Chronicles (1ch) - next
+- [x] 1 Chronicles (1ch)
+- [ ] 2 Chronicles (2ch) - next
+
+---
+### SESSION 13 - 1 CHRONICLES COMPREHENSIVE CLEANUP
+Date: 2024-12-20
+
+Completed comprehensive cleanup of all remaining issues in 1 Chronicles (1ch.tsv).
+
+**Batch Corrections Applied:**
+
+1. **|old pattern fixes (German words incorrectly glossed as "old"):**
+   - `Kinder|old` → `Kinder|children` (207 occurrences)
+   - `Kindern|old` → `Kindern|children` (dative plural)
+   - `Söhne|old` → `Söhne|sons` (33 occurrences)
+   - `Söhnen|old` → `Söhnen|sons` (dative plural)
+   - `Sohn|old` → `Sohn|son` (138 occurrences)
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Männer|old` → `Männer|men`
+   - `Leute|old` → `Leute|people`
+   - `Kahathitern|old` → `Kahathitern|Kohathites`
+   - `Ammonitern|old` → `Ammonitern|Ammonites`
+
+2. **"stringed instrument" mistranslation fixes (~157 occurrences):**
+   This was a major systematic error where many German words were incorrectly glossed:
+   - `von|stringed instrument` → `von|FROM`
+   - `Von|stringed instrument` → `Von|FROM`
+   - `aus|stringed instrument` → `aus|FROM`
+   - `Aus|stringed instrument` → `Aus|FROM`
+   - `dazu|stringed instrument` → `dazu|ALSO`
+   - `ohne|stringed instrument` → `ohne|WITHOUT`
+   - `denn|stringed instrument` → `denn|THAN`
+   - `mit|stringed instrument` → `mit|WITH`
+   - `vor|stringed instrument` → `vor|BEFORE`
+   - `am|stringed instrument` → `am|AT-THE`
+   - `was|stringed instrument` → `was|WHAT`
+   - `als|stringed instrument` → `als|AS`
+   - `durch|stringed instrument` → `durch|THROUGH`
+   - `Aber|stringed instrument` → `Aber|BUT`
+   - `jenseit|stringed instrument` → `jenseit|BEYOND`
+   - `da|stringed instrument` → `da|THERE`
+   - `etliche|stringed instrument` → `etliche|SOME`
+   - `allezeit|stringed instrument` → `allezeit|ALWAYS`
+   - `Und|stringed instrument` → `Und|AND`
+   - `Des|stringed instrument` → `Des|OF-THE`
+   - `umher|stringed instrument` → `umher|AROUND`
+   - `daß|stringed instrument` → `daß|THAT`
+   - `der|stringed instrument` → `der|THE`
+   - `unter|stringed instrument` → `unter|AMONG`
+   - `auch|stringed instrument` → `auch|ALSO`
+   - `des|stringed instrument` → `des|OF-THE`
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `gegenüber|stringed instrument` → `gegenüber|OPPOSITE`
+   - `täglich|stringed instrument` → `täglich|DAILY`
+   - `ihn|stringed instrument` → `ihn|HIM`
+   - `wo|stringed instrument` → `wo|WHERE`
+   - `und|stringed instrument` → `und|AND`
+   - `hinter|stringed instrument` → `hinter|BEHIND`
+   - `zu|stringed instrument` → `zu|TO`
+   - `deiner|stringed instrument` → `deiner|YOUR`
+   - `ab|stringed instrument` → `ab|—`
+   - `den|stringed instrument` → `den|THE`
+   - `mir|stringed instrument` → `mir|ME`
+   - `dir|stringed instrument` → `dir|YOU`
+   - `erwähle|stringed instrument` → `erwähle|CHOOSE`
+   - `diesseits|stringed instrument` → `diesseits|THIS-SIDE`
+   - `außer|stringed instrument` → `außer|BESIDES`
+   - `ewiglich|stringed instrument` → `ewiglich|FOREVER`
+
+3. **Death-related |die pattern fixes (~24 occurrences):**
+   - `starb|die` → `starb|DIED` (18 occurrences)
+   - `starben|die` → `starben|DIED`
+   - `tötete|die` → `tötete|KILLED`
+   - `war|die` → `war|WAS` (context-specific)
+   - `waren|die` → `waren|WERE` (context-specific)
+   - `er|die` → `er|HE` (context-specific)
+
+**Statistics:**
+- ~420+ |old patterns fixed (1 legitimate "alt|old" remains for age reference)
+- ~157 "stringed instrument" mistranslations fixed
+- ~24 death-related |die patterns fixed
+- Total: ~600+ individual word glosses corrected
+
+**Status:**
+- 1 Chronicles (1ch.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 13/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [ ] 2 Chronicles (2ch) - next
 
 ---

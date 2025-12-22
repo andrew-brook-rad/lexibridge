@@ -2425,6 +2425,59 @@ Date: 2024-12-20
 - [x] Daniel (dan)
 - [x] Hosea (hos)
 - [x] Joel (jol)
-- [x] Amos (amo) ← NEWLY COMPLETED
-- [ ] Obadiah (oba) - next
+- [x] Amos (amo)
+- [x] Obadiah (oba) ← NEWLY COMPLETED
+- [ ] Jonah (jon) - next
+
+---
+### SESSION 31 - OBADIAH COMPREHENSIVE CLEANUP
+Date: 2024-12-22
+
+Completed comprehensive cleanup of all issues in Obadiah (oba.tsv).
+
+**Corrections Made:**
+
+1. **Bracketed unknown word fixes (~17 occurrences):**
+   - `verachtet|[verachtet]` → `verachtet|DESPISED`
+   - `sprichst|[sprichst]` → `sprichst|SAY`
+   - `dennoch|[dennoch]` → `dennoch|YET`
+   - `zunichte|[zunichte]` → `zunichte|DESTROYED` (2 occurrences)
+   - `Schätze|[Schätze]` → `Schätze|TREASURES`
+   - `Bundesgenossen|[Bundesgenossen]` → `Bundesgenossen|ALLIES`
+   - `Trost|[Trost]` → `Trost|TRUST`
+   - `setztest|[setztest]` → `setztest|SET`
+   - `gilt|[gilt]` → `gilt|MATTERS`
+   - `Morden|[Morden]` → `Morden|SLAUGHTER`
+   - `Schanden|[Schanden]` → `Schanden|SHAME`
+   - `einzogen|[einzogen]` → `einzogen|ENTERED`
+   - `einziehen|[einziehen]` → `einziehen|ENTER`
+   - `Jammers|[Jammers]` → `Jammers|DISTRESS` (5 occurrences)
+   - `stolz|[stolz]` → `stolz|PROUDLY`
+   - `verdient|[verdient]` → `verdient|DESERVED`
+   - `s|[s]` → `s|IT` (3 occurrences)
+
+2. **"stringed instrument" mistranslation fixes (~7 occurrences):**
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `von|stringed instrument dort|in it` → `von|FROM dort|THERE`
+   - `zu|stringed instrument Edom` → `zu|IN Edom`
+   - `auf|stringed instrument dem...Gebirge` → `auf|ON dem...Gebirge` (2 occurrences)
+   - `Um|stringed instrument` → `Um|BECAUSE-OF`
+   - `wider|stringed instrument` → `wider|AGAINST`
+   - `deren|stringed instrument` → `deren|OF-THEM`
+
+3. **|old pattern fixes (2 occurrences):**
+   - `Kinder|old` → `Kinder|children` (1:12, 1:20)
+
+**Statistics:**
+- Total issues fixed: ~26
+- Lines in oba.tsv: 21 verses
+- All bracketed unknown words resolved
+- All |stringed instrument patterns eliminated
+- All |old patterns fixed
+
+**Status:**
+- Obadiah (oba.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 31/66**
 

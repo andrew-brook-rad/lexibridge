@@ -2294,3 +2294,137 @@ Date: 2024-12-20
 
 **Books Completed: 29/66**
 
+---
+
+## Session: Amos (amo) Correction
+
+**Book:** Amos (amo)
+**Date:** 2024-12-22
+**Status:** COMPLETED
+
+**Issues Fixed:**
+
+1. **|old patterns (~10 occurrences):**
+   - `Sohnes|old` → `Sohnes|son's` (genitive)
+   - `Kinder|old` → `Kinder|children` (children of Ammon, Israel)
+   - `Kindern|old` → `Kindern|children`
+   - `Söhne|old` → `Söhne|sons`
+   - `Sohn|old` → `Sohn|son`
+
+2. **|stringed instrument mistranslations (~25+ occurrences):**
+   - `vor|stringed instrument` → `vor|BEFORE`
+   - `von|stringed instrument` → `von|FROM`
+   - `vom|stringed instrument` → `vom|FROM-THE`
+   - `aus|stringed instrument` → `aus|FROM`
+   - `Aus|stringed instrument` → `Aus|FROM`
+   - `oben|stringed instrument` → `oben|ABOVE`
+   - `und|stringed instrument` → `und|AND`
+   - `über|stringed instrument` → `über|OVER`
+   - `sind|stringed instrument` → `sind|ARE`
+   - `sie|stringed instrument` → `sie|THEM`
+   - `ich|stringed instrument` → `ich|I`
+
+3. **Bracketed unknown words (~70+ occurrences):**
+   - Verbs: `bekehrtet|[bekehrtet]` → `bekehrtet|RETURNED`
+   - `freiwillige|[freiwillige]` → `freiwillige|FREEWILL`
+   - `dürrer|[dürrer]` → `dürrer|DROUGHT`
+   - `Mannschaft|[Mannschaft]` → `Mannschaft|SOLDIERS`
+   - `Gestank|[Gestank]` → `Gestank|STENCH`
+   - `Nasen|[Nasen]` → `Nasen|NOSTRILS`
+   - `Brand|[Brand]` → `Brand|FIREBRAND`
+   - `schicke|[schicke]` → `schicke|PREPARE`
+   - `einher|[einher]` → `einher|ALONG`
+   - `kommet|[kommet]` → `kommet|COME`
+   - `Beer-|[Beer-]` → `Beer-|BEER-` (place name)
+   - `Aven|[Aven]` → `Aven|AVEN` (place name)
+   - `verzehre|[verzehre]` → `verzehre|CONSUME`
+   - `löschen|[löschen]` → `löschen|QUENCH`
+   - `schüttet|[schüttet]` → `schüttet|POURS`
+   - `gebaut|[gebaut]` → `gebaut|BUILT`
+   - `rühmet|[rühmet]` → `rühmet|BOAST`
+   - `liebet|[liebet]` → `liebet|LOVE`
+   - `Trauern|[Trauern]` → `Trauern|MOURNING`
+   - `begehren|[begehren]` → `begehren|DESIRE`
+   - `hell|[hell]` → `hell|BRIGHT`
+   - `mag|[mag]` → `mag|CAN`
+   - `starker|[starker]` → `starker|MIGHTY`
+   - `trachtet|[trachtet]` → `trachtet|STRIVE`
+   - `spielt|[spielt]` → `spielt|PLAY`
+   - `vornan|[vornan]` → `vornan|FIRST`
+   - `wenngleich|[wenngleich]` → `wenngleich|EVEN-IF`
+   - `verbrennen|[verbrennen]` → `verbrennen|BURN`
+   - `darf|[darf]` → `darf|DARE`
+   - `gewinnen|[gewinnen]` → `gewinnen|GET`
+   - `wandelt|[wandelt]` → `wandelt|TURN`
+   - `tröstet|[tröstet]` → `tröstet|COMFORT`
+   - `mähen|[mähen]` → `mähen|MOWN`
+   - `abgefressen|[abgefressen]` → `abgefressen|EATEN`
+   - `verzehrte|[verzehrte]` → `verzehrte|DEVOURED`
+   - `fraß|[fraß]` → `fraß|DEVOURED`
+   - `Bleischnur|[Bleischnur]` → `Bleischnur|PLUMBLINE` (4 occurrences)
+   - `gemessen|[gemessen]` → `gemessen|MADE`
+   - `zerstört|[zerstört]` → `zerstört|DESTROYED`
+   - `Amazja|[Amazja]` → `Amazja|AMAZIAH` (4 occurrences)
+   - `Hirt|[Hirt]` → `Hirt|HERDSMAN`
+   - `sprichst|[sprichst]` → `sprichst|SAY`
+   - `ausgeteilt|[ausgeteilt]` → `ausgeteilt|DIVIDED`
+   - `vertrieben|[vertrieben]` → `vertrieben|EXILED`
+   - `reifem|[reifem]` → `reifem|RIPE` (2 occurrences)
+   - `verkehrt|[verkehrt]` → `verkehrt|TURNED`
+   - `hinwerfen|[hinwerfen]` → `hinwerfen|CAST`
+   - `Dürftigen|[Dürftigen]` → `Dürftigen|NEEDY`
+   - `gilt|[gilt]` → `gilt|MATTERS`
+   - `erbeben|[erbeben]` → `erbeben|QUAKE`
+   - `trauern|[trauern]` → `trauern|MOURN` (2 occurrences)
+   - `überlaufen|[überlaufen]` → `überlaufen|OVERFLOW` (2 occurrences)
+   - `überschwemmt|[überschwemmt]` → `überschwemmt|FLOODED`
+   - `Fluß|[Fluß]` → `Fluß|RIVER`
+   - `hellen|[hellen]` → `hellen|BRIGHT`
+   - `Stücke|[Stücke]` → `Stücke|PIECES`
+   - `entgehen|[entgehen]` → `entgehen|ESCAPE`
+   - `sichten|[sichten]` → `sichten|SIFT`
+   - `zugleich|[zugleich]` → `zugleich|AT-THE-SAME-TIME`
+   - `säen|[säen]` → `säen|SOW`
+   - `süßem|[süßem]` → `süßem|SWEET`
+   - Quote marks: `"|["]` → `"|—`
+
+**Statistics:**
+- Total issues fixed: ~105+
+- Lines in amo.tsv: 146 verses
+- All |old patterns eliminated
+- All |stringed instrument patterns eliminated
+- All bracketed unknown words resolved
+
+**Books Completed: 30/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Song of Solomon (sng)
+- [x] Isaiah (isa)
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [x] Ezekiel (ezk)
+- [x] Daniel (dan)
+- [x] Hosea (hos)
+- [x] Joel (jol)
+- [x] Amos (amo) ← NEWLY COMPLETED
+- [ ] Obadiah (oba) - next
+

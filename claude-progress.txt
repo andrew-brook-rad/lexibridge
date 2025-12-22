@@ -2481,3 +2481,106 @@ Completed comprehensive cleanup of all issues in Obadiah (oba.tsv).
 
 **Books Completed: 31/66**
 
+---
+### SESSION 32 - JONAH COMPREHENSIVE CLEANUP
+Date: 2024-12-22
+
+Completed comprehensive cleanup of all issues in Jonah (jon.tsv).
+
+**Corrections Made:**
+
+1. **Bracketed unknown word fixes (~18 occurrences):**
+   - `Amitthais|[Amitthais]` → `Amitthais|AMITTAI'S`
+   - `Schiff|[Schiff]` → `Schiff|SHIP` (3 occurrences)
+   - `schläfst|[schläfst]` → `schläfst|SLEEP`
+   - `verdürben|[verdürben]` → `verdürben|PERISH`
+   - `traf|[traf]` → `traf|FELL`
+   - `s|[s]` → `s|IT`
+   - `sank|[sank]` → `sank|SANK`
+   - `hineinzugehen|[hineinzugehen]` → `hineinzugehen|ENTER`
+   - `glaubten|[glaubten]` → `glaubten|BELIEVED`
+   - `Purpur|[Purpur]` → `Purpur|ROBE`
+   - `hüllte|[hüllte]` → `hüllte|COVERED`
+   - `bekehre|[bekehre]` → `bekehre|TURN`
+   - `langmütig|[langmütig]` → `langmütig|LONGSUFFERING`
+   - `widerfahren|[widerfahren]` → `widerfahren|HAPPEN`
+   - `freute|[freute]` → `freute|REJOICED`
+   - `matt|[matt]` → `matt|FAINT`
+   - `gearbeitet|[gearbeitet]` → `gearbeitet|LABORED`
+   - `verdarb|[verdarb]` → `verdarb|PERISHED`
+
+2. **"stringed instrument" mistranslation fixes (~20 occurrences):**
+   - `vor|stringed instrument dem|the HERRN` → `vor|FROM dem|the HERRN`
+   - `daß|stringed instrument es|it leichter|curse` → `daß|THAT es|it leichter|LIGHTER`
+   - `und|stringed instrument wo|where` → `und|AND wo|WHERE`
+   - `von|stringed instrument welchem|whomever` → `von|FROM welchem|WHAT`
+   - `denn|stringed instrument mit|with` → `denn|THEN mit|with`
+   - `euch|stringed instrument das|the Meer` → `euch|YOU das|the Meer`
+   - `im|stringed instrument Leibe|bowels` → `im|IN-THE Leibe|BELLY`
+   - `in|stringed instrument meiner|my Angst` → `in|IN meiner|my Angst`
+   - `aus|stringed instrument dem|the Bauche` → `aus|FROM dem|the Bauche`
+   - `von|stringed instrument deinen|your Augen` → `von|FROM deinen|your Augen`
+   - `von|stringed instrument seinem|his bösen` → `von|FROM seinem|his bösen`
+   - `vom|stringed instrument Frevel` → `vom|FROM-THE Frevel`
+   - `von|stringed instrument ihrem|her bösen` → `von|FROM ihrem|their bösen`
+   - `von|stringed instrument mir|me` → `von|FROM mir|me`
+   - `als|stringed instrument leben` → `als|THAN leben`
+   - `zur|stringed instrument Stadt` → `zur|FROM-THE Stadt`
+   - `morgenwärts|stringed instrument` → `morgenwärts|EASTWARD`
+   - `über|stringed instrument Jona` → `über|OVER Jona`
+   - `von|stringed instrument seinem|his Übel` → `von|FROM seinem|his Übel`
+
+3. **|old pattern fixes (3 occurrences):**
+   - `Sohn|old` → `Sohn|SON`
+   - `einer|old Nacht` → `einer|ONE Nacht`
+   - `Nacht|old` → `Nacht|NIGHT`
+
+4. **Verse marker fix:**
+   - `[2|[[2] 1]|[1]]` → `[2:1]|—` (chapter reference)
+
+**Statistics:**
+- Total issues fixed: ~41
+- Lines in jon.tsv: 48 verses
+- All bracketed unknown words resolved
+- All |stringed instrument patterns eliminated
+- All |old patterns fixed
+
+**Status:**
+- Jonah (jon.tsv) is now COMPLETE
+- All known issue patterns have been corrected
+
+**Books Completed: 32/66**
+- [x] Genesis (gen)
+- [x] Exodus (exo)
+- [x] Leviticus (lev)
+- [x] Numbers (num)
+- [x] Deuteronomy (deu)
+- [x] Joshua (jos)
+- [x] Judges (jdg)
+- [x] Ruth (rut)
+- [x] 1 Samuel (1sa)
+- [x] 2 Samuel (2sa)
+- [x] 1 Kings (1ki)
+- [x] 2 Kings (2ki)
+- [x] 1 Chronicles (1ch)
+- [x] 2 Chronicles (2ch)
+- [x] Ezra (ezr)
+- [x] Nehemiah (neh)
+- [x] Esther (est)
+- [x] Job (job)
+- [x] Psalms (psa)
+- [x] Proverbs (pro)
+- [x] Ecclesiastes (ecc)
+- [x] Song of Solomon (sng)
+- [x] Isaiah (isa)
+- [x] Jeremiah (jer)
+- [x] Lamentations (lam)
+- [x] Ezekiel (ezk)
+- [x] Daniel (dan)
+- [x] Hosea (hos)
+- [x] Joel (jol)
+- [x] Amos (amo)
+- [x] Obadiah (oba)
+- [x] Jonah (jon) ← NEWLY COMPLETED
+- [ ] Micah (mic) - next
+
